@@ -4,7 +4,14 @@ iTRAQI
 
 #### resources used:
 
--   kriging (<https://rpubs.com/nabilabd/118172>)
+-   kriging <https://rpubs.com/nabilabd/118172>
+-   plots <https://r-spatial.github.io/sf/articles/sf5.html>
+-   understanding crs
+    <https://www.earthdatascience.org/courses/earth-analytics/spatial-data-r/understand-epsg-wkt-and-other-crs-definition-file-types/>
+-   changing crs
+    <https://stackoverflow.com/questions/50372533/changing-crs-of-a-sf-object>
+-   spatial aggregations
+    <https://cengel.github.io/R-spatial/spatialops.html>
 
 # load inputs
 
@@ -16,7 +23,7 @@ qld_bounary <- st_read("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 ```
 
     ## Reading layer `QLD_STATE_POLYGON_shp' from data source 
-    ##   `C:\Users\n10891277\OneDrive - Queensland University of Technology\Documents\R_projects\SC_TRAUMA\iTRAQI\input\qld_state_polygon_shp\QLD_STATE_POLYGON_shp.shp' 
+    ##   `C:\Users\Rex\Documents\R_projects\iTRAQI\input\qld_state_polygon_shp\QLD_STATE_POLYGON_shp.shp' 
     ##   using driver `ESRI Shapefile'
     ## Simple feature collection with 2031 features and 6 fields
     ## Geometry type: POLYGON
@@ -29,7 +36,7 @@ qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 ```
 
     ## Reading layer `MB_2016_QLD' from data source 
-    ##   `C:\Users\n10891277\OneDrive - Queensland University of Technology\Documents\R_projects\SC_TRAUMA\iTRAQI\input\qld_sa_zones\MB_2016_QLD.shp' 
+    ##   `C:\Users\Rex\Documents\R_projects\iTRAQI\input\qld_sa_zones\MB_2016_QLD.shp' 
     ##   using driver `ESRI Shapefile'
     ## replacing null geometries with empty geometries
     ## Simple feature collection with 69764 features and 16 fields (with 25 geometries empty)
@@ -41,8 +48,9 @@ qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 ``` r
 # ggplot(data = world) +
 #   geom_sf() +
-#   geom_sf(data=qld_SAs, aes(color=SA2_MAIN16)) +
-#   coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) 
+#   geom_sf(data=qld_SAs, aes(fill=SA3_NAME16), col = NA) +
+#   coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) + 
+#   guides(fill="none")
 ```
 
 # base map and points
@@ -53,12 +61,11 @@ ggplot(data = world) +
   geom_sf() +
   geom_sf(data=qld_bounary, color="blue") +
   labs( x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) +
   annotation_scale(location = "bl", width_hint = 0.5) +
-  annotation_north_arrow(location = "bl", which_north = "true", 
-                         pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
-                         style = north_arrow_fancy_orienteering) +
-  geom_point(data=as.data.frame(df_times), aes(x,y))
+  geom_sf(data=qld_SAs, aes(fill=SA3_NAME16), col = NA) +
+  geom_point(data=as.data.frame(df_times), aes(x,y))+ 
+  guides(fill="none") +
+  coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T)
 ```
 
     ## Scale on map varies by more than 10%, scale bar may be inaccurate
@@ -107,7 +114,7 @@ lzn_kriged <- krige(acute_time ~ 1, df_times, pnts, model=lzn_fit)%>%
     ## [using ordinary kriging]
 
 ``` r
-lzn_kriged  %>%
+lzn_kriged %>%
   ggplot(aes(X, Y)) + 
   geom_tile(aes(fill=var1.pred)) + 
   coord_equal()+
@@ -135,3 +142,45 @@ ggplot(data = world) +
 ![](iTRAQI_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 # spatial join from SA1 and SA2 polygons to interpolated values
+
+``` r
+coordinates(lzn_kriged) <- ~ X + Y
+lzn_kriged_sf <- st_as_sf(lzn_kriged)
+
+qld_SAs <- st_transform(qld_SAs, crs = 4326)
+lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4326)
+lzn_kriged_sf <- st_transform(lzn_kriged_sf, crs = 4326)
+
+test <- st_join(qld_SAs, lzn_kriged_sf)
+
+test2 <- 
+  test %>% 
+  na.omit() %>%
+  group_by(SA2_NAME16) %>%
+  mutate(mean=mean(var1.pred, na.omit=TRUE)) %>% 
+  ungroup()
+
+length(unique(test$SA2_NAME16))
+```
+
+    ## [1] 530
+
+``` r
+length(unique(test2$SA2_NAME16))
+```
+
+    ## [1] 188
+
+``` r
+ggplot(data = world) +
+  geom_sf() +
+  geom_sf(data=test2, aes(fill=mean), col = NA) +
+  # coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) +
+  coord_sf(xlim = c(138, 153.00), ylim = c(-30.00, -10.00), expand = T) +
+  guides(fill="none") +
+  scale_fill_gradient(low = "yellow", high="red")
+```
+
+![](iTRAQI_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+# try to join the SA1 polygons together: <https://gis.stackexchange.com/questions/63577/joining-polygons-in-r>
