@@ -119,7 +119,7 @@ do_union <- function(x){
 
 aggregate_by_SA <- function(qld_sf, SA_number){
   sa_main <- glue::glue('SA{SA_number}_{ifelse(SA_number %in% c(3,4), "CODE", "MAIN")}16')
-  print(sa_main)
+  message(glue::glue('----- grouping polygons within SA{SA_number} -----'))
   num_ticks <- length(unique(qld_sf[[sa_main]]))
   pb <<- progress_bar$new(
     format = "[:bar] :current/:total (:percent) elapsed :elapsed eta :eta", 
@@ -212,4 +212,10 @@ ggplot(data = world) +
   guides(fill="none") +
   scale_fill_gradient(low = "yellow", high="red")
 
+```
+
+# write interpolation layers to disk
+```{r}
+saveRDS(qld_SA1s_agged_times, "input/layers/SA1s_acute.rds")
+saveRDS(qld_SA2s_agged_times, "input/layers/SA2s_acute.rds")
 ```
