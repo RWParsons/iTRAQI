@@ -1,6 +1,6 @@
 iTRAQI
 ================
-23 February, 2022
+24 February, 2022
 
 #### resources used:
 
@@ -19,19 +19,10 @@ iTRAQI
 df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv")
 coordinates(df_times) <- ~ x + y
 
-qld_bounary <- st_read("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
-```
+# qld_bounary <- st_read("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
+qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 
-    ## Reading layer `QLD_STATE_POLYGON_shp' from data source 
-    ##   `C:\Users\Rex\Documents\R_projects\iTRAQI\input\qld_state_polygon_shp\QLD_STATE_POLYGON_shp.shp' 
-    ##   using driver `ESRI Shapefile'
-    ## Simple feature collection with 2031 features and 6 fields
-    ## Geometry type: POLYGON
-    ## Dimension:     XY
-    ## Bounding box:  xmin: 137.996 ymin: -29.1779 xmax: 153.5552 ymax: -9.141203
-    ## Geodetic CRS:  GDA94
 
-``` r
 qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 ```
 
@@ -148,10 +139,10 @@ ggplot(data = world) +
 ``` r
 do_union <- function(x){
   pb$tick()
-  st_union(x)
+  st_union(x, is_coverage = TRUE)
 }
 
-f <- function(qld_sf, SA_number){
+aggregate_by_SA <- function(qld_sf, SA_number){
   sa_main <- glue::glue('SA{SA_number}_{ifelse(SA_number %in% c(3,4), "CODE", "MAIN")}16')
   print(sa_main)
   num_ticks <- length(unique(qld_sf[[sa_main]]))
@@ -166,16 +157,21 @@ f <- function(qld_sf, SA_number){
     summarize(geometry=do_union(geometry))
 }
 
-qld_SA2s <- f(qld_sf=qld_SAs, SA_number=2)
+qld_SA2s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=2)
 ```
 
     ## SA2_MAIN16
 
 ``` r
+qld_SA1s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=1)
+```
+
+    ## SA1_MAIN16
+
+``` r
 ggplot(data = world) +
   geom_sf() +
   geom_sf(data=qld_SA2s, aes(fill=1)) +
-  # coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) +
   coord_sf(xlim = c(138, 153.00), ylim = c(-30.00, -10.00), expand = T) +
   guides(fill="none") +
   scale_fill_gradient(low = "yellow", high="red")
@@ -183,18 +179,41 @@ ggplot(data = world) +
 
 ![](iTRAQI_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
+# find out why there is a mix of polygons and multipolygons…
+
+##### spoiler: multipolygons where there are islands
+
+``` r
+mlt_idx <- c()
+for(i in 1:nrow(qld_SA2s)){
+  geo <- qld_SA2s$geometry[i]
+  cl <- class(geo[[1]])[2]
+  if(cl=="MULTIPOLYGON"){
+    mlt_idx <- append(mlt_idx, i)
+  }
+}
+
+ggplot(data = world) +
+  geom_sf() +
+  geom_sf(data=qld_SA2s[mlt_idx,], aes(fill=1)) +
+  geom_sf(data=qld_SA2s[-mlt_idx,], aes(fill=0)) +
+  coord_sf(xlim = c(138, 153.00), ylim = c(-30.00, -10.00), expand = T) +
+  guides(fill="none") +
+  scale_fill_gradient(low = "yellow", high="red")
+```
+
+![](iTRAQI_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
 # spatial join from SA2 polygons to interpolated values
 
 ``` r
 coordinates(lzn_kriged) <- ~ X + Y
 lzn_kriged_sf <- st_as_sf(lzn_kriged)
 
-# qld_SAs <- st_transform(qld_SAs, crs = 4326)
-qld_SA2s <- st_transform(qld_SA2s, crs = 4326)
 lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4326)
 lzn_kriged_sf <- st_transform(lzn_kriged_sf, crs = 4326)
 
-# test <- st_join(qld_SAs, lzn_kriged_sf)
+qld_SA2s <- st_transform(qld_SA2s, crs = 4326)
 qld_SA2s_with_int_times <- st_join(qld_SA2s, lzn_kriged_sf)
 # https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
 
@@ -205,25 +224,36 @@ qld_SA2s_agged_times <-
   mutate(mean=mean(var1.pred, na.omit=TRUE)) %>% 
   ungroup()
 
-length(unique(qld_SA2s_with_int_times$SA2_MAIN16))
-```
-
-    ## [1] 530
-
-``` r
-length(unique(qld_SA2s_agged_times$SA2_MAIN16))
-```
-
-    ## [1] 301
-
-``` r
 ggplot(data = world) +
   geom_sf() +
   geom_sf(data=qld_SA2s_agged_times, aes(fill=mean), col = NA) +
-  # coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) +
   coord_sf(xlim = c(138, 153.00), ylim = c(-30.00, -10.00), expand = T) +
   guides(fill="none") +
   scale_fill_gradient(low = "yellow", high="red")
 ```
 
-![](iTRAQI_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](iTRAQI_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
+# spatial join from SA1 polygons to interpolated values
+
+``` r
+qld_SA1s <- st_transform(qld_SA1s, crs = 4326)
+qld_SA1s_with_int_times <- st_join(qld_SA1s, lzn_kriged_sf)
+# https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
+
+qld_SA1s_agged_times <- 
+  qld_SA1s_with_int_times %>% 
+  na.omit() %>%
+  group_by(SA1_MAIN16) %>%
+  mutate(mean=mean(var1.pred, na.omit=TRUE)) %>% 
+  ungroup()
+
+ggplot(data = world) +
+  geom_sf() +
+  geom_sf(data=qld_SA1s_agged_times, aes(fill=mean), col = NA) +
+  coord_sf(xlim = c(138, 153.00), ylim = c(-30.00, -10.00), expand = T) +
+  guides(fill="none") +
+  scale_fill_gradient(low = "yellow", high="red")
+```
+
+![](iTRAQI_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
