@@ -72,6 +72,7 @@ grid <- makegrid(aus[aus$NAME_1 == "Queensland",], cellsize = 0.05)
 pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(map))
 
 pnts <- pnts_sf %>% mutate(
+  # https://gis.stackexchange.com/a/343479
   intersection = as.integer(st_intersects(geometry, map))
 ) %>%
   filter(!is.na(intersection)) %>%
@@ -108,8 +109,7 @@ ggplot(data = world) +
 
 ```
 
-# Join the SA2s polygons together: https://gis.stackexchange.com/questions/63577/joining-polygons-in-r
-### This isn't reducing the plotting time as much as I had thought. I think the combined polygons (after st_union()) still contain every polygon that's been aggregated rather than keeping the largest polygon that contains them all (outside boarder). Not sure how to do this but there may be some better way out there.
+# Join the SA polygons together depending on level (SA1 vs SA2)
 ```{r}
 
 do_union <- function(x){
@@ -117,9 +117,13 @@ do_union <- function(x){
   st_union(x, is_coverage = TRUE)
 }
 
-aggregate_by_SA <- function(qld_sf, SA_number){
+aggregate_by_SA <- function(qld_sf, SA_number, use_dissolve=FALSE){
   sa_main <- glue::glue('SA{SA_number}_{ifelse(SA_number %in% c(3,4), "CODE", "MAIN")}16')
   message(glue::glue('----- grouping polygons within SA{SA_number} -----'))
+  if(use_dissolve){
+    return(rmapshaper::ms_dissolve(qld_sf, sa_main))
+  }
+  
   num_ticks <- length(unique(qld_sf[[sa_main]]))
   pb <<- progress_bar$new(
     format = "[:bar] :current/:total (:percent) elapsed :elapsed eta :eta", 
@@ -132,8 +136,8 @@ aggregate_by_SA <- function(qld_sf, SA_number){
     summarize(geometry=do_union(geometry))
 }
 
-qld_SA2s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=2)
-qld_SA1s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=1)
+qld_SA2s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=2, use_dissolve=TRUE)
+qld_SA1s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=1, use_dissolve=TRUE)
 
 ggplot(data = world) +
   geom_sf() +
