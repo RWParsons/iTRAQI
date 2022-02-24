@@ -2,6 +2,7 @@
 title: "iTRAQI"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: rmarkdown::github_document
+always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
@@ -233,18 +234,31 @@ saveRDS(qld_SA2s_agged_times, "input/layers/SA2s_acute.rds")
 
 # test space for leaflet
 ```{r}
+library(leaflet)
 bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
 pal <- colorBin("YlOrRd", domain = qld_SA2s_agged_times$mean, bins = bins)
 
 leaflet() %>% 
-  addTiles() %>%
+  addMapPane(name = "polygons", zIndex = 410) %>% 
+  addMapPane(name = "maplabels", zIndex = 420) %>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addProviderTiles("CartoDB.VoyagerOnlyLabels",
+                   options = leafletOptions(pane = "maplabels"),
+                   group = "map labels") %>%
   addPolygons(
     data=qld_SA2s_agged_times, 
     fillColor = ~pal(mean), 
     color="black", 
     fillOpacity=1,
-    weight=1
+    weight=1,
+    group="polys",
+    options = leafletOptions(pane = "polygons")
+  )%>%
+  addLayersControl(
+    baseGroups = "CartoDB.PositronNoLabels",
+    overlayGroups = c("map labels","polys")
   )
+
 ```
 
 

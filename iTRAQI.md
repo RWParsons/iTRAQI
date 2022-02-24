@@ -278,3 +278,40 @@ ggplot(data = world) +
 saveRDS(qld_SA1s_agged_times, "input/layers/SA1s_acute.rds")
 saveRDS(qld_SA2s_agged_times, "input/layers/SA2s_acute.rds")
 ```
+
+# test space for leaflet
+
+``` r
+library(leaflet)
+```
+
+    ## Warning: package 'leaflet' was built under R version 4.1.2
+
+``` r
+bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
+pal <- colorBin("YlOrRd", domain = qld_SA2s_agged_times$mean, bins = bins)
+
+leaflet() %>% 
+  # addTiles() %>%
+  addMapPane(name = "polygons", zIndex = 410) %>% 
+  addMapPane(name = "maplabels", zIndex = 420) %>%
+  addProviderTiles("CartoDB.PositronNoLabels") %>%
+  addProviderTiles("CartoDB.PositronOnlyLabels", 
+                   options = leafletOptions(pane = "maplabels"),
+                   group = "map labels") %>%
+  addPolygons(
+    data=qld_SA2s_agged_times, 
+    fillColor = ~pal(mean), 
+    color="black", 
+    fillOpacity=1,
+    weight=1,
+    group="sa2s",
+    options = leafletOptions(pane = "polygons")
+  )%>%
+  addLayersControl(
+    baseGroups = "CartoDB.PositronNoLabels",
+    overlayGroups = c("map labels","sa2s")
+  )
+```
+
+![](iTRAQI_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
