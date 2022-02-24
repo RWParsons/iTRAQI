@@ -3,7 +3,7 @@
 .Rapp.history
 
 # Large layer files
-/input/layers/*
+# /input/layers/*
 
 # Session Data files
 .RData

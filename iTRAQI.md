@@ -19,10 +19,8 @@ iTRAQI
 df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv")
 coordinates(df_times) <- ~ x + y
 
-# qld_bounary <- st_read("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
-
-
+world <- ne_countries(scale = "medium", returnclass = "sf")
 qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 ```
 
@@ -47,7 +45,6 @@ qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 # base map and points
 
 ``` r
-world <- ne_countries(scale = "medium", returnclass = "sf")
 ggplot(data = world) +
   geom_sf() +
   geom_sf(data=qld_bounary, color="blue") +
@@ -81,13 +78,13 @@ plot(lzn_vgm, lzn_fit)
 # kriging - create spatial domain to interpolate over
 
 ``` r
-map <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
-grid <- makegrid(aus[aus$NAME_1 == "Queensland",], cellsize = 0.05)
-pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(map))
+grid <- makegrid(aus[aus$NAME_1 == "Queensland",], cellsize = 0.1)
+pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(qld_bounary))
 
 pnts <- pnts_sf %>% mutate(
-  intersection = as.integer(st_intersects(geometry, map))
+  # https://gis.stackexchange.com/a/343479
+  intersection = as.integer(st_intersects(geometry, qld_bounary))
 ) %>%
   filter(!is.na(intersection)) %>%
   st_coordinates() %>% 
@@ -132,9 +129,7 @@ ggplot(data = world) +
 
 ![](iTRAQI_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-# Join the SA2s polygons together: <https://gis.stackexchange.com/questions/63577/joining-polygons-in-r>
-
-### This isn’t reducing the plotting time as much as I had thought. I think the combined polygons (after st_union()) still contain every polygon that’s been aggregated rather than keeping the largest polygon that contains them all (outside boarder). Not sure how to do this but there may be some better way out there.
+# Join the SA polygons together depending on level (SA1 vs SA2)
 
 ``` r
 do_union <- function(x){
@@ -142,9 +137,13 @@ do_union <- function(x){
   st_union(x, is_coverage = TRUE)
 }
 
-aggregate_by_SA <- function(qld_sf, SA_number){
+aggregate_by_SA <- function(qld_sf, SA_number, use_dissolve=FALSE){
   sa_main <- glue::glue('SA{SA_number}_{ifelse(SA_number %in% c(3,4), "CODE", "MAIN")}16')
-  print(sa_main)
+  message(glue::glue('----- grouping polygons within SA{SA_number} -----'))
+  if(use_dissolve){
+    return(rmapshaper::ms_dissolve(qld_sf, sa_main))
+  }
+  
   num_ticks <- length(unique(qld_sf[[sa_main]]))
   pb <<- progress_bar$new(
     format = "[:bar] :current/:total (:percent) elapsed :elapsed eta :eta", 
@@ -157,16 +156,20 @@ aggregate_by_SA <- function(qld_sf, SA_number){
     summarize(geometry=do_union(geometry))
 }
 
-qld_SA2s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=2)
+qld_SA2s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=2, use_dissolve=TRUE)
 ```
 
-    ## SA2_MAIN16
+    ## ----- grouping polygons within SA2 -----
+
+    ## Registered S3 method overwritten by 'geojsonlint':
+    ##   method         from 
+    ##   print.location dplyr
 
 ``` r
-qld_SA1s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=1)
+qld_SA1s <- aggregate_by_SA(qld_sf=qld_SAs, SA_number=1, use_dissolve=TRUE)
 ```
 
-    ## SA1_MAIN16
+    ## ----- grouping polygons within SA1 -----
 
 ``` r
 ggplot(data = world) +
@@ -217,12 +220,14 @@ qld_SA2s <- st_transform(qld_SA2s, crs = 4326)
 qld_SA2s_with_int_times <- st_join(qld_SA2s, lzn_kriged_sf)
 # https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
 
-qld_SA2s_agged_times <- 
-  qld_SA2s_with_int_times %>% 
+SA2_agg_times <- 
+  qld_SA2s_with_int_times %>%
   na.omit() %>%
+  as.data.frame() %>%
   group_by(SA2_MAIN16) %>%
-  mutate(mean=mean(var1.pred, na.omit=TRUE)) %>% 
-  ungroup()
+  summarize(mean=mean(var1.pred, na.omit=TRUE))
+
+qld_SA2s_agged_times <- merge(qld_SA2s, SA2_agg_times, all.x=TRUE)
 
 ggplot(data = world) +
   geom_sf() +
@@ -241,12 +246,21 @@ qld_SA1s <- st_transform(qld_SA1s, crs = 4326)
 qld_SA1s_with_int_times <- st_join(qld_SA1s, lzn_kriged_sf)
 # https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
 
-qld_SA1s_agged_times <- 
-  qld_SA1s_with_int_times %>% 
+# qld_SA1s_agged_times <- 
+#   qld_SA1s_with_int_times %>% 
+#   na.omit() %>%
+#   group_by(SA1_MAIN16) %>%
+#   mutate(mean=mean(var1.pred, na.omit=TRUE)) %>% 
+#   ungroup()
+
+SA1_agg_times <- 
+  qld_SA1s_with_int_times %>%
   na.omit() %>%
+  as.data.frame() %>%
   group_by(SA1_MAIN16) %>%
-  mutate(mean=mean(var1.pred, na.omit=TRUE)) %>% 
-  ungroup()
+  summarize(mean=mean(var1.pred, na.omit=TRUE))
+
+qld_SA1s_agged_times <- merge(qld_SA1s, SA1_agg_times, all.x=TRUE)
 
 ggplot(data = world) +
   geom_sf() +
@@ -257,3 +271,10 @@ ggplot(data = world) +
 ```
 
 ![](iTRAQI_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+# write interpolation layers to disk
+
+``` r
+saveRDS(qld_SA1s_agged_times, "input/layers/SA1s_acute.rds")
+saveRDS(qld_SA2s_agged_times, "input/layers/SA2s_acute.rds")
+```
