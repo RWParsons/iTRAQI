@@ -1,6 +1,6 @@
 iTRAQI
 ================
-24 February, 2022
+25 February, 2022
 
 #### resources used:
 
@@ -89,25 +89,44 @@ pnts <- pnts_sf %>% mutate(
   filter(!is.na(intersection)) %>%
   st_coordinates() %>% 
   as.data.frame()
+
+# add centroids of all polygons to pnts to ensure there's at least one interpolated value within
+centroids <- 
+  qld_SAs %>%
+  st_centroid() %>%
+  st_coordinates() %>%
+  na.omit() %>% 
+  as.data.frame()
+```
+
+    ## Warning in st_centroid.sf(.): st_centroid assumes attributes are constant over
+    ## geometries of x
+
+``` r
+pnts2 <- rbind(pnts, centroids)
 coordinates(pnts) <- ~ X + Y
+coordinates(pnts2) <- ~ X + Y
 ```
 
 # kriging - generate interpolations
 
 ``` r
-lzn_kriged <- krige(acute_time ~ 1, df_times, pnts, model=lzn_fit)%>%
-  as.data.frame
+lzn_kriged <- krige(acute_time ~ 1, df_times, pnts2, model=lzn_fit)%>%
+  as.data.frame()
 ```
 
     ## [using ordinary kriging]
 
 ``` r
-lzn_kriged %>%
+krige(acute_time ~ 1, df_times, pnts, model=lzn_fit)%>%
+  as.data.frame() %>%
   ggplot(aes(X, Y)) + 
   geom_tile(aes(fill=var1.pred)) + 
   coord_equal()+
   scale_fill_gradient(low = "yellow", high="red")
 ```
+
+    ## [using ordinary kriging]
 
 ![](iTRAQI_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
@@ -292,11 +311,10 @@ bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
 pal <- colorBin("YlOrRd", domain = qld_SA2s_agged_times$mean, bins = bins)
 
 leaflet() %>% 
-  # addTiles() %>%
   addMapPane(name = "polygons", zIndex = 410) %>% 
   addMapPane(name = "maplabels", zIndex = 420) %>%
-  addProviderTiles("CartoDB.PositronNoLabels") %>%
-  addProviderTiles("CartoDB.PositronOnlyLabels", 
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addProviderTiles("CartoDB.VoyagerOnlyLabels",
                    options = leafletOptions(pane = "maplabels"),
                    group = "map labels") %>%
   addPolygons(
@@ -305,12 +323,12 @@ leaflet() %>%
     color="black", 
     fillOpacity=1,
     weight=1,
-    group="sa2s",
+    group="polys",
     options = leafletOptions(pane = "polygons")
   )%>%
   addLayersControl(
     baseGroups = "CartoDB.PositronNoLabels",
-    overlayGroups = c("map labels","sa2s")
+    overlayGroups = c("map labels","polys")
   )
 ```
 

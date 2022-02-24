@@ -75,16 +75,28 @@ pnts <- pnts_sf %>% mutate(
   filter(!is.na(intersection)) %>%
   st_coordinates() %>% 
   as.data.frame()
+
+# add centroids of all polygons to pnts to ensure there's at least one interpolated value within
+centroids <- 
+  qld_SAs %>%
+  st_centroid() %>%
+  st_coordinates() %>%
+  na.omit() %>% 
+  as.data.frame()
+
+pnts2 <- rbind(pnts, centroids)
 coordinates(pnts) <- ~ X + Y
+coordinates(pnts2) <- ~ X + Y
 
 ```
 
 # kriging - generate interpolations
 ```{r}
-lzn_kriged <- krige(acute_time ~ 1, df_times, pnts, model=lzn_fit)%>%
-  as.data.frame
+lzn_kriged <- krige(acute_time ~ 1, df_times, pnts2, model=lzn_fit)%>%
+  as.data.frame()
 
-lzn_kriged %>%
+krige(acute_time ~ 1, df_times, pnts, model=lzn_fit)%>%
+  as.data.frame() %>%
   ggplot(aes(X, Y)) + 
   geom_tile(aes(fill=var1.pred)) + 
   coord_equal()+
