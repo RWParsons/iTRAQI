@@ -1,5 +1,6 @@
 library(shiny)
 library(leaflet)
+library(leaflet.extras)
 library(RColorBrewer)
 
 
@@ -27,33 +28,10 @@ server <- function(input, output, session){
   # https://medium.com/ibm-data-ai/asynchronous-loading-of-leaflet-layer-groups-afc073999e77
   rvs <- reactiveValues(to_load=0, map=NULL)
   
-
   bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
   pal <- colorBin("YlOrRd", domain = SAs_sf$mean, bins = bins)
   
-  output$map <- renderLeaflet({
-    leaflet() %>%
-      addMapPane(name = "polygons", zIndex = 410) %>%
-      addMapPane(name = "maplabels", zIndex = 420) %>%
-      addProviderTiles("CartoDB.VoyagerNoLabels") %>%
-      addProviderTiles("CartoDB.VoyagerOnlyLabels",
-                       options = leafletOptions(pane = "maplabels"),
-                       group = "map labels") %>%
-      addPolygons(
-        data=SAs_sf,
-        fillColor = ~pal(mean),
-        color="black",
-        fillOpacity=1,
-        weight=1,
-        group="SAs",
-        options = leafletOptions(pane = "polygons")
-      )%>%
-      addLayersControl(
-        baseGroups = "CartoDB.PositronNoLabels",
-        overlayGroups = c("map labels","SAs")
-      )
-  })
-  # # Use a separate observer to recreate the legend as needed.
+  # Use a separate observer to recreate the legend as needed.
   observe({
     proxy <- leafletProxy("map_async", data = SAs_sf)
 
@@ -68,13 +46,13 @@ server <- function(input, output, session){
     }
   })
   
-  
   output$map_async <- renderLeaflet({
     rvs$to_load <- isolate(rvs$to_load) + 1 # change the value to trigger observeEvent
     rvs$map <- 
       leaflet() %>%
-      addMapPane(name = "polygons", zIndex = 410) %>%
-      addMapPane(name = "maplabels", zIndex = 420) %>%
+      addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
+      addMapPane(name = "polygons", zIndex = 200) %>%
+      addMapPane(name = "maplabels", zIndex = 210) %>%
       addProviderTiles("CartoDB.VoyagerNoLabels") %>%
       addProviderTiles("CartoDB.VoyagerOnlyLabels",
                        options = leafletOptions(pane = "maplabels"),
