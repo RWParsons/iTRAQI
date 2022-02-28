@@ -2,6 +2,7 @@ library(shiny)
 library(leaflet)
 # To get the pane options in raster layers to work, install leaflet from 
 # https://github.com/rstudio/leaflet/tree/joe/feature/raster-options
+# see associated PR here: https://github.com/rstudio/leaflet/pull/692
 library(leaflet.extras)
 library(RColorBrewer)
 library(tidyverse)
@@ -71,7 +72,7 @@ server <- function(input, output, session){
   rvs <- reactiveValues(to_load=0, map=NULL)
   
   bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
-  pal <- colorBin("YlOrRd", domain = SAs_sf$mean, bins = bins)
+  pal <- colorBin("YlOrRd", domain = SAs_sf$mean, bins=bins, na.color="transparent")
   centre_icons <- iconList(
     acute=makeIcon(iconUrl = "../input/imgs/acute_care2.png", iconWidth = 783/18, iconHeight = 900/18),
     rehab=makeIcon(iconUrl = "../input/imgs/rehab_care.png", iconWidth = 783/18, iconHeight = 783/18)
@@ -154,7 +155,8 @@ server <- function(input, output, session){
           data=new_layer,
           x=raster(new_layer, layer=1),
           group=group_name,
-          options=leafletOptions(pane="layers")
+          options=leafletOptions(pane="layers"),
+          colors=pal
         )
     }
   })

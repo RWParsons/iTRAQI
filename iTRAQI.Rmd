@@ -7,6 +7,7 @@ always_allow_html: true
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(raster)
 library(sp)
 library(gstat)
 library(tidyverse)
@@ -149,7 +150,6 @@ ggplot(data = world) +
 
 # Join the SA polygons together depending on level (SA1 vs SA2)
 ```{r}
-
 do_union <- function(x){
   pb$tick()
   st_union(x, is_coverage = TRUE)
@@ -348,20 +348,36 @@ leaflet() %>%
 
 
 ```{r}
-library(raster)
 
-# projection(x) <- "+proj=utm +zone=48 +datum=WGS84"
+x <- readRDS("input/layers/kriged_acute.rds")
+SA1s_acute <- readRDS("input/layers/SA1s_acute.rds")
 
+bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
+pal <- colorBin("YlOrRd", domain = SA1s_acute$mean, bins = bins)
+rasterPal <- colorBin("YlOrRd", domain = x$var1.pred, bins = bins, na.color="transparent")
 
 leaflet() %>% 
   addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
-  addMapPane(name = "polygons", zIndex = 200) %>%
-  addMapPane(name = "maplabels", zIndex = 2102) %>%
+  addMapPane(name = "layers", zIndex = 200) %>%
+  addMapPane(name = "maplabels", zIndex = 210) %>%
   addProviderTiles("CartoDB.VoyagerNoLabels") %>%
   addProviderTiles("CartoDB.VoyagerOnlyLabels",
                    options = leafletOptions(pane = "maplabels"),
                    group = "map labels") %>%
-  addRasterImage(raster(x, layer=1))
+  # addPolygons(
+  #         data=qld_SA1s_agged_times,
+  #         fillColor = ~pal(mean),
+  #         color="black",
+  #         fillOpacity=1,
+  #         weight=1,
+  #         options = leafletOptions(pane = "layers")
+  #       ) %>%
+  addRasterImage(
+    data=x,
+    x=raster(x, layer=1),
+    options=leafletOptions(pane="layers"),
+    # colors=pal
+  )
 
 ```
 
