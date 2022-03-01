@@ -437,6 +437,7 @@ leaflet() %>%
 
 x <- readRDS("input/layers/kriged_acute.rds")
 SA1s_acute <- readRDS("input/layers/SA1s_acute.rds")
+roads_sf <- st_read("input/baseline_roads_and_tracks/Baseline_roads_and_tracks.shp")
 
 bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
 pal <- colorBin("YlOrRd", domain = SA1s_acute$mean, bins = bins, na.color="transparent")
@@ -463,8 +464,12 @@ leaflet() %>%
     x=raster(x, layer=1),
     options=leafletOptions(pane="layers"),
     colors=pal
-  )
-  
+  ) %>%
+  addPolylines(data=roads_sf[roads_sf$ROADTYPE==2,], 
+               weight=1, opacity=1, fillOpacity=1, color="black",
+               options=leafletOptions(pane="maplabels"))
+
+ggplot() + geom_sf(data=roads_sf[roads_sf$ROADTYPE==3,])
 ```
 
 

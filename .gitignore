@@ -3,7 +3,7 @@
 .Rapp.history
 
 # Large layer files
-# /input/layers/*
+/input/baseline_roads_and_tracks/*
 
 # Session Data files
 .RData
