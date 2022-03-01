@@ -96,7 +96,8 @@ server <- function(input, output, session){
   output$map_async <- renderLeaflet({
     rvs$to_load <- isolate(rvs$to_load) + 1 # change the value to trigger observeEvent
     rvs$map <- 
-      leaflet() %>%
+      leaflet(options=leafletOptions(minZoom=5)) %>%
+      setMaxBounds(lng1 = 115, lat1 = -45.00, lng2 = 170, lat2 = -5) %>%
       addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
       addMapPane(name = "layers", zIndex = 200) %>%
       addMapPane(name = "maplabels", zIndex = 400) %>%
