@@ -84,20 +84,106 @@ coordinates(pnts2) <- ~ X + Y
 
 ```
 
-# kriging - select variogram model (Gaussian looks best)
+# kriging - select variogram model 
+### Gaussian looks best but Spherical matches expectation
 ```{r}
+# "Gau" model gives better model fit but does not match up with our 
+# interpolations in ArcGIS like the Spherical ("Sph") option does
+vgm_model <- "Sph"
+
 # acute variogram
 lzn_vgm <- variogram(acute_time~1, df_times)
-lzn_fit_acute <- fit.variogram(lzn_vgm, model=vgm("Gau"))
-# plot(lzn_vgm, lzn_fit)
+lzn_fit_acute <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
+plot(lzn_vgm, lzn_fit_acute)
 
 # rehab variogram
 lzn_vgm <- variogram(rehab_time~1, df_times)
-lzn_fit_rehab <- fit.variogram(lzn_vgm, model=vgm("Gau"))
-# plot(lzn_vgm, lzn_fit)
+lzn_fit_rehab <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
+plot(lzn_vgm, lzn_fit_rehab)
 
-# show.vgms()
+show.vgms()
 ```
+
+### test space for visualisaing interpolated values
+```{r}
+vgm_model <- "Cir"
+
+# kriged_layer <-
+#   krige(
+#     acute_time ~ 1, df_times, pnts,
+#     model=fit.variogram(variogram(acute_time~1, df_times), model=vgm(vgm_model))
+#   ) %>%
+#   as.data.frame() %>%
+#   rasterFromXYZ(crs=4326)
+
+kriged_layer <-
+  krige(
+    rehab_time ~ 1, df_times, pnts,
+    model=fit.variogram(variogram(rehab_time~1, df_times), model=vgm(vgm_model))
+  ) %>%
+  as.data.frame() %>%
+  rasterFromXYZ(crs=4326)
+
+bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
+pal <- colorBin("YlOrRd", domain = SA1s_acute$mean, bins = bins, na.color="transparent")
+
+rehab_centres <- c(
+  "Sunshine Coast University Hospital",
+  "Central West Sub-Acute Service",
+  "Gympie Hospital",
+  "Rockhampton Hospital",
+  "Roma Hospital"
+)
+acute_centres <- c(
+  "Brain Injury Rehabilitation Unit",
+  "Gold Coast University Hospital",
+  "Townsville University Hospital"
+)
+
+df_centres <- read.csv("input/centres.csv") %>% 
+  janitor::clean_names() %>%
+  mutate(centre_name = str_trim(centre_name))%>%
+  filter(centre_name %in% c(rehab_centres, acute_centres)) %>%
+  mutate(
+    care_type=ifelse(centre_name %in% acute_centres, "acute", "rehab"),
+    popup=paste0(
+      "<b>Centre name: </b>", centre_name, "<br>",
+      "<b>Care type: </b>", ifelse(care_type=="acute", "Acute care", "Rehabilitation care"), "<br>",
+      "<b>Address: </b>", address, "<br>"
+    )
+  )
+centre_icons <- iconList(
+  acute=makeIcon(iconUrl = "input/imgs/acute_care2.png", iconWidth = 783/18, iconHeight = 900/18),
+  rehab=makeIcon(iconUrl = "input/imgs/rehab_care.png", iconWidth = 783/18, iconHeight = 783/18)
+)
+
+leaflet() %>% 
+  addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
+  addMapPane(name = "layers", zIndex = 200) %>%
+  addMapPane(name = "maplabels", zIndex = 400) %>%
+  addMapPane(name = "markers", zIndex = 205) %>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addProviderTiles("CartoDB.VoyagerOnlyLabels",
+                   options = leafletOptions(pane = "maplabels"),
+                   group = "map labels") %>%
+  addRasterImage(
+    data=kriged_layer,
+    x=raster(kriged_layer, layer=1),
+    options=leafletOptions(pane="layers"),
+    colors=pal
+  ) %>%
+  addMarkers(
+    lng=df_centres$x, lat=df_centres$y, 
+    icon=centre_icons[df_centres$care_type],
+    popup=df_centres$popup,
+    options=leafletOptions(pane="markers")
+  )
+
+```
+
+
+
+
 
 # kriging - generate interpolations
 ```{r}
@@ -114,7 +200,7 @@ krige(acute_time ~ 1, df_times, pnts, model=lzn_fit_acute)%>%
 lzn_kriged_rehab <- krige(rehab_time ~ 1, df_times, pnts2, model=lzn_fit_rehab)%>%
   as.data.frame()
 
-krige(acute_time ~ 1, df_times, pnts, model=lzn_fit_rehab)%>%
+krige(rehab_time ~ 1, df_times, pnts, model=lzn_fit_rehab)%>%
   as.data.frame() %>%
   ggplot(aes(X, Y)) + 
   geom_tile(aes(fill=var1.pred)) + 
@@ -353,7 +439,7 @@ x <- readRDS("input/layers/kriged_acute.rds")
 SA1s_acute <- readRDS("input/layers/SA1s_acute.rds")
 
 bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
-pal <- colorBin("YlOrRd", domain = SA1s_acute$mean, bins = bins)
+pal <- colorBin("YlOrRd", domain = SA1s_acute$mean, bins = bins, na.color="transparent")
 rasterPal <- colorBin("YlOrRd", domain = x$var1.pred, bins = bins, na.color="transparent")
 
 leaflet() %>% 
@@ -376,9 +462,9 @@ leaflet() %>%
     data=x,
     x=raster(x, layer=1),
     options=leafletOptions(pane="layers"),
-    # colors=pal
+    colors=pal
   )
-
+  
 ```
 
 
