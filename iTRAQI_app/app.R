@@ -88,7 +88,8 @@ server <- function(input, output, session){
     if (input$legend) {
       proxy %>% addLegend(
         position = "bottomright",
-        pal = pal, values = ~mean
+        pal = pal, values = ~mean,
+        title = "Time to care (minutes)"
       )
     }
   })
@@ -108,7 +109,7 @@ server <- function(input, output, session){
                        group = "map labels") %>%
       addLayersControl(
         position = "topright",
-        baseGroups = names(layer_input),
+        baseGroups = c("None",names(layer_input)),
         options = layersControlOptions(collapsed = TRUE)) %>%
       hideGroup(names(layer_input)) %>%
       addCircleMarkers(
