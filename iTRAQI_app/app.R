@@ -4,6 +4,7 @@ library(leaflet)
 # To get the pane options in raster layers to work, install leaflet from 
 # https://github.com/rstudio/leaflet/tree/joe/feature/raster-options
 # see associated PR here: https://github.com/rstudio/leaflet/pull/692
+# can install directly with `remotes::install_github("rstudio/leaflet", ref="joe/feature/raster-options")`
 library(leaflet.extras)
 library(RColorBrewer)
 library(tidyverse)
