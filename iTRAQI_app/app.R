@@ -58,12 +58,24 @@ df_centres <- read.csv("../input/centres.csv") %>%
     )
   )
 
-ui <- bootstrapPage(
-  tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
-  leafletOutput("map_async", width = "100%", height = "100%"),
-  absolutePanel(
-    top = 0, right = 0,
-    checkboxInput("legend", "Show legend", TRUE)
+ui <- navbarPage(
+  "iTRAQI",
+  tabPanel(
+    title="Map",
+    div(
+      class="outer",
+      tags$style(type = "text/css", ".outer {position: fixed; top: 41px; left: 0; right: 0; bottom: 0; overflow: hidden; padding: 0}"),
+      leafletOutput("map_async", width = "100%", height = "100%"),
+      absolutePanel(
+        top = 0, right = 0,
+        checkboxInput("legend", "Show legend", TRUE)
+      )
+    )
+  ),
+  tabPanel(
+    title="Information",
+    icon=icon("info-sign",lib='glyphicon'),
+    includeMarkdown("../input/iTRAQI_info.md")
   )
 )
 
