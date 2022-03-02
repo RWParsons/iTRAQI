@@ -515,4 +515,30 @@ leaflet() %>%
 ggplot() + geom_sf(data=roads_sf[roads_sf$ROADTYPE==3,])
 ```
 
+```{r, include=F}
+# write aggregate data to disk so that it can be included in app
+SA2s_acute <- readRDS("input/layers/SA2s_acute.rds")
+SA2s_rehab <- readRDS("input/layers/SA2s_rehab.rds")
+SA1s_acute <- readRDS("input/layers/SA1s_acute.rds")
+SA1s_rehab <- readRDS("input/layers/SA1s_rehab.rds")
+qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
+SA2s_data <- 
+  as.data.frame(qld_SAs) %>%
+  dplyr::select(SA2_NAME16, SA2_MAIN16) %>%
+  distinct() %>%
+  left_join(., dplyr::select(as.data.frame(SA2s_acute), SA2_MAIN16, acute_time=mean)) %>%
+  left_join(., dplyr::select(as.data.frame(SA2s_rehab), SA2_MAIN16, rehab_time=mean)) %>%
+  na.omit()
 
+SA1s_data <- 
+  as.data.frame(qld_SAs) %>%
+  dplyr::select(SA1_MAIN16) %>%
+  distinct() %>%
+  left_join(., dplyr::select(as.data.frame(SA1s_acute), SA1_MAIN16, acute_time=mean)) %>%
+  left_join(., dplyr::select(as.data.frame(SA1s_rehab), SA1_MAIN16, rehab_time=mean)) %>%
+  na.omit()
+
+write.csv(SA2s_data, "input/SA2s_data.csv", row.names = FALSE)
+write.csv(SA1s_data, "input/SA1s_data.csv", row.names = FALSE)
+
+```
