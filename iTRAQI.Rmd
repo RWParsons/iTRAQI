@@ -15,6 +15,8 @@ library(sf)
 library(rnaturalearth)
 library(ggspatial)
 library(progress)
+library(leaflet)
+library(leaflet.extras)
 ```
 
 #### resources used:
@@ -89,13 +91,14 @@ coordinates(pnts2) <- ~ X + Y
 ```{r}
 # "Gau" model gives better model fit but does not match up with our 
 # interpolations in ArcGIS like the Spherical ("Sph") option does
-vgm_model <- "Sph"
+vgm_model <- "Sph" # Exc or Cir looks best for acute
 
 # acute variogram
 lzn_vgm <- variogram(acute_time~1, df_times)
 lzn_fit_acute <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
 plot(lzn_vgm, lzn_fit_acute)
 
+vgm_model <- "Sph" # Sph or Cir looks best for rehab (most sensible interpolations)
 # rehab variogram
 lzn_vgm <- variogram(rehab_time~1, df_times)
 lzn_fit_rehab <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
@@ -104,9 +107,51 @@ plot(lzn_vgm, lzn_fit_rehab)
 show.vgms()
 ```
 
+```{r, echo=F, results='hide'}
+f_rehab_vgm_model_fit <- function(model){
+  lzn_vgm <- variogram(rehab_time~1, df_times)
+  lzn_fit_rehab <- fit.variogram(lzn_vgm, model=vgm(model))
+  plot(lzn_vgm, lzn_fit_rehab, main=glue::glue("using a {model} model"))
+}
+
+# map(c("Sph", "Exc", "Ste", "Cir", "Lin", "Pen"), f_rehab_vgm_model_fit)
+# f_rehab_vgm_model_fit("Cir")
+```
+
+```{r, echo=F, results='hide'}
+# kriging cross-validation
+vgm_model <- "Exp"
+
+# lzn_vgm <- variogram(acute_time~1, df_times)
+# lzn_fit_acute <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
+
+f_krige_cv <- function(model, time, nfold=10){
+  print(model)
+  m <- vgm(.59, model, 874, .04)
+  # five-fold cross validation:
+  if(time=="acute"){
+    x <- krige.cv(acute_time~1, df_times, m, nmax = 40, nfold=nfold)
+  }
+  if(time=="rehab"){
+    x <- krige.cv(rehab_time~1, df_times, m, nmax = 40, nfold=nfold)
+  }
+  bubble(x, "residual", main = glue::glue("{time} time: 5-fold CV residuals with {model} model"))
+}
+
+# map(c( "Exp", "Sph", "Gau", "Exc", "Mat", "Ste", "Cir", "Lin", "Bes", "Pen", "Per", "Wav", "Hol"), function(x) f_krige_cv(x, "rehab"))
+
+# top picks for acute - currently, I prefer the "Exc" model
+# map(c("Pen","Exc","Sph","Cir"), function(x) f_krige_cv(x, "acute"))
+
+# top picks for acute - currently, I prefer the "Exc" model
+# map(c("Sph", "Exc", "Ste", "Cir", "Lin", "Pen"), function(x) f_krige_cv(x, "rehab"))
+
+```
+
+
+```{r, include=F}
 ### test space for visualisaing interpolated values
-```{r}
-vgm_model <- "Cir"
+vgm_model <- "Sph"
 
 # kriged_layer <-
 #   krige(
@@ -125,7 +170,7 @@ kriged_layer <-
   rasterFromXYZ(crs=4326)
 
 bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
-pal <- colorBin("YlOrRd", domain = SA1s_acute$mean, bins = bins, na.color="transparent")
+pal <- colorBin("YlOrRd", domain = readRDS("input/layers/SA1s_acute.rds")$mean, bins = bins, na.color="transparent")
 
 rehab_centres <- c(
   "Sunshine Coast University Hospital",
@@ -140,9 +185,9 @@ acute_centres <- c(
   "Townsville University Hospital"
 )
 
-df_centres <- read.csv("input/centres.csv") %>% 
-  janitor::clean_names() %>%
-  mutate(centre_name = str_trim(centre_name))%>%
+df_centres <- read.csv("input/centres.csv") 
+names(df_centres) <- c("centre_name", "address", "x", "y")
+df_centres <- df_centres %>%
   filter(centre_name %in% c(rehab_centres, acute_centres)) %>%
   mutate(
     care_type=ifelse(centre_name %in% acute_centres, "acute", "rehab"),
@@ -180,9 +225,6 @@ leaflet() %>%
   )
 
 ```
-
-
-
 
 
 # kriging - generate interpolations
@@ -228,7 +270,7 @@ ggplot(data = world) +
   labs( x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) +
   annotation_scale(location = "bl", width_hint = 0.5) +
-  geom_tile(data=lzn_kriged, aes(X, Y, fill=var1.pred)) +
+  geom_tile(data=lzn_kriged_acute, aes(X, Y, fill=var1.pred)) +
   geom_point(data=as.data.frame(df_times), aes(x,y)) +
   scale_fill_gradient(low = "yellow", high="red")
 
@@ -355,7 +397,6 @@ ggplot(data = world) +
 
 # test space for leaflet
 ```{r}
-library(leaflet)
 qld_SA2s_agged_times <- readRDS("input/layers/SA2s_acute.rds")
 bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
 pal <- colorBin("YlOrRd", domain = qld_SA2s_agged_times$mean, bins = bins)
@@ -382,9 +423,11 @@ acute_centres <- c(
   "Townsville University Hospital"
 )
 
-df_centres <- read.csv("input/centres.csv") %>% 
-  janitor::clean_names() %>%
-  mutate(centre_name = str_trim(centre_name))%>%
+df_centres <- read.csv("input/centres.csv") 
+names(df_centres) <- c("centre_name", "address", "x", "y")
+
+df_centres <- df_centres %>%
+  # mutate(centre_name = str_trim(centre_name))%>%
   filter(centre_name %in% c(rehab_centres, acute_centres)) %>%
   mutate(
     care_type=ifelse(centre_name %in% acute_centres, "acute", "rehab"),
