@@ -170,7 +170,15 @@ server <- function(input, output, session){
     raster_layers <- group_names_to_load[raster_layers]
     
     for(group_name in polygon_layers){
-      new_layer <- readRDS(file.path(layers_dir, glue::glue("{layer_input[group_name]}.rds")))
+      care_type <- ifelse(grepl("acute", group_name), "acute", "rehab")
+      new_layer <- readRDS(file.path(layers_dir, glue::glue("{layer_input[group_name]}.rds")))%>%
+        mutate(popup = paste0(
+          paste0(
+            "<b>ID: </b>", .[[1]], "<br>",
+            "<b>Time to ", care_type, " care (minutes): </b>", round(.[[2]]), "<br>"
+          )
+        ))
+      
       leafletProxy("map_async") %>%
         addPolygons(
           data=new_layer,
@@ -179,6 +187,7 @@ server <- function(input, output, session){
           fillOpacity=1,
           weight=1,
           group=group_name,
+          popup=new_layer$popup,
           options=leafletOptions(pane="layers")
         )
     }
