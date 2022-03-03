@@ -81,7 +81,11 @@ ui <- navbarPage(
     title="Information",
     icon=icon("info-sign",lib='glyphicon'),
     includeMarkdown("../input/iTRAQI_info.md"),
-    tags$br(),
+    tags$br()
+  ),
+  tabPanel(
+    title="Downloads",
+    icon=icon("download-alt", lib="glyphicon"),
     downloadBttn("download_SA1", "Download (SA1s)", style="pill", block=FALSE),
     downloadBttn("download_SA2", "Download (SA2s)", style="pill", block=FALSE)
   )
@@ -189,8 +193,8 @@ server <- function(input, output, session){
       new_layer <- new_layer %>%
         mutate(popup = paste0(
           paste0(
-            "<b>Region: </b>", .[[3]], "<br>",
-            "<b>ID: </b>", .[[1]], "<br>",
+            "<b>SA2 Region: </b>", .[[3]], "<br>",
+            "<b>SA", SA_level, " ID: </b>", .[[1]], "<br>",
             "<b>Time to ", care_type, " care (minutes): </b>", round(.[[2]]), "<br>"
           )
         ))
