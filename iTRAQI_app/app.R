@@ -120,6 +120,7 @@ server <- function(input, output, session){
     proxy %>% clearControls()
     if (input$legend) {
       proxy %>% addLegend(
+        opacity=1,
         position = "bottomright",
         pal = pal, values = ~mean,
         title = "Time to care (minutes)"
@@ -163,6 +164,11 @@ server <- function(input, output, session){
   
   observeEvent(rvs$to_load,{
     req(rvs$map) # if it's not null or false
+    SA2s_lookup <- read.csv("../input/SA2s_names_lookup.csv")
+    SA2s_lookup$SA2_MAIN16 <- as.character(SA2s_lookup$SA2_MAIN16)
+    SA1s_lookup <- read.csv("../input/SA1s_names_lookup.csv")
+    SA1s_lookup$SA1_MAIN16 <- as.character(SA1s_lookup$SA1_MAIN16)
+    
     
     group_names_to_load <- names(layer_input)
     raster_layers <- grep("kriged", layer_input)
@@ -170,10 +176,20 @@ server <- function(input, output, session){
     raster_layers <- group_names_to_load[raster_layers]
     
     for(group_name in polygon_layers){
-      care_type <- ifelse(grepl("acute", group_name), "acute", "rehab")
-      new_layer <- readRDS(file.path(layers_dir, glue::glue("{layer_input[group_name]}.rds")))%>%
+      care_type <- ifelse(grepl("acute", tolower(group_name)), "acute", "rehab")
+      SA_level <- as.numeric(str_extract(group_name, "(?<=SA)[0-9]"))
+      
+      new_layer <- readRDS(file.path(layers_dir, glue::glue("{layer_input[group_name]}.rds")))
+      
+      if(SA_level==2){
+        new_layer <- left_join(new_layer, SA2s_lookup)
+      }else if(SA_level==1){
+        new_layer <- left_join(new_layer, SA1s_lookup)
+      }
+      new_layer <- new_layer %>%
         mutate(popup = paste0(
           paste0(
+            "<b>Region: </b>", .[[3]], "<br>",
             "<b>ID: </b>", .[[1]], "<br>",
             "<b>Time to ", care_type, " care (minutes): </b>", round(.[[2]]), "<br>"
           )
