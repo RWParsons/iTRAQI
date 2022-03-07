@@ -4,6 +4,11 @@
 
 # Large layer files
 /input/baseline_roads_and_tracks/*
+/input/qld_sa_zones_2011/*
+/input/qld_sa_zones_2016/*
+/input/qld_sa_zones_2021/*
+/input/aus_sa1_2021/*
+/input/aus_sa2_2021/*
 
 # Session Data files
 .RData
