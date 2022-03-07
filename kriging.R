@@ -9,7 +9,8 @@ library(sf)
 # library(ggspatial)
 
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
-qld_SAs2021 <- st_read("input/qld_sa_zones_2021/MB_2021_AUST_GDA2020.shp")
+qld_SAs2021 <- st_read("input/qld_sa_zones_2021/MB_2021_AUST_GDA2020.shp") %>%
+  filter(STE_NAME21=="Queensland")
 df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv")
 coordinates(df_times) <- ~ x + y
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
