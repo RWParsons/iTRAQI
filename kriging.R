@@ -1,12 +1,9 @@
 # kriging
 set.seed(42)
-
 library(sp)
 library(gstat)
 library(tidyverse)
 library(sf)
-# library(rnaturalearth)
-# library(ggspatial)
 
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 qld_SAs2021 <- st_read("input/qld_sa_zones_2021/MB_2021_AUST_GDA2020.shp") %>%

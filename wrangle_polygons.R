@@ -1,7 +1,8 @@
+# wrangle polygons for downloadable aggregate data and map
 set.seed(42)
 library(sf)
+library(sp)
 library(tidyverse)
-library(parallel)
 
 
 # dissolve polygon
@@ -44,3 +45,65 @@ saveRDS(
   aus_SA2_2021[aus_SA2_2021$STE_NAME21=="Queensland", ], 
   file="output/sa_polygons/QLD_SA2_2021.rds"
 )
+
+
+# join interpolated values and aggregate within zones
+get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, save_path=NULL){
+  coordinates(lzn_kriged_df) <- ~ X + Y
+  lzn_kriged_sf <- st_as_sf(lzn_kriged_df)
+  lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4326)
+  lzn_kriged_sf <- st_transform(lzn_kriged_sf, crs = 4326)
+  
+  qld_SAs <- readRDS(glue::glue("output/sa_polygons/QLD_SA{SA_number}_20{SA_year}.rds"))
+  qld_SAs <- st_transform(qld_SAs, crs = 4326)
+  qld_SAs_with_int_times <- st_join(qld_SAs, lzn_kriged_sf)
+  
+  # https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
+  SA_id <- glue::glue('SA{SA_number}_CODE{SA_year}')
+  SAs_agg_times <- 
+    qld_SAs_with_int_times %>%
+    na.omit() %>%
+    as.data.frame() %>%
+    group_by(across(all_of(SA_id))) %>%
+    summarize(value=median(var1.pred, na.omit=TRUE))
+  
+  SAs_agg_times <- merge(qld_SAs, SAs_agg_times, all.x=TRUE)
+  
+  if(!is.null(save_path)){
+    saveRDS(SAs_agg_times, save_path)
+  }
+  return(SAs_agg_times)
+}
+
+
+grid <- expand.grid(
+  data=list.files("output/kriging_data"),
+  SA_polygons=list.files("output/sa_polygons"),
+  stringsAsFactors=FALSE
+)
+
+sf_use_s2(FALSE)
+
+for(i in 1:nrow(grid)){
+  data_file <- grid$data[i]
+  sa_file <- grid$SA_polygons[i]
+  kriged_df <- readRDS(file.path("output/kriging_data", grid$data[i]))
+  sa_polygons <- readRDS(file.path("output/sa_polygons", grid$SA_polygons[i]))
+  care_type <- str_extract(data_file, "^[a-z]*(?=_)")
+  SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
+  SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
+  
+  get_SA_agged_times(
+    lzn_kriged_df=kriged_df,
+    SA_number=SA_level,
+    SA_year=SA_year,
+    save_path=glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}.rds")
+  ) %>% as.data.frame() %>%
+    dplyr::select(1, value) %>% 
+    write.csv(
+      file=glue::glue("output/download_data/{care_type}_data_SA{SA_level}_year20{SA_year}.csv"),
+      row.names=FALSE
+    )
+}
+
+
