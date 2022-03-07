@@ -33,7 +33,7 @@ coordinates(df_times) <- ~ x + y
 
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 world <- ne_countries(scale = "medium", returnclass = "sf")
-qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
+qld_SAs <- st_read("input/qld_sa_zones_2016/MB_2016_QLD.shp")
 
 as.data.frame(qld_SAs) %>%
   dplyr::select(SA2_MAIN16, SA2_NAME16) %>%
@@ -544,7 +544,7 @@ SA2s_acute <- readRDS("input/layers/SA2s_acute.rds")
 SA2s_rehab <- readRDS("input/layers/SA2s_rehab.rds")
 SA1s_acute <- readRDS("input/layers/SA1s_acute.rds")
 SA1s_rehab <- readRDS("input/layers/SA1s_rehab.rds")
-qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
+qld_SAs <- st_read("input/qld_sa_zones_2016/MB_2016_QLD.shp")
 SA2s_data <- 
   as.data.frame(qld_SAs) %>%
   dplyr::select(SA2_NAME16, SA2_MAIN16) %>%
