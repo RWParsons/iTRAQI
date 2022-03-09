@@ -48,7 +48,7 @@ saveRDS(
 
 
 # join interpolated values and aggregate within zones
-get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, save_path=NULL){
+get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=1, save_path=NULL){
   coordinates(lzn_kriged_df) <- ~ X + Y
   lzn_kriged_sf <- st_as_sf(lzn_kriged_df)
   lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4326)
@@ -68,6 +68,10 @@ get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, save_path=NULL
     summarize(value=median(var1.pred, na.omit=TRUE))
   
   SAs_agg_times <- merge(qld_SAs, SAs_agg_times, all.x=TRUE)
+  
+  if(simplify_keep<1){
+    SAs_agg_times <- rmapshaper::ms_simplify(SAs_agg_times, keep=simplify_keep)
+  }
   
   if(!is.null(save_path)){
     saveRDS(SAs_agg_times, save_path)
@@ -105,5 +109,116 @@ for(i in 1:nrow(grid)){
       row.names=FALSE
     )
 }
+
+
+# make 2016 layers with simplify_keep=0.1 for faster load time and smaller file size
+grid_2016 <- filter(grid, str_detect(SA_polygons, "2016"))
+
+for(i in 1:nrow(grid_2016)){
+  data_file <- grid_2016$data[i]
+  sa_file <- grid_2016$SA_polygons[i]
+  kriged_df <- readRDS(file.path("output/kriging_data", grid_2016$data[i]))
+  sa_polygons <- readRDS(file.path("output/sa_polygons", grid_2016$SA_polygons[i]))
+  care_type <- str_extract(data_file, "^[a-z]*(?=_)")
+  SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
+  SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
+  
+  get_SA_agged_times(
+    lzn_kriged_df=kriged_df,
+    SA_number=SA_level,
+    SA_year=SA_year,
+    simplify_keep=0.1,
+    save_path=glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}_simplified.rds")
+  )
+}
+
+
+
+
+library(rmapshaper)
+library(leaflet)
+library(leaflet.extras)
+bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
+pal <- colorBin("YlOrRd", domain = 0:900, bins=bins, na.color="transparent")
+l <- get_SA_agged_times(
+  lzn_kriged_df=kriged_df,
+  SA_number=SA_level,
+  SA_year=SA_year
+)
+
+
+l_0.9 <- ms_simplify(l, keep=0.9)
+l_0.6 <- ms_simplify(l, keep=0.6)
+l_0.3 <- ms_simplify(l, keep=0.3)
+l_0.1 <- ms_simplify(l, keep=0.1)
+
+
+t0 <- Sys.time()
+leaflet(options=leafletOptions(minZoom=5)) %>%
+  setMaxBounds(lng1 = 115, lat1 = -45.00, lng2 = 170, lat2 = -5)%>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addPolygons(
+    data=l,
+    fillColor=~pal(value),
+    color="black",
+    fillOpacity=1,
+    weight=1
+  )
+t_full <- Sys.time() - t0
+
+t0 <- Sys.time()
+leaflet(options=leafletOptions(minZoom=5)) %>%
+  setMaxBounds(lng1 = 115, lat1 = -45.00, lng2 = 170, lat2 = -5)%>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addPolygons(
+    data=l_0.9,
+    fillColor=~pal(value),
+    color="black",
+    fillOpacity=1,
+    weight=1
+  )
+t_0.9 <- Sys.time() - t0
+
+t0 <- Sys.time()
+leaflet(options=leafletOptions(minZoom=5)) %>%
+  setMaxBounds(lng1 = 115, lat1 = -45.00, lng2 = 170, lat2 = -5)%>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addPolygons(
+    data=l_0.6,
+    fillColor=~pal(value),
+    color="black",
+    fillOpacity=1,
+    weight=1
+  )
+t_0.6 <- Sys.time() - t0
+
+t0 <- Sys.time()
+leaflet(options=leafletOptions(minZoom=5)) %>%
+  setMaxBounds(lng1 = 115, lat1 = -45.00, lng2 = 170, lat2 = -5)%>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addPolygons(
+    data=l_0.3,
+    fillColor=~pal(value),
+    color="black",
+    fillOpacity=1,
+    weight=1
+  )
+t_0.3 <- Sys.time() - t0
+
+t0 <- Sys.time()
+leaflet(options=leafletOptions(minZoom=5)) %>%
+  setMaxBounds(lng1 = 115, lat1 = -45.00, lng2 = 170, lat2 = -5)%>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addPolygons(
+    data=l_0.1,
+    fillColor=~pal(value),
+    color="black",
+    fillOpacity=1,
+    weight=1
+  )
+t_0.1 <- Sys.time() - t0
+
+
+c(t_full, t_0.9, t_0.6, t_0.3, t_0.1)
 
 
