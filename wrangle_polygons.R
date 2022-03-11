@@ -133,6 +133,23 @@ for(i in 1:nrow(grid_2016)){
 }
 
 
+# combine downloadable data sheets so that acute and rehab times are on same sheet
+combine_data <- function(SA_year, SA_level){
+  df_acute <- read.csv(glue::glue("output/download_data/acute_data_SA{SA_level}_year20{SA_year}.csv"))
+  df_rehab <- read.csv(glue::glue("output/download_data/rehab_data_SA{SA_level}_year20{SA_year}.csv"))
+  df_combined <- inner_join(df_acute, df_rehab, by = glue::glue("SA{SA_level}_CODE{SA_year}"))
+  names(df_combined)[-1] <- c("time_to_acute_care", "time_to_rehab_care")
+  write.csv(
+    df_combined, 
+    glue::glue("output/download_data/combined_data_SA{SA_level}_year20{SA_year}.csv"),
+    row.names=FALSE
+  )
+  df_combined
+}
+
+grid_combine <- expand.grid(year=c(11, 16, 21), sa=c(1, 2))
+map2(.x=grid_combine$year, .y=grid_combine$sa, combine_data)
+
 
 
 library(rmapshaper)
