@@ -65,7 +65,11 @@ get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=
     na.omit() %>%
     as.data.frame() %>%
     group_by(across(all_of(SA_id))) %>%
-    summarize(value=median(var1.pred, na.omit=TRUE))
+    summarize(
+      value=median(var1.pred, na.rm=TRUE),
+      min=min(var1.pred, na.rm=TRUE),
+      max=max(var1.pred, na.rm=TRUE)
+    )
   
   SAs_agg_times <- merge(qld_SAs, SAs_agg_times, all.x=TRUE)
   
@@ -103,7 +107,7 @@ for(i in 1:nrow(grid)){
     SA_year=SA_year,
     save_path=glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}.rds")
   ) %>% as.data.frame() %>%
-    dplyr::select(1, value) %>% 
+    dplyr::select(1, value, min, max) %>% 
     write.csv(
       file=glue::glue("output/download_data/{care_type}_data_SA{SA_level}_year20{SA_year}.csv"),
       row.names=FALSE
@@ -137,8 +141,17 @@ for(i in 1:nrow(grid_2016)){
 combine_data <- function(SA_year, SA_level){
   df_acute <- read.csv(glue::glue("output/download_data/acute_data_SA{SA_level}_year20{SA_year}.csv"))
   df_rehab <- read.csv(glue::glue("output/download_data/rehab_data_SA{SA_level}_year20{SA_year}.csv"))
+  get_names <- function(x) {
+    c(
+      glue::glue("median_time_to_{x}_care"),
+      glue::glue("min_time_to_{x}_care"),
+      glue::glue("max_time_to_{x}_care")
+    )
+  }
+  names(df_acute)[-1] <- get_names("acute")
+  names(df_rehab)[-1] <- get_names("rehab")
+  
   df_combined <- inner_join(df_acute, df_rehab, by = glue::glue("SA{SA_level}_CODE{SA_year}"))
-  names(df_combined)[-1] <- c("time_to_acute_care", "time_to_rehab_care")
   write.csv(
     df_combined, 
     glue::glue("output/download_data/combined_data_SA{SA_level}_year20{SA_year}.csv"),
