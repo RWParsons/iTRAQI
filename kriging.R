@@ -52,7 +52,7 @@ do_kriging <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save
     ) %>%
     as.data.frame()
   if(return_raster) {
-    kriged_layer <- rasterFromXYZ(kriged_layer, crs=4326)
+    kriged_layer <- raster::rasterFromXYZ(kriged_layer, crs=4326)
   }
   if(!is.null(save_path)){
     saveRDS(kriged_layer, file=save_path)
@@ -84,4 +84,85 @@ do_kriging(
   pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_times, return_raster=TRUE,
   formula=acute_time~1, save_path="output/layers/acute_raster.rds"
 )
+
+
+# get rehab raster when considering different sets of possible centres
+files <- file.path("input/drive_times", list.files("input/drive_times/"))
+df_combined <- plyr::ldply(files[!str_detect(files, "qld_town_names")], read.csv)
+
+df_towns_details <- read.csv("input/drive_times/qld_town_names_points.csv") %>%
+  select(town=Town_Point, x=Xcoord, y=Ycoord)
+
+get_df_times <- function(data, centres){
+  df_combined %>% 
+    select(town=From_TOWN_POINT, centre=To_Title, rehab_time=Total_Minutes) %>%
+    mutate(centre=str_trim(centre)) %>%
+    filter(centre %in% centres) %>%
+    group_by(town) %>%
+    arrange(rehab_time) %>%
+    slice(1) %>%
+    ungroup() %>%
+    inner_join(., df_towns_details, by="town")
+}
+
+df_platinum <- get_df_times(
+  df_combined, 
+  c("Brain Injury Rehabilitation Unit")
+)
+coordinates(df_platinum) <- ~ x + y
+
+df_gold <- get_df_times(
+  df_combined, 
+  c("Brain Injury Rehabilitation Unit", "Townsville University Hospital")
+)
+coordinates(df_gold) <- ~ x + y
+
+df_future_gold <- get_df_times(
+  df_combined, 
+  c("Sunshine Coast University Hospital",
+    "Gold Coast University Hospital",
+    "Townsville University Hospital",
+    "Brain Injury Rehabilitation Unit")
+)
+coordinates(df_future_gold) <- ~ x + y
+
+
+do_kriging(
+  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_platinum, return_raster=TRUE,
+  formula=rehab_time~1, save_path="output/layers/rehab_raster_platinum.rds"
+)
+do_kriging(
+  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_gold, return_raster=TRUE,
+  formula=rehab_time~1, save_path="output/layers/rehab_raster_gold.rds"
+)
+do_kriging(
+  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_future_gold, return_raster=TRUE,
+  formula=rehab_time~1, save_path="output/layers/rehab_raster_future_gold.rds"
+)
+
+
+# sanity check - visualise the custom rehab rasters 
+library(leaflet)
+library(leaflet.extras)
+kriging_raster <- do_kriging(
+  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_future_gold, return_raster=TRUE,
+  formula=rehab_time~1
+)
+bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
+pal <- colorBin("YlOrRd", domain = 0:900, bins = bins, na.color="transparent")
+leaflet() %>% 
+  addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
+  addMapPane(name = "layers", zIndex = 200) %>%
+  addMapPane(name = "maplabels", zIndex = 400) %>%
+  addMapPane(name = "markers", zIndex = 205) %>%
+  addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+  addProviderTiles("CartoDB.VoyagerOnlyLabels",
+                   options = leafletOptions(pane = "maplabels"),
+                   group = "map labels") %>%
+  addRasterImage(
+    data=kriging_raster,
+    x=raster::raster(kriging_raster, layer=1),
+    options=leafletOptions(pane="layers"),
+    colors=pal
+  )
 
