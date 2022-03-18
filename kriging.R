@@ -145,6 +145,40 @@ df_platinum <- get_df_times(
 )
 coordinates(df_platinum) <- ~ x + y
 
+# for gold rehab, ensure that the rehab centre is the centre where they had acute treatment
+# of Townsville and Brisbane
+df_town_ids_and_names <- 
+  df_times_rsq %>%
+  select(town_point, town_name=TOWN_NAME)
+
+df_gold <- df_times %>%
+  as.data.frame() %>%
+  select(location, acute_care_centre) %>%
+  left_join(., df_town_ids_and_names, by=c("location"="town_name"))%>%
+  inner_join(
+    .,
+    select(df_combined, town=From_TOWN_POINT, centre=To_Title, 
+           rehab_time=Total_Minutes, town_point=From_TOWN_POINT),
+    by="town_point"
+  ) %>%
+  filter(
+    centre %in% c("Brain Injury Rehabilitation Unit", "Townsville University Hospital"),
+    !(acute_care_centre=="Townsville Hospital" & centre=="Brain Injury Rehabilitation Unit"),
+    !(acute_care_centre!="Townsville Hospital" & centre=="Townsville University Hospital"),
+  )
+df_platinum$town[!df_platinum$town %in% df_gold$town_point]
+
+
+select(df_combined, town=From_TOWN_POINT, centre=To_Title, rehab_time=Total_Minutes) %>% 
+  plyr::count("centre")
+
+df_times %>%
+  as.data.frame() %>%
+  select(location, acute_care_centre) %>%
+  plyr::count("acute_care_centre")
+
+
+
 df_gold <- get_df_times(
   df_combined, 
   c("Brain Injury Rehabilitation Unit", "Townsville University Hospital")
