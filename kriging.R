@@ -8,11 +8,26 @@ library(sf)
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 qld_SAs2021 <- st_read("input/qld_sa_zones_2021/MB_2021_AUST_GDA2020.shp") %>%
   filter(STE_NAME21=="Queensland")
-df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv")
-coordinates(df_times) <- ~ x + y
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
 CELL_SIZE = 0.03
 VGM_MODEL = "Sph"
+
+df_times_rsq <- readxl::read_xlsx(
+  "input/drive_times/qld_towns_RSQ pathways V2.xlsx",
+  skip=2
+) %>%
+  filter(!(TOWN_NAME=="Killarney" & round(xcoord) == 144 ))
+df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv") 
+df_times <- df_times %>%
+  select(-acute_time) %>%
+  inner_join(
+    ., 
+    select(df_times_rsq, location=TOWN_NAME, acute_time=Total_transport_time_min),
+    by="location"
+  )%>%
+  select(names(df_times)) %>%
+  mutate(acute_time=as.integer(acute_time))
+coordinates(df_times) <- ~ x + y
 
 get_kriging_grid <- function(cellsize, add_centroids=FALSE, centroids_polygon_sf=NULL) {
   grid <- makegrid(aus[aus$NAME_1 == "Queensland",], cellsize = cellsize)
@@ -69,7 +84,7 @@ pnts_for_raster <- get_kriging_grid(cellsize = CELL_SIZE, add_centroids = FALSE)
 
 # interpolate and write layers to disk
 do_kriging(
-  pnts=pnts_for_agg, vgm_model=VGM_MODEL, data=df_times, 
+  pnts=pnts_for_agg, vgm_model=VGM_MODEL, data=df_times,
   formula=rehab_time~1, save_path="output/kriging_data/rehab_for_agg.rds"
 )
 do_kriging(
@@ -85,10 +100,29 @@ do_kriging(
   formula=acute_time~1, save_path="output/layers/acute_raster.rds"
 )
 
+# sanity check plots
+# library(leaflet)
+# library(leaflet.extras)
+# bins <- c(0, 30, 60, 120, 180, 240, 300, 360, 900)
+# palBin <- colorBin("YlOrRd", domain = 0:900, bins=bins, na.color="transparent")
+# r <- readRDS("output/layers/acute_raster.rds")
+# leaflet() %>% 
+#   addMapPane(name = "layers", zIndex = 200) %>%
+#   addMapPane(name = "maplabels", zIndex = 400) %>%
+#   addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+#   addProviderTiles("CartoDB.VoyagerOnlyLabels",
+#                    options = leafletOptions(pane = "maplabels"),
+#                    group = "map labels") %>%
+#   addRasterImage(
+#     data=r,
+#     x=raster::raster(r, layer=1),
+#     options=leafletOptions(pane="layers"),
+#     colors=palBin
+#   )
 
 # get rehab raster when considering different sets of possible centres
 files <- file.path("input/drive_times", list.files("input/drive_times/"))
-df_combined <- plyr::ldply(files[!str_detect(files, "qld_town_names")], read.csv)
+df_combined <- plyr::ldply(files[!str_detect(files, "qld_town")], read.csv)
 
 df_towns_details <- read.csv("input/drive_times/qld_town_names_points.csv") %>%
   select(town=Town_Point, x=Xcoord, y=Ycoord)
