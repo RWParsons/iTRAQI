@@ -119,6 +119,16 @@ for(i in 1:nrow(grid)){
 # make 2016 layers with simplify_keep=0.1 for faster load time and smaller file size
 grid_2016 <- filter(grid, str_detect(SA_polygons, "2016"))
 
+
+asgs_2016_sa1 <- haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa1_detls.dta") %>%
+  select(SA1_CODE16=sa1_maincode, ra, ra_name)
+asgs_2016_sa2 <- haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa2_detls.dta") %>%
+  select(SA2_CODE16=sa2_maincode, ra, ra_name)
+
+layer_2016_sa1 <- readRDS(glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}_simplified.rds"))
+layer_2016_sa2 <- readRDS(glue::glue("output/layers/{care_type}_polygons_SA{2}_year20{SA_year}_simplified.rds"))
+
+
 for(i in 1:nrow(grid_2016)){
   data_file <- grid_2016$data[i]
   sa_file <- grid_2016$SA_polygons[i]
@@ -128,13 +138,18 @@ for(i in 1:nrow(grid_2016)){
   SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
   SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
   # if(care_type=="rehab") next
-  get_SA_agged_times(
+  layer <- get_SA_agged_times(
     lzn_kriged_df=kriged_df,
     SA_number=SA_level,
     SA_year=SA_year,
-    simplify_keep=0.1,
-    save_path=glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}_simplified.rds")
+    simplify_keep=0.1
   )
+  if(SA_level=="1"){
+    layer <- merge(layer, asgs_2016_sa1, all.x=TRUE)
+  } else if(SA_level=="2"){
+    layer <- merge(layer, asgs_2016_sa2, all.x=TRUE)
+  }
+  saveRDS(layer, glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}_simplified.rds"))
 }
 
 
