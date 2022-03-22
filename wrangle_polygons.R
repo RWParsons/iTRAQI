@@ -100,7 +100,8 @@ for(i in 1:nrow(grid)){
   care_type <- str_extract(data_file, "^[a-z]*(?=_)")
   SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
   SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
-  
+  # if(care_type=="rehab") next
+  # print(care_type)
   get_SA_agged_times(
     lzn_kriged_df=kriged_df,
     SA_number=SA_level,
@@ -126,7 +127,7 @@ for(i in 1:nrow(grid_2016)){
   care_type <- str_extract(data_file, "^[a-z]*(?=_)")
   SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
   SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
-  
+  # if(care_type=="rehab") next
   get_SA_agged_times(
     lzn_kriged_df=kriged_df,
     SA_number=SA_level,
