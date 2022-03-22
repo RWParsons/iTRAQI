@@ -46,9 +46,67 @@ saveRDS(
   file="output/sa_polygons/QLD_SA2_2021.rds"
 )
 
+make_seifas_df <- function(){
+  # SEIFA 2016 source: https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2033.0.55.0012016?OpenDocument
+  # SEIFA 2011 source: https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2033.0.55.0012011?OpenDocument
+  quintile_from_decile <- function(x) (x + x %% 2)/2
+  
+  seifa_2016_sa1 <- readxl::read_xls("input/remoteness_and_seifa_data/2016_sa1_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
+  seifa_2016_sa1 <- seifa_2016_sa1[, c(2, (ncol(seifa_2016_sa1)-3): ncol(seifa_2016_sa1))]
+  names(seifa_2016_sa1) <- c("SA1_CODE16", "state", "rank", "decile", "percentile")
+  seifa_2016_sa1$quintile <- quintile_from_decile(seifa_2016_sa1$decile)
+  
+  seifa_2016_sa2 <- readxl::read_xls("input/remoteness_and_seifa_data/2016_sa2_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
+  seifa_2016_sa2 <- seifa_2016_sa2[, c(1, (ncol(seifa_2016_sa2)-6): (ncol(seifa_2016_sa2)-3))]
+  names(seifa_2016_sa2) <- c("SA2_CODE16", "state", "rank", "decile", "percentile")
+  seifa_2016_sa2$quintile <- quintile_from_decile(seifa_2016_sa2$decile)
+  
+  seifa_2011_sa1 <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa1_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
+  seifa_2011_sa1 <- seifa_2011_sa1[, c(1, (ncol(seifa_2011_sa1)-3): ncol(seifa_2011_sa1))]
+  names(seifa_2011_sa1) <- c("SA1_CODE11", "state", "rank", "decile", "percentile")
+  seifa_2011_sa1$quintile <- quintile_from_decile(seifa_2011_sa1$decile)
+  
+  seifa_2011_sa2 <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa2_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
+  seifa_2011_sa2 <- seifa_2011_sa2[, c(1, (ncol(seifa_2011_sa2)-6): (ncol(seifa_2011_sa2)-3))]
+  names(seifa_2011_sa2) <- c("SA2_CODE11", "state", "rank", "decile", "percentile")
+  seifa_2011_sa2$decile <- as.numeric(seifa_2011_sa2$decile)
+  seifa_2011_sa2$percentile <- as.numeric(seifa_2011_sa2$percentile)
+  seifa_2011_sa2$quintile <- quintile_from_decile(seifa_2011_sa2$decile)
+  
+  list(
+    seifa_2016_sa1=seifa_2016_sa1,
+    seifa_2016_sa2=seifa_2016_sa2,
+    seifa_2011_sa1=seifa_2011_sa1,
+    seifa_2011_sa2=seifa_2011_sa2
+  )
+}
+
+seifa_list <- make_seifas_df()
+
+make_asgs_df <- function(){
+  # source: Susanna's method
+  asgs_2016_sa1 <- haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa1_detls.dta") %>%
+    select(SA1_CODE16=sa1_maincode, ra, ra_name)
+  asgs_2016_sa2 <- haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa2_detls.dta") %>%
+    select(SA2_CODE16=sa2_maincode, ra, ra_name)
+  list(
+    asgs_2011_sa1=haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2011_sa1_detls.dta") %>%
+      select(SA1_CODE11=sa1_maincode, ra, ra_name),
+    asgs_2011_sa2=haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2011_sa2_detls.dta") %>%
+      select(SA2_CODE11=sa2_maincode, ra, ra_name),
+    
+    asgs_2016_sa1=haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa1_detls.dta") %>%
+      select(SA1_CODE16=sa1_maincode, ra, ra_name),
+    asgs_2016_sa2=haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa2_detls.dta") %>%
+      select(SA2_CODE16=sa2_maincode, ra, ra_name)
+  )
+}
+
+asgs_list <- make_asgs_df()
+x <- "asgs_2016_sa2"
 
 # join interpolated values and aggregate within zones
-get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=1, save_path=NULL){
+get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=1, add_seifa_and_asgs=FALSE, save_path=NULL){
   coordinates(lzn_kriged_df) <- ~ X + Y
   lzn_kriged_sf <- st_as_sf(lzn_kriged_df)
   lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4326)
@@ -75,6 +133,15 @@ get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=
   
   if(simplify_keep<1){
     SAs_agg_times <- rmapshaper::ms_simplify(SAs_agg_times, keep=simplify_keep)
+  }
+  
+  if(add_seifa_and_asgs){
+    seifa_df <- seifa_list[[glue::glue("seifa_20{SA_year}_sa{SA_number}")]]
+    seifa_df <- select(seifa_df, 1, seifa_quintile=quintile)
+    SAs_agg_times <- merge(SAs_agg_times, seifa_df, all.x=TRUE)
+    
+    asgs_df <- asgs_list[[glue::glue("asgs_20{SA_year}_sa{SA_number}")]]
+    SAs_agg_times <- merge(SAs_agg_times, asgs_df, all.x=TRUE)
   }
   
   if(!is.null(save_path)){
@@ -119,16 +186,6 @@ for(i in 1:nrow(grid)){
 # make 2016 layers with simplify_keep=0.1 for faster load time and smaller file size
 grid_2016 <- filter(grid, str_detect(SA_polygons, "2016"))
 
-
-asgs_2016_sa1 <- haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa1_detls.dta") %>%
-  select(SA1_CODE16=sa1_maincode, ra, ra_name)
-asgs_2016_sa2 <- haven::read_dta("input/remoteness_and_seifa_data/qld_ASGS2016_sa2_detls.dta") %>%
-  select(SA2_CODE16=sa2_maincode, ra, ra_name)
-
-layer_2016_sa1 <- readRDS(glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}_simplified.rds"))
-layer_2016_sa2 <- readRDS(glue::glue("output/layers/{care_type}_polygons_SA{2}_year20{SA_year}_simplified.rds"))
-
-
 for(i in 1:nrow(grid_2016)){
   data_file <- grid_2016$data[i]
   sa_file <- grid_2016$SA_polygons[i]
@@ -142,7 +199,8 @@ for(i in 1:nrow(grid_2016)){
     lzn_kriged_df=kriged_df,
     SA_number=SA_level,
     SA_year=SA_year,
-    simplify_keep=0.1
+    simplify_keep=0.1,
+    add_seifa_and_asgs=TRUE
   )
   if(SA_level=="1"){
     layer <- merge(layer, asgs_2016_sa1, all.x=TRUE)
