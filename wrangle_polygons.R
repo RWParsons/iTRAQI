@@ -63,8 +63,10 @@ make_seifas_df <- function(){
   
   seifa_2011_sa1 <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa1_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
   seifa_2011_sa1 <- seifa_2011_sa1[, c(1, (ncol(seifa_2011_sa1)-3): ncol(seifa_2011_sa1))]
-  names(seifa_2011_sa1) <- c("SA1_CODE11", "state", "rank", "decile", "percentile")
-  seifa_2011_sa1$quintile <- quintile_from_decile(seifa_2011_sa1$decile)
+  names(seifa_2011_sa1) <- c("code7", "state", "rank", "decile", "percentile")
+  sa1_digits <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa1_seifa.xls", sheet="Table 7", skip=6, col_names=FALSE) %>%
+    select(code7=1, SA1_CODE11=2)
+  seifa_2011_sa1 <- inner_join(sa1_digits, seifa_2011_sa1, by="code7") %>% select(-code7)
   
   seifa_2011_sa2 <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa2_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
   seifa_2011_sa2 <- seifa_2011_sa2[, c(1, (ncol(seifa_2011_sa2)-6): (ncol(seifa_2011_sa2)-3))]
@@ -103,7 +105,6 @@ make_asgs_df <- function(){
 }
 
 asgs_list <- make_asgs_df()
-x <- "asgs_2016_sa2"
 
 # join interpolated values and aggregate within zones
 get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=1, add_seifa_and_asgs=FALSE, save_path=NULL){
@@ -226,12 +227,33 @@ combine_data <- function(SA_year, SA_level){
   names(df_rehab)[-1] <- get_names("rehab")
   
   df_combined <- inner_join(df_acute, df_rehab, by = glue::glue("SA{SA_level}_CODE{SA_year}"))
+  
   write.csv(
-    df_combined, 
+    df_combined,
     glue::glue("output/download_data/combined_data_SA{SA_level}_year20{SA_year}.csv"),
     row.names=FALSE
   )
-  df_combined
+  if(SA_year != 21){
+    seifa_df <- seifa_list[[glue::glue("seifa_20{SA_year}_sa{SA_level}")]] %>%
+      select(-state, -rank)
+    names(seifa_df)[-1] <- paste0("seifa_", names(seifa_df)[-1])
+    
+    asgs_df <- asgs_list[[glue::glue("asgs_20{SA_year}_sa{SA_level}")]]
+    
+    df_seifa_and_asgs <- 
+      df_combined %>% 
+      select(1) %>%
+      left_join(., seifa_df, by=glue::glue("SA{SA_level}_CODE{SA_year}")) %>%
+      left_join(., asgs_df, by=glue::glue("SA{SA_level}_CODE{SA_year}"))
+    
+    write.csv(
+      df_seifa_and_asgs,
+      glue::glue("output/download_data/seifa_and_israd_SA{SA_level}_year20{SA_year}.csv"),
+      row.names=FALSE
+    )
+  }
+  
+  return(df_combined)
 }
 
 grid_combine <- expand.grid(year=c(11, 16, 21), sa=c(1, 2))
