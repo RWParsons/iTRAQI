@@ -46,6 +46,17 @@ saveRDS(
   file="output/sa_polygons/QLD_SA2_2021.rds"
 )
 
+seifa_scale_to_text <- function(x){
+  case_when(
+    x==1 ~ "Most disadvantaged",
+    x==2 ~ "Disadvantaged",
+    x==3 ~ "Middle socio-economic status",
+    x==4 ~ "Advantaged",
+    x==5 ~ "Most advantaged",
+    TRUE ~ "NA"
+  )
+}
+
 make_seifas_df <- function(){
   # SEIFA 2016 source: https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2033.0.55.0012016?OpenDocument
   # SEIFA 2011 source: https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/2033.0.55.0012011?OpenDocument
@@ -67,6 +78,7 @@ make_seifas_df <- function(){
   sa1_digits <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa1_seifa.xls", sheet="Table 7", skip=6, col_names=FALSE) %>%
     select(code7=1, SA1_CODE11=2)
   seifa_2011_sa1 <- inner_join(sa1_digits, seifa_2011_sa1, by="code7") %>% select(-code7)
+  seifa_2011_sa1$quintile <- quintile_from_decile(seifa_2011_sa1$decile)
   
   seifa_2011_sa2 <- readxl::read_xls("input/remoteness_and_seifa_data/2011_sa2_seifa.xls", sheet="Table 3", skip=6, col_names=FALSE)
   seifa_2011_sa2 <- seifa_2011_sa2[, c(1, (ncol(seifa_2011_sa2)-6): (ncol(seifa_2011_sa2)-3))]
@@ -260,7 +272,6 @@ grid_combine <- expand.grid(year=c(11, 16, 21), sa=c(1, 2))
 map2(.x=grid_combine$year, .y=grid_combine$sa, combine_data)
 
 
-library(openxlsx)
 write_data_to_xlsx <- function(template_dir, 
                                output_dir,
                                seifa=seifa_list, 
@@ -291,6 +302,8 @@ write_data_to_xlsx <- function(template_dir,
     seifa_name <- glue::glue("seifa_20{SA_year}_sa{SA_level}")
     if(!is.null(seifa[[seifa_name]])){
       df_seifa <- left_join(drive_times_idx, as.data.frame(seifa[[seifa_name]]))
+      df_seifa$state <- NULL
+      df_seifa$quintile_label <- seifa_scale_to_text(df_seifa$quintile)
       xlsx::write.xlsx(
         x=df_seifa,
         file=file.path(output_dir, f),
@@ -314,12 +327,10 @@ write_data_to_xlsx <- function(template_dir,
   }
 }
 
-
 write_data_to_xlsx(
   template_dir="input/downloadable_data_templates/",
   output_dir="output/compiled_download_data/"
 )
-
 
 library(rmapshaper)
 library(leaflet)
