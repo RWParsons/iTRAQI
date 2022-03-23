@@ -260,6 +260,66 @@ grid_combine <- expand.grid(year=c(11, 16, 21), sa=c(1, 2))
 map2(.x=grid_combine$year, .y=grid_combine$sa, combine_data)
 
 
+library(openxlsx)
+write_data_to_xlsx <- function(template_dir, 
+                               output_dir,
+                               seifa=seifa_list, 
+                               asgs=asgs_list, 
+                               data_dir="output/download_data/"){
+  unlink(paste0(output_dir, "*")) # delete old files in output_dir
+  templates <- dir(template_dir)
+  for(f in templates){
+    gc()
+    # copy template files to output_dir
+    file.copy(file.path(template_dir, f), file.path(output_dir, f))
+    
+    SA_year <- str_extract(f, "(?<=20)[0-9]{2}")
+    SA_level <- str_extract(f, "(?<=SA)[0-9]")
+    
+    # write drive times, seifa, and israd data to separate sheets in the new xlsx doc (from template)
+    df_drive_times <- read.csv(file.path(data_dir, glue::glue("combined_data_SA{SA_level}_year20{SA_year}.csv")))
+    xlsx::write.xlsx(
+      x=df_drive_times,
+      file=file.path(output_dir, f),
+      sheetName="drive_times",
+      row.names=FALSE,
+      append=TRUE
+    )
+    
+    drive_times_idx <- select(df_drive_times, 1)
+    gc()
+    seifa_name <- glue::glue("seifa_20{SA_year}_sa{SA_level}")
+    if(!is.null(seifa[[seifa_name]])){
+      df_seifa <- left_join(drive_times_idx, as.data.frame(seifa[[seifa_name]]))
+      xlsx::write.xlsx(
+        x=df_seifa,
+        file=file.path(output_dir, f),
+        sheetName="seifa",
+        row.names=FALSE,
+        append=TRUE
+      )
+    }
+    gc()
+    asgs_name <- glue::glue("asgs_20{SA_year}_sa{SA_level}")
+    if(!is.null(asgs[[asgs_name]])){
+      df_israd <- left_join(drive_times_idx, as.data.frame(asgs[[asgs_name]]))
+      xlsx::write.xlsx(
+        x=df_israd,
+        file=file.path(output_dir, f),
+        sheetName="remoteness",
+        row.names=FALSE,
+        append=TRUE
+      )
+    }
+  }
+}
+
+
+write_data_to_xlsx(
+  template_dir="input/downloadable_data_templates/",
+  output_dir="output/compiled_download_data/"
+)
+
 
 library(rmapshaper)
 library(leaflet)
