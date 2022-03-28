@@ -224,6 +224,108 @@ for(i in 1:nrow(grid_2016)){
 }
 
 
+# combine SA agg layers into a single layer with column for SA and care type so that shiny can filter on them
+##########
+
+make_combined_SA2_layers <- function(save=TRUE){
+  region_lookup <- distinct(as.data.frame(qld_SAs2016)[, c("SA2_CODE16", "SA2_NAME16")])
+  
+  SA2_acute <- readRDS("output/layers/acute_polygons_SA2_year2016_simplified.rds")
+  SA2_acute$care_type <- "acute"
+  SA2_acute <- left_join(SA2_acute, region_lookup) %>%
+    mutate(popup_acute = paste0(
+      paste0(
+        "<b>SA2 Region: </b>", .[["SA2_NAME16"]], "<br>",
+        "<b>SA", 2, " ID: </b>", .[[1]], "<br>",
+        "<b>Remoteness: </b>", .[["ra_name"]], "<br>",
+        "<b>SEIFA: </b>", seifa_scale_to_text(.[["seifa_quintile"]]), "<br>",
+        "<b>Time to ", care_type, " care in minutes (estimate [min - max]): </b>", "<br>", 
+        "&nbsp;&nbsp;&nbsp;&nbsp; ", round(.[["value"]]), " [", round(.[["min"]]), " - ", round(.[["max"]]), "]<br>"
+      )
+    ))
+  
+  SA2_rehab <- readRDS("output/layers/rehab_polygons_SA2_year2016_simplified.rds")
+  SA2_rehab$care_type <- "rehab"
+  SA2_rehab <- left_join(SA2_rehab, region_lookup) %>%
+    mutate(popup_rehab = paste0(
+      paste0(
+        "<b>SA2 Region: </b>", .[["SA2_NAME16"]], "<br>",
+        "<b>SA", 2, " ID: </b>", .[[1]], "<br>",
+        "<b>Remoteness: </b>", .[["ra_name"]], "<br>",
+        "<b>SEIFA: </b>", seifa_scale_to_text(.[["seifa_quintile"]]), "<br>",
+        "<b>Time to ", care_type, " care in minutes (estimate [min - max]): </b>", "<br>", 
+        "&nbsp;&nbsp;&nbsp;&nbsp; ", round(.[["value"]]), " [", round(.[["min"]]), " - ", round(.[["max"]]), "]<br>"
+      )
+    ))
+  
+  combined_SA2 <- select(SA2_acute, 1, ra, seifa_quintile, popup_acute, value_acute=value) %>% 
+    left_join(., select(as.data.frame(SA2_rehab), 1, popup_rehab, value_rehab=value))
+  
+  if(save) saveRDS(combined_SA2, "output/layers/combined_polygons_SA2_year2016_simplified.rds")
+  combined_SA2
+}
+
+make_combined_SA1_layers <- function(save=TRUE){
+  region_lookup <- distinct(as.data.frame(qld_SAs2016)[, c("SA1_CODE16", "SA2_NAME16")])
+  
+  SA1_acute <- readRDS("output/layers/acute_polygons_SA1_year2016_simplified.rds")
+  SA1_acute$care_type <- "acute"
+  SA1_acute <- left_join(SA1_acute, region_lookup) %>%
+    mutate(popup_acute = paste0(
+      paste0(
+        "<b>SA2 Region: </b>", .[["SA2_NAME16"]], "<br>",
+        "<b>SA", 1, " ID: </b>", .[[1]], "<br>",
+        "<b>Remoteness: </b>", .[["ra_name"]], "<br>",
+        "<b>SEIFA: </b>", seifa_scale_to_text(.[["seifa_quintile"]]), "<br>",
+        "<b>Time to ", care_type, " care in minutes (estimate [min - max]): </b>", "<br>", 
+        "&nbsp;&nbsp;&nbsp;&nbsp; ", round(.[["value"]]), " [", round(.[["min"]]), " - ", round(.[["max"]]), "]<br>"
+      )
+    ))
+  
+  SA1_rehab <- readRDS("output/layers/rehab_polygons_SA1_year2016_simplified.rds")
+  SA1_rehab$care_type <- "rehab"
+  SA1_rehab <- left_join(SA1_rehab, region_lookup) %>%
+    mutate(popup_rehab = paste0(
+      paste0(
+        "<b>SA2 Region: </b>", .[["SA2_NAME16"]], "<br>",
+        "<b>SA", 1, " ID: </b>", .[[1]], "<br>",
+        "<b>Remoteness: </b>", .[["ra_name"]], "<br>",
+        "<b>SEIFA: </b>", seifa_scale_to_text(.[["seifa_quintile"]]), "<br>",
+        "<b>Time to ", care_type, " care in minutes (estimate [min - max]): </b>", "<br>", 
+        "&nbsp;&nbsp;&nbsp;&nbsp; ", round(.[["value"]]), " [", round(.[["min"]]), " - ", round(.[["max"]]), "]<br>"
+      )
+    ))
+  
+  combined_SA1 <- select(SA1_acute, 1, ra, seifa_quintile, popup_acute, value_acute=value) %>% 
+    left_join(., select(as.data.frame(SA1_rehab), 1, popup_rehab, value_rehab=value))
+  
+  if(save) saveRDS(combined_SA1, "output/layers/combined_polygons_SA1_year2016_simplified.rds")
+  combined_SA1
+}
+
+make_combined_SA2_layers()
+make_combined_SA1_layers()
+
+stack_SA1_and_SA2_layers <- function(save=TRUE){
+  SA1 <- make_combined_SA1_layers(save=FALSE)
+  SA2 <- make_combined_SA2_layers(save=FALSE)
+  
+  SA1$SA_level <- 1
+  SA2$SA_level <- 2
+  
+  names(SA1)[1] <- "CODE"
+  names(SA2)[1] <- "CODE"
+  
+  stacked <- rbind(SA1, SA2)
+  if(save) saveRDS(stacked, "output/layers/stacked_SA1_and_SA2_polygons_year2016_simplified.rds")
+  stacked
+}
+
+stack <- stack_SA1_and_SA2_layers()
+
+
+#############
+
 # combine downloadable data sheets so that acute and rehab times are on same sheet
 combine_data <- function(SA_year, SA_level){
   df_acute <- read.csv(glue::glue("output/download_data/acute_data_SA{SA_level}_year20{SA_year}.csv"))
