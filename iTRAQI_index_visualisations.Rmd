@@ -25,9 +25,11 @@ layers_dir <- "output/layers"
 
 rehab_raster <- readRDS(file.path(layers_dir, "rehab_raster.rds"))
 acute_raster <- readRDS(file.path(layers_dir, "acute_raster.rds"))
+rehab_gold_raster <- readRDS(file.path(layers_dir, "rehab_raster_gold.rds"))
 
 
-sum_raster <- rehab_raster + acute_raster
+rehab_and_acute_raster <- rehab_raster + acute_raster
+rehab_gold_and_silver <- rehab_raster + rehab_gold_raster
 
 ```
 
@@ -66,9 +68,15 @@ leaflet() %>%
   addProviderTiles("Esri") %>%
   addMapPane(name = "layers", zIndex = 200) %>%
   addRasterImage(
-    x=raster::raster(sum_raster, layer=1),
+    x=raster::raster(rehab_and_acute_raster, layer=1),
     colors=palNum,
-    group="sum",
+    group="acute + rehab (silver)",
+    options=leafletOptions(pane="layers")
+  ) %>%
+  addRasterImage(
+    x=raster::raster(rehab_gold_and_silver, layer=1),
+    colors=palNum,
+    group="gold + silver",
     options=leafletOptions(pane="layers")
   ) %>%
   addRasterImage(
@@ -85,7 +93,7 @@ leaflet() %>%
   ) %>%
   addLayersControl(
     position = "topright",
-    baseGroups = c("None","sum", "acute", "rehab"),
+    baseGroups = c("None","acute + rehab (silver)","gold + silver", "acute", "rehab"),
     options = layersControlOptions(collapsed = FALSE)
   ) %>% 
   leaflegend::addLegendNumeric(
