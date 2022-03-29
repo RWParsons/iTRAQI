@@ -67,6 +67,28 @@ seifa_text_to_value <- function(x){
   )
 }
 
+ra_scale_to_text <- function(x){
+  case_when(
+    x==0 ~ "Major Cities of Australia",
+    x==1 ~ "Inner Regional Australia",
+    x==2 ~ "Outer Regional Australia",
+    x==3 ~ "Remote Australia",
+    x==4 ~ "Very Remote Australia",
+    TRUE ~ "NA"
+  )
+}
+
+ra_text_to_value <- function(x){
+  case_when(
+    x=="Major Cities of Australia" ~ 0,
+    x=="Inner Regional Australia" ~ 1,
+    x=="Outer Regional Australia" ~ 2,
+    x=="Remote Australia" ~ 3,
+    x=="Very Remote Australia" ~ 4,
+  )
+}
+
+dropdown_width <- "100%"
 
 ui <- navbarPage(
   "iTRAQI",
@@ -81,15 +103,29 @@ ui <- navbarPage(
         width = 330, height = "auto",
         
         h3("control panel"),
+        selectInput(
+          inputId="sa_level",
+          label="Statistical area level",
+          choice=c("SA1", "SA2"),
+          selected="SA1",
+          width=dropdown_width
+        ),
         dropdownButton2(
-          label="Socioeconomic status", status="default", width=80,
+          label="Socioeconomic status", status="default", width=dropdown_width,
           checkboxGroupInput(
-            inputId="seifa", label="SEIFA", 
+            inputId="seifa", label="SEIFA", width=dropdown_width,
             choices=c(seifa_scale_to_text(1:5), NA),
             selected=c(seifa_scale_to_text(1:5), NA)
           )
         ),
-        verbatimTextOutput("dropdown_values")
+        dropdownButton2(
+          label="Remoteness index", status="default", width=dropdown_width,
+          checkboxGroupInput(
+            inputId="remoteness", label="Remoteness", width=dropdown_width,
+            choices=c(ra_scale_to_text(0:4)),
+            selected=c(ra_scale_to_text(0:4))
+          )
+        )
       )
     )
   )
@@ -98,8 +134,6 @@ ui <- navbarPage(
 server <- function(input, output, session){
   bins <- c(0, 30, 60, 120, 180, 240, 300, 360, 900)
   palBin <- colorBin("YlOrRd", domain = 0:900, bins=bins, na.color="transparent")
-  
-  output$dropdown_values <- renderPrint({seifa_text_to_value(input$seifa)})
   
   output$main_map <- renderLeaflet({
     leaflet(options=leafletOptions(minZoom=5)) %>%
@@ -118,24 +152,24 @@ server <- function(input, output, session){
         pal=palBin,
         values=0:900,
         title=htmltools::tagList(tags$div("Time to care (minutes)"), tags$br())
-      ) 
-    
+      )
   })
   
-  polygons <- readRDS("../output/layers/stacked_SA1_and_SA2_polygons_year2016_simplified.rds") %>%
-    filter(SA_level==1)
+  polygons <- readRDS("../output/layers/stacked_SA1_and_SA2_polygons_year2016_simplified.rds")
   
   first_load <- TRUE
   proxy <- leafletProxy("main_map")
   
-  observeEvent(list(input$seifa), {
+  observeEvent(list(input$seifa, input$remoteness, input$sa_level), {
     # resources:
       # https://stackoverflow.com/questions/58014620/remove-specific-layers-in-r-leaflet
       # https://stackoverflow.com/questions/62700258/leaflet-in-another-tab-not-updated-with-leafletproxy-before-visiting-tab
     
     desired_codes <- 
       polygons %>%
-      filter(seifa_quintile %in% seifa_text_to_value(input$seifa)) %>%
+      filter(seifa_quintile %in% seifa_text_to_value(input$seifa),
+             ra %in% ra_text_to_value(input$remoteness),
+             SA_level == as.numeric(str_extract(input$sa_level, "[0-9]{1}"))) %>%
       pull(CODE)
     
     if(first_load){
@@ -166,8 +200,6 @@ server <- function(input, output, session){
       ) %>%
       removeShape(codes_to_remove)
   })
-  
-  
 }
 
 shinyApp(ui, server)
