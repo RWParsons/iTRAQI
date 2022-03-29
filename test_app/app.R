@@ -15,6 +15,36 @@ library(sp)
 library(raster)
 library(rgdal)
 
+dropdownButton2 <- function(label = "", status = c("default", "primary", "success", "info", "warning", "danger"), ..., width = NULL) {
+  # https://stackoverflow.com/questions/34530142/drop-down-checkbox-input-in-shiny
+  status <- match.arg(status)
+  # dropdown button content
+  html_ul <- list(
+    class = "dropdown-menu",
+    style = if (!is.null(width)) 
+      paste0("width: ", validateCssUnit(width), ";"),
+    lapply(X = list(...), FUN = tags$li, style = "margin-left: 10px; margin-right: 10px;")
+  )
+  # dropdown button apparence
+  html_button <- list(
+    class = paste0("btn btn-", status," dropdown-toggle"),
+    type = "button", 
+    `data-toggle` = "dropdown"
+  )
+  html_button <- c(html_button, list(label))
+  html_button <- c(html_button, list(tags$span(class = "caret")))
+  # final result
+  tags$div(
+    class = "dropdown",
+    do.call(tags$button, html_button),
+    do.call(tags$ul, html_ul),
+    tags$script(
+      "$('.dropdown-menu').click(function(e) {
+      e.stopPropagation();
+});")
+  )
+}
+
 
 seifa_scale_to_text <- function(x){
   case_when(
@@ -51,8 +81,15 @@ ui <- navbarPage(
         width = 330, height = "auto",
         
         h3("control panel"),
-        sliderTextInput("seifa", "SEIFA", seifa_scale_to_text(1:5), selected = c(seifa_scale_to_text(1), seifa_scale_to_text(5))),
-        verbatimTextOutput("value")
+        dropdownButton2(
+          label="Socioeconomic status", status="default", width=80,
+          checkboxGroupInput(
+            inputId="seifa", label="SEIFA", 
+            choices=c(seifa_scale_to_text(1:5), NA),
+            selected=c(seifa_scale_to_text(1:5), NA)
+          )
+        ),
+        verbatimTextOutput("dropdown_values")
       )
     )
   )
@@ -62,7 +99,7 @@ server <- function(input, output, session){
   bins <- c(0, 30, 60, 120, 180, 240, 300, 360, 900)
   palBin <- colorBin("YlOrRd", domain = 0:900, bins=bins, na.color="transparent")
   
-  output$value <- renderPrint({seifa_text_to_value(input$seifa)})
+  output$dropdown_values <- renderPrint({seifa_text_to_value(input$seifa)})
   
   output$main_map <- renderLeaflet({
     leaflet(options=leafletOptions(minZoom=5)) %>%
@@ -82,43 +119,53 @@ server <- function(input, output, session){
         values=0:900,
         title=htmltools::tagList(tags$div("Time to care (minutes)"), tags$br())
       ) 
+    
   })
   
   polygons <- readRDS("../output/layers/stacked_SA1_and_SA2_polygons_year2016_simplified.rds") %>%
-    filter(SA_level==2)
+    filter(SA_level==1)
   
-  observe({
-    seifa_filter <- input$seifa
+  first_load <- TRUE
+  proxy <- leafletProxy("main_map")
+  
+  observeEvent(list(input$seifa), {
+    # resources:
+      # https://stackoverflow.com/questions/58014620/remove-specific-layers-in-r-leaflet
+      # https://stackoverflow.com/questions/62700258/leaflet-in-another-tab-not-updated-with-leafletproxy-before-visiting-tab
     
-    seifa_lower <- seifa_text_to_value(seifa_filter[1])
-    seifa_upper <- seifa_text_to_value(seifa_filter[2])
+    desired_codes <- 
+      polygons %>%
+      filter(seifa_quintile %in% seifa_text_to_value(input$seifa)) %>%
+      pull(CODE)
     
-    update_polygons <- polygons %>%
-      filter(seifa_quintile >= seifa_lower,
-             seifa_quintile <= seifa_upper)
+    if(first_load){
+      codes_to_remove <- c()
+      codes_to_add <- desired_codes
+      first_load <<- FALSE
+    }else{
+      codes_to_remove <- current_codes[!current_codes %in% desired_codes]
+      codes_to_add <- desired_codes[!desired_codes %in% current_codes]
+    }
     
+    current_codes <<- desired_codes
     
-    # if (sizeBy == "superzip") {
-    #   # Radius is treated specially in the "superzip" case.
-    #   radius <- ifelse(zipdata$centile >= (100 - input$threshold), 30000, 3000)
-    # } else {
-    #   radius <- zipdata[[sizeBy]] / max(zipdata[[sizeBy]]) * 30000
-    # }
+    update_polygons <- 
+      polygons %>%
+      filter(CODE %in% codes_to_add)
     
-    leafletProxy("main_map", data = update_polygons) %>%
+    proxy %>%
       addPolygons(
-        fillColor=~palBin(value_acute),
+        data=update_polygons,
+        fillColor=~palBin(update_polygons$value_acute),
         color="black",
         fillOpacity=1,
         weight=1,
         popup=update_polygons$popup_acute,
-        options=leafletOptions(pane="layers")
-        # layerId="updatePoly"
-      )
+        options=leafletOptions(pane="layers"),
+        layerId=~CODE
+      ) %>%
+      removeShape(codes_to_remove)
   })
-  
-  
-  
   
   
 }
