@@ -103,14 +103,7 @@ ui <- navbarPage(
         draggable = TRUE, top = 60, left = "auto", right = 20, bottom = "auto",
         width = 330, height = "auto",
         radioButtons(inputId="layer_selection", label="Layer", choices=c("None", "SA1 Acute", "SA2 Acute"), selected="None"),
-        h3("control panel"),
-        selectInput(
-          inputId="sa_level",
-          label="Statistical area level",
-          choice=c("SA1", "SA2"),
-          selected="SA1",
-          width=dropdown_width
-        ),
+        h4("Filters"),
         dropdownButton2(
           label="Socioeconomic status", status="default", width=dropdown_width,
           checkboxGroupInput(
