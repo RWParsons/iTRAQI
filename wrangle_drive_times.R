@@ -57,8 +57,20 @@ platinum_locs <- c(
   "Brain Injury Rehabilitation Unit"
 )
 
+files <- c(
+  "CairnsRDT",
+  "TownsvilleRDT",
+  "LongreachRDT",
+  "RockhamptonRDT",
+  "RomaRDT",
+  "GympieRDT",
+  "SCRDT",
+  "PARDT",
+  "GCRDT"
+)
+
 df_combined <- 
-  plyr::ldply(file.path(drive_times_dir, paste0(silver_locs, ".csv")), read.csv) %>%
+  plyr::ldply(file.path(drive_times_dir, paste0(files, ".csv")), read.csv) %>%
   select(id=From_ID, town_name=From_Location, x=From_x, y=From_y, centre=To_Title, minutes=Total_Minutes) %>%
   mutate(centre=str_trim(centre))
 
@@ -93,6 +105,8 @@ weighted_rehab_times <-
     rename(silver_times, rehab_centre=centre, silver_time=minutes),
     select(gold_times, id, gold_time=minutes),
     by="id"
-  )
+  ) %>%
+  mutate(minutes=silver_time + gold_time) %>%
+  select(-silver_time, -gold_time)
 
 write.csv(weighted_rehab_times, file=file.path(rehab_times_dir, "weighted_rehab_time.csv"), row.names=FALSE)
