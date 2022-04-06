@@ -12,21 +12,31 @@ aus <- raster::getData('GADM', country = 'AUS', level = 1)
 CELL_SIZE = 0.03
 VGM_MODEL = "Sph"
 
-df_times_rsq <- readxl::read_xlsx(
-  "input/drive_times/qld_towns_RSQ pathways V2.xlsx",
-  skip=2
-) %>%
-  filter(!(TOWN_NAME=="Killarney" & round(xcoord) == 144 ))
-df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv") 
-df_times <- df_times %>%
-  select(-acute_time) %>%
-  inner_join(
-    ., 
-    select(df_times_rsq, location=TOWN_NAME, acute_time=Total_transport_time_min),
-    by="location"
-  )%>%
-  select(names(df_times)) %>%
-  mutate(acute_time=as.integer(acute_time))
+df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
+  select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, acute_care_centre=Destination2) %>%
+  filter(!is.na(acute_care_centre)) %>%
+  mutate(acute_care_centre=ifelse(acute_care_centre=="Townsville Hospital","Townsville University Hospital","Brain Injury Rehabilitation Unit"))
+
+df_rehab <- read.csv("input/rehab_times/weighted_rehab_time.csv")
+
+df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_name") %>%
+  rename(location=town_name)
+
+# df_times_rsq <- readxl::read_xlsx(
+#   "input/drive_times/qld_towns_RSQ pathways V2.xlsx",
+#   skip=2
+# ) %>%
+#   filter(!(TOWN_NAME=="Killarney" & round(xcoord) == 144 ))
+# df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv") 
+# df_times <- df_times %>%
+#   select(-acute_time) %>%
+#   inner_join(
+#     ., 
+#     select(df_times_rsq, location=TOWN_NAME, acute_time=Total_transport_time_min),
+#     by="location"
+#   )%>%
+#   select(names(df_times)) %>%
+#   mutate(acute_time=as.integer(acute_time))
 coordinates(df_times) <- ~ x + y
 
 get_kriging_grid <- function(cellsize, add_centroids=FALSE, centroids_polygon_sf=NULL) {
@@ -100,137 +110,109 @@ do_kriging(
   formula=acute_time~1, save_path="output/layers/acute_raster.rds"
 )
 
-# sanity check plots
-# library(leaflet)
-# library(leaflet.extras)
-# bins <- c(0, 30, 60, 120, 180, 240, 300, 360, 900)
-# palBin <- colorBin("YlOrRd", domain = 0:900, bins=bins, na.color="transparent")
-# r <- readRDS("output/layers/acute_raster.rds")
-# leaflet() %>% 
-#   addMapPane(name = "layers", zIndex = 200) %>%
-#   addMapPane(name = "maplabels", zIndex = 400) %>%
-#   addProviderTiles("CartoDB.VoyagerNoLabels") %>%
-#   addProviderTiles("CartoDB.VoyagerOnlyLabels",
-#                    options = leafletOptions(pane = "maplabels"),
-#                    group = "map labels") %>%
-#   addRasterImage(
-#     data=r,
-#     x=raster::raster(r, layer=1),
-#     options=leafletOptions(pane="layers"),
-#     colors=palBin
-#   )
 
-# get rehab raster when considering different sets of possible centres
-files <- file.path("input/drive_times", list.files("input/drive_times/"))
-df_combined <- plyr::ldply(files[!str_detect(files, "qld_town")], read.csv)
-
-df_towns_details <- read.csv("input/drive_times/qld_town_names_points.csv") %>%
-  select(town=Town_Point, x=Xcoord, y=Ycoord)
-
-get_df_times <- function(data, centres){
-  df_combined %>% 
-    select(town=From_TOWN_POINT, centre=To_Title, rehab_time=Total_Minutes) %>%
-    mutate(centre=str_trim(centre)) %>%
-    filter(centre %in% centres) %>%
-    group_by(town) %>%
-    arrange(rehab_time) %>%
-    slice(1) %>%
-    ungroup() %>%
-    inner_join(., df_towns_details, by="town")
+do_rehab_layer_kriging <- function(file_path, save_path=NULL){
+  df_rehab <- read.csv(file_path)
+  coordinates(df_rehab) <- ~ x + y
+  do_kriging(
+    pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_rehab, return_raster=TRUE,
+    formula=minutes~1, save_path=save_path
+  )
+  return()
 }
 
-df_platinum <- get_df_times(
-  df_combined, 
-  c("Brain Injury Rehabilitation Unit")
-)
-coordinates(df_platinum) <- ~ x + y
+rehab_times_dir <- "input/rehab_times"
+data_files <- list.files(rehab_times_dir, full.names = T)
+raster_out_paths <- list.files(rehab_times_dir, full.names = F)
+raster_out_paths <- str_replace(raster_out_paths, "csv", "rds")
+raster_out_paths <- file.path("output/layers", raster_out_paths)
 
-# for gold rehab, ensure that the rehab centre is the centre where they had acute treatment
-# of Townsville and Brisbane
-df_town_ids_and_names <- 
-  df_times_rsq %>%
-  select(town_point, town_name=TOWN_NAME)
+map2(data_files[-5], raster_out_paths[-5], do_rehab_layer_kriging) # ignore the weighted_rehab_time
 
-df_gold <- df_times %>%
-  as.data.frame() %>%
-  select(location, acute_care_centre) %>%
-  left_join(., df_town_ids_and_names, by=c("location"="town_name"))%>%
-  inner_join(
-    .,
-    select(df_combined, town=From_TOWN_POINT, centre=To_Title, 
-           rehab_time=Total_Minutes, town_point=From_TOWN_POINT),
-    by="town_point"
-  ) %>%
-  filter(
-    centre %in% c("Brain Injury Rehabilitation Unit", "Townsville University Hospital"),
-    !(acute_care_centre=="Townsville Hospital" & centre=="Brain Injury Rehabilitation Unit"),
-    !(acute_care_centre!="Townsville Hospital" & centre=="Townsville University Hospital"),
-  )
-df_platinum$town[!df_platinum$town %in% df_gold$town_point]
-
-
-select(df_combined, town=From_TOWN_POINT, centre=To_Title, rehab_time=Total_Minutes) %>% 
-  plyr::count("centre")
-
-df_times %>%
-  as.data.frame() %>%
-  select(location, acute_care_centre) %>%
-  plyr::count("acute_care_centre")
-
-
-
-df_gold <- get_df_times(
-  df_combined, 
-  c("Brain Injury Rehabilitation Unit", "Townsville University Hospital")
-)
-coordinates(df_gold) <- ~ x + y
-
-df_future_gold <- get_df_times(
-  df_combined, 
-  c("Sunshine Coast University Hospital",
-    "Gold Coast University Hospital",
-    "Townsville University Hospital",
-    "Brain Injury Rehabilitation Unit")
-)
-coordinates(df_future_gold) <- ~ x + y
-
-
-do_kriging(
-  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_platinum, return_raster=TRUE,
-  formula=rehab_time~1, save_path="output/layers/rehab_raster_platinum.rds"
-)
-do_kriging(
-  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_gold, return_raster=TRUE,
-  formula=rehab_time~1, save_path="output/layers/rehab_raster_gold.rds"
-)
-do_kriging(
-  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_future_gold, return_raster=TRUE,
-  formula=rehab_time~1, save_path="output/layers/rehab_raster_future_gold.rds"
-)
-
-
-# sanity check - visualise the custom rehab rasters 
+# sanity check plots
 library(leaflet)
 library(leaflet.extras)
-kriging_raster <- do_kriging(
-  pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_future_gold, return_raster=TRUE,
-  formula=rehab_time~1
-)
-bins <- c(0, 30, 60, 120, 180, 240, 300, 360, Inf)
-pal <- colorBin("YlOrRd", domain = 0:900, bins = bins, na.color="transparent")
-leaflet() %>% 
-  addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
+bins <- c(0, 30, 60, 120, 180, 240, 300, 360, 900, 1200, 1800)
+palBin <- colorBin("YlOrRd", domain = 0:1800, bins=bins, na.color="transparent")
+r <- readRDS("output/layers/acute_raster.rds")
+# r <- readRDS("output/layers/rehab_raster.rds")
+leaflet() %>%
   addMapPane(name = "layers", zIndex = 200) %>%
   addMapPane(name = "maplabels", zIndex = 400) %>%
-  addMapPane(name = "markers", zIndex = 205) %>%
+  addMapPane(name = "markers", zIndex = 405) %>%
   addProviderTiles("CartoDB.VoyagerNoLabels") %>%
   addProviderTiles("CartoDB.VoyagerOnlyLabels",
                    options = leafletOptions(pane = "maplabels"),
                    group = "map labels") %>%
   addRasterImage(
-    data=kriging_raster,
-    x=raster::raster(kriging_raster, layer=1),
+    data=r,
+    x=raster::raster(r, layer=1),
     options=leafletOptions(pane="layers"),
-    colors=pal
+    colors=palBin
+  ) %>%
+  addCircleMarkers(
+    lng=df_times$x,
+    lat=df_times$y,
+    popup=paste0(df_times$location, ", acute time:", df_times$acute_time, ", rehab time:", df_times$rehab_time),
+    radius=2, fillOpacity=0,
+    options = leafletOptions(pane = "markers")
   )
+
+
+# sanity check - visualise the custom rehab rasters 
+# library(leaflet)
+# library(leaflet.extras)
+# kriging_raster <- do_kriging(
+#   pnts=pnts_for_raster, vgm_model=VGM_MODEL, data=df_gold, return_raster=TRUE,
+#   formula=rehab_time~1
+# )
+# bins <- c(0, 30, 60, 120, 180, 240, 300, 360, 900)
+# palBin <- colorBin("YlOrRd", domain = 0:900, bins=bins, na.color="transparent")
+# 
+# palNum1 <- colorNumeric(c("#FFFFCC", "#FFEDA0"), domain=0:30, na.color="transparent")
+# palNum2 <- colorNumeric(c("#FFEDA0", "#FED976"), domain=30:60, na.color="transparent")
+# palNum3 <- colorNumeric(c("#FED976", "#FEB24C"), domain=60:120, na.color="transparent")
+# palNum4 <- colorNumeric(c("#FEB24C", "#FD8D3C"), domain=120:180, na.color="transparent")
+# palNum5 <- colorNumeric(c("#FD8D3C", "#FC4E2A"), domain=180:240, na.color="transparent")
+# palNum6 <- colorNumeric(c("#FC4E2A", "#E31A1C"), domain=240:300, na.color="transparent")
+# palNum7 <- colorNumeric(c("#E31A1C", "#B10026"), domain=300:360, na.color="transparent")
+# palNum8 <- colorNumeric(c("#B10026", "#000000"), domain=360:900, na.color="transparent")
+# 
+# palNum <- function(x){
+#   case_when(
+#     x < 30 ~ palNum1(x),
+#     x < 60 ~ palNum2(x),
+#     x < 120 ~ palNum3(x),
+#     x < 180 ~ palNum4(x),
+#     x < 240 ~ palNum5(x),
+#     x < 300 ~ palNum6(x),
+#     x < 360 ~ palNum7(x),
+#     x < 900 ~ palNum8(x),
+#     x >= 900 ~ "#000000",
+#     TRUE ~ "transparent"
+#   )
+# }
+# leaflet() %>% 
+#   # addSearchOSM(options=searchOptions(moveToLocation=FALSE, zoom=NULL)) %>%
+#   addMapPane(name = "layers", zIndex = 200) %>%
+#   addMapPane(name = "maplabels", zIndex = 400) %>%
+#   addMapPane(name = "markers", zIndex = 405) %>%
+#   addProviderTiles("CartoDB.VoyagerNoLabels") %>%
+#   addProviderTiles("CartoDB.VoyagerOnlyLabels",
+#                    options = leafletOptions(pane = "maplabels"),
+#                    group = "map labels") %>%
+#   addRasterImage(
+#     data=kriging_raster,
+#     x=raster::raster(kriging_raster, layer=1),
+#     options=leafletOptions(pane="layers"),
+#     colors=palNum
+#   ) %>%
+#   addCircleMarkers(
+#     lng=as.data.frame(df_platinum)$x, lat=as.data.frame(df_platinum)$y,
+#     radius=2, fillOpacity=0,
+#     # popup=glue::glue("TWP:{df_gold$town}, name:{df_gold$location}, time:{df_gold$rehab_time} "),
+#     options=leafletOptions(pane="markers")
+#   )
+
+
 
