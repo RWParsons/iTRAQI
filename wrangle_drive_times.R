@@ -6,25 +6,25 @@ library(tidyverse)
 drive_times_dir <- "input/drive_times/NewRehabTimes"
 
 
-df <- read.csv(file.path(drive_times_dir, "LongreachRDT.csv"))
-
-df_ids <- read.csv(file.path(drive_times_dir, "QLDLocations3422.csv"))
-
-(inner_join(df, df_ids, by=c("From_ID"="ID")) %>% nrow()) == nrow(df)
-
-df_rsq <- read("input/drive_times/Qld_towns_RSQ pathways V2.xlsx")
-
-df_rsq <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
-  select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, acute_care_centre=Destination2) %>%
-  filter(!is.na(acute_care_centre)) %>%
-  mutate(acute_care_centre=ifelse(acute_care_centre=="Townsville Hospital","Townsville University Hospital","Brain Injury Rehabilitation Unit"))
-
-inner_join(df_rsq, df_ids, by=c("town_name"="Location"))
-
-
-# check whether there is a drive time and acute time for every location
-left_join(df_rsq, select(df, From_Location, drive_time=Total_Minutes), by=c("town_name"="From_Location")) %>%
-  (function(x) nrow(x) == nrow(na.omit(x))) 
+# df <- read.csv(file.path(drive_times_dir, "LongreachRDT.csv"))
+# 
+# df_ids <- read.csv(file.path(drive_times_dir, "QLDLocations3422.csv"))
+# 
+# (inner_join(df, df_ids, by=c("From_ID"="ID")) %>% nrow()) == nrow(df)
+# 
+# df_rsq <- read("input/drive_times/Qld_towns_RSQ pathways V2.xlsx")
+# 
+# df_rsq <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
+#   select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, acute_care_centre=Destination2) %>%
+#   filter(!is.na(acute_care_centre)) %>%
+#   mutate(acute_care_centre=ifelse(acute_care_centre=="Townsville Hospital","Townsville University Hospital","Brain Injury Rehabilitation Unit"))
+# 
+# inner_join(df_rsq, df_ids, by=c("town_name"="Location"))
+# 
+# 
+# # check whether there is a drive time and acute time for every location
+# left_join(df_rsq, select(df, From_Location, drive_time=Total_Minutes), by=c("town_name"="From_Location")) %>%
+#   (function(x) nrow(x) == nrow(na.omit(x))) 
 
 
 ############# wrangle times
@@ -106,7 +106,7 @@ weighted_rehab_times <-
     select(gold_times, id, gold_time=minutes),
     by="id"
   ) %>%
-  mutate(minutes=silver_time + gold_time) %>%
+  mutate(minutes=(silver_time + gold_time)/2) %>%
   select(-silver_time, -gold_time)
 
 write.csv(weighted_rehab_times, file=file.path(rehab_times_dir, "weighted_rehab_time.csv"), row.names=FALSE)
