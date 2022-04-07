@@ -22,6 +22,8 @@ df_rehab <- read.csv("input/rehab_times/weighted_rehab_time.csv")
 df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_name") %>%
   rename(location=town_name)
 
+write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220407.csv", row.names = F)
+
 # df_times_rsq <- readxl::read_xlsx(
 #   "input/drive_times/qld_towns_RSQ pathways V2.xlsx",
 #   skip=2
