@@ -387,8 +387,9 @@ write_data_to_xlsx <- function(template_dir,
   templates <- dir(template_dir)
   for(f in templates){
     gc()
+    out_file <- str_remove(f, "front page ")
     # copy template files to output_dir
-    file.copy(file.path(template_dir, f), file.path(output_dir, f))
+    file.copy(file.path(template_dir, f), file.path(output_dir, out_file))
     
     SA_year <- str_extract(f, "(?<=20)[0-9]{2}")
     SA_level <- str_extract(f, "(?<=SA)[0-9]")
@@ -397,7 +398,7 @@ write_data_to_xlsx <- function(template_dir,
     df_drive_times <- read.csv(file.path(data_dir, glue::glue("combined_data_SA{SA_level}_year20{SA_year}.csv")))
     xlsx::write.xlsx(
       x=df_drive_times,
-      file=file.path(output_dir, f),
+      file=file.path(output_dir, out_file),
       sheetName="drive_times",
       row.names=FALSE,
       append=TRUE
@@ -412,7 +413,7 @@ write_data_to_xlsx <- function(template_dir,
       df_seifa$quintile_label <- seifa_scale_to_text(df_seifa$quintile)
       xlsx::write.xlsx(
         x=df_seifa,
-        file=file.path(output_dir, f),
+        file=file.path(output_dir, out_file),
         sheetName="seifa",
         row.names=FALSE,
         append=TRUE
@@ -424,7 +425,7 @@ write_data_to_xlsx <- function(template_dir,
       df_israd <- left_join(drive_times_idx, as.data.frame(asgs[[asgs_name]]))
       xlsx::write.xlsx(
         x=df_israd,
-        file=file.path(output_dir, f),
+        file=file.path(output_dir, out_file),
         sheetName="remoteness",
         row.names=FALSE,
         append=TRUE
