@@ -399,7 +399,7 @@ write_data_to_xlsx <- function(template_dir,
     xlsx::write.xlsx(
       x=df_drive_times,
       file=file.path(output_dir, out_file),
-      sheetName="drive_times",
+      sheetName="Travel time",
       row.names=FALSE,
       append=TRUE
     )
@@ -414,7 +414,7 @@ write_data_to_xlsx <- function(template_dir,
       xlsx::write.xlsx(
         x=df_seifa,
         file=file.path(output_dir, out_file),
-        sheetName="seifa",
+        sheetName="SEIFA",
         row.names=FALSE,
         append=TRUE
       )
@@ -426,7 +426,7 @@ write_data_to_xlsx <- function(template_dir,
       xlsx::write.xlsx(
         x=df_israd,
         file=file.path(output_dir, out_file),
-        sheetName="remoteness",
+        sheetName="Remoteness",
         row.names=FALSE,
         append=TRUE
       )
