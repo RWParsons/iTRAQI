@@ -24,6 +24,10 @@ df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_
 
 write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220407.csv", row.names = F)
 
+df_times <- 
+  df_times %>%
+  rename(rehab_centre = silver_rehab_centre) %>%
+  select(-gold_rehab_centre)
 # df_times_rsq <- readxl::read_xlsx(
 #   "input/drive_times/qld_towns_RSQ pathways V2.xlsx",
 #   skip=2

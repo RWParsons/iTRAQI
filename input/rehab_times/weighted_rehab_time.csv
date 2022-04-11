@@ -1,429 +1,429 @@
-"id","town_name","x","y","rehab_centre","minutes"
-1012,"Thursday Island",142.2167,-10.5804,"Cairns Hospital",977.278586185
-1013,"Horn Island",142.2837,-10.60644,"Cairns Hospital",991.955002195
-1014,"Seisia",142.3701,-10.85188,"Cairns Hospital",842.14916386
-1015,"New Mapoon",142.3863,-10.87403,"Cairns Hospital",838.584054015
-1016,"Umagico",142.3489,-10.88916,"Cairns Hospital",835.926384015
-1017,"Bamaga",142.3893,-10.89279,"Cairns Hospital",837.138957345
-1018,"Injinoo",142.3275,-10.90209,"Cairns Hospital",832.59118507
-1019,"Mapoon",141.8976,-12.02178,"Cairns Hospital",768.40852244
-1020,"Weipa",141.8777,-12.62496,"Cairns Hospital",713.05227822
-1021,"Napranum",141.8909,-12.68153,"Cairns Hospital",706.522240415
-1022,"Lockhart River",143.3424,-12.78591,"Cairns Hospital",748.961990875
-1023,"Aurukun",141.7292,-13.35609,"Cairns Hospital",706.14408337
-1024,"Coen",143.1999,-13.9448,"Cairns Hospital",517.186593525
-1025,"Pormpuraaw",141.6245,-14.89198,"Cairns Hospital",545.676107605
-1026,"Hope Vale",145.1102,-15.2971,"Cairns Hospital",372.542846655
-1027,"Cooktown",145.2488,-15.47177,"Cairns Hospital",335.677292415
-1028,"Kowanyama",141.7435,-15.47744,"Cairns Hospital",764.529042295
-1029,"Wujal Wujal",145.3188,-15.94835,"Cairns Hospital",267.10697799
-1030,"Daintree",145.3306,-16.26079,"Cairns Hospital",210.045394025
-1031,"Wonga Beach",145.4137,-16.3472,"Cairns Hospital",198.423943475
-1032,"Newell",145.4061,-16.425,"Cairns Hospital",190.77838214
-1033,"Cooya Beach",145.4067,-16.44813,"Cairns Hospital",183.62191915
-1034,"Mossman",145.3731,-16.46155,"Cairns Hospital",184.58166038
-1035,"Port Douglas",145.4662,-16.48533,"Cairns Hospital",179.540114835
-1036,"Craiglie",145.467,-16.51455,"Cairns Hospital",176.71157866
-1037,"Oak Beach",145.5147,-16.5941,"Cairns Hospital",166.38753359
-1039,"Kuranda",145.6352,-16.82032,"Cairns Hospital",151.40248918
-1040,"Yarrabah",145.865,-16.90636,"Cairns Hospital",146.51604817
-1041,"Cairns",145.7649,-16.92311,"Cairns Hospital",121.935812865
-1042,"Mareeba",145.4221,-16.9965,"Cairns Hospital",162.597050545
-1043,"Mareeba - South",145.4211,-17.05062,"Cairns Hospital",160.947298535
-1044,"Gordonvale",145.7806,-17.09611,"Cairns Hospital",122.913130255
-1045,"Goldsborough",145.7509,-17.14553,"Cairns Hospital",128.96102357
-1046,"Dimbulah",145.1096,-17.15058,"Cairns Hospital",188.4890811
-1047,"Chillagoe",144.5225,-17.15243,"Cairns Hospital",260.122615135
-1048,"Walkamin",145.4411,-17.15428,"Cairns Hospital",160.02969049
-1049,"Tinaroo",145.5505,-17.16863,"Cairns Hospital",169.08843357
-1050,"Tolga - West",145.4506,-17.204,"Cairns Hospital",162.30367173
-1051,"Tolga",145.4776,-17.22463,"Cairns Hospital",161.032853245
-1052,"Atherton",145.4776,-17.26641,"Cairns Hospital",162.05462704
-1053,"Yungaburra",145.5851,-17.26885,"Cairns Hospital",154.67698161
-1054,"Babinda",145.9219,-17.3445,"Cairns Hospital",123.3897452
-1055,"Bramston Beach",146.0198,-17.35108,"Cairns Hospital",131.324892175
-1056,"Malanda",145.5954,-17.35328,"Cairns Hospital",150.804824245
-1057,"Herberton",145.3852,-17.38376,"Cairns Hospital",166.80685316
-1058,"Mirriwinni",145.9089,-17.39951,"Cairns Hospital",122.475844785
-1059,"Tarzali",145.61,-17.42092,"Cairns Hospital",151.613571175
-1060,"Karumba",140.8383,-17.48673,"Cairns Hospital",551.91631546
-1061,"Flying Fish Point",146.0754,-17.49616,"Cairns Hospital",130.877148315
-1062,"Coconuts",146.0431,-17.50908,"Cairns Hospital",126.101393805
-1063,"Millaa Millaa",145.612,-17.51108,"Cairns Hospital",151.796618025
-1064,"Belvedere",145.9896,-17.51972,"Cairns Hospital",123.796599805
-1065,"Innisfail",146.0299,-17.52363,"Cairns Hospital",122.70099102
-1066,"Wangan",146.0083,-17.57463,"Cairns Hospital",122.960616815
-1067,"Mourilyan",146.0419,-17.583,"Cairns Hospital",122.43876823
-1068,"South Johnstone",145.9951,-17.60097,"Cairns Hospital",122.48249929
-1069,"Ravenshoe",145.4842,-17.60534,"Cairns Hospital",171.90652851
-1070,"Normanton",141.0761,-17.67331,"Cairns Hospital",506.076564905
-1071,"Mount Garnet",145.1208,-17.67675,"Cairns Hospital",200.44997264
-1072,"Burketown",139.5466,-17.74255,"Central West Sub-Acute Service",692.427999925
-1073,"Silkwood",146.0203,-17.74863,"Cairns Hospital",123.18939966
-1074,"Kurrimine",146.1047,-17.77796,"Cairns Hospital",129.799603055
-1075,"El Arish",146.0048,-17.80559,"Cairns Hospital",122.26925331
-1076,"Bingil Bay",146.0976,-17.83471,"Cairns Hospital",134.92075859
-1077,"Mission Beach",146.107,-17.86879,"Cairns Hospital",134.582180065
-1078,"Wongaling Beach",146.091,-17.91401,"Cairns Hospital",135.052380015
-1079,"Tully",145.9217,-17.93491,"Cairns Hospital",124.268000935
-1080,"Doomadgee",138.824,-17.94141,"Central West Sub-Acute Service",727.27320828
-1081,"South Mission Beach",146.0909,-17.94652,"Cairns Hospital",137.109735145
-1082,"Carmoo",146.0461,-17.94788,"Cairns Hospital",129.804441
-1083,"Tully Heads",146.0563,-18.01976,"Cairns Hospital",134.235945825
-1084,"Croydon",142.2422,-18.2051,"Cairns Hospital",409.77814442
-1085,"Cardwell",146.0227,-18.26396,"Townsville University Hospital",110.1552451
-1086,"Georgetown",143.5479,-18.29241,"Cairns Hospital",313.84355355
-1087,"Lucinda",146.3337,-18.52889,"Townsville University Hospital",95.78898402
-1088,"Halifax",146.2856,-18.58094,"Townsville University Hospital",88.62110909
-1089,"Macknade",146.2605,-18.58664,"Townsville University Hospital",87.42525437
-1090,"Taylors Beach",146.3273,-18.62407,"Townsville University Hospital",93.48412274
-1091,"Trebonne",146.0781,-18.62689,"Townsville University Hospital",80.53296272
-1092,"Ingham",146.1581,-18.64706,"Townsville University Hospital",75.33067823
-1093,"Allingham",146.2953,-18.70771,"Townsville University Hospital",87.7786455
-1094,"Palm Island",146.6058,-18.72665,"Townsville University Hospital",284.3648964
-1095,"Balgal Beach",146.4083,-19.01722,"Townsville University Hospital",40.98592217
-1096,"Horseshoe Bay",146.8597,-19.11815,"Townsville University Hospital",70.42251091
-1097,"Toolakea",146.5788,-19.14605,"Townsville University Hospital",28.14502335
-1098,"Arcadia Bay",146.8651,-19.14853,"Townsville University Hospital",66.25233923
-1099,"Nelly Bay",146.8484,-19.15696,"Townsville University Hospital",64.50439318
-1100,"Saunders Beach",146.6098,-19.15875,"Townsville University Hospital",24.8172253
-1101,"Bluewater",146.5589,-19.1675,"Townsville University Hospital",24.33048709
-1102,"Picnic Bay",146.8379,-19.17814,"Townsville University Hospital",67.93645744
-1103,"Yabulu",146.5851,-19.20155,"Townsville University Hospital",20.55597816
-1104,"Pallarenda",146.773,-19.20234,"Townsville University Hospital",20.55136238
-1105,"Bluewater Park",146.5138,-19.20308,"Townsville University Hospital",27.82355798
-1106,"Black River",146.618,-19.23302,"Townsville University Hospital",17.40782956
-1107,"Townsville",146.8092,-19.26508,"Townsville University Hospital",15.43296472
-1108,"Rangewood",146.6392,-19.31192,"Townsville University Hospital",13.49819877
-1109,"Alice River",146.6023,-19.32778,"Townsville University Hospital",16.00790769
-1110,"Nome",146.9099,-19.37372,"Townsville University Hospital",17.938261
-1111,"Cungulla",147.1112,-19.40128,"Townsville University Hospital",34.92663311
-1112,"Alligator Creek",146.9432,-19.42302,"Townsville University Hospital",23.91320446
-1113,"Alva Beach",147.4799,-19.45506,"Townsville University Hospital",75.38588839
-1114,"Giru",147.1066,-19.51333,"Townsville University Hospital",39.88493742
-1115,"Kalamia Estate",147.4184,-19.53428,"Townsville University Hospital",67.14997686
-1116,"Brandon",147.3554,-19.55389,"Townsville University Hospital",55.77882303
-1117,"Ayr",147.4056,-19.57545,"Townsville University Hospital",61.79092973
-1118,"Home Hill",147.4144,-19.66043,"Townsville University Hospital",70.87277856
-1119,"Camooweal",138.119,-19.92248,"Central West Sub-Acute Service",631.444940265
-1120,"Bowen",148.2418,-20.01494,"Townsville University Hospital",136.0164966
-1121,"Merinda",148.1648,-20.01751,"Townsville University Hospital",128.9773991
-1122,"Charters Towers",146.2598,-20.07699,"Townsville University Hospital",90.71172953
-1123,"Hideaway Bay - Dingo Beach",148.4886,-20.08489,"Townsville University Hospital",183.9408397
-1124,"Ravenswood",146.8898,-20.10146,"Townsville University Hospital",82.7330207
-1125,"Airlie Beach",148.7132,-20.26829,"Townsville University Hospital",187.9391187
-1126,"Cannonvale",148.6962,-20.2769,"Townsville University Hospital",184.2158004
-1128,"Mount Julian",148.6196,-20.37468,"Townsville University Hospital",176.5526797
-1129,"Proserpine",148.5821,-20.40489,"Townsville University Hospital",175.0745524
-1130,"Collinsville",147.8441,-20.55341,"Townsville University Hospital",180.8340175
-1131,"Scottville",147.8184,-20.57206,"Townsville University Hospital",184.6055052
-1132,"Midge Point",148.7213,-20.65029,"Townsville University Hospital",197.2785208
-1133,"Julia Creek",141.7435,-20.65701,"Central West Sub-Acute Service",369.235802145
-1134,"Cloncurry",140.5092,-20.70554,"Central West Sub-Acute Service",435.48477666
-1135,"Mount Isa",139.4993,-20.73044,"Central West Sub-Acute Service",514.618390395
-1136,"Richmond",143.1423,-20.73186,"Townsville University Hospital",338.2240319
-1137,"Hughenden",144.1992,-20.84553,"Townsville University Hospital",258.6784947
-1138,"Seaforth",148.9607,-20.89524,"Rockhampton Hospital",247.621649915
-1139,"Calen",148.7716,-20.89849,"Townsville University Hospital",217.8878607
-1140,"Haliday Bay - Ball Bay",148.9879,-20.90075,"Rockhampton Hospital",247.198075645
-1141,"Killarney",152.2963,-28.33305,"Brain Injury Rehabilitation Unit",125.95798438
-1142,"Nindaroo",149.1636,-21.05945,"Rockhampton Hospital",244.484014885
-1143,"Farleigh",149.1017,-21.10705,"Rockhampton Hospital",233.09900522
-1144,"Erakala",149.1071,-21.12326,"Rockhampton Hospital",234.99413705
-1145,"Finch Hatton",148.6313,-21.14165,"Rockhampton Hospital",257.83189301
-1146,"Marian",148.9428,-21.14558,"Rockhampton Hospital",235.855098075
-1147,"Mackay",149.1664,-21.15497,"Rockhampton Hospital",236.02468955
-1148,"Mirani",148.8653,-21.16023,"Rockhampton Hospital",242.72155027
-1149,"Walkerston",149.0554,-21.16249,"Rockhampton Hospital",234.82823202
-1150,"Bakers Creek",149.1521,-21.20776,"Rockhampton Hospital",234.74028601
-1151,"Eton",148.9732,-21.26365,"Rockhampton Hospital",236.263856255
-1152,"Hay Point",149.2905,-21.29652,"Rockhampton Hospital",242.673954695
-1153,"Glenden",148.1138,-21.35315,"Townsville University Hospital",258.0834264
-1154,"Grasstree Beach",149.3067,-21.36404,"Rockhampton Hospital",240.57793501
-1155,"Campwin Beach",149.313,-21.37793,"Rockhampton Hospital",240.46688967
-1156,"Sarina Beach",149.3095,-21.38995,"Rockhampton Hospital",239.54132044
-1157,"Sarina",149.216,-21.4206,"Rockhampton Hospital",232.577329225
-1158,"Armstrong Beach",149.2873,-21.45078,"Rockhampton Hospital",239.112385945
-1159,"Nebo",148.6917,-21.69028,"Rockhampton Hospital",254.741242785
-1160,"Moranbah",148.0456,-22.0039,"Rockhampton Hospital",310.752506445
-1161,"Winton",143.0414,-22.38676,"Central West Sub-Acute Service",258.853697925
-1162,"Dysart",148.3481,-22.58982,"Rockhampton Hospital",296.541378695
-1163,"Middlemount",148.7039,-22.81426,"Rockhampton Hospital",281.91979288
-1164,"Clermont",147.6374,-22.82681,"Rockhampton Hospital",287.519724575
-1165,"Byfield",150.6508,-22.85074,"Rockhampton Hospital",263.80328089
-1166,"Boulia",139.9082,-22.91287,"Central West Sub-Acute Service",520.755672475
-1167,"Aramac",145.2439,-22.9698,"Central West Sub-Acute Service",367.74447295
-1168,"Tieri",148.3497,-23.03219,"Rockhampton Hospital",293.43825514
-1169,"Capella",148.0248,-23.08513,"Rockhampton Hospital",284.575564025
-1170,"Yeppoon",150.7431,-23.12635,"Rockhampton Hospital",243.385708575
-1171,"The Caves",150.4661,-23.17545,"Rockhampton Hospital",232.311171995
-1172,"Mulambin",150.7857,-23.19155,"Rockhampton Hospital",247.906584575
-1173,"Kinka Beach",150.7876,-23.2243,"Rockhampton Hospital",241.8253076
-1174,"Glendale",150.4751,-23.24572,"Rockhampton Hospital",229.97914471
-1175,"Emu Park",150.8238,-23.25994,"Rockhampton Hospital",242.716798795
-1176,"Keppel Sands",150.7919,-23.3275,"Rockhampton Hospital",239.445456865
-1177,"Rockhampton",150.4974,-23.38918,"Rockhampton Hospital",208.663866155
-1178,"Rubyvale",147.6974,-23.42054,"Rockhampton Hospital",306.2224806
-1179,"Gracemere",150.4558,-23.43865,"Rockhampton Hospital",212.795899065
-1180,"Longreach",144.2475,-23.44447,"Central West Sub-Acute Service",259.156003615
-1181,"Sapphire",147.7193,-23.46006,"Rockhampton Hospital",306.322512455
-1182,"Emerald",148.1598,-23.52349,"Rockhampton Hospital",284.72946483
-1183,"Barcaldine",145.2854,-23.55288,"Central West Sub-Acute Service",325.739498085
-1184,"Blackwater",148.8834,-23.5779,"Rockhampton Hospital",286.50562309
-1185,"Bouldercombe",150.4668,-23.57818,"Rockhampton Hospital",217.954923145
-1186,"Bluff",149.0695,-23.57993,"Rockhampton Hospital",285.8130312
-1187,"Mount Morgan",150.3881,-23.64464,"Rockhampton Hospital",232.199321255
-1188,"Dingo",149.3315,-23.64629,"Rockhampton Hospital",281.658111
-1189,"Alpha",146.6387,-23.65028,"Central West Sub-Acute Service",320.02265546
-1190,"Duaringa",149.6687,-23.71846,"Rockhampton Hospital",275.534958775
-1191,"Willows Gemfields",147.5411,-23.73932,"Central West Sub-Acute Service",327.670350625
-1192,"Mount Larcom",150.9799,-23.8124,"Rockhampton Hospital",209.41189694
-1193,"Gladstone",151.2578,-23.84753,"Rockhampton Hospital",216.01722012
-1194,"Tannum Sands",151.3685,-23.94867,"Rockhampton Hospital",216.63799335
-1195,"Wurdong Heights",151.3025,-23.98485,"Rockhampton Hospital",211.428150405
-1196,"Calliope",151.213,-23.99655,"Rockhampton Hospital",210.71790436
-1197,"Benaraby",151.3256,-24.00187,"Rockhampton Hospital",209.834913
-1198,"Springsure",148.0891,-24.11595,"Roma Hospital",326.638695785
-1199,"Woorabinda",149.4575,-24.1306,"Rockhampton Hospital",294.08899174
-1200,"Seventeen Seventy",151.8855,-24.16343,"Rockhampton Hospital",244.91759271
-1201,"Baralaba",149.8114,-24.17958,"Rockhampton Hospital",275.578490295
-1202,"Agnes Water",151.9008,-24.21017,"Rockhampton Hospital",238.10845874
-1203,"Taylors Creek",149.1545,-24.25325,"Rockhampton Hospital",314.13049746
-1204,"Miriam Vale",151.5583,-24.328,"Rockhampton Hospital",209.97753499
-1205,"Biloela",150.5098,-24.39602,"Rockhampton Hospital",242.24137348
-1206,"Blackall",145.4645,-24.42336,"Central West Sub-Acute Service",378.82867252
-1207,"Thangool",150.5751,-24.48738,"Rockhampton Hospital",241.871241535
-1208,"Moura",149.9719,-24.57498,"Rockhampton Hospital",261.925335055
-1209,"Moore Park",152.2757,-24.71776,"Gympie Hospital",207.068653835
-1210,"Burnett Heads",152.4149,-24.76892,"Gympie Hospital",196.30246226
-1211,"Bargara",152.4607,-24.81453,"Gympie Hospital",195.452741265
-1212,"Gooburrum",152.345,-24.81685,"Gympie Hospital",195.49034591
-1213,"Sloping Hummock",152.4252,-24.8436,"Gympie Hospital",190.75888611
-1214,"Oakwood",152.298,-24.85082,"Gympie Hospital",192.79166564
-1215,"Monto",151.1207,-24.86547,"Rockhampton Hospital",242.880433405
-1216,"Bundaberg",152.3444,-24.87052,"Gympie Hospital",188.08093643
-1217,"Innes Park",152.4823,-24.88137,"Gympie Hospital",192.409762775
-1218,"Tambo",146.2549,-24.88339,"Central West Sub-Acute Service",377.877825305
-1219,"Sharon",152.2587,-24.88377,"Gympie Hospital",190.17073919
-1220,"Elliott Heads",152.4888,-24.9178,"Gympie Hospital",194.13847464
-1221,"Theodore",150.075,-24.94678,"Rockhampton Hospital",254.564055835
-1222,"South Bingera",152.2194,-24.96842,"Gympie Hospital",177.473464025
-1223,"Gin Gin",151.9557,-24.99157,"Gympie Hospital",187.9205637
-1224,"Woodgate",152.5506,-25.0964,"Gympie Hospital",172.22448757
-1225,"Cordalba",152.2111,-25.15681,"Gympie Hospital",162.127536125
-1226,"Mount Perry",151.6442,-25.18036,"Gympie Hospital",222.81074911
-1227,"Burrum Heads",152.609,-25.18701,"Gympie Hospital",143.84313594
-1228,"Burrum Heads - East",152.6334,-25.21101,"Gympie Hospital",142.699116155
-1229,"Apple Tree Creek",152.2338,-25.22391,"Gympie Hospital",155.579401835
-1230,"Burrum Heads - South",152.5934,-25.23535,"Gympie Hospital",139.89799348
-1231,"Childers",152.2765,-25.23536,"Gympie Hospital",150.89006065
-1232,"Toogoom",152.6898,-25.25614,"Gympie Hospital",141.2610208
-1233,"Pacific Haven",152.5565,-25.26683,"Gympie Hospital",137.67282888
-1234,"Hervey Bay",152.8722,-25.28535,"Gympie Hospital",150.73428445
-1235,"Howard",152.5602,-25.31648,"Gympie Hospital",132.897119615
-1236,"Torbanlea",152.596,-25.34752,"Gympie Hospital",129.548418005
-1237,"Walligan",152.771,-25.35161,"Gympie Hospital",135.542637465
-1238,"Sunshine Acres",152.7889,-25.35801,"Gympie Hospital",137.44560011
-1239,"Booral",152.9037,-25.36202,"Gympie Hospital",145.606301165
-1240,"Eidsvold",151.1221,-25.37064,"Gympie Hospital",212.189615845
-1241,"River Heads",152.9102,-25.39864,"Gympie Hospital",149.020150095
-1242,"Aldershot",152.6613,-25.46311,"Gympie Hospital",120.3877298
-1243,"Biggenden",152.0449,-25.50952,"Gympie Hospital",138.42951925
-1244,"Oakhurst",152.6206,-25.51008,"Gympie Hospital",122.24219244
-1245,"Maryborough",152.6935,-25.52726,"Gympie Hospital",118.736034825
-1246,"Mundubbera",151.2992,-25.59115,"Gympie Hospital",188.43640377
-1247,"Maaroom",152.8722,-25.61156,"Gympie Hospital",113.787637455
-1248,"Gayndah",151.6074,-25.62451,"Gympie Hospital",161.155053205
-1249,"Taroom",149.7974,-25.6412,"Roma Hospital",207.957524475
-1250,"Boonooroo - Tuan",152.8771,-25.6788,"Gympie Hospital",110.89148217
-1251,"Poona",152.9052,-25.71673,"Gympie Hospital",108.59372861
-1252,"Tiaro",152.584,-25.725,"Gympie Hospital",99.371458455
-1253,"Augathella",146.5842,-25.79596,"Roma Hospital",330.095013665
-1254,"Injune",148.5651,-25.84311,"Roma Hospital",217.55553453
-1255,"Bauple Forest",152.636,-25.85212,"Gympie Hospital",96.814315275
-1256,"Rainbow Beach",153.0922,-25.90782,"Gympie Hospital",108.36166738
-1257,"Tin Can Bay",153.0031,-25.91357,"Gympie Hospital",94.839136265
-1258,"Glenwood",152.6324,-25.94735,"Gympie Hospital",85.80235912
-1259,"Cooloola Village",152.982,-25.97598,"Gympie Hospital",96.241809235
-1260,"Curra",152.5881,-26.07081,"Gympie Hospital",71.829087465
-1261,"Kilkivan",152.2399,-26.08621,"Gympie Hospital",92.19596873
-1262,"Wandoan",149.9628,-26.12088,"Roma Hospital",191.004652975
-1263,"Proston",151.603,-26.16377,"Gympie Hospital",152.227544725
-1264,"Goomeri",152.0647,-26.18048,"Gympie Hospital",110.157022345
-1265,"Gympie",152.6706,-26.18893,"Gympie Hospital",58.968224905
-1266,"The Palms",152.5889,-26.19336,"Gympie Hospital",65.82183044
-1267,"Nahrunda",152.6127,-26.20237,"Gympie Hospital",63.098330335
-1268,"Gowrie",146.3207,-26.23114,"Roma Hospital",342.75143901
-1269,"Pie Creek",152.6277,-26.23769,"Gympie Hospital",61.709738985
-1270,"Murgon",151.9402,-26.24246,"Gympie Hospital",121.47632436
-1271,"Boreen Point",152.9952,-26.28443,"Gympie Hospital",77.821716035
-1272,"Cherbourg",151.9565,-26.28971,"Gympie Hospital",124.556759535
-1273,"Wondai",151.8736,-26.32045,"Gympie Hospital",130.10546572
-1274,"Cooran",152.8222,-26.33805,"Gympie Hospital",64.71663162
-1275,"Amamoor",152.6748,-26.34607,"Gympie Hospital",63.17442681
-1276,"Cooroibah",152.9939,-26.35897,"Gympie Hospital",76.349732875
-1277,"Pomona",152.8533,-26.36256,"Gympie Hospital",64.09896967
-1278,"Forest Acres",152.9413,-26.36638,"Gympie Hospital",67.20464219
-1279,"Black Mountain",152.8819,-26.40467,"Gympie Hospital",61.40989114
-1280,"Charleville",146.2416,-26.40697,"Roma Hospital",328.665977255
-1281,"Sunshine Beach",153.1058,-26.41021,"Sunshine Coast University Hospital",72.63108456
-1282,"Cooroy",152.9089,-26.41875,"Gympie Hospital",60.96875212
-1283,"Doonan - Tinbeerwah",153.0119,-26.43781,"Sunshine Coast University Hospital",64.457888505
-1284,"Weyba Downs",153.0474,-26.45561,"Sunshine Coast University Hospital",63.863793215
-1285,"Imbil",152.677,-26.46119,"Gympie Hospital",70.67323711
-1286,"Eumundi",152.9513,-26.47643,"Sunshine Coast University Hospital",58.530946095
-1287,"Mitchell",147.976,-26.48827,"Roma Hospital",215.935451725
-1288,"Kingaroy",151.8443,-26.53645,"Gympie Hospital",128.12553584
-1289,"Yandina",152.9565,-26.56212,"Sunshine Coast University Hospital",53.02662388
-1290,"Roma",148.7879,-26.57094,"Roma Hospital",160.608427085
-1291,"Wallumbilla",149.187,-26.58483,"Roma Hospital",161.013251935
-1292,"Kenilworth",152.727,-26.59522,"Gympie Hospital",76.154615295
-1293,"Kureelpa",152.8837,-26.60834,"Sunshine Coast University Hospital",59.78682533
-1294,"Yuleba",149.381,-26.61304,"Roma Hospital",160.782874155
-1295,"Quilpie",144.2683,-26.61502,"Roma Hospital",459.062441105
-1296,"Mapleton",152.8651,-26.62074,"Sunshine Coast University Hospital",61.56815465
-1297,"Nambour",152.9592,-26.62753,"Sunshine Coast University Hospital",50.66487677
-1298,"Kiels Mountain",153.001,-26.6527,"Sunshine Coast University Hospital",47.812294865
-1299,"Flaxton",152.8647,-26.65557,"Sunshine Coast University Hospital",62.43394666
-1300,"Miles",150.1857,-26.65858,"Roma Hospital",160.326718555
-1301,"Woombye",152.9666,-26.66148,"Sunshine Coast University Hospital",47.191062565
-1302,"Nanango",151.9992,-26.6713,"Gympie Hospital",116.315173055
-1303,"Palmwoods",152.9568,-26.69113,"Sunshine Coast University Hospital",51.59772381
-1304,"Witta",152.8107,-26.70454,"Sunshine Coast University Hospital",62.760222595
-1305,"Chinchilla",150.628,-26.74202,"Roma Hospital",160.64087285
-1306,"Maleny",152.848,-26.75878,"Sunshine Coast University Hospital",54.423834845
-1307,"Mooloolah",152.9616,-26.76553,"Sunshine Coast University Hospital",44.01153091
-1308,"Glenview",153.0204,-26.76952,"Sunshine Coast University Hospital",39.414259375
-1309,"Jandowae",151.1101,-26.78068,"Gympie Hospital",164.32020343
-1310,"Landsborough",152.9652,-26.80826,"Sunshine Coast University Hospital",40.240519955
-1311,"Yarraman",151.9796,-26.84046,"Gympie Hospital",115.37401775
-1312,"Peachester",152.8871,-26.84242,"Sunshine Coast University Hospital",49.53127134
-1313,"Beerwah",152.954,-26.85293,"Sunshine Coast University Hospital",41.172467575
-1314,"Blackbutt",152.1042,-26.88722,"Sunshine Coast University Hospital",110.65915009
-1315,"Glass House Mountain",152.9507,-26.89771,"Sunshine Coast University Hospital",40.755656915
-1316,"Bell",151.4491,-26.93176,"Gympie Hospital",154.657185275
-1317,"Beerburrum - North",152.957,-26.93545,"Sunshine Coast University Hospital",37.92331556
-1318,"Kilcoy",152.5638,-26.94019,"Sunshine Coast University Hospital",69.242141145
-1319,"Woodford",152.778,-26.95557,"Sunshine Coast University Hospital",54.61886777
-1320,"Beerburrum",152.955,-26.96138,"Sunshine Coast University Hospital",39.54292047
-1321,"D'Aguilar",152.7984,-26.98884,"Sunshine Coast University Hospital",50.912303915
-1322,"Delaneys Creek",152.7971,-27.00308,"Sunshine Coast University Hospital",51.400396015
-1323,"Donnybrook",153.0662,-27.00662,"Sunshine Coast University Hospital",40.98264594
-1324,"Toorbul",153.0991,-27.03348,"Sunshine Coast University Hospital",44.7087974
-1325,"Wamuran",152.8643,-27.04069,"Sunshine Coast University Hospital",43.36318345
-1326,"Ningi",153.1051,-27.06703,"Sunshine Coast University Hospital",46.13124289
-1327,"Woorim",153.2035,-27.07303,"Sunshine Coast University Hospital",59.534609065
-1328,"Sandstone Point",153.1273,-27.08295,"Sunshine Coast University Hospital",49.62545242
-1329,"Bongaree",153.1626,-27.08546,"Sunshine Coast University Hospital",56.31982388
-1330,"Toogoolawah",152.3753,-27.08821,"Brain Injury Rehabilitation Unit",82.62366994
-1331,"Beachmere",153.0514,-27.12968,"Sunshine Coast University Hospital",43.59274859
-1332,"Surat",149.0666,-27.15384,"Roma Hospital",173.591572555
-1333,"Dalby",151.261,-27.18328,"Brain Injury Rehabilitation Unit",137.77687653
-1334,"Dayboro",152.8215,-27.19792,"Brain Injury Rehabilitation Unit",49.10065275
-1335,"Esk",152.4179,-27.23674,"Brain Injury Rehabilitation Unit",69.77455894
-1336,"Crows Nest",152.0506,-27.26153,"Brain Injury Rehabilitation Unit",112.27559275
-1337,"Tara",150.4556,-27.27772,"Roma Hospital",173.45635389
-1338,"Goombungee",151.8502,-27.30485,"Brain Injury Rehabilitation Unit",111.93125337
-1339,"Mount Glorious",152.7701,-27.33397,"Brain Injury Rehabilitation Unit",48.40423478
-1340,"Samford Valley - Highvale",152.8394,-27.36508,"Brain Injury Rehabilitation Unit",35.6333058
-1341,"Samford",152.8849,-27.37146,"Brain Injury Rehabilitation Unit",30.56607673
-1342,"Mount Nebo",152.7795,-27.39084,"Brain Injury Rehabilitation Unit",43.93633549
-1343,"Coominya",152.5023,-27.3916,"Brain Injury Rehabilitation Unit",58.81420238
-1344,"Amity Point",153.44,-27.39664,"Brain Injury Rehabilitation Unit",98.73954695
-1345,"Meringandan West",151.8819,-27.41789,"Brain Injury Rehabilitation Unit",105.21845738
-1346,"Meringandan",151.9132,-27.42327,"Brain Injury Rehabilitation Unit",103.2118672
-1347,"Point Lookout",153.5377,-27.43022,"Brain Injury Rehabilitation Unit",101.57142405
-1348,"Oakey",151.7183,-27.43202,"Brain Injury Rehabilitation Unit",104.5037502
-1349,"Fernvale",152.6594,-27.45012,"Brain Injury Rehabilitation Unit",43.88047248
-1350,"Lowood",152.5763,-27.46078,"Brain Injury Rehabilitation Unit",49.60656927
-1351,"Murphys Creek",152.0567,-27.46123,"Brain Injury Rehabilitation Unit",80.36699962
-1352,"Highfields",151.9481,-27.46253,"Brain Injury Rehabilitation Unit",95.97185368
-1353,"Brisbane",153.0249,-27.47072,"Brain Injury Rehabilitation Unit",8.15721476
-1354,"Kingsthorpe",151.8191,-27.47543,"Brain Injury Rehabilitation Unit",98.02037522
-1355,"Gowrie Junction",151.8928,-27.49125,"Brain Injury Rehabilitation Unit",92.73435423
-1356,"Lockrose",152.4579,-27.49448,"Brain Injury Rehabilitation Unit",56.91201266
-1357,"Dunwich",153.4038,-27.49776,"Brain Injury Rehabilitation Unit",82.96294679
-1358,"Blue Mountain Heights",151.9612,-27.50364,"Brain Injury Rehabilitation Unit",90.53431145
-1359,"Gowrie Mountain",151.8228,-27.51137,"Brain Injury Rehabilitation Unit",94.01662795
-1360,"Brightview",152.4916,-27.51975,"Brain Injury Rehabilitation Unit",50.71590027
-1361,"Cecil Plains",151.1936,-27.53233,"Brain Injury Rehabilitation Unit",138.04025191
-1362,"Minden Village",152.5591,-27.5357,"Brain Injury Rehabilitation Unit",46.44948929
-1363,"Kensington Grove - Regency Downs",152.4572,-27.53986,"Brain Injury Rehabilitation Unit",51.65972605
-1364,"Glenore Grove",152.4122,-27.54114,"Brain Injury Rehabilitation Unit",54.25347942
-1365,"Helidon",152.1254,-27.54838,"Brain Injury Rehabilitation Unit",70.45244663
-1366,"Prince Henry Heights",151.9905,-27.55295,"Brain Injury Rehabilitation Unit",86.80185357
-1367,"Withcott",152.026,-27.55364,"Brain Injury Rehabilitation Unit",76.63585619
-1368,"Placid Hills",152.2504,-27.5578,"Brain Injury Rehabilitation Unit",66.2224794
-1369,"Gatton",152.2751,-27.56033,"Brain Injury Rehabilitation Unit",62.54882434
-1370,"Toowoomba",151.9528,-27.56216,"Brain Injury Rehabilitation Unit",88.26447445
-1371,"Coochiemudlo Island",153.3328,-27.56886,"Brain Injury Rehabilitation Unit",44.25689606
-1372,"Marburg",152.5954,-27.56895,"Brain Injury Rehabilitation Unit",40.25067943
-1373,"Grantham",152.2012,-27.57374,"Brain Injury Rehabilitation Unit",70.15459664
-1374,"Plainland",152.4165,-27.57656,"Brain Injury Rehabilitation Unit",52.16447553
-1375,"Forest Hill",152.3549,-27.58999,"Brain Injury Rehabilitation Unit",57.99959716
-1376,"Macleay Island",153.3615,-27.59184,"Brain Injury Rehabilitation Unit",73.83337555
-1377,"Walloon",152.6725,-27.60325,"Brain Injury Rehabilitation Unit",39.82479035
-1378,"Westbrook",151.8757,-27.60355,"Brain Injury Rehabilitation Unit",99.63518723
-1379,"Lamb Island",153.3798,-27.62387,"Brain Injury Rehabilitation Unit",71.52496925
-1380,"Thagoona",152.6257,-27.62401,"Brain Injury Rehabilitation Unit",41.63568175
-1381,"Laidley",152.3938,-27.63099,"Brain Injury Rehabilitation Unit",58.33069643
-1382,"Rosewood",152.5889,-27.63446,"Brain Injury Rehabilitation Unit",44.70891386
-1383,"Mount Cotton",153.2508,-27.63515,"Brain Injury Rehabilitation Unit",31.84857512
-1384,"Laidley Heights",152.3675,-27.63571,"Brain Injury Rehabilitation Unit",64.12887747
-1385,"Wyreema",151.8542,-27.65743,"Brain Injury Rehabilitation Unit",103.00072181
-1386,"Ripley",152.7864,-27.66642,"Brain Injury Rehabilitation Unit",31.42813773
-1387,"Southbrook",151.7128,-27.67579,"Brain Injury Rehabilitation Unit",106.04344468
-1388,"Russell Island",153.3905,-27.68322,"Brain Injury Rehabilitation Unit",79.05485061
-1389,"Deebing Heights",152.7546,-27.69709,"Brain Injury Rehabilitation Unit",36.3807417
-1390,"Cambooya",151.8615,-27.70633,"Brain Injury Rehabilitation Unit",106.85816831
-1391,"Pittsworth",151.6329,-27.71797,"Brain Injury Rehabilitation Unit",112.37610928
-1392,"Cabbage Tree Point",153.3552,-27.73664,"Gold Coast University Hospital",35.485723575
-1393,"Logan Village",153.1134,-27.77455,"Brain Injury Rehabilitation Unit",41.25195715
-1394,"Jacobs Well",153.3629,-27.78179,"Gold Coast University Hospital",33.883718045
-1395,"Greenmount",151.9059,-27.78299,"Brain Injury Rehabilitation Unit",108.43819217
-1396,"Peak Crossing",152.7294,-27.78404,"Brain Injury Rehabilitation Unit",41.480086
-1397,"Harrisville",152.6677,-27.81036,"Brain Injury Rehabilitation Unit",48.79239698
-1398,"Jimboomba - West",152.9618,-27.81259,"Brain Injury Rehabilitation Unit",40.15583666
-1399,"Jimboomba",153.0307,-27.83265,"Brain Injury Rehabilitation Unit",38.239324
-1400,"Mundoolun",153.0767,-27.86482,"Brain Injury Rehabilitation Unit",44.67092978
-1401,"Cedar Grove",152.9843,-27.86655,"Brain Injury Rehabilitation Unit",42.69951376
-1402,"Millmerran",151.2671,-27.87814,"Brain Injury Rehabilitation Unit",137.99248504
-1403,"Cedar Vale",153.002,-27.87876,"Brain Injury Rehabilitation Unit",42.92606492
-1404,"Tamborine",153.1285,-27.88138,"Gold Coast University Hospital",43.758124905
-1405,"Eagle Heights",153.2054,-27.92251,"Gold Coast University Hospital",43.66494125
-1406,"Clifton",151.9083,-27.92996,"Brain Injury Rehabilitation Unit",120.8941977
-1407,"Maudsland",153.2774,-27.93276,"Gold Coast University Hospital",30.34350339
-1408,"Kalbar",152.6229,-27.94196,"Brain Injury Rehabilitation Unit",58.29706134
-1409,"Gleneagle",152.9918,-27.94234,"Brain Injury Rehabilitation Unit",50.63844965
-1410,"Boyland",153.1642,-27.94939,"Gold Coast University Hospital",46.66859482
-1411,"Mount Tamborine",153.2014,-27.97114,"Gold Coast University Hospital",43.067508305
-1412,"Mount Nathan",153.2639,-27.97678,"Gold Coast University Hospital",36.71769324
-1413,"Aratula",152.5384,-27.98409,"Brain Injury Rehabilitation Unit",62.0275709
-1414,"Beaudesert",152.9992,-27.98632,"Gold Coast University Hospital",58.86948468
-1415,"Gold Coast",153.4277,-27.99114,"Gold Coast University Hospital",32.35222577
-1416,"Thargomindah",143.8229,-27.99583,"Roma Hospital",528.71196751
-1417,"Boonah",152.6824,-27.9978,"Brain Injury Rehabilitation Unit",61.17967837
-1418,"Canungra",153.1598,-28.01415,"Gold Coast University Hospital",47.86985817
-1419,"Allora",151.982,-28.03472,"Brain Injury Rehabilitation Unit",109.27837318
-1420,"St George",148.5812,-28.03888,"Roma Hospital",226.61313207
-1421,"Lower Beechmont",153.2516,-28.04105,"Gold Coast University Hospital",41.49187337
-1422,"Cunnamulla",145.6832,-28.06921,"Roma Hospital",402.227548
-1423,"Kooralbyn",152.8443,-28.08068,"Gold Coast University Hospital",77.492981145
-1424,"Beechmont",153.206,-28.09893,"Gold Coast University Hospital",54.59096696
-1425,"Springbrook",153.2644,-28.18766,"Gold Coast University Hospital",61.89129285
-1426,"Yangan",152.2107,-28.19552,"Brain Injury Rehabilitation Unit",110.32258503
-1427,"Rathdowney",152.8635,-28.20976,"Gold Coast University Hospital",81.427456205
-1428,"Warwick",152.0311,-28.21745,"Brain Injury Rehabilitation Unit",110.69038149
-1429,"Inglewood",151.0795,-28.41751,"Brain Injury Rehabilitation Unit",179.77983077
-1430,"Goondiwindi",150.3062,-28.54799,"Roma Hospital",224.35145201
-1431,"Yelarbon",150.7524,-28.57416,"Brain Injury Rehabilitation Unit",206.27735905
-1432,"Dirranbandi",148.2271,-28.5841,"Roma Hospital",279.19051503
-1433,"Stanthorpe",151.9327,-28.65779,"Brain Injury Rehabilitation Unit",152.3265671
-1434,"Johnstone",148.5382,-28.6787,"Roma Hospital",275.520494745
-1435,"Smithfield",145.690172,-16.83142,"Cairns Hospital",134.222506395
-1436,"Texas",151.1692,-28.85306,"Brain Injury Rehabilitation Unit",203.98724218
-1437,"Wallangarra",151.9262,-28.92345,"Brain Injury Rehabilitation Unit",176.54359463
-1438,"Birdsville",139.3551,-25.8978,"Central West Sub-Acute Service",781.9293898
-1439,"Durham",141.811455,-27.397056,"Central West Sub-Acute Service",666.80032922
-1440,"Hungerford",144.409847,-28.996741,"Roma Hospital",531.02257507
-1441,"RBWH",153.0285,-27.447,"Brain Injury Rehabilitation Unit",7.17536896
+"id","town_name","x","y","silver_rehab_centre","gold_rehab_centre","minutes"
+1012,"Thursday Island",142.2167,-10.5804,"Cairns Hospital","Townsville University Hospital",977.278586185
+1013,"Horn Island",142.2837,-10.60644,"Cairns Hospital","Townsville University Hospital",991.955002195
+1014,"Seisia",142.3701,-10.85188,"Cairns Hospital","Townsville University Hospital",842.14916386
+1015,"New Mapoon",142.3863,-10.87403,"Cairns Hospital","Townsville University Hospital",838.584054015
+1016,"Umagico",142.3489,-10.88916,"Cairns Hospital","Townsville University Hospital",835.926384015
+1017,"Bamaga",142.3893,-10.89279,"Cairns Hospital","Townsville University Hospital",837.138957345
+1018,"Injinoo",142.3275,-10.90209,"Cairns Hospital","Townsville University Hospital",832.59118507
+1019,"Mapoon",141.8976,-12.02178,"Cairns Hospital","Townsville University Hospital",768.40852244
+1020,"Weipa",141.8777,-12.62496,"Cairns Hospital","Townsville University Hospital",713.05227822
+1021,"Napranum",141.8909,-12.68153,"Cairns Hospital","Townsville University Hospital",706.522240415
+1022,"Lockhart River",143.3424,-12.78591,"Cairns Hospital","Townsville University Hospital",748.961990875
+1023,"Aurukun",141.7292,-13.35609,"Cairns Hospital","Townsville University Hospital",706.14408337
+1024,"Coen",143.1999,-13.9448,"Cairns Hospital","Townsville University Hospital",517.186593525
+1025,"Pormpuraaw",141.6245,-14.89198,"Cairns Hospital","Townsville University Hospital",545.676107605
+1026,"Hope Vale",145.1102,-15.2971,"Cairns Hospital","Townsville University Hospital",372.542846655
+1027,"Cooktown",145.2488,-15.47177,"Cairns Hospital","Townsville University Hospital",335.677292415
+1028,"Kowanyama",141.7435,-15.47744,"Cairns Hospital","Townsville University Hospital",764.529042295
+1029,"Wujal Wujal",145.3188,-15.94835,"Cairns Hospital","Townsville University Hospital",267.10697799
+1030,"Daintree",145.3306,-16.26079,"Cairns Hospital","Townsville University Hospital",210.045394025
+1031,"Wonga Beach",145.4137,-16.3472,"Cairns Hospital","Townsville University Hospital",198.423943475
+1032,"Newell",145.4061,-16.425,"Cairns Hospital","Townsville University Hospital",190.77838214
+1033,"Cooya Beach",145.4067,-16.44813,"Cairns Hospital","Townsville University Hospital",183.62191915
+1034,"Mossman",145.3731,-16.46155,"Cairns Hospital","Townsville University Hospital",184.58166038
+1035,"Port Douglas",145.4662,-16.48533,"Cairns Hospital","Townsville University Hospital",179.540114835
+1036,"Craiglie",145.467,-16.51455,"Cairns Hospital","Townsville University Hospital",176.71157866
+1037,"Oak Beach",145.5147,-16.5941,"Cairns Hospital","Townsville University Hospital",166.38753359
+1039,"Kuranda",145.6352,-16.82032,"Cairns Hospital","Townsville University Hospital",151.40248918
+1040,"Yarrabah",145.865,-16.90636,"Cairns Hospital","Townsville University Hospital",146.51604817
+1041,"Cairns",145.7649,-16.92311,"Cairns Hospital","Townsville University Hospital",121.935812865
+1042,"Mareeba",145.4221,-16.9965,"Cairns Hospital","Townsville University Hospital",162.597050545
+1043,"Mareeba - South",145.4211,-17.05062,"Cairns Hospital","Townsville University Hospital",160.947298535
+1044,"Gordonvale",145.7806,-17.09611,"Cairns Hospital","Townsville University Hospital",122.913130255
+1045,"Goldsborough",145.7509,-17.14553,"Cairns Hospital","Townsville University Hospital",128.96102357
+1046,"Dimbulah",145.1096,-17.15058,"Cairns Hospital","Townsville University Hospital",188.4890811
+1047,"Chillagoe",144.5225,-17.15243,"Cairns Hospital","Townsville University Hospital",260.122615135
+1048,"Walkamin",145.4411,-17.15428,"Cairns Hospital","Townsville University Hospital",160.02969049
+1049,"Tinaroo",145.5505,-17.16863,"Cairns Hospital","Townsville University Hospital",169.08843357
+1050,"Tolga - West",145.4506,-17.204,"Cairns Hospital","Townsville University Hospital",162.30367173
+1051,"Tolga",145.4776,-17.22463,"Cairns Hospital","Townsville University Hospital",161.032853245
+1052,"Atherton",145.4776,-17.26641,"Cairns Hospital","Townsville University Hospital",162.05462704
+1053,"Yungaburra",145.5851,-17.26885,"Cairns Hospital","Townsville University Hospital",154.67698161
+1054,"Babinda",145.9219,-17.3445,"Cairns Hospital","Townsville University Hospital",123.3897452
+1055,"Bramston Beach",146.0198,-17.35108,"Cairns Hospital","Townsville University Hospital",131.324892175
+1056,"Malanda",145.5954,-17.35328,"Cairns Hospital","Townsville University Hospital",150.804824245
+1057,"Herberton",145.3852,-17.38376,"Cairns Hospital","Townsville University Hospital",166.80685316
+1058,"Mirriwinni",145.9089,-17.39951,"Cairns Hospital","Townsville University Hospital",122.475844785
+1059,"Tarzali",145.61,-17.42092,"Cairns Hospital","Townsville University Hospital",151.613571175
+1060,"Karumba",140.8383,-17.48673,"Cairns Hospital","Townsville University Hospital",551.91631546
+1061,"Flying Fish Point",146.0754,-17.49616,"Cairns Hospital","Townsville University Hospital",130.877148315
+1062,"Coconuts",146.0431,-17.50908,"Cairns Hospital","Townsville University Hospital",126.101393805
+1063,"Millaa Millaa",145.612,-17.51108,"Cairns Hospital","Townsville University Hospital",151.796618025
+1064,"Belvedere",145.9896,-17.51972,"Cairns Hospital","Townsville University Hospital",123.796599805
+1065,"Innisfail",146.0299,-17.52363,"Cairns Hospital","Townsville University Hospital",122.70099102
+1066,"Wangan",146.0083,-17.57463,"Cairns Hospital","Townsville University Hospital",122.960616815
+1067,"Mourilyan",146.0419,-17.583,"Cairns Hospital","Townsville University Hospital",122.43876823
+1068,"South Johnstone",145.9951,-17.60097,"Cairns Hospital","Townsville University Hospital",122.48249929
+1069,"Ravenshoe",145.4842,-17.60534,"Cairns Hospital","Townsville University Hospital",171.90652851
+1070,"Normanton",141.0761,-17.67331,"Cairns Hospital","Townsville University Hospital",506.076564905
+1071,"Mount Garnet",145.1208,-17.67675,"Cairns Hospital","Townsville University Hospital",200.44997264
+1072,"Burketown",139.5466,-17.74255,"Central West Sub-Acute Service","Townsville University Hospital",692.427999925
+1073,"Silkwood",146.0203,-17.74863,"Cairns Hospital","Townsville University Hospital",123.18939966
+1074,"Kurrimine",146.1047,-17.77796,"Cairns Hospital","Townsville University Hospital",129.799603055
+1075,"El Arish",146.0048,-17.80559,"Cairns Hospital","Townsville University Hospital",122.26925331
+1076,"Bingil Bay",146.0976,-17.83471,"Cairns Hospital","Townsville University Hospital",134.92075859
+1077,"Mission Beach",146.107,-17.86879,"Cairns Hospital","Townsville University Hospital",134.582180065
+1078,"Wongaling Beach",146.091,-17.91401,"Cairns Hospital","Townsville University Hospital",135.052380015
+1079,"Tully",145.9217,-17.93491,"Cairns Hospital","Townsville University Hospital",124.268000935
+1080,"Doomadgee",138.824,-17.94141,"Central West Sub-Acute Service","Townsville University Hospital",727.27320828
+1081,"South Mission Beach",146.0909,-17.94652,"Cairns Hospital","Townsville University Hospital",137.109735145
+1082,"Carmoo",146.0461,-17.94788,"Cairns Hospital","Townsville University Hospital",129.804441
+1083,"Tully Heads",146.0563,-18.01976,"Cairns Hospital","Townsville University Hospital",134.235945825
+1084,"Croydon",142.2422,-18.2051,"Cairns Hospital","Townsville University Hospital",409.77814442
+1085,"Cardwell",146.0227,-18.26396,"Townsville University Hospital","Townsville University Hospital",110.1552451
+1086,"Georgetown",143.5479,-18.29241,"Cairns Hospital","Townsville University Hospital",313.84355355
+1087,"Lucinda",146.3337,-18.52889,"Townsville University Hospital","Townsville University Hospital",95.78898402
+1088,"Halifax",146.2856,-18.58094,"Townsville University Hospital","Townsville University Hospital",88.62110909
+1089,"Macknade",146.2605,-18.58664,"Townsville University Hospital","Townsville University Hospital",87.42525437
+1090,"Taylors Beach",146.3273,-18.62407,"Townsville University Hospital","Townsville University Hospital",93.48412274
+1091,"Trebonne",146.0781,-18.62689,"Townsville University Hospital","Townsville University Hospital",80.53296272
+1092,"Ingham",146.1581,-18.64706,"Townsville University Hospital","Townsville University Hospital",75.33067823
+1093,"Allingham",146.2953,-18.70771,"Townsville University Hospital","Townsville University Hospital",87.7786455
+1094,"Palm Island",146.6058,-18.72665,"Townsville University Hospital","Townsville University Hospital",284.3648964
+1095,"Balgal Beach",146.4083,-19.01722,"Townsville University Hospital","Townsville University Hospital",40.98592217
+1096,"Horseshoe Bay",146.8597,-19.11815,"Townsville University Hospital","Townsville University Hospital",70.42251091
+1097,"Toolakea",146.5788,-19.14605,"Townsville University Hospital","Townsville University Hospital",28.14502335
+1098,"Arcadia Bay",146.8651,-19.14853,"Townsville University Hospital","Townsville University Hospital",66.25233923
+1099,"Nelly Bay",146.8484,-19.15696,"Townsville University Hospital","Townsville University Hospital",64.50439318
+1100,"Saunders Beach",146.6098,-19.15875,"Townsville University Hospital","Townsville University Hospital",24.8172253
+1101,"Bluewater",146.5589,-19.1675,"Townsville University Hospital","Townsville University Hospital",24.33048709
+1102,"Picnic Bay",146.8379,-19.17814,"Townsville University Hospital","Townsville University Hospital",67.93645744
+1103,"Yabulu",146.5851,-19.20155,"Townsville University Hospital","Townsville University Hospital",20.55597816
+1104,"Pallarenda",146.773,-19.20234,"Townsville University Hospital","Townsville University Hospital",20.55136238
+1105,"Bluewater Park",146.5138,-19.20308,"Townsville University Hospital","Townsville University Hospital",27.82355798
+1106,"Black River",146.618,-19.23302,"Townsville University Hospital","Townsville University Hospital",17.40782956
+1107,"Townsville",146.8092,-19.26508,"Townsville University Hospital","Townsville University Hospital",15.43296472
+1108,"Rangewood",146.6392,-19.31192,"Townsville University Hospital","Townsville University Hospital",13.49819877
+1109,"Alice River",146.6023,-19.32778,"Townsville University Hospital","Townsville University Hospital",16.00790769
+1110,"Nome",146.9099,-19.37372,"Townsville University Hospital","Townsville University Hospital",17.938261
+1111,"Cungulla",147.1112,-19.40128,"Townsville University Hospital","Townsville University Hospital",34.92663311
+1112,"Alligator Creek",146.9432,-19.42302,"Townsville University Hospital","Townsville University Hospital",23.91320446
+1113,"Alva Beach",147.4799,-19.45506,"Townsville University Hospital","Townsville University Hospital",75.38588839
+1114,"Giru",147.1066,-19.51333,"Townsville University Hospital","Townsville University Hospital",39.88493742
+1115,"Kalamia Estate",147.4184,-19.53428,"Townsville University Hospital","Townsville University Hospital",67.14997686
+1116,"Brandon",147.3554,-19.55389,"Townsville University Hospital","Townsville University Hospital",55.77882303
+1117,"Ayr",147.4056,-19.57545,"Townsville University Hospital","Townsville University Hospital",61.79092973
+1118,"Home Hill",147.4144,-19.66043,"Townsville University Hospital","Townsville University Hospital",70.87277856
+1119,"Camooweal",138.119,-19.92248,"Central West Sub-Acute Service","Townsville University Hospital",631.444940265
+1120,"Bowen",148.2418,-20.01494,"Townsville University Hospital","Townsville University Hospital",136.0164966
+1121,"Merinda",148.1648,-20.01751,"Townsville University Hospital","Townsville University Hospital",128.9773991
+1122,"Charters Towers",146.2598,-20.07699,"Townsville University Hospital","Townsville University Hospital",90.71172953
+1123,"Hideaway Bay - Dingo Beach",148.4886,-20.08489,"Townsville University Hospital","Townsville University Hospital",183.9408397
+1124,"Ravenswood",146.8898,-20.10146,"Townsville University Hospital","Townsville University Hospital",82.7330207
+1125,"Airlie Beach",148.7132,-20.26829,"Townsville University Hospital","Townsville University Hospital",187.9391187
+1126,"Cannonvale",148.6962,-20.2769,"Townsville University Hospital","Townsville University Hospital",184.2158004
+1128,"Mount Julian",148.6196,-20.37468,"Townsville University Hospital","Townsville University Hospital",176.5526797
+1129,"Proserpine",148.5821,-20.40489,"Townsville University Hospital","Townsville University Hospital",175.0745524
+1130,"Collinsville",147.8441,-20.55341,"Townsville University Hospital","Townsville University Hospital",180.8340175
+1131,"Scottville",147.8184,-20.57206,"Townsville University Hospital","Townsville University Hospital",184.6055052
+1132,"Midge Point",148.7213,-20.65029,"Townsville University Hospital","Townsville University Hospital",197.2785208
+1133,"Julia Creek",141.7435,-20.65701,"Central West Sub-Acute Service","Townsville University Hospital",369.235802145
+1134,"Cloncurry",140.5092,-20.70554,"Central West Sub-Acute Service","Townsville University Hospital",435.48477666
+1135,"Mount Isa",139.4993,-20.73044,"Central West Sub-Acute Service","Townsville University Hospital",514.618390395
+1136,"Richmond",143.1423,-20.73186,"Townsville University Hospital","Townsville University Hospital",338.2240319
+1137,"Hughenden",144.1992,-20.84553,"Townsville University Hospital","Townsville University Hospital",258.6784947
+1138,"Seaforth",148.9607,-20.89524,"Rockhampton Hospital","Townsville University Hospital",247.621649915
+1139,"Calen",148.7716,-20.89849,"Townsville University Hospital","Townsville University Hospital",217.8878607
+1140,"Haliday Bay - Ball Bay",148.9879,-20.90075,"Rockhampton Hospital","Townsville University Hospital",247.198075645
+1141,"Killarney",152.2963,-28.33305,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",125.95798438
+1142,"Nindaroo",149.1636,-21.05945,"Rockhampton Hospital","Townsville University Hospital",244.484014885
+1143,"Farleigh",149.1017,-21.10705,"Rockhampton Hospital","Townsville University Hospital",233.09900522
+1144,"Erakala",149.1071,-21.12326,"Rockhampton Hospital","Townsville University Hospital",234.99413705
+1145,"Finch Hatton",148.6313,-21.14165,"Rockhampton Hospital","Townsville University Hospital",257.83189301
+1146,"Marian",148.9428,-21.14558,"Rockhampton Hospital","Townsville University Hospital",235.855098075
+1147,"Mackay",149.1664,-21.15497,"Rockhampton Hospital","Townsville University Hospital",236.02468955
+1148,"Mirani",148.8653,-21.16023,"Rockhampton Hospital","Townsville University Hospital",242.72155027
+1149,"Walkerston",149.0554,-21.16249,"Rockhampton Hospital","Townsville University Hospital",234.82823202
+1150,"Bakers Creek",149.1521,-21.20776,"Rockhampton Hospital","Townsville University Hospital",234.74028601
+1151,"Eton",148.9732,-21.26365,"Rockhampton Hospital","Townsville University Hospital",236.263856255
+1152,"Hay Point",149.2905,-21.29652,"Rockhampton Hospital","Townsville University Hospital",242.673954695
+1153,"Glenden",148.1138,-21.35315,"Townsville University Hospital","Townsville University Hospital",258.0834264
+1154,"Grasstree Beach",149.3067,-21.36404,"Rockhampton Hospital","Townsville University Hospital",240.57793501
+1155,"Campwin Beach",149.313,-21.37793,"Rockhampton Hospital","Townsville University Hospital",240.46688967
+1156,"Sarina Beach",149.3095,-21.38995,"Rockhampton Hospital","Townsville University Hospital",239.54132044
+1157,"Sarina",149.216,-21.4206,"Rockhampton Hospital","Townsville University Hospital",232.577329225
+1158,"Armstrong Beach",149.2873,-21.45078,"Rockhampton Hospital","Townsville University Hospital",239.112385945
+1159,"Nebo",148.6917,-21.69028,"Rockhampton Hospital","Townsville University Hospital",254.741242785
+1160,"Moranbah",148.0456,-22.0039,"Rockhampton Hospital","Townsville University Hospital",310.752506445
+1161,"Winton",143.0414,-22.38676,"Central West Sub-Acute Service","Townsville University Hospital",258.853697925
+1162,"Dysart",148.3481,-22.58982,"Rockhampton Hospital","Townsville University Hospital",296.541378695
+1163,"Middlemount",148.7039,-22.81426,"Rockhampton Hospital","Townsville University Hospital",281.91979288
+1164,"Clermont",147.6374,-22.82681,"Rockhampton Hospital","Townsville University Hospital",287.519724575
+1165,"Byfield",150.6508,-22.85074,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",263.80328089
+1166,"Boulia",139.9082,-22.91287,"Central West Sub-Acute Service","Townsville University Hospital",520.755672475
+1167,"Aramac",145.2439,-22.9698,"Central West Sub-Acute Service","Townsville University Hospital",367.74447295
+1168,"Tieri",148.3497,-23.03219,"Rockhampton Hospital","Townsville University Hospital",293.43825514
+1169,"Capella",148.0248,-23.08513,"Rockhampton Hospital","Townsville University Hospital",284.575564025
+1170,"Yeppoon",150.7431,-23.12635,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",243.385708575
+1171,"The Caves",150.4661,-23.17545,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",232.311171995
+1172,"Mulambin",150.7857,-23.19155,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",247.906584575
+1173,"Kinka Beach",150.7876,-23.2243,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",241.8253076
+1174,"Glendale",150.4751,-23.24572,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",229.97914471
+1175,"Emu Park",150.8238,-23.25994,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",242.716798795
+1176,"Keppel Sands",150.7919,-23.3275,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",239.445456865
+1177,"Rockhampton",150.4974,-23.38918,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",208.663866155
+1178,"Rubyvale",147.6974,-23.42054,"Rockhampton Hospital","Townsville University Hospital",306.2224806
+1179,"Gracemere",150.4558,-23.43865,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",212.795899065
+1180,"Longreach",144.2475,-23.44447,"Central West Sub-Acute Service","Townsville University Hospital",259.156003615
+1181,"Sapphire",147.7193,-23.46006,"Rockhampton Hospital","Townsville University Hospital",306.322512455
+1182,"Emerald",148.1598,-23.52349,"Rockhampton Hospital","Townsville University Hospital",284.72946483
+1183,"Barcaldine",145.2854,-23.55288,"Central West Sub-Acute Service","Townsville University Hospital",325.739498085
+1184,"Blackwater",148.8834,-23.5779,"Rockhampton Hospital","Townsville University Hospital",286.50562309
+1185,"Bouldercombe",150.4668,-23.57818,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",217.954923145
+1186,"Bluff",149.0695,-23.57993,"Rockhampton Hospital","Townsville University Hospital",285.8130312
+1187,"Mount Morgan",150.3881,-23.64464,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",232.199321255
+1188,"Dingo",149.3315,-23.64629,"Rockhampton Hospital","Townsville University Hospital",281.658111
+1189,"Alpha",146.6387,-23.65028,"Central West Sub-Acute Service","Townsville University Hospital",320.02265546
+1190,"Duaringa",149.6687,-23.71846,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",275.534958775
+1191,"Willows Gemfields",147.5411,-23.73932,"Central West Sub-Acute Service","Townsville University Hospital",327.670350625
+1192,"Mount Larcom",150.9799,-23.8124,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",209.41189694
+1193,"Gladstone",151.2578,-23.84753,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",216.01722012
+1194,"Tannum Sands",151.3685,-23.94867,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",216.63799335
+1195,"Wurdong Heights",151.3025,-23.98485,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",211.428150405
+1196,"Calliope",151.213,-23.99655,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",210.71790436
+1197,"Benaraby",151.3256,-24.00187,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",209.834913
+1198,"Springsure",148.0891,-24.11595,"Roma Hospital","Townsville University Hospital",326.638695785
+1199,"Woorabinda",149.4575,-24.1306,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",294.08899174
+1200,"Seventeen Seventy",151.8855,-24.16343,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",244.91759271
+1201,"Baralaba",149.8114,-24.17958,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",275.578490295
+1202,"Agnes Water",151.9008,-24.21017,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",238.10845874
+1203,"Taylors Creek",149.1545,-24.25325,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",314.13049746
+1204,"Miriam Vale",151.5583,-24.328,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",209.97753499
+1205,"Biloela",150.5098,-24.39602,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",242.24137348
+1206,"Blackall",145.4645,-24.42336,"Central West Sub-Acute Service","Brain Injury Rehabilitation Unit",378.82867252
+1207,"Thangool",150.5751,-24.48738,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",241.871241535
+1208,"Moura",149.9719,-24.57498,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",261.925335055
+1209,"Moore Park",152.2757,-24.71776,"Gympie Hospital","Brain Injury Rehabilitation Unit",207.068653835
+1210,"Burnett Heads",152.4149,-24.76892,"Gympie Hospital","Brain Injury Rehabilitation Unit",196.30246226
+1211,"Bargara",152.4607,-24.81453,"Gympie Hospital","Brain Injury Rehabilitation Unit",195.452741265
+1212,"Gooburrum",152.345,-24.81685,"Gympie Hospital","Brain Injury Rehabilitation Unit",195.49034591
+1213,"Sloping Hummock",152.4252,-24.8436,"Gympie Hospital","Brain Injury Rehabilitation Unit",190.75888611
+1214,"Oakwood",152.298,-24.85082,"Gympie Hospital","Brain Injury Rehabilitation Unit",192.79166564
+1215,"Monto",151.1207,-24.86547,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",242.880433405
+1216,"Bundaberg",152.3444,-24.87052,"Gympie Hospital","Brain Injury Rehabilitation Unit",188.08093643
+1217,"Innes Park",152.4823,-24.88137,"Gympie Hospital","Brain Injury Rehabilitation Unit",192.409762775
+1218,"Tambo",146.2549,-24.88339,"Central West Sub-Acute Service","Brain Injury Rehabilitation Unit",377.877825305
+1219,"Sharon",152.2587,-24.88377,"Gympie Hospital","Brain Injury Rehabilitation Unit",190.17073919
+1220,"Elliott Heads",152.4888,-24.9178,"Gympie Hospital","Brain Injury Rehabilitation Unit",194.13847464
+1221,"Theodore",150.075,-24.94678,"Rockhampton Hospital","Brain Injury Rehabilitation Unit",254.564055835
+1222,"South Bingera",152.2194,-24.96842,"Gympie Hospital","Brain Injury Rehabilitation Unit",177.473464025
+1223,"Gin Gin",151.9557,-24.99157,"Gympie Hospital","Brain Injury Rehabilitation Unit",187.9205637
+1224,"Woodgate",152.5506,-25.0964,"Gympie Hospital","Brain Injury Rehabilitation Unit",172.22448757
+1225,"Cordalba",152.2111,-25.15681,"Gympie Hospital","Brain Injury Rehabilitation Unit",162.127536125
+1226,"Mount Perry",151.6442,-25.18036,"Gympie Hospital","Brain Injury Rehabilitation Unit",222.81074911
+1227,"Burrum Heads",152.609,-25.18701,"Gympie Hospital","Brain Injury Rehabilitation Unit",143.84313594
+1228,"Burrum Heads - East",152.6334,-25.21101,"Gympie Hospital","Brain Injury Rehabilitation Unit",142.699116155
+1229,"Apple Tree Creek",152.2338,-25.22391,"Gympie Hospital","Brain Injury Rehabilitation Unit",155.579401835
+1230,"Burrum Heads - South",152.5934,-25.23535,"Gympie Hospital","Brain Injury Rehabilitation Unit",139.89799348
+1231,"Childers",152.2765,-25.23536,"Gympie Hospital","Brain Injury Rehabilitation Unit",150.89006065
+1232,"Toogoom",152.6898,-25.25614,"Gympie Hospital","Brain Injury Rehabilitation Unit",141.2610208
+1233,"Pacific Haven",152.5565,-25.26683,"Gympie Hospital","Brain Injury Rehabilitation Unit",137.67282888
+1234,"Hervey Bay",152.8722,-25.28535,"Gympie Hospital","Brain Injury Rehabilitation Unit",150.73428445
+1235,"Howard",152.5602,-25.31648,"Gympie Hospital","Brain Injury Rehabilitation Unit",132.897119615
+1236,"Torbanlea",152.596,-25.34752,"Gympie Hospital","Brain Injury Rehabilitation Unit",129.548418005
+1237,"Walligan",152.771,-25.35161,"Gympie Hospital","Brain Injury Rehabilitation Unit",135.542637465
+1238,"Sunshine Acres",152.7889,-25.35801,"Gympie Hospital","Brain Injury Rehabilitation Unit",137.44560011
+1239,"Booral",152.9037,-25.36202,"Gympie Hospital","Brain Injury Rehabilitation Unit",145.606301165
+1240,"Eidsvold",151.1221,-25.37064,"Gympie Hospital","Brain Injury Rehabilitation Unit",212.189615845
+1241,"River Heads",152.9102,-25.39864,"Gympie Hospital","Brain Injury Rehabilitation Unit",149.020150095
+1242,"Aldershot",152.6613,-25.46311,"Gympie Hospital","Brain Injury Rehabilitation Unit",120.3877298
+1243,"Biggenden",152.0449,-25.50952,"Gympie Hospital","Brain Injury Rehabilitation Unit",138.42951925
+1244,"Oakhurst",152.6206,-25.51008,"Gympie Hospital","Brain Injury Rehabilitation Unit",122.24219244
+1245,"Maryborough",152.6935,-25.52726,"Gympie Hospital","Brain Injury Rehabilitation Unit",118.736034825
+1246,"Mundubbera",151.2992,-25.59115,"Gympie Hospital","Brain Injury Rehabilitation Unit",188.43640377
+1247,"Maaroom",152.8722,-25.61156,"Gympie Hospital","Brain Injury Rehabilitation Unit",113.787637455
+1248,"Gayndah",151.6074,-25.62451,"Gympie Hospital","Brain Injury Rehabilitation Unit",161.155053205
+1249,"Taroom",149.7974,-25.6412,"Roma Hospital","Brain Injury Rehabilitation Unit",207.957524475
+1250,"Boonooroo - Tuan",152.8771,-25.6788,"Gympie Hospital","Brain Injury Rehabilitation Unit",110.89148217
+1251,"Poona",152.9052,-25.71673,"Gympie Hospital","Brain Injury Rehabilitation Unit",108.59372861
+1252,"Tiaro",152.584,-25.725,"Gympie Hospital","Brain Injury Rehabilitation Unit",99.371458455
+1253,"Augathella",146.5842,-25.79596,"Roma Hospital","Brain Injury Rehabilitation Unit",330.095013665
+1254,"Injune",148.5651,-25.84311,"Roma Hospital","Brain Injury Rehabilitation Unit",217.55553453
+1255,"Bauple Forest",152.636,-25.85212,"Gympie Hospital","Brain Injury Rehabilitation Unit",96.814315275
+1256,"Rainbow Beach",153.0922,-25.90782,"Gympie Hospital","Brain Injury Rehabilitation Unit",108.36166738
+1257,"Tin Can Bay",153.0031,-25.91357,"Gympie Hospital","Brain Injury Rehabilitation Unit",94.839136265
+1258,"Glenwood",152.6324,-25.94735,"Gympie Hospital","Brain Injury Rehabilitation Unit",85.80235912
+1259,"Cooloola Village",152.982,-25.97598,"Gympie Hospital","Brain Injury Rehabilitation Unit",96.241809235
+1260,"Curra",152.5881,-26.07081,"Gympie Hospital","Brain Injury Rehabilitation Unit",71.829087465
+1261,"Kilkivan",152.2399,-26.08621,"Gympie Hospital","Brain Injury Rehabilitation Unit",92.19596873
+1262,"Wandoan",149.9628,-26.12088,"Roma Hospital","Brain Injury Rehabilitation Unit",191.004652975
+1263,"Proston",151.603,-26.16377,"Gympie Hospital","Brain Injury Rehabilitation Unit",152.227544725
+1264,"Goomeri",152.0647,-26.18048,"Gympie Hospital","Brain Injury Rehabilitation Unit",110.157022345
+1265,"Gympie",152.6706,-26.18893,"Gympie Hospital","Brain Injury Rehabilitation Unit",58.968224905
+1266,"The Palms",152.5889,-26.19336,"Gympie Hospital","Brain Injury Rehabilitation Unit",65.82183044
+1267,"Nahrunda",152.6127,-26.20237,"Gympie Hospital","Brain Injury Rehabilitation Unit",63.098330335
+1268,"Gowrie",146.3207,-26.23114,"Roma Hospital","Brain Injury Rehabilitation Unit",342.75143901
+1269,"Pie Creek",152.6277,-26.23769,"Gympie Hospital","Brain Injury Rehabilitation Unit",61.709738985
+1270,"Murgon",151.9402,-26.24246,"Gympie Hospital","Brain Injury Rehabilitation Unit",121.47632436
+1271,"Boreen Point",152.9952,-26.28443,"Gympie Hospital","Brain Injury Rehabilitation Unit",77.821716035
+1272,"Cherbourg",151.9565,-26.28971,"Gympie Hospital","Brain Injury Rehabilitation Unit",124.556759535
+1273,"Wondai",151.8736,-26.32045,"Gympie Hospital","Brain Injury Rehabilitation Unit",130.10546572
+1274,"Cooran",152.8222,-26.33805,"Gympie Hospital","Brain Injury Rehabilitation Unit",64.71663162
+1275,"Amamoor",152.6748,-26.34607,"Gympie Hospital","Brain Injury Rehabilitation Unit",63.17442681
+1276,"Cooroibah",152.9939,-26.35897,"Gympie Hospital","Brain Injury Rehabilitation Unit",76.349732875
+1277,"Pomona",152.8533,-26.36256,"Gympie Hospital","Brain Injury Rehabilitation Unit",64.09896967
+1278,"Forest Acres",152.9413,-26.36638,"Gympie Hospital","Brain Injury Rehabilitation Unit",67.20464219
+1279,"Black Mountain",152.8819,-26.40467,"Gympie Hospital","Brain Injury Rehabilitation Unit",61.40989114
+1280,"Charleville",146.2416,-26.40697,"Roma Hospital","Brain Injury Rehabilitation Unit",328.665977255
+1281,"Sunshine Beach",153.1058,-26.41021,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",72.63108456
+1282,"Cooroy",152.9089,-26.41875,"Gympie Hospital","Brain Injury Rehabilitation Unit",60.96875212
+1283,"Doonan - Tinbeerwah",153.0119,-26.43781,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",64.457888505
+1284,"Weyba Downs",153.0474,-26.45561,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",63.863793215
+1285,"Imbil",152.677,-26.46119,"Gympie Hospital","Brain Injury Rehabilitation Unit",70.67323711
+1286,"Eumundi",152.9513,-26.47643,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",58.530946095
+1287,"Mitchell",147.976,-26.48827,"Roma Hospital","Brain Injury Rehabilitation Unit",215.935451725
+1288,"Kingaroy",151.8443,-26.53645,"Gympie Hospital","Brain Injury Rehabilitation Unit",128.12553584
+1289,"Yandina",152.9565,-26.56212,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",53.02662388
+1290,"Roma",148.7879,-26.57094,"Roma Hospital","Brain Injury Rehabilitation Unit",160.608427085
+1291,"Wallumbilla",149.187,-26.58483,"Roma Hospital","Brain Injury Rehabilitation Unit",161.013251935
+1292,"Kenilworth",152.727,-26.59522,"Gympie Hospital","Brain Injury Rehabilitation Unit",76.154615295
+1293,"Kureelpa",152.8837,-26.60834,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",59.78682533
+1294,"Yuleba",149.381,-26.61304,"Roma Hospital","Brain Injury Rehabilitation Unit",160.782874155
+1295,"Quilpie",144.2683,-26.61502,"Roma Hospital","Brain Injury Rehabilitation Unit",459.062441105
+1296,"Mapleton",152.8651,-26.62074,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",61.56815465
+1297,"Nambour",152.9592,-26.62753,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",50.66487677
+1298,"Kiels Mountain",153.001,-26.6527,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",47.812294865
+1299,"Flaxton",152.8647,-26.65557,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",62.43394666
+1300,"Miles",150.1857,-26.65858,"Roma Hospital","Brain Injury Rehabilitation Unit",160.326718555
+1301,"Woombye",152.9666,-26.66148,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",47.191062565
+1302,"Nanango",151.9992,-26.6713,"Gympie Hospital","Brain Injury Rehabilitation Unit",116.315173055
+1303,"Palmwoods",152.9568,-26.69113,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",51.59772381
+1304,"Witta",152.8107,-26.70454,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",62.760222595
+1305,"Chinchilla",150.628,-26.74202,"Roma Hospital","Brain Injury Rehabilitation Unit",160.64087285
+1306,"Maleny",152.848,-26.75878,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",54.423834845
+1307,"Mooloolah",152.9616,-26.76553,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",44.01153091
+1308,"Glenview",153.0204,-26.76952,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",39.414259375
+1309,"Jandowae",151.1101,-26.78068,"Gympie Hospital","Brain Injury Rehabilitation Unit",164.32020343
+1310,"Landsborough",152.9652,-26.80826,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",40.240519955
+1311,"Yarraman",151.9796,-26.84046,"Gympie Hospital","Brain Injury Rehabilitation Unit",115.37401775
+1312,"Peachester",152.8871,-26.84242,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",49.53127134
+1313,"Beerwah",152.954,-26.85293,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",41.172467575
+1314,"Blackbutt",152.1042,-26.88722,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",110.65915009
+1315,"Glass House Mountain",152.9507,-26.89771,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",40.755656915
+1316,"Bell",151.4491,-26.93176,"Gympie Hospital","Brain Injury Rehabilitation Unit",154.657185275
+1317,"Beerburrum - North",152.957,-26.93545,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",37.92331556
+1318,"Kilcoy",152.5638,-26.94019,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",69.242141145
+1319,"Woodford",152.778,-26.95557,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",54.61886777
+1320,"Beerburrum",152.955,-26.96138,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",39.54292047
+1321,"D'Aguilar",152.7984,-26.98884,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",50.912303915
+1322,"Delaneys Creek",152.7971,-27.00308,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",51.400396015
+1323,"Donnybrook",153.0662,-27.00662,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",40.98264594
+1324,"Toorbul",153.0991,-27.03348,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",44.7087974
+1325,"Wamuran",152.8643,-27.04069,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",43.36318345
+1326,"Ningi",153.1051,-27.06703,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",46.13124289
+1327,"Woorim",153.2035,-27.07303,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",59.534609065
+1328,"Sandstone Point",153.1273,-27.08295,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",49.62545242
+1329,"Bongaree",153.1626,-27.08546,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",56.31982388
+1330,"Toogoolawah",152.3753,-27.08821,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",82.62366994
+1331,"Beachmere",153.0514,-27.12968,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",43.59274859
+1332,"Surat",149.0666,-27.15384,"Roma Hospital","Brain Injury Rehabilitation Unit",173.591572555
+1333,"Dalby",151.261,-27.18328,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",137.77687653
+1334,"Dayboro",152.8215,-27.19792,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",49.10065275
+1335,"Esk",152.4179,-27.23674,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",69.77455894
+1336,"Crows Nest",152.0506,-27.26153,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",112.27559275
+1337,"Tara",150.4556,-27.27772,"Roma Hospital","Brain Injury Rehabilitation Unit",173.45635389
+1338,"Goombungee",151.8502,-27.30485,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",111.93125337
+1339,"Mount Glorious",152.7701,-27.33397,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",48.40423478
+1340,"Samford Valley - Highvale",152.8394,-27.36508,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",35.6333058
+1341,"Samford",152.8849,-27.37146,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",30.56607673
+1342,"Mount Nebo",152.7795,-27.39084,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",43.93633549
+1343,"Coominya",152.5023,-27.3916,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",58.81420238
+1344,"Amity Point",153.44,-27.39664,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",98.73954695
+1345,"Meringandan West",151.8819,-27.41789,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",105.21845738
+1346,"Meringandan",151.9132,-27.42327,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",103.2118672
+1347,"Point Lookout",153.5377,-27.43022,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",101.57142405
+1348,"Oakey",151.7183,-27.43202,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",104.5037502
+1349,"Fernvale",152.6594,-27.45012,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",43.88047248
+1350,"Lowood",152.5763,-27.46078,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",49.60656927
+1351,"Murphys Creek",152.0567,-27.46123,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",80.36699962
+1352,"Highfields",151.9481,-27.46253,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",95.97185368
+1353,"Brisbane",153.0249,-27.47072,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",8.15721476
+1354,"Kingsthorpe",151.8191,-27.47543,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",98.02037522
+1355,"Gowrie Junction",151.8928,-27.49125,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",92.73435423
+1356,"Lockrose",152.4579,-27.49448,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",56.91201266
+1357,"Dunwich",153.4038,-27.49776,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",82.96294679
+1358,"Blue Mountain Heights",151.9612,-27.50364,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",90.53431145
+1359,"Gowrie Mountain",151.8228,-27.51137,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",94.01662795
+1360,"Brightview",152.4916,-27.51975,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",50.71590027
+1361,"Cecil Plains",151.1936,-27.53233,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",138.04025191
+1362,"Minden Village",152.5591,-27.5357,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",46.44948929
+1363,"Kensington Grove - Regency Downs",152.4572,-27.53986,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",51.65972605
+1364,"Glenore Grove",152.4122,-27.54114,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",54.25347942
+1365,"Helidon",152.1254,-27.54838,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",70.45244663
+1366,"Prince Henry Heights",151.9905,-27.55295,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",86.80185357
+1367,"Withcott",152.026,-27.55364,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",76.63585619
+1368,"Placid Hills",152.2504,-27.5578,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",66.2224794
+1369,"Gatton",152.2751,-27.56033,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",62.54882434
+1370,"Toowoomba",151.9528,-27.56216,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",88.26447445
+1371,"Coochiemudlo Island",153.3328,-27.56886,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",44.25689606
+1372,"Marburg",152.5954,-27.56895,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",40.25067943
+1373,"Grantham",152.2012,-27.57374,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",70.15459664
+1374,"Plainland",152.4165,-27.57656,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",52.16447553
+1375,"Forest Hill",152.3549,-27.58999,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",57.99959716
+1376,"Macleay Island",153.3615,-27.59184,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",73.83337555
+1377,"Walloon",152.6725,-27.60325,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",39.82479035
+1378,"Westbrook",151.8757,-27.60355,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",99.63518723
+1379,"Lamb Island",153.3798,-27.62387,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",71.52496925
+1380,"Thagoona",152.6257,-27.62401,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",41.63568175
+1381,"Laidley",152.3938,-27.63099,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",58.33069643
+1382,"Rosewood",152.5889,-27.63446,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",44.70891386
+1383,"Mount Cotton",153.2508,-27.63515,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",31.84857512
+1384,"Laidley Heights",152.3675,-27.63571,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",64.12887747
+1385,"Wyreema",151.8542,-27.65743,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",103.00072181
+1386,"Ripley",152.7864,-27.66642,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",31.42813773
+1387,"Southbrook",151.7128,-27.67579,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",106.04344468
+1388,"Russell Island",153.3905,-27.68322,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",79.05485061
+1389,"Deebing Heights",152.7546,-27.69709,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",36.3807417
+1390,"Cambooya",151.8615,-27.70633,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",106.85816831
+1391,"Pittsworth",151.6329,-27.71797,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",112.37610928
+1392,"Cabbage Tree Point",153.3552,-27.73664,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",35.485723575
+1393,"Logan Village",153.1134,-27.77455,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",41.25195715
+1394,"Jacobs Well",153.3629,-27.78179,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",33.883718045
+1395,"Greenmount",151.9059,-27.78299,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",108.43819217
+1396,"Peak Crossing",152.7294,-27.78404,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",41.480086
+1397,"Harrisville",152.6677,-27.81036,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",48.79239698
+1398,"Jimboomba - West",152.9618,-27.81259,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",40.15583666
+1399,"Jimboomba",153.0307,-27.83265,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",38.239324
+1400,"Mundoolun",153.0767,-27.86482,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",44.67092978
+1401,"Cedar Grove",152.9843,-27.86655,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",42.69951376
+1402,"Millmerran",151.2671,-27.87814,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",137.99248504
+1403,"Cedar Vale",153.002,-27.87876,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",42.92606492
+1404,"Tamborine",153.1285,-27.88138,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",43.758124905
+1405,"Eagle Heights",153.2054,-27.92251,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",43.66494125
+1406,"Clifton",151.9083,-27.92996,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",120.8941977
+1407,"Maudsland",153.2774,-27.93276,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",30.34350339
+1408,"Kalbar",152.6229,-27.94196,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",58.29706134
+1409,"Gleneagle",152.9918,-27.94234,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",50.63844965
+1410,"Boyland",153.1642,-27.94939,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",46.66859482
+1411,"Mount Tamborine",153.2014,-27.97114,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",43.067508305
+1412,"Mount Nathan",153.2639,-27.97678,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",36.71769324
+1413,"Aratula",152.5384,-27.98409,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",62.0275709
+1414,"Beaudesert",152.9992,-27.98632,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",58.86948468
+1415,"Gold Coast",153.4277,-27.99114,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",32.35222577
+1416,"Thargomindah",143.8229,-27.99583,"Roma Hospital","Brain Injury Rehabilitation Unit",528.71196751
+1417,"Boonah",152.6824,-27.9978,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",61.17967837
+1418,"Canungra",153.1598,-28.01415,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",47.86985817
+1419,"Allora",151.982,-28.03472,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",109.27837318
+1420,"St George",148.5812,-28.03888,"Roma Hospital","Brain Injury Rehabilitation Unit",226.61313207
+1421,"Lower Beechmont",153.2516,-28.04105,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",41.49187337
+1422,"Cunnamulla",145.6832,-28.06921,"Roma Hospital","Brain Injury Rehabilitation Unit",402.227548
+1423,"Kooralbyn",152.8443,-28.08068,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",77.492981145
+1424,"Beechmont",153.206,-28.09893,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",54.59096696
+1425,"Springbrook",153.2644,-28.18766,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",61.89129285
+1426,"Yangan",152.2107,-28.19552,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",110.32258503
+1427,"Rathdowney",152.8635,-28.20976,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",81.427456205
+1428,"Warwick",152.0311,-28.21745,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",110.69038149
+1429,"Inglewood",151.0795,-28.41751,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",179.77983077
+1430,"Goondiwindi",150.3062,-28.54799,"Roma Hospital","Brain Injury Rehabilitation Unit",224.35145201
+1431,"Yelarbon",150.7524,-28.57416,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",206.27735905
+1432,"Dirranbandi",148.2271,-28.5841,"Roma Hospital","Brain Injury Rehabilitation Unit",279.19051503
+1433,"Stanthorpe",151.9327,-28.65779,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",152.3265671
+1434,"Johnstone",148.5382,-28.6787,"Roma Hospital","Brain Injury Rehabilitation Unit",275.520494745
+1435,"Smithfield",145.690172,-16.83142,"Cairns Hospital","Townsville University Hospital",134.222506395
+1436,"Texas",151.1692,-28.85306,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",203.98724218
+1437,"Wallangarra",151.9262,-28.92345,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",176.54359463
+1438,"Birdsville",139.3551,-25.8978,"Central West Sub-Acute Service","Townsville University Hospital",781.9293898
+1439,"Durham",141.811455,-27.397056,"Central West Sub-Acute Service","Brain Injury Rehabilitation Unit",666.80032922
+1440,"Hungerford",144.409847,-28.996741,"Roma Hospital","Brain Injury Rehabilitation Unit",531.02257507
+1441,"RBWH",153.0285,-27.447,"Brain Injury Rehabilitation Unit","Brain Injury Rehabilitation Unit",7.17536896

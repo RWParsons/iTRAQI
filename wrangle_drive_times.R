@@ -102,8 +102,8 @@ gold_times <- get_df_times(data=df_combined, centres=gold_locs)
 
 weighted_rehab_times <- 
   inner_join(
-    rename(silver_times, rehab_centre=centre, silver_time=minutes),
-    select(gold_times, id, gold_time=minutes),
+    rename(silver_times, silver_rehab_centre=centre, silver_time=minutes),
+    select(gold_times, id, gold_rehab_centre=centre, gold_time=minutes),
     by="id"
   ) %>%
   mutate(minutes=(silver_time + gold_time)/2) %>%
