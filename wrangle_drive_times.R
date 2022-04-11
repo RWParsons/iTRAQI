@@ -99,6 +99,8 @@ get_df_times(data=df_combined, centres=platinum_locs, save_file=file.path(rehab_
 
 silver_times <- get_df_times(data=df_combined, centres=silver_locs)
 gold_times <- get_df_times(data=df_combined, centres=gold_locs)
+future_gold_times <- get_df_times(data=df_combined, centres=future_gold_locs)
+platinum_times <- get_df_times(data=df_combined, centres=platinum_locs)
 
 weighted_rehab_times <- 
   inner_join(
@@ -109,4 +111,23 @@ weighted_rehab_times <-
   mutate(minutes=(silver_time + gold_time)/2) %>%
   select(-silver_time, -gold_time)
 
+all_rehab_times <- 
+  rename(silver_times, silver_rehab_centre=centre, silver_time=minutes) %>%
+  inner_join(
+    .,
+    select(gold_times, id, gold_rehab_centre=centre, gold_time=minutes),
+    by="id"
+  ) %>%
+  inner_join(
+    .,
+    select(future_gold_times, id, future_gold_rehab_centre=centre, future_gold_time=minutes),
+    by="id"
+  ) %>%
+  inner_join(
+    .,
+    select(platinum_times, id, platinum_rehab_centre=centre, platinum_time=minutes),
+    by="id"
+  ) 
+
+write.csv(all_rehab_times, file=file.path(rehab_times_dir, "all_rehab_time.csv"), row.names=FALSE)
 write.csv(weighted_rehab_times, file=file.path(rehab_times_dir, "weighted_rehab_time.csv"), row.names=FALSE)
