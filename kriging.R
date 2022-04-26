@@ -6,8 +6,8 @@ library(tidyverse)
 library(sf)
 
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
-qld_SAs2021 <- st_read("input/qld_sa_zones_2021/MB_2021_AUST_GDA2020.shp") %>%
-  filter(STE_NAME21=="Queensland")
+qld_SAs2021 <- readRDS("input/qld_2021_SA1s.rds")
+
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
 CELL_SIZE = 0.03
 VGM_MODEL = "Sph"
