@@ -113,12 +113,6 @@ df_islands <-
   left_join(., rename(df_ids, id=ID), by=c("island_location" = "Location"))
 
 
-df_islands %>%
-  left_join(., select(d, -x, -y, -id), by=c("closest_town"="town_name")) %>%
-  mutate(minutes = minutes + travel_time) %>%
-  rename(town_name = island_location) %>%
-  select(names(d))
-
 ############# wrangle times
 
 silver_locs <- c(
@@ -130,7 +124,12 @@ silver_locs <- c(
   "Gympie Hospital",
   "Sunshine Coast University Hospital",
   "Brain Injury Rehabilitation Unit",
-  "Gold Coast University Hospital"
+  "Gold Coast University Hospital",
+  "Sarina Hospital",
+  "RBWH",
+  "Logan Hospital",
+  "Redcliffe Hospital",
+  "Maleny Hospital"
 )
 
 future_gold_locs <- c(
@@ -158,8 +157,23 @@ files <- c(
   "GympieRDT",
   "SCRDT",
   "PARDT",
-  "GCRDT"
+  "GCRDT",
+  "RHDTtoSarina",
+  "RHDTtoRBWHSilver",
+  "RHDTtoLogan",
+  "RHDTtoRedcliffe",
+  "RHDTtoMaleny"
 )
+
+
+centre_renaming <- function(x) {
+  case_when(
+    x == "Brain Injury Rehabilitation Unit" ~ "Princess Alexandra hospital",
+    x == "RBWH" ~ "Royal Brisbane and Women's Hospital",
+    x == "Maleny Hospital" ~ "Maleny Soldiers Memorial Hospital",
+    TRUE ~ x
+  )
+}
 
 df_combined <- 
   plyr::ldply(file.path(drive_times_dir, paste0(files, ".csv")), read.csv) %>%
@@ -187,6 +201,7 @@ get_df_times <- function(data, centres, islands_data=df_islands, save_file=NULL)
     select(names(df_times))
   
   df_times <- rbind(df_times, islands_times)
+  df_times$centre = centre_renaming(df_times$centre)
   
   if(!is.null(save_file)){
     write.csv(df_times, file=save_file, row.names=FALSE)

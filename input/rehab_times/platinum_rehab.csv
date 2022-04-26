@@ -1,429 +1,442 @@
 "id","town_name","x","y","centre","minutes"
-1012,"Thursday Island",142.2167,-10.5804,"Brain Injury Rehabilitation Unit",1957.4509899
-1013,"Horn Island",142.2837,-10.60644,"Brain Injury Rehabilitation Unit",1972.23410399
-1014,"Seisia",142.3701,-10.85188,"Brain Injury Rehabilitation Unit",1821.14992244
-1015,"New Mapoon",142.3863,-10.87403,"Brain Injury Rehabilitation Unit",1817.64525219
-1016,"Umagico",142.3489,-10.88916,"Brain Injury Rehabilitation Unit",1815.02391269
-1017,"Bamaga",142.3893,-10.89279,"Brain Injury Rehabilitation Unit",1816.10660672
-1018,"Injinoo",142.3275,-10.90209,"Brain Injury Rehabilitation Unit",1811.45060579
-1019,"Mapoon",141.8976,-12.02178,"Brain Injury Rehabilitation Unit",1749.37298566
-1020,"Weipa",141.8777,-12.62496,"Brain Injury Rehabilitation Unit",1690.62694434
-1021,"Napranum",141.8909,-12.68153,"Brain Injury Rehabilitation Unit",1681.84809847
-1022,"Lockhart River",143.3424,-12.78591,"Brain Injury Rehabilitation Unit",1731.26337647
-1023,"Aurukun",141.7292,-13.35609,"Brain Injury Rehabilitation Unit",1682.51913632
-1024,"Coen",143.1999,-13.9448,"Brain Injury Rehabilitation Unit",1500.59826929
-1025,"Pormpuraaw",141.6245,-14.89198,"Brain Injury Rehabilitation Unit",1525.37306656
-1026,"Hope Vale",145.1102,-15.2971,"Brain Injury Rehabilitation Unit",1346.39961692
-1027,"Cooktown",145.2488,-15.47177,"Brain Injury Rehabilitation Unit",1309.75280035
-1028,"Kowanyama",141.7435,-15.47744,"Brain Injury Rehabilitation Unit",1583.43227858
-1029,"Wujal Wujal",145.3188,-15.94835,"Brain Injury Rehabilitation Unit",1254.8089556
-1030,"Daintree",145.3306,-16.26079,"Brain Injury Rehabilitation Unit",1198.58360111
-1031,"Wonga Beach",145.4137,-16.3472,"Brain Injury Rehabilitation Unit",1186.95170201
-1032,"Newell",145.4061,-16.425,"Brain Injury Rehabilitation Unit",1179.34685493
-1033,"Cooya Beach",145.4067,-16.44813,"Brain Injury Rehabilitation Unit",1172.32656331
-1034,"Mossman",145.3731,-16.46155,"Brain Injury Rehabilitation Unit",1173.30366036
-1035,"Port Douglas",145.4662,-16.48533,"Brain Injury Rehabilitation Unit",1168.39880264
-1036,"Craiglie",145.467,-16.51455,"Brain Injury Rehabilitation Unit",1165.59447591
-1037,"Oak Beach",145.5147,-16.5941,"Brain Injury Rehabilitation Unit",1155.16498829
-1039,"Kuranda",145.6352,-16.82032,"Brain Injury Rehabilitation Unit",1140.17540986
-1040,"Yarrabah",145.865,-16.90636,"Brain Injury Rehabilitation Unit",1116.77311545
-1041,"Cairns",145.7649,-16.92311,"Brain Injury Rehabilitation Unit",1109.22247268
-1042,"Mareeba",145.4221,-16.9965,"Brain Injury Rehabilitation Unit",1139.38929303
-1043,"Mareeba - South",145.4211,-17.05062,"Brain Injury Rehabilitation Unit",1134.44986837
-1044,"Gordonvale",145.7806,-17.09611,"Brain Injury Rehabilitation Unit",1086.75781309
-1045,"Goldsborough",145.7509,-17.14553,"Brain Injury Rehabilitation Unit",1092.19466821
-1046,"Dimbulah",145.1096,-17.15058,"Brain Injury Rehabilitation Unit",1159.61663199
-1047,"Chillagoe",144.5225,-17.15243,"Brain Injury Rehabilitation Unit",1229.72538516
-1048,"Walkamin",145.4411,-17.15428,"Brain Injury Rehabilitation Unit",1122.67340272
-1049,"Tinaroo",145.5505,-17.16863,"Brain Injury Rehabilitation Unit",1121.22585883
-1050,"Tolga - West",145.4506,-17.204,"Brain Injury Rehabilitation Unit",1119.6264426
-1051,"Tolga",145.4776,-17.22463,"Brain Injury Rehabilitation Unit",1116.02648239
-1052,"Atherton",145.4776,-17.26641,"Brain Injury Rehabilitation Unit",1112.72884046
-1053,"Yungaburra",145.5851,-17.26885,"Brain Injury Rehabilitation Unit",1107.366885
-1054,"Babinda",145.9219,-17.3445,"Brain Injury Rehabilitation Unit",1060.9768056
-1055,"Bramston Beach",146.0198,-17.35108,"Brain Injury Rehabilitation Unit",1060.00977328
-1056,"Malanda",145.5954,-17.35328,"Brain Injury Rehabilitation Unit",1094.75969211
-1057,"Herberton",145.3852,-17.38376,"Brain Injury Rehabilitation Unit",1109.37404782
-1058,"Mirriwinni",145.9089,-17.39951,"Brain Injury Rehabilitation Unit",1055.38510072
-1059,"Tarzali",145.61,-17.42092,"Brain Injury Rehabilitation Unit",1088.26369407
-1060,"Karumba",140.8383,-17.48673,"Brain Injury Rehabilitation Unit",1360.29063589
-1061,"Flying Fish Point",146.0754,-17.49616,"Brain Injury Rehabilitation Unit",1046.92587181
-1062,"Coconuts",146.0431,-17.50908,"Brain Injury Rehabilitation Unit",1042.33979676
-1063,"Millaa Millaa",145.612,-17.51108,"Brain Injury Rehabilitation Unit",1077.53938514
-1064,"Belvedere",145.9896,-17.51972,"Brain Injury Rehabilitation Unit",1044.65421537
-1065,"Innisfail",146.0299,-17.52363,"Brain Injury Rehabilitation Unit",1038.56764454
-1066,"Wangan",146.0083,-17.57463,"Brain Injury Rehabilitation Unit",1035.98503724
-1067,"Mourilyan",146.0419,-17.583,"Brain Injury Rehabilitation Unit",1031.53134978
-1068,"South Johnstone",145.9951,-17.60097,"Brain Injury Rehabilitation Unit",1032.66969428
-1069,"Ravenshoe",145.4842,-17.60534,"Brain Injury Rehabilitation Unit",1101.35521586
-1070,"Normanton",141.0761,-17.67331,"Brain Injury Rehabilitation Unit",1314.59772181
-1071,"Mount Garnet",145.1208,-17.67675,"Brain Injury Rehabilitation Unit",1131.08045344
-1072,"Burketown",139.5466,-17.74255,"Brain Injury Rehabilitation Unit",1354.84381984
-1073,"Silkwood",146.0203,-17.74863,"Brain Injury Rehabilitation Unit",1019.39226228
-1074,"Kurrimine",146.1047,-17.77796,"Brain Injury Rehabilitation Unit",1025.73744733
-1075,"El Arish",146.0048,-17.80559,"Brain Injury Rehabilitation Unit",1013.66796843
-1076,"Bingil Bay",146.0976,-17.83471,"Brain Injury Rehabilitation Unit",1025.68736316
-1077,"Mission Beach",146.107,-17.86879,"Brain Injury Rehabilitation Unit",1024.685786
-1078,"Wongaling Beach",146.091,-17.91401,"Brain Injury Rehabilitation Unit",1021.14254016
-1079,"Tully",145.9217,-17.93491,"Brain Injury Rehabilitation Unit",1004.70450529
-1080,"Doomadgee",138.824,-17.94141,"Brain Injury Rehabilitation Unit",1391.67012381
-1081,"South Mission Beach",146.0909,-17.94652,"Brain Injury Rehabilitation Unit",1022.01046523
-1082,"Carmoo",146.0461,-17.94788,"Brain Injury Rehabilitation Unit",1013.20991875
-1083,"Tully Heads",146.0563,-18.01976,"Brain Injury Rehabilitation Unit",1011.11026584
-1084,"Croydon",142.2422,-18.2051,"Brain Injury Rehabilitation Unit",1277.52098704
-1085,"Cardwell",146.0227,-18.26396,"Brain Injury Rehabilitation Unit",975.60575
-1086,"Georgetown",143.5479,-18.29241,"Brain Injury Rehabilitation Unit",1182.58553867
-1087,"Lucinda",146.3337,-18.52889,"Brain Injury Rehabilitation Unit",961.67770716
-1088,"Halifax",146.2856,-18.58094,"Brain Injury Rehabilitation Unit",954.74004745
-1089,"Macknade",146.2605,-18.58664,"Brain Injury Rehabilitation Unit",953.59640139
-1090,"Taylors Beach",146.3273,-18.62407,"Brain Injury Rehabilitation Unit",959.428607
-1091,"Trebonne",146.0781,-18.62689,"Brain Injury Rehabilitation Unit",946.83818809
-1092,"Ingham",146.1581,-18.64706,"Brain Injury Rehabilitation Unit",941.76225389
-1093,"Allingham",146.2953,-18.70771,"Brain Injury Rehabilitation Unit",953.93409697
-1094,"Palm Island",146.6058,-18.72665,"Brain Injury Rehabilitation Unit",1142.99198156
-1095,"Balgal Beach",146.4083,-19.01722,"Brain Injury Rehabilitation Unit",908.36588097
-1096,"Horseshoe Bay",146.8597,-19.11815,"Brain Injury Rehabilitation Unit",925.42126765
-1097,"Toolakea",146.5788,-19.14605,"Brain Injury Rehabilitation Unit",895.85814511
-1098,"Arcadia Bay",146.8651,-19.14853,"Brain Injury Rehabilitation Unit",921.3842622
-1099,"Nelly Bay",146.8484,-19.15696,"Brain Injury Rehabilitation Unit",919.64035292
-1100,"Saunders Beach",146.6098,-19.15875,"Brain Injury Rehabilitation Unit",892.66484531
-1101,"Bluewater",146.5589,-19.1675,"Brain Injury Rehabilitation Unit",892.19460525
-1102,"Picnic Bay",146.8379,-19.17814,"Brain Injury Rehabilitation Unit",923.03592324
-1103,"Yabulu",146.5851,-19.20155,"Brain Injury Rehabilitation Unit",888.47991943
-1104,"Pallarenda",146.773,-19.20234,"Brain Injury Rehabilitation Unit",883.05998047
-1105,"Bluewater Park",146.5138,-19.20308,"Brain Injury Rehabilitation Unit",895.55620901
-1106,"Black River",146.618,-19.23302,"Brain Injury Rehabilitation Unit",885.40273137
-1107,"Townsville",146.8092,-19.26508,"Brain Injury Rehabilitation Unit",874.21362725
-1108,"Rangewood",146.6392,-19.31192,"Brain Injury Rehabilitation Unit",881.54722567
-1109,"Alice River",146.6023,-19.32778,"Brain Injury Rehabilitation Unit",884.01455417
-1110,"Nome",146.9099,-19.37372,"Brain Injury Rehabilitation Unit",858.87704725
-1111,"Cungulla",147.1112,-19.40128,"Brain Injury Rehabilitation Unit",859.89311742
-1112,"Alligator Creek",146.9432,-19.42302,"Brain Injury Rehabilitation Unit",858.08251766
-1113,"Alva Beach",147.4799,-19.45506,"Brain Injury Rehabilitation Unit",827.0868084
-1114,"Giru",147.1066,-19.51333,"Brain Injury Rehabilitation Unit",839.28786562
-1115,"Kalamia Estate",147.4184,-19.53428,"Brain Injury Rehabilitation Unit",819.05056551
-1116,"Brandon",147.3554,-19.55389,"Brain Injury Rehabilitation Unit",816.07768451
-1117,"Ayr",147.4056,-19.57545,"Brain Injury Rehabilitation Unit",813.1068012
-1118,"Home Hill",147.4144,-19.66043,"Brain Injury Rehabilitation Unit",802.49705628
-1119,"Camooweal",138.119,-19.92248,"Brain Injury Rehabilitation Unit",1271.73746243
-1120,"Bowen",148.2418,-20.01494,"Brain Injury Rehabilitation Unit",744.6070073
-1121,"Merinda",148.1648,-20.01751,"Brain Injury Rehabilitation Unit",747.23423113
-1122,"Charters Towers",146.2598,-20.07699,"Brain Injury Rehabilitation Unit",863.05895323
-1123,"Hideaway Bay - Dingo Beach",148.4886,-20.08489,"Brain Injury Rehabilitation Unit",729.95230319
-1124,"Ravenswood",146.8898,-20.10146,"Brain Injury Rehabilitation Unit",910.96989473
-1125,"Airlie Beach",148.7132,-20.26829,"Brain Injury Rehabilitation Unit",723.96132534
-1126,"Cannonvale",148.6962,-20.2769,"Brain Injury Rehabilitation Unit",720.44403786
-1128,"Mount Julian",148.6196,-20.37468,"Brain Injury Rehabilitation Unit",709.53247349
-1129,"Proserpine",148.5821,-20.40489,"Brain Injury Rehabilitation Unit",705.77077764
-1130,"Collinsville",147.8441,-20.55341,"Brain Injury Rehabilitation Unit",757.26402127
-1131,"Scottville",147.8184,-20.57206,"Brain Injury Rehabilitation Unit",757.65286287
-1132,"Midge Point",148.7213,-20.65029,"Brain Injury Rehabilitation Unit",691.35733541
-1133,"Julia Creek",141.7435,-20.65701,"Brain Injury Rehabilitation Unit",1031.95015182
-1134,"Cloncurry",140.5092,-20.70554,"Brain Injury Rehabilitation Unit",1071.81933158
-1135,"Mount Isa",139.4993,-20.73044,"Brain Injury Rehabilitation Unit",1154.09798635
-1136,"Richmond",143.1423,-20.73186,"Brain Injury Rehabilitation Unit",1067.30759922
-1137,"Hughenden",144.1992,-20.84553,"Brain Injury Rehabilitation Unit",993.1820469
-1138,"Seaforth",148.9607,-20.89524,"Brain Injury Rehabilitation Unit",659.84098225
-1139,"Calen",148.7716,-20.89849,"Brain Injury Rehabilitation Unit",661.97743948
-1140,"Haliday Bay - Ball Bay",148.9879,-20.90075,"Brain Injury Rehabilitation Unit",659.41737075
-1141,"Killarney",152.2963,-28.33305,"Brain Injury Rehabilitation Unit",125.95798438
-1142,"Nindaroo",149.1636,-21.05945,"Brain Injury Rehabilitation Unit",642.93311355
-1143,"Farleigh",149.1017,-21.10705,"Brain Injury Rehabilitation Unit",634.1895335
-1144,"Erakala",149.1071,-21.12326,"Brain Injury Rehabilitation Unit",636.04010989
-1145,"Finch Hatton",148.6313,-21.14165,"Brain Injury Rehabilitation Unit",669.30317097
-1146,"Marian",148.9428,-21.14558,"Brain Injury Rehabilitation Unit",643.46588863
-1147,"Mackay",149.1664,-21.15497,"Brain Injury Rehabilitation Unit",629.39919221
-1148,"Mirani",148.8653,-21.16023,"Brain Injury Rehabilitation Unit",650.62973268
-1149,"Walkerston",149.0554,-21.16249,"Brain Injury Rehabilitation Unit",634.52352739
-1150,"Bakers Creek",149.1521,-21.20776,"Brain Injury Rehabilitation Unit",624.56135514
-1151,"Eton",148.9732,-21.26365,"Brain Injury Rehabilitation Unit",633.05896328
-1152,"Hay Point",149.2905,-21.29652,"Brain Injury Rehabilitation Unit",622.1757903
-1153,"Glenden",148.1138,-21.35315,"Brain Injury Rehabilitation Unit",686.70439646
-1154,"Grasstree Beach",149.3067,-21.36404,"Brain Injury Rehabilitation Unit",617.76421541
-1155,"Campwin Beach",149.313,-21.37793,"Brain Injury Rehabilitation Unit",616.13100743
-1156,"Sarina Beach",149.3095,-21.38995,"Brain Injury Rehabilitation Unit",615.20726745
-1157,"Sarina",149.216,-21.4206,"Brain Injury Rehabilitation Unit",604.20938672
-1158,"Armstrong Beach",149.2873,-21.45078,"Brain Injury Rehabilitation Unit",607.87283397
-1159,"Nebo",148.6917,-21.69028,"Brain Injury Rehabilitation Unit",628.2605958
-1160,"Moranbah",148.0456,-22.0039,"Brain Injury Rehabilitation Unit",671.58786501
-1161,"Winton",143.0414,-22.38676,"Brain Injury Rehabilitation Unit",861.06791173
-1162,"Dysart",148.3481,-22.58982,"Brain Injury Rehabilitation Unit",615.11831519
-1163,"Middlemount",148.7039,-22.81426,"Brain Injury Rehabilitation Unit",580.51712215
-1164,"Clermont",147.6374,-22.82681,"Brain Injury Rehabilitation Unit",645.70998605
-1165,"Byfield",150.6508,-22.85074,"Brain Injury Rehabilitation Unit",471.14886349
-1166,"Boulia",139.9082,-22.91287,"Brain Injury Rehabilitation Unit",1106.85943023
-1167,"Aramac",145.2439,-22.9698,"Brain Injury Rehabilitation Unit",733.16729224
-1168,"Tieri",148.3497,-23.03219,"Brain Injury Rehabilitation Unit",603.12487199
-1169,"Capella",148.0248,-23.08513,"Brain Injury Rehabilitation Unit",608.6238927
-1170,"Yeppoon",150.7431,-23.12635,"Brain Injury Rehabilitation Unit",450.8685383
-1171,"The Caves",150.4661,-23.17545,"Brain Injury Rehabilitation Unit",439.85838797
-1172,"Mulambin",150.7857,-23.19155,"Brain Injury Rehabilitation Unit",454.45270275
-1173,"Kinka Beach",150.7876,-23.2243,"Brain Injury Rehabilitation Unit",448.41139614
-1174,"Glendale",150.4751,-23.24572,"Brain Injury Rehabilitation Unit",437.53607742
-1175,"Emu Park",150.8238,-23.25994,"Brain Injury Rehabilitation Unit",449.29930062
-1176,"Keppel Sands",150.7919,-23.3275,"Brain Injury Rehabilitation Unit",446.0681726
-1177,"Rockhampton",150.4974,-23.38918,"Brain Injury Rehabilitation Unit",415.46302655
-1178,"Rubyvale",147.6974,-23.42054,"Brain Injury Rehabilitation Unit",615.5464337
-1179,"Gracemere",150.4558,-23.43865,"Brain Injury Rehabilitation Unit",414.04319946
-1180,"Longreach",144.2475,-23.44447,"Brain Injury Rehabilitation Unit",754.35758932
-1181,"Sapphire",147.7193,-23.46006,"Brain Injury Rehabilitation Unit",609.46979159
-1182,"Emerald",148.1598,-23.52349,"Brain Injury Rehabilitation Unit",574.24286584
-1183,"Barcaldine",145.2854,-23.55288,"Brain Injury Rehabilitation Unit",689.15282926
-1184,"Blackwater",148.8834,-23.5779,"Brain Injury Rehabilitation Unit",530.91953545
-1185,"Bouldercombe",150.4668,-23.57818,"Brain Injury Rehabilitation Unit",417.17048858
-1186,"Bluff",149.0695,-23.57993,"Brain Injury Rehabilitation Unit",517.58857121
-1187,"Mount Morgan",150.3881,-23.64464,"Brain Injury Rehabilitation Unit",431.23924003
-1188,"Dingo",149.3315,-23.64629,"Brain Injury Rehabilitation Unit",499.66503901
-1189,"Alpha",146.6387,-23.65028,"Brain Injury Rehabilitation Unit",678.0525876
-1190,"Duaringa",149.6687,-23.71846,"Brain Injury Rehabilitation Unit",477.67254067
-1191,"Willows Gemfields",147.5411,-23.73932,"Brain Injury Rehabilitation Unit",625.3939618
-1192,"Mount Larcom",150.9799,-23.8124,"Brain Injury Rehabilitation Unit",368.11848685
-1193,"Gladstone",151.2578,-23.84753,"Brain Injury Rehabilitation Unit",355.78865832
-1194,"Tannum Sands",151.3685,-23.94867,"Brain Injury Rehabilitation Unit",341.93598594
-1195,"Wurdong Heights",151.3025,-23.98485,"Brain Injury Rehabilitation Unit",340.62432803
-1196,"Calliope",151.213,-23.99655,"Brain Injury Rehabilitation Unit",348.44793403
-1197,"Benaraby",151.3256,-24.00187,"Brain Injury Rehabilitation Unit",337.79102668
-1198,"Springsure",148.0891,-24.11595,"Brain Injury Rehabilitation Unit",528.55891142
-1199,"Woorabinda",149.4575,-24.1306,"Brain Injury Rehabilitation Unit",477.37438005
-1200,"Seventeen Seventy",151.8855,-24.16343,"Brain Injury Rehabilitation Unit",333.09678321
-1201,"Baralaba",149.8114,-24.17958,"Brain Injury Rehabilitation Unit",450.94398209
-1202,"Agnes Water",151.9008,-24.21017,"Brain Injury Rehabilitation Unit",326.39834542
-1203,"Taylors Creek",149.1545,-24.25325,"Brain Injury Rehabilitation Unit",489.39862458
-1204,"Miriam Vale",151.5583,-24.328,"Brain Injury Rehabilitation Unit",307.49872197
-1205,"Biloela",150.5098,-24.39602,"Brain Injury Rehabilitation Unit",386.10321611
-1206,"Blackall",145.4645,-24.42336,"Brain Injury Rehabilitation Unit",623.3512071
-1207,"Thangool",150.5751,-24.48738,"Brain Injury Rehabilitation Unit",376.40835441
-1208,"Moura",149.9719,-24.57498,"Brain Injury Rehabilitation Unit",405.51872207
-1209,"Moore Park",152.2757,-24.71776,"Brain Injury Rehabilitation Unit",264.13260585
-1210,"Burnett Heads",152.4149,-24.76892,"Brain Injury Rehabilitation Unit",253.37672904
-1211,"Bargara",152.4607,-24.81453,"Brain Injury Rehabilitation Unit",252.52700805
-1212,"Gooburrum",152.345,-24.81685,"Brain Injury Rehabilitation Unit",252.56461269
-1213,"Sloping Hummock",152.4252,-24.8436,"Brain Injury Rehabilitation Unit",247.83522222
-1214,"Oakwood",152.298,-24.85082,"Brain Injury Rehabilitation Unit",249.87034168
-1215,"Monto",151.1207,-24.86547,"Brain Injury Rehabilitation Unit",326.23223226
-1216,"Bundaberg",152.3444,-24.87052,"Brain Injury Rehabilitation Unit",245.16229387
-1217,"Innes Park",152.4823,-24.88137,"Brain Injury Rehabilitation Unit",249.48843881
-1218,"Tambo",146.2549,-24.88339,"Brain Injury Rehabilitation Unit",559.29948721
-1219,"Sharon",152.2587,-24.88377,"Brain Injury Rehabilitation Unit",247.24855361
-1220,"Elliott Heads",152.4888,-24.9178,"Brain Injury Rehabilitation Unit",251.21477385
-1221,"Theodore",150.075,-24.94678,"Brain Injury Rehabilitation Unit",368.73268855
-1222,"South Bingera",152.2194,-24.96842,"Brain Injury Rehabilitation Unit",234.54586673
-1223,"Gin Gin",151.9557,-24.99157,"Brain Injury Rehabilitation Unit",245.00192114
-1224,"Woodgate",152.5506,-25.0964,"Brain Injury Rehabilitation Unit",229.30522542
-1225,"Cordalba",152.2111,-25.15681,"Brain Injury Rehabilitation Unit",219.21288079
-1226,"Mount Perry",151.6442,-25.18036,"Brain Injury Rehabilitation Unit",280.02265948
-1227,"Burrum Heads",152.609,-25.18701,"Brain Injury Rehabilitation Unit",200.95292015
-1228,"Burrum Heads - East",152.6334,-25.21101,"Brain Injury Rehabilitation Unit",199.81057036
-1229,"Apple Tree Creek",152.2338,-25.22391,"Brain Injury Rehabilitation Unit",212.68837744
-1230,"Burrum Heads - South",152.5934,-25.23535,"Brain Injury Rehabilitation Unit",197.01011564
-1231,"Childers",152.2765,-25.23536,"Brain Injury Rehabilitation Unit",207.99865239
-1232,"Toogoom",152.6898,-25.25614,"Brain Injury Rehabilitation Unit",198.37264897
-1233,"Pacific Haven",152.5565,-25.26683,"Brain Injury Rehabilitation Unit",194.77866729
-1234,"Hervey Bay",152.8722,-25.28535,"Brain Injury Rehabilitation Unit",207.8428762
-1235,"Howard",152.5602,-25.31648,"Brain Injury Rehabilitation Unit",190.00304065
-1236,"Torbanlea",152.596,-25.34752,"Brain Injury Rehabilitation Unit",186.67341626
-1237,"Walligan",152.771,-25.35161,"Brain Injury Rehabilitation Unit",192.6491475
-1238,"Sunshine Acres",152.7889,-25.35801,"Brain Injury Rehabilitation Unit",194.55208803
-1239,"Booral",152.9037,-25.36202,"Brain Injury Rehabilitation Unit",202.71382284
-1240,"Eidsvold",151.1221,-25.37064,"Brain Injury Rehabilitation Unit",269.44534802
-1241,"River Heads",152.9102,-25.39864,"Brain Injury Rehabilitation Unit",206.12836416
-1242,"Aldershot",152.6613,-25.46311,"Brain Injury Rehabilitation Unit",177.52692681
-1243,"Biggenden",152.0449,-25.50952,"Brain Injury Rehabilitation Unit",195.53392371
-1244,"Oakhurst",152.6206,-25.51008,"Brain Injury Rehabilitation Unit",179.37928685
-1245,"Maryborough",152.6935,-25.52726,"Brain Injury Rehabilitation Unit",175.86470872
-1246,"Mundubbera",151.2992,-25.59115,"Brain Injury Rehabilitation Unit",245.51691217
-1247,"Maaroom",152.8722,-25.61156,"Brain Injury Rehabilitation Unit",168.93251434
-1248,"Gayndah",151.6074,-25.62451,"Brain Injury Rehabilitation Unit",218.24577166
-1249,"Taroom",149.7974,-25.6412,"Brain Injury Rehabilitation Unit",308.00880443
-1250,"Boonooroo - Tuan",152.8771,-25.6788,"Brain Injury Rehabilitation Unit",166.0385831
-1251,"Poona",152.9052,-25.71673,"Brain Injury Rehabilitation Unit",163.73083566
-1252,"Tiaro",152.584,-25.725,"Brain Injury Rehabilitation Unit",156.5179985
-1253,"Augathella",146.5842,-25.79596,"Brain Injury Rehabilitation Unit",488.48353991
-1254,"Injune",148.5651,-25.84311,"Brain Injury Rehabilitation Unit",375.55593746
-1255,"Bauple Forest",152.636,-25.85212,"Brain Injury Rehabilitation Unit",153.96211968
-1256,"Rainbow Beach",153.0922,-25.90782,"Brain Injury Rehabilitation Unit",163.49877443
-1257,"Tin Can Bay",153.0031,-25.91357,"Brain Injury Rehabilitation Unit",149.99542777
-1258,"Glenwood",152.6324,-25.94735,"Brain Injury Rehabilitation Unit",142.9521597
-1259,"Cooloola Village",152.982,-25.97598,"Brain Injury Rehabilitation Unit",151.39898318
-1260,"Curra",152.5881,-26.07081,"Brain Injury Rehabilitation Unit",128.57579039
-1261,"Kilkivan",152.2399,-26.08621,"Brain Injury Rehabilitation Unit",149.3516243
-1262,"Wandoan",149.9628,-26.12088,"Brain Injury Rehabilitation Unit",270.75040345
-1263,"Proston",151.603,-26.16377,"Brain Injury Rehabilitation Unit",209.33679801
-1264,"Goomeri",152.0647,-26.18048,"Brain Injury Rehabilitation Unit",167.293968
-1265,"Gympie",152.6706,-26.18893,"Brain Injury Rehabilitation Unit",114.37907544
-1266,"The Palms",152.5889,-26.19336,"Brain Injury Rehabilitation Unit",121.33218415
-1267,"Nahrunda",152.6127,-26.20237,"Brain Injury Rehabilitation Unit",118.58733998
-1268,"Gowrie",146.3207,-26.23114,"Brain Injury Rehabilitation Unit",501.11740632
-1269,"Pie Creek",152.6277,-26.23769,"Brain Injury Rehabilitation Unit",114.64113349
-1270,"Murgon",151.9402,-26.24246,"Brain Injury Rehabilitation Unit",178.61512818
-1271,"Boreen Point",152.9952,-26.28443,"Brain Injury Rehabilitation Unit",110.35261377
-1272,"Cherbourg",151.9565,-26.28971,"Brain Injury Rehabilitation Unit",181.7016288
-1273,"Wondai",151.8736,-26.32045,"Brain Injury Rehabilitation Unit",184.71148493
-1274,"Cooran",152.8222,-26.33805,"Brain Injury Rehabilitation Unit",101.88312234
-1275,"Amamoor",152.6748,-26.34607,"Brain Injury Rehabilitation Unit",106.93703394
-1276,"Cooroibah",152.9939,-26.35897,"Brain Injury Rehabilitation Unit",104.88378663
-1277,"Pomona",152.8533,-26.36256,"Brain Injury Rehabilitation Unit",95.72653115
-1278,"Forest Acres",152.9413,-26.36638,"Brain Injury Rehabilitation Unit",95.62950385
-1279,"Black Mountain",152.8819,-26.40467,"Brain Injury Rehabilitation Unit",92.40095052
-1280,"Charleville",146.2416,-26.40697,"Brain Injury Rehabilitation Unit",487.05455387
-1281,"Sunshine Beach",153.1058,-26.41021,"Brain Injury Rehabilitation Unit",103.22663086
-1282,"Cooroy",152.9089,-26.41875,"Brain Injury Rehabilitation Unit",88.14061374
-1283,"Doonan - Tinbeerwah",153.0119,-26.43781,"Brain Injury Rehabilitation Unit",91.82462468
-1284,"Weyba Downs",153.0474,-26.45561,"Brain Injury Rehabilitation Unit",93.36900824
-1285,"Imbil",152.677,-26.46119,"Brain Injury Rehabilitation Unit",112.09270844
-1286,"Eumundi",152.9513,-26.47643,"Brain Injury Rehabilitation Unit",84.66015616
-1287,"Mitchell",147.976,-26.48827,"Brain Injury Rehabilitation Unit",374.88801161
-1288,"Kingaroy",151.8443,-26.53645,"Brain Injury Rehabilitation Unit",160.61248637
-1289,"Yandina",152.9565,-26.56212,"Brain Injury Rehabilitation Unit",79.15825175
-1290,"Roma",148.7879,-26.57094,"Brain Injury Rehabilitation Unit",318.86736908
-1291,"Wallumbilla",149.187,-26.58483,"Brain Injury Rehabilitation Unit",292.30060614
-1292,"Kenilworth",152.727,-26.59522,"Brain Injury Rehabilitation Unit",106.95576923
-1293,"Kureelpa",152.8837,-26.60834,"Brain Injury Rehabilitation Unit",85.92096216
-1294,"Yuleba",149.381,-26.61304,"Brain Injury Rehabilitation Unit",279.33658825
-1295,"Quilpie",144.2683,-26.61502,"Brain Injury Rehabilitation Unit",617.36154224
-1296,"Mapleton",152.8651,-26.62074,"Brain Injury Rehabilitation Unit",87.70604307
-1297,"Nambour",152.9592,-26.62753,"Brain Injury Rehabilitation Unit",76.79058917
-1298,"Kiels Mountain",153.001,-26.6527,"Brain Injury Rehabilitation Unit",73.93384239
-1299,"Flaxton",152.8647,-26.65557,"Brain Injury Rehabilitation Unit",88.36588028
-1300,"Miles",150.1857,-26.65858,"Brain Injury Rehabilitation Unit",226.7836894
-1301,"Woombye",152.9666,-26.66148,"Brain Injury Rehabilitation Unit",73.31261009
-1302,"Nanango",151.9992,-26.6713,"Brain Injury Rehabilitation Unit",141.80998964
-1303,"Palmwoods",152.9568,-26.69113,"Brain Injury Rehabilitation Unit",77.72753536
-1304,"Witta",152.8107,-26.70454,"Brain Injury Rehabilitation Unit",85.87598637
-1305,"Chinchilla",150.628,-26.74202,"Brain Injury Rehabilitation Unit",194.30463383
-1306,"Maleny",152.848,-26.75878,"Brain Injury Rehabilitation Unit",77.53711772
-1307,"Mooloolah",152.9616,-26.76553,"Brain Injury Rehabilitation Unit",69.95815581
-1308,"Glenview",153.0204,-26.76952,"Brain Injury Rehabilitation Unit",65.3536683
-1309,"Jandowae",151.1101,-26.78068,"Brain Injury Rehabilitation Unit",172.48807088
-1310,"Landsborough",152.9652,-26.80826,"Brain Injury Rehabilitation Unit",63.54971926
-1311,"Yarraman",151.9796,-26.84046,"Brain Injury Rehabilitation Unit",126.20230891
-1312,"Peachester",152.8871,-26.84242,"Brain Injury Rehabilitation Unit",68.20845497
-1313,"Beerwah",152.954,-26.85293,"Brain Injury Rehabilitation Unit",61.02620774
-1314,"Blackbutt",152.1042,-26.88722,"Brain Injury Rehabilitation Unit",115.35411794
-1315,"Glass House Mountain",152.9507,-26.89771,"Brain Injury Rehabilitation Unit",56.19806444
-1316,"Bell",151.4491,-26.93176,"Brain Injury Rehabilitation Unit",160.95182636
-1317,"Beerburrum - North",152.957,-26.93545,"Brain Injury Rehabilitation Unit",50.73171927
-1318,"Kilcoy",152.5638,-26.94019,"Brain Injury Rehabilitation Unit",78.94441216
-1319,"Woodford",152.778,-26.95557,"Brain Injury Rehabilitation Unit",61.26798898
-1320,"Beerburrum",152.955,-26.96138,"Brain Injury Rehabilitation Unit",50.87279392
-1321,"D'Aguilar",152.7984,-26.98884,"Brain Injury Rehabilitation Unit",56.64819983
-1322,"Delaneys Creek",152.7971,-27.00308,"Brain Injury Rehabilitation Unit",57.1357613
-1323,"Donnybrook",153.0662,-27.00662,"Brain Injury Rehabilitation Unit",50.75301972
-1324,"Toorbul",153.0991,-27.03348,"Brain Injury Rehabilitation Unit",52.28402483
-1325,"Wamuran",152.8643,-27.04069,"Brain Injury Rehabilitation Unit",49.08591381
-1326,"Ningi",153.1051,-27.06703,"Brain Injury Rehabilitation Unit",51.39521312
-1327,"Woorim",153.2035,-27.07303,"Brain Injury Rehabilitation Unit",64.82187606
-1328,"Sandstone Point",153.1273,-27.08295,"Brain Injury Rehabilitation Unit",54.89355953
-1329,"Bongaree",153.1626,-27.08546,"Brain Injury Rehabilitation Unit",61.60741799
-1330,"Toogoolawah",152.3753,-27.08821,"Brain Injury Rehabilitation Unit",82.62366994
-1331,"Beachmere",153.0514,-27.12968,"Brain Injury Rehabilitation Unit",47.62596559
-1332,"Surat",149.0666,-27.15384,"Brain Injury Rehabilitation Unit",293.75536059
-1333,"Dalby",151.261,-27.18328,"Brain Injury Rehabilitation Unit",137.77687653
-1334,"Dayboro",152.8215,-27.19792,"Brain Injury Rehabilitation Unit",49.10065275
-1335,"Esk",152.4179,-27.23674,"Brain Injury Rehabilitation Unit",69.77455894
-1336,"Crows Nest",152.0506,-27.26153,"Brain Injury Rehabilitation Unit",112.27559275
-1337,"Tara",150.4556,-27.27772,"Brain Injury Rehabilitation Unit",197.56860279
-1338,"Goombungee",151.8502,-27.30485,"Brain Injury Rehabilitation Unit",111.93125337
-1339,"Mount Glorious",152.7701,-27.33397,"Brain Injury Rehabilitation Unit",48.40423478
-1340,"Samford Valley - Highvale",152.8394,-27.36508,"Brain Injury Rehabilitation Unit",35.6333058
-1341,"Samford",152.8849,-27.37146,"Brain Injury Rehabilitation Unit",30.56607673
-1342,"Mount Nebo",152.7795,-27.39084,"Brain Injury Rehabilitation Unit",43.93633549
-1343,"Coominya",152.5023,-27.3916,"Brain Injury Rehabilitation Unit",58.81420238
-1344,"Amity Point",153.44,-27.39664,"Brain Injury Rehabilitation Unit",98.73954695
-1345,"Meringandan West",151.8819,-27.41789,"Brain Injury Rehabilitation Unit",105.21845738
-1346,"Meringandan",151.9132,-27.42327,"Brain Injury Rehabilitation Unit",103.2118672
-1347,"Point Lookout",153.5377,-27.43022,"Brain Injury Rehabilitation Unit",101.57142405
-1348,"Oakey",151.7183,-27.43202,"Brain Injury Rehabilitation Unit",104.5037502
-1349,"Fernvale",152.6594,-27.45012,"Brain Injury Rehabilitation Unit",43.88047248
-1350,"Lowood",152.5763,-27.46078,"Brain Injury Rehabilitation Unit",49.60656927
-1351,"Murphys Creek",152.0567,-27.46123,"Brain Injury Rehabilitation Unit",80.36699962
-1352,"Highfields",151.9481,-27.46253,"Brain Injury Rehabilitation Unit",95.97185368
-1353,"Brisbane",153.0249,-27.47072,"Brain Injury Rehabilitation Unit",8.15721476
-1354,"Kingsthorpe",151.8191,-27.47543,"Brain Injury Rehabilitation Unit",98.02037522
-1355,"Gowrie Junction",151.8928,-27.49125,"Brain Injury Rehabilitation Unit",92.73435423
-1356,"Lockrose",152.4579,-27.49448,"Brain Injury Rehabilitation Unit",56.91201266
-1357,"Dunwich",153.4038,-27.49776,"Brain Injury Rehabilitation Unit",82.96294679
-1358,"Blue Mountain Heights",151.9612,-27.50364,"Brain Injury Rehabilitation Unit",90.53431145
-1359,"Gowrie Mountain",151.8228,-27.51137,"Brain Injury Rehabilitation Unit",94.01662795
-1360,"Brightview",152.4916,-27.51975,"Brain Injury Rehabilitation Unit",50.71590027
-1361,"Cecil Plains",151.1936,-27.53233,"Brain Injury Rehabilitation Unit",138.04025191
-1362,"Minden Village",152.5591,-27.5357,"Brain Injury Rehabilitation Unit",46.44948929
-1363,"Kensington Grove - Regency Downs",152.4572,-27.53986,"Brain Injury Rehabilitation Unit",51.65972605
-1364,"Glenore Grove",152.4122,-27.54114,"Brain Injury Rehabilitation Unit",54.25347942
-1365,"Helidon",152.1254,-27.54838,"Brain Injury Rehabilitation Unit",70.45244663
-1366,"Prince Henry Heights",151.9905,-27.55295,"Brain Injury Rehabilitation Unit",86.80185357
-1367,"Withcott",152.026,-27.55364,"Brain Injury Rehabilitation Unit",76.63585619
-1368,"Placid Hills",152.2504,-27.5578,"Brain Injury Rehabilitation Unit",66.2224794
-1369,"Gatton",152.2751,-27.56033,"Brain Injury Rehabilitation Unit",62.54882434
-1370,"Toowoomba",151.9528,-27.56216,"Brain Injury Rehabilitation Unit",88.26447445
-1371,"Coochiemudlo Island",153.3328,-27.56886,"Brain Injury Rehabilitation Unit",44.25689606
-1372,"Marburg",152.5954,-27.56895,"Brain Injury Rehabilitation Unit",40.25067943
-1373,"Grantham",152.2012,-27.57374,"Brain Injury Rehabilitation Unit",70.15459664
-1374,"Plainland",152.4165,-27.57656,"Brain Injury Rehabilitation Unit",52.16447553
-1375,"Forest Hill",152.3549,-27.58999,"Brain Injury Rehabilitation Unit",57.99959716
-1376,"Macleay Island",153.3615,-27.59184,"Brain Injury Rehabilitation Unit",73.83337555
-1377,"Walloon",152.6725,-27.60325,"Brain Injury Rehabilitation Unit",39.82479035
-1378,"Westbrook",151.8757,-27.60355,"Brain Injury Rehabilitation Unit",99.63518723
-1379,"Lamb Island",153.3798,-27.62387,"Brain Injury Rehabilitation Unit",71.52496925
-1380,"Thagoona",152.6257,-27.62401,"Brain Injury Rehabilitation Unit",41.63568175
-1381,"Laidley",152.3938,-27.63099,"Brain Injury Rehabilitation Unit",58.33069643
-1382,"Rosewood",152.5889,-27.63446,"Brain Injury Rehabilitation Unit",44.70891386
-1383,"Mount Cotton",153.2508,-27.63515,"Brain Injury Rehabilitation Unit",31.84857512
-1384,"Laidley Heights",152.3675,-27.63571,"Brain Injury Rehabilitation Unit",64.12887747
-1385,"Wyreema",151.8542,-27.65743,"Brain Injury Rehabilitation Unit",103.00072181
-1386,"Ripley",152.7864,-27.66642,"Brain Injury Rehabilitation Unit",31.42813773
-1387,"Southbrook",151.7128,-27.67579,"Brain Injury Rehabilitation Unit",106.04344468
-1388,"Russell Island",153.3905,-27.68322,"Brain Injury Rehabilitation Unit",79.05485061
-1389,"Deebing Heights",152.7546,-27.69709,"Brain Injury Rehabilitation Unit",36.3807417
-1390,"Cambooya",151.8615,-27.70633,"Brain Injury Rehabilitation Unit",106.85816831
-1391,"Pittsworth",151.6329,-27.71797,"Brain Injury Rehabilitation Unit",112.37610928
-1392,"Cabbage Tree Point",153.3552,-27.73664,"Brain Injury Rehabilitation Unit",40.11308175
-1393,"Logan Village",153.1134,-27.77455,"Brain Injury Rehabilitation Unit",41.25195715
-1394,"Jacobs Well",153.3629,-27.78179,"Brain Injury Rehabilitation Unit",41.6934216
-1395,"Greenmount",151.9059,-27.78299,"Brain Injury Rehabilitation Unit",108.43819217
-1396,"Peak Crossing",152.7294,-27.78404,"Brain Injury Rehabilitation Unit",41.480086
-1397,"Harrisville",152.6677,-27.81036,"Brain Injury Rehabilitation Unit",48.79239698
-1398,"Jimboomba - West",152.9618,-27.81259,"Brain Injury Rehabilitation Unit",40.15583666
-1399,"Jimboomba",153.0307,-27.83265,"Brain Injury Rehabilitation Unit",38.239324
-1400,"Mundoolun",153.0767,-27.86482,"Brain Injury Rehabilitation Unit",44.67092978
-1401,"Cedar Grove",152.9843,-27.86655,"Brain Injury Rehabilitation Unit",42.69951376
-1402,"Millmerran",151.2671,-27.87814,"Brain Injury Rehabilitation Unit",137.99248504
-1403,"Cedar Vale",153.002,-27.87876,"Brain Injury Rehabilitation Unit",42.92606492
-1404,"Tamborine",153.1285,-27.88138,"Brain Injury Rehabilitation Unit",44.81171294
-1405,"Eagle Heights",153.2054,-27.92251,"Brain Injury Rehabilitation Unit",53.77232063
-1406,"Clifton",151.9083,-27.92996,"Brain Injury Rehabilitation Unit",120.8941977
-1407,"Maudsland",153.2774,-27.93276,"Brain Injury Rehabilitation Unit",44.36490787
-1408,"Kalbar",152.6229,-27.94196,"Brain Injury Rehabilitation Unit",58.29706134
-1409,"Gleneagle",152.9918,-27.94234,"Brain Injury Rehabilitation Unit",50.63844965
-1410,"Boyland",153.1642,-27.94939,"Brain Injury Rehabilitation Unit",53.88413024
-1411,"Mount Tamborine",153.2014,-27.97114,"Brain Injury Rehabilitation Unit",57.08223085
-1412,"Mount Nathan",153.2639,-27.97678,"Brain Injury Rehabilitation Unit",50.74219293
-1413,"Aratula",152.5384,-27.98409,"Brain Injury Rehabilitation Unit",62.0275709
-1414,"Beaudesert",152.9992,-27.98632,"Brain Injury Rehabilitation Unit",59.66672642
-1415,"Gold Coast",153.4277,-27.99114,"Brain Injury Rehabilitation Unit",53.84085637
-1416,"Thargomindah",143.8229,-27.99583,"Brain Injury Rehabilitation Unit",636.53277238
-1417,"Boonah",152.6824,-27.9978,"Brain Injury Rehabilitation Unit",61.17967837
-1418,"Canungra",153.1598,-28.01415,"Brain Injury Rehabilitation Unit",62.59359887
-1419,"Allora",151.982,-28.03472,"Brain Injury Rehabilitation Unit",109.27837318
-1420,"St George",148.5812,-28.03888,"Brain Injury Rehabilitation Unit",325.73906934
-1421,"Lower Beechmont",153.2516,-28.04105,"Brain Injury Rehabilitation Unit",58.46061939
-1422,"Cunnamulla",145.6832,-28.06921,"Brain Injury Rehabilitation Unit",510.4661174
-1423,"Kooralbyn",152.8443,-28.08068,"Brain Injury Rehabilitation Unit",78.02296305
-1424,"Beechmont",153.206,-28.09893,"Brain Injury Rehabilitation Unit",71.55455858
-1425,"Springbrook",153.2644,-28.18766,"Brain Injury Rehabilitation Unit",78.85012582
-1426,"Yangan",152.2107,-28.19552,"Brain Injury Rehabilitation Unit",110.32258503
-1427,"Rathdowney",152.8635,-28.20976,"Brain Injury Rehabilitation Unit",81.96300062
-1428,"Warwick",152.0311,-28.21745,"Brain Injury Rehabilitation Unit",110.69038149
-1429,"Inglewood",151.0795,-28.41751,"Brain Injury Rehabilitation Unit",179.77983077
-1430,"Goondiwindi",150.3062,-28.54799,"Brain Injury Rehabilitation Unit",226.26842531
-1431,"Yelarbon",150.7524,-28.57416,"Brain Injury Rehabilitation Unit",206.27735905
-1432,"Dirranbandi",148.2271,-28.5841,"Brain Injury Rehabilitation Unit",377.35030448
-1433,"Stanthorpe",151.9327,-28.65779,"Brain Injury Rehabilitation Unit",152.3265671
-1434,"Johnstone",148.5382,-28.6787,"Brain Injury Rehabilitation Unit",373.71842787
-1435,"Smithfield",145.690172,-16.83142,"Brain Injury Rehabilitation Unit",1122.22375097
-1436,"Texas",151.1692,-28.85306,"Brain Injury Rehabilitation Unit",203.98724218
-1437,"Wallangarra",151.9262,-28.92345,"Brain Injury Rehabilitation Unit",176.54359463
-1438,"Birdsville",139.3551,-25.8978,"Brain Injury Rehabilitation Unit",1377.01727547
-1439,"Durham",141.811455,-27.397056,"Brain Injury Rehabilitation Unit",790.94068159
-1440,"Hungerford",144.409847,-28.996741,"Brain Injury Rehabilitation Unit",638.80820376
-1441,"RBWH",153.0285,-27.447,"Brain Injury Rehabilitation Unit",7.17536896
+1012,"Thursday Island",142.2167,-10.5804,"Princess Alexandra hospital",1957.4509899
+1013,"Horn Island",142.2837,-10.60644,"Princess Alexandra hospital",1972.23410399
+1014,"Seisia",142.3701,-10.85188,"Princess Alexandra hospital",1821.14992244
+1015,"New Mapoon",142.3863,-10.87403,"Princess Alexandra hospital",1817.64525219
+1016,"Umagico",142.3489,-10.88916,"Princess Alexandra hospital",1815.02391269
+1017,"Bamaga",142.3893,-10.89279,"Princess Alexandra hospital",1816.10660672
+1018,"Injinoo",142.3275,-10.90209,"Princess Alexandra hospital",1811.45060579
+1019,"Mapoon",141.8976,-12.02178,"Princess Alexandra hospital",1749.37298566
+1020,"Weipa",141.8777,-12.62496,"Princess Alexandra hospital",1690.62694434
+1021,"Napranum",141.8909,-12.68153,"Princess Alexandra hospital",1681.84809847
+1022,"Lockhart River",143.3424,-12.78591,"Princess Alexandra hospital",1731.26337647
+1023,"Aurukun",141.7292,-13.35609,"Princess Alexandra hospital",1682.51913632
+1024,"Coen",143.1999,-13.9448,"Princess Alexandra hospital",1500.59826929
+1025,"Pormpuraaw",141.6245,-14.89198,"Princess Alexandra hospital",1525.37306656
+1026,"Hope Vale",145.1102,-15.2971,"Princess Alexandra hospital",1346.39961692
+1027,"Cooktown",145.2488,-15.47177,"Princess Alexandra hospital",1309.75280035
+1028,"Kowanyama",141.7435,-15.47744,"Princess Alexandra hospital",1583.43227858
+1029,"Wujal Wujal",145.3188,-15.94835,"Princess Alexandra hospital",1254.8089556
+1030,"Daintree",145.3306,-16.26079,"Princess Alexandra hospital",1198.58360111
+1031,"Wonga Beach",145.4137,-16.3472,"Princess Alexandra hospital",1186.95170201
+1032,"Newell",145.4061,-16.425,"Princess Alexandra hospital",1179.34685493
+1033,"Cooya Beach",145.4067,-16.44813,"Princess Alexandra hospital",1172.32656331
+1034,"Mossman",145.3731,-16.46155,"Princess Alexandra hospital",1173.30366036
+1035,"Port Douglas",145.4662,-16.48533,"Princess Alexandra hospital",1168.39880264
+1036,"Craiglie",145.467,-16.51455,"Princess Alexandra hospital",1165.59447591
+1037,"Oak Beach",145.5147,-16.5941,"Princess Alexandra hospital",1155.16498829
+1039,"Kuranda",145.6352,-16.82032,"Princess Alexandra hospital",1140.17540986
+1040,"Yarrabah",145.865,-16.90636,"Princess Alexandra hospital",1116.77311545
+1041,"Cairns",145.7649,-16.92311,"Princess Alexandra hospital",1109.22247268
+1042,"Mareeba",145.4221,-16.9965,"Princess Alexandra hospital",1139.38929303
+1043,"Mareeba - South",145.4211,-17.05062,"Princess Alexandra hospital",1134.44986837
+1044,"Gordonvale",145.7806,-17.09611,"Princess Alexandra hospital",1086.75781309
+1045,"Goldsborough",145.7509,-17.14553,"Princess Alexandra hospital",1092.19466821
+1046,"Dimbulah",145.1096,-17.15058,"Princess Alexandra hospital",1159.61663199
+1047,"Chillagoe",144.5225,-17.15243,"Princess Alexandra hospital",1229.72538516
+1048,"Walkamin",145.4411,-17.15428,"Princess Alexandra hospital",1122.67340272
+1049,"Tinaroo",145.5505,-17.16863,"Princess Alexandra hospital",1121.22585883
+1050,"Tolga - West",145.4506,-17.204,"Princess Alexandra hospital",1119.6264426
+1051,"Tolga",145.4776,-17.22463,"Princess Alexandra hospital",1116.02648239
+1052,"Atherton",145.4776,-17.26641,"Princess Alexandra hospital",1112.72884046
+1053,"Yungaburra",145.5851,-17.26885,"Princess Alexandra hospital",1107.366885
+1054,"Babinda",145.9219,-17.3445,"Princess Alexandra hospital",1060.9768056
+1055,"Bramston Beach",146.0198,-17.35108,"Princess Alexandra hospital",1060.00977328
+1056,"Malanda",145.5954,-17.35328,"Princess Alexandra hospital",1094.75969211
+1057,"Herberton",145.3852,-17.38376,"Princess Alexandra hospital",1109.37404782
+1058,"Mirriwinni",145.9089,-17.39951,"Princess Alexandra hospital",1055.38510072
+1059,"Tarzali",145.61,-17.42092,"Princess Alexandra hospital",1088.26369407
+1060,"Karumba",140.8383,-17.48673,"Princess Alexandra hospital",1360.29063589
+1061,"Flying Fish Point",146.0754,-17.49616,"Princess Alexandra hospital",1046.92587181
+1062,"Coconuts",146.0431,-17.50908,"Princess Alexandra hospital",1042.33979676
+1063,"Millaa Millaa",145.612,-17.51108,"Princess Alexandra hospital",1077.53938514
+1064,"Belvedere",145.9896,-17.51972,"Princess Alexandra hospital",1044.65421537
+1065,"Innisfail",146.0299,-17.52363,"Princess Alexandra hospital",1038.56764454
+1066,"Wangan",146.0083,-17.57463,"Princess Alexandra hospital",1035.98503724
+1067,"Mourilyan",146.0419,-17.583,"Princess Alexandra hospital",1031.53134978
+1068,"South Johnstone",145.9951,-17.60097,"Princess Alexandra hospital",1032.66969428
+1069,"Ravenshoe",145.4842,-17.60534,"Princess Alexandra hospital",1101.35521586
+1070,"Normanton",141.0761,-17.67331,"Princess Alexandra hospital",1314.59772181
+1071,"Mount Garnet",145.1208,-17.67675,"Princess Alexandra hospital",1131.08045344
+1072,"Burketown",139.5466,-17.74255,"Princess Alexandra hospital",1354.84381984
+1073,"Silkwood",146.0203,-17.74863,"Princess Alexandra hospital",1019.39226228
+1074,"Kurrimine",146.1047,-17.77796,"Princess Alexandra hospital",1025.73744733
+1075,"El Arish",146.0048,-17.80559,"Princess Alexandra hospital",1013.66796843
+1076,"Bingil Bay",146.0976,-17.83471,"Princess Alexandra hospital",1025.68736316
+1077,"Mission Beach",146.107,-17.86879,"Princess Alexandra hospital",1024.685786
+1078,"Wongaling Beach",146.091,-17.91401,"Princess Alexandra hospital",1021.14254016
+1079,"Tully",145.9217,-17.93491,"Princess Alexandra hospital",1004.70450529
+1080,"Doomadgee",138.824,-17.94141,"Princess Alexandra hospital",1391.67012381
+1081,"South Mission Beach",146.0909,-17.94652,"Princess Alexandra hospital",1022.01046523
+1082,"Carmoo",146.0461,-17.94788,"Princess Alexandra hospital",1013.20991875
+1083,"Tully Heads",146.0563,-18.01976,"Princess Alexandra hospital",1011.11026584
+1084,"Croydon",142.2422,-18.2051,"Princess Alexandra hospital",1277.52098704
+1085,"Cardwell",146.0227,-18.26396,"Princess Alexandra hospital",975.60575
+1086,"Georgetown",143.5479,-18.29241,"Princess Alexandra hospital",1182.58553867
+1087,"Lucinda",146.3337,-18.52889,"Princess Alexandra hospital",961.67770716
+1088,"Halifax",146.2856,-18.58094,"Princess Alexandra hospital",954.74004745
+1089,"Macknade",146.2605,-18.58664,"Princess Alexandra hospital",953.59640139
+1090,"Taylors Beach",146.3273,-18.62407,"Princess Alexandra hospital",959.428607
+1091,"Trebonne",146.0781,-18.62689,"Princess Alexandra hospital",946.83818809
+1092,"Ingham",146.1581,-18.64706,"Princess Alexandra hospital",941.76225389
+1093,"Allingham",146.2953,-18.70771,"Princess Alexandra hospital",953.93409697
+1094,"Palm Island",146.6058,-18.72665,"Princess Alexandra hospital",1142.99198156
+1095,"Balgal Beach",146.4083,-19.01722,"Princess Alexandra hospital",908.36588097
+1096,"Horseshoe Bay",146.8597,-19.11815,"Princess Alexandra hospital",925.42126765
+1097,"Toolakea",146.5788,-19.14605,"Princess Alexandra hospital",895.85814511
+1098,"Arcadia Bay",146.8651,-19.14853,"Princess Alexandra hospital",921.3842622
+1099,"Nelly Bay",146.8484,-19.15696,"Princess Alexandra hospital",919.64035292
+1100,"Saunders Beach",146.6098,-19.15875,"Princess Alexandra hospital",892.66484531
+1101,"Bluewater",146.5589,-19.1675,"Princess Alexandra hospital",892.19460525
+1102,"Picnic Bay",146.8379,-19.17814,"Princess Alexandra hospital",923.03592324
+1103,"Yabulu",146.5851,-19.20155,"Princess Alexandra hospital",888.47991943
+1104,"Pallarenda",146.773,-19.20234,"Princess Alexandra hospital",883.05998047
+1105,"Bluewater Park",146.5138,-19.20308,"Princess Alexandra hospital",895.55620901
+1106,"Black River",146.618,-19.23302,"Princess Alexandra hospital",885.40273137
+1107,"Townsville",146.8092,-19.26508,"Princess Alexandra hospital",874.21362725
+1108,"Rangewood",146.6392,-19.31192,"Princess Alexandra hospital",881.54722567
+1109,"Alice River",146.6023,-19.32778,"Princess Alexandra hospital",884.01455417
+1110,"Nome",146.9099,-19.37372,"Princess Alexandra hospital",858.87704725
+1111,"Cungulla",147.1112,-19.40128,"Princess Alexandra hospital",859.89311742
+1112,"Alligator Creek",146.9432,-19.42302,"Princess Alexandra hospital",858.08251766
+1113,"Alva Beach",147.4799,-19.45506,"Princess Alexandra hospital",827.0868084
+1114,"Giru",147.1066,-19.51333,"Princess Alexandra hospital",839.28786562
+1115,"Kalamia Estate",147.4184,-19.53428,"Princess Alexandra hospital",819.05056551
+1116,"Brandon",147.3554,-19.55389,"Princess Alexandra hospital",816.07768451
+1117,"Ayr",147.4056,-19.57545,"Princess Alexandra hospital",813.1068012
+1118,"Home Hill",147.4144,-19.66043,"Princess Alexandra hospital",802.49705628
+1119,"Camooweal",138.119,-19.92248,"Princess Alexandra hospital",1271.73746243
+1120,"Bowen",148.2418,-20.01494,"Princess Alexandra hospital",744.6070073
+1121,"Merinda",148.1648,-20.01751,"Princess Alexandra hospital",747.23423113
+1122,"Charters Towers",146.2598,-20.07699,"Princess Alexandra hospital",863.05895323
+1123,"Hideaway Bay - Dingo Beach",148.4886,-20.08489,"Princess Alexandra hospital",729.95230319
+1124,"Ravenswood",146.8898,-20.10146,"Princess Alexandra hospital",910.96989473
+1125,"Airlie Beach",148.7132,-20.26829,"Princess Alexandra hospital",723.96132534
+1126,"Cannonvale",148.6962,-20.2769,"Princess Alexandra hospital",720.44403786
+1128,"Mount Julian",148.6196,-20.37468,"Princess Alexandra hospital",709.53247349
+1129,"Proserpine",148.5821,-20.40489,"Princess Alexandra hospital",705.77077764
+1130,"Collinsville",147.8441,-20.55341,"Princess Alexandra hospital",757.26402127
+1131,"Scottville",147.8184,-20.57206,"Princess Alexandra hospital",757.65286287
+1132,"Midge Point",148.7213,-20.65029,"Princess Alexandra hospital",691.35733541
+1133,"Julia Creek",141.7435,-20.65701,"Princess Alexandra hospital",1031.95015182
+1134,"Cloncurry",140.5092,-20.70554,"Princess Alexandra hospital",1071.81933158
+1135,"Mount Isa",139.4993,-20.73044,"Princess Alexandra hospital",1154.09798635
+1136,"Richmond",143.1423,-20.73186,"Princess Alexandra hospital",1067.30759922
+1137,"Hughenden",144.1992,-20.84553,"Princess Alexandra hospital",993.1820469
+1138,"Seaforth",148.9607,-20.89524,"Princess Alexandra hospital",659.84098225
+1139,"Calen",148.7716,-20.89849,"Princess Alexandra hospital",661.97743948
+1140,"Haliday Bay - Ball Bay",148.9879,-20.90075,"Princess Alexandra hospital",659.41737075
+1141,"Killarney",152.2963,-28.33305,"Princess Alexandra hospital",125.95798438
+1142,"Nindaroo",149.1636,-21.05945,"Princess Alexandra hospital",642.93311355
+1143,"Farleigh",149.1017,-21.10705,"Princess Alexandra hospital",634.1895335
+1144,"Erakala",149.1071,-21.12326,"Princess Alexandra hospital",636.04010989
+1145,"Finch Hatton",148.6313,-21.14165,"Princess Alexandra hospital",669.30317097
+1146,"Marian",148.9428,-21.14558,"Princess Alexandra hospital",643.46588863
+1147,"Mackay",149.1664,-21.15497,"Princess Alexandra hospital",629.39919221
+1148,"Mirani",148.8653,-21.16023,"Princess Alexandra hospital",650.62973268
+1149,"Walkerston",149.0554,-21.16249,"Princess Alexandra hospital",634.52352739
+1150,"Bakers Creek",149.1521,-21.20776,"Princess Alexandra hospital",624.56135514
+1151,"Eton",148.9732,-21.26365,"Princess Alexandra hospital",633.05896328
+1152,"Hay Point",149.2905,-21.29652,"Princess Alexandra hospital",622.1757903
+1153,"Glenden",148.1138,-21.35315,"Princess Alexandra hospital",686.70439646
+1154,"Grasstree Beach",149.3067,-21.36404,"Princess Alexandra hospital",617.76421541
+1155,"Campwin Beach",149.313,-21.37793,"Princess Alexandra hospital",616.13100743
+1156,"Sarina Beach",149.3095,-21.38995,"Princess Alexandra hospital",615.20726745
+1157,"Sarina",149.216,-21.4206,"Princess Alexandra hospital",604.20938672
+1158,"Armstrong Beach",149.2873,-21.45078,"Princess Alexandra hospital",607.87283397
+1159,"Nebo",148.6917,-21.69028,"Princess Alexandra hospital",628.2605958
+1160,"Moranbah",148.0456,-22.0039,"Princess Alexandra hospital",671.58786501
+1161,"Winton",143.0414,-22.38676,"Princess Alexandra hospital",861.06791173
+1162,"Dysart",148.3481,-22.58982,"Princess Alexandra hospital",615.11831519
+1163,"Middlemount",148.7039,-22.81426,"Princess Alexandra hospital",580.51712215
+1164,"Clermont",147.6374,-22.82681,"Princess Alexandra hospital",645.70998605
+1165,"Byfield",150.6508,-22.85074,"Princess Alexandra hospital",471.14886349
+1166,"Boulia",139.9082,-22.91287,"Princess Alexandra hospital",1106.85943023
+1167,"Aramac",145.2439,-22.9698,"Princess Alexandra hospital",733.16729224
+1168,"Tieri",148.3497,-23.03219,"Princess Alexandra hospital",603.12487199
+1169,"Capella",148.0248,-23.08513,"Princess Alexandra hospital",608.6238927
+1170,"Yeppoon",150.7431,-23.12635,"Princess Alexandra hospital",450.8685383
+1171,"The Caves",150.4661,-23.17545,"Princess Alexandra hospital",439.85838797
+1172,"Mulambin",150.7857,-23.19155,"Princess Alexandra hospital",454.45270275
+1173,"Kinka Beach",150.7876,-23.2243,"Princess Alexandra hospital",448.41139614
+1174,"Glendale",150.4751,-23.24572,"Princess Alexandra hospital",437.53607742
+1175,"Emu Park",150.8238,-23.25994,"Princess Alexandra hospital",449.29930062
+1176,"Keppel Sands",150.7919,-23.3275,"Princess Alexandra hospital",446.0681726
+1177,"Rockhampton",150.4974,-23.38918,"Princess Alexandra hospital",415.46302655
+1178,"Rubyvale",147.6974,-23.42054,"Princess Alexandra hospital",615.5464337
+1179,"Gracemere",150.4558,-23.43865,"Princess Alexandra hospital",414.04319946
+1180,"Longreach",144.2475,-23.44447,"Princess Alexandra hospital",754.35758932
+1181,"Sapphire",147.7193,-23.46006,"Princess Alexandra hospital",609.46979159
+1182,"Emerald",148.1598,-23.52349,"Princess Alexandra hospital",574.24286584
+1183,"Barcaldine",145.2854,-23.55288,"Princess Alexandra hospital",689.15282926
+1184,"Blackwater",148.8834,-23.5779,"Princess Alexandra hospital",530.91953545
+1185,"Bouldercombe",150.4668,-23.57818,"Princess Alexandra hospital",417.17048858
+1186,"Bluff",149.0695,-23.57993,"Princess Alexandra hospital",517.58857121
+1187,"Mount Morgan",150.3881,-23.64464,"Princess Alexandra hospital",431.23924003
+1188,"Dingo",149.3315,-23.64629,"Princess Alexandra hospital",499.66503901
+1189,"Alpha",146.6387,-23.65028,"Princess Alexandra hospital",678.0525876
+1190,"Duaringa",149.6687,-23.71846,"Princess Alexandra hospital",477.67254067
+1191,"Willows Gemfields",147.5411,-23.73932,"Princess Alexandra hospital",625.3939618
+1192,"Mount Larcom",150.9799,-23.8124,"Princess Alexandra hospital",368.11848685
+1193,"Gladstone",151.2578,-23.84753,"Princess Alexandra hospital",355.78865832
+1194,"Tannum Sands",151.3685,-23.94867,"Princess Alexandra hospital",341.93598594
+1195,"Wurdong Heights",151.3025,-23.98485,"Princess Alexandra hospital",340.62432803
+1196,"Calliope",151.213,-23.99655,"Princess Alexandra hospital",348.44793403
+1197,"Benaraby",151.3256,-24.00187,"Princess Alexandra hospital",337.79102668
+1198,"Springsure",148.0891,-24.11595,"Princess Alexandra hospital",528.55891142
+1199,"Woorabinda",149.4575,-24.1306,"Princess Alexandra hospital",477.37438005
+1200,"Seventeen Seventy",151.8855,-24.16343,"Princess Alexandra hospital",333.09678321
+1201,"Baralaba",149.8114,-24.17958,"Princess Alexandra hospital",450.94398209
+1202,"Agnes Water",151.9008,-24.21017,"Princess Alexandra hospital",326.39834542
+1203,"Taylors Creek",149.1545,-24.25325,"Princess Alexandra hospital",489.39862458
+1204,"Miriam Vale",151.5583,-24.328,"Princess Alexandra hospital",307.49872197
+1205,"Biloela",150.5098,-24.39602,"Princess Alexandra hospital",386.10321611
+1206,"Blackall",145.4645,-24.42336,"Princess Alexandra hospital",623.3512071
+1207,"Thangool",150.5751,-24.48738,"Princess Alexandra hospital",376.40835441
+1208,"Moura",149.9719,-24.57498,"Princess Alexandra hospital",405.51872207
+1209,"Moore Park",152.2757,-24.71776,"Princess Alexandra hospital",264.13260585
+1210,"Burnett Heads",152.4149,-24.76892,"Princess Alexandra hospital",253.37672904
+1211,"Bargara",152.4607,-24.81453,"Princess Alexandra hospital",252.52700805
+1212,"Gooburrum",152.345,-24.81685,"Princess Alexandra hospital",252.56461269
+1213,"Sloping Hummock",152.4252,-24.8436,"Princess Alexandra hospital",247.83522222
+1214,"Oakwood",152.298,-24.85082,"Princess Alexandra hospital",249.87034168
+1215,"Monto",151.1207,-24.86547,"Princess Alexandra hospital",326.23223226
+1216,"Bundaberg",152.3444,-24.87052,"Princess Alexandra hospital",245.16229387
+1217,"Innes Park",152.4823,-24.88137,"Princess Alexandra hospital",249.48843881
+1218,"Tambo",146.2549,-24.88339,"Princess Alexandra hospital",559.29948721
+1219,"Sharon",152.2587,-24.88377,"Princess Alexandra hospital",247.24855361
+1220,"Elliott Heads",152.4888,-24.9178,"Princess Alexandra hospital",251.21477385
+1221,"Theodore",150.075,-24.94678,"Princess Alexandra hospital",368.73268855
+1222,"South Bingera",152.2194,-24.96842,"Princess Alexandra hospital",234.54586673
+1223,"Gin Gin",151.9557,-24.99157,"Princess Alexandra hospital",245.00192114
+1224,"Woodgate",152.5506,-25.0964,"Princess Alexandra hospital",229.30522542
+1225,"Cordalba",152.2111,-25.15681,"Princess Alexandra hospital",219.21288079
+1226,"Mount Perry",151.6442,-25.18036,"Princess Alexandra hospital",280.02265948
+1227,"Burrum Heads",152.609,-25.18701,"Princess Alexandra hospital",200.95292015
+1228,"Burrum Heads - East",152.6334,-25.21101,"Princess Alexandra hospital",199.81057036
+1229,"Apple Tree Creek",152.2338,-25.22391,"Princess Alexandra hospital",212.68837744
+1230,"Burrum Heads - South",152.5934,-25.23535,"Princess Alexandra hospital",197.01011564
+1231,"Childers",152.2765,-25.23536,"Princess Alexandra hospital",207.99865239
+1232,"Toogoom",152.6898,-25.25614,"Princess Alexandra hospital",198.37264897
+1233,"Pacific Haven",152.5565,-25.26683,"Princess Alexandra hospital",194.77866729
+1234,"Hervey Bay",152.8722,-25.28535,"Princess Alexandra hospital",207.8428762
+1235,"Howard",152.5602,-25.31648,"Princess Alexandra hospital",190.00304065
+1236,"Torbanlea",152.596,-25.34752,"Princess Alexandra hospital",186.67341626
+1237,"Walligan",152.771,-25.35161,"Princess Alexandra hospital",192.6491475
+1238,"Sunshine Acres",152.7889,-25.35801,"Princess Alexandra hospital",194.55208803
+1239,"Booral",152.9037,-25.36202,"Princess Alexandra hospital",202.71382284
+1240,"Eidsvold",151.1221,-25.37064,"Princess Alexandra hospital",269.44534802
+1241,"River Heads",152.9102,-25.39864,"Princess Alexandra hospital",206.12836416
+1242,"Aldershot",152.6613,-25.46311,"Princess Alexandra hospital",177.52692681
+1243,"Biggenden",152.0449,-25.50952,"Princess Alexandra hospital",195.53392371
+1244,"Oakhurst",152.6206,-25.51008,"Princess Alexandra hospital",179.37928685
+1245,"Maryborough",152.6935,-25.52726,"Princess Alexandra hospital",175.86470872
+1246,"Mundubbera",151.2992,-25.59115,"Princess Alexandra hospital",245.51691217
+1247,"Maaroom",152.8722,-25.61156,"Princess Alexandra hospital",168.93251434
+1248,"Gayndah",151.6074,-25.62451,"Princess Alexandra hospital",218.24577166
+1249,"Taroom",149.7974,-25.6412,"Princess Alexandra hospital",308.00880443
+1250,"Boonooroo - Tuan",152.8771,-25.6788,"Princess Alexandra hospital",166.0385831
+1251,"Poona",152.9052,-25.71673,"Princess Alexandra hospital",163.73083566
+1252,"Tiaro",152.584,-25.725,"Princess Alexandra hospital",156.5179985
+1253,"Augathella",146.5842,-25.79596,"Princess Alexandra hospital",488.48353991
+1254,"Injune",148.5651,-25.84311,"Princess Alexandra hospital",375.55593746
+1255,"Bauple Forest",152.636,-25.85212,"Princess Alexandra hospital",153.96211968
+1256,"Rainbow Beach",153.0922,-25.90782,"Princess Alexandra hospital",163.49877443
+1257,"Tin Can Bay",153.0031,-25.91357,"Princess Alexandra hospital",149.99542777
+1258,"Glenwood",152.6324,-25.94735,"Princess Alexandra hospital",142.9521597
+1259,"Cooloola Village",152.982,-25.97598,"Princess Alexandra hospital",151.39898318
+1260,"Curra",152.5881,-26.07081,"Princess Alexandra hospital",128.57579039
+1261,"Kilkivan",152.2399,-26.08621,"Princess Alexandra hospital",149.3516243
+1262,"Wandoan",149.9628,-26.12088,"Princess Alexandra hospital",270.75040345
+1263,"Proston",151.603,-26.16377,"Princess Alexandra hospital",209.33679801
+1264,"Goomeri",152.0647,-26.18048,"Princess Alexandra hospital",167.293968
+1265,"Gympie",152.6706,-26.18893,"Princess Alexandra hospital",114.37907544
+1266,"The Palms",152.5889,-26.19336,"Princess Alexandra hospital",121.33218415
+1267,"Nahrunda",152.6127,-26.20237,"Princess Alexandra hospital",118.58733998
+1268,"Gowrie",146.3207,-26.23114,"Princess Alexandra hospital",501.11740632
+1269,"Pie Creek",152.6277,-26.23769,"Princess Alexandra hospital",114.64113349
+1270,"Murgon",151.9402,-26.24246,"Princess Alexandra hospital",178.61512818
+1271,"Boreen Point",152.9952,-26.28443,"Princess Alexandra hospital",110.35261377
+1272,"Cherbourg",151.9565,-26.28971,"Princess Alexandra hospital",181.7016288
+1273,"Wondai",151.8736,-26.32045,"Princess Alexandra hospital",184.71148493
+1274,"Cooran",152.8222,-26.33805,"Princess Alexandra hospital",101.88312234
+1275,"Amamoor",152.6748,-26.34607,"Princess Alexandra hospital",106.93703394
+1276,"Cooroibah",152.9939,-26.35897,"Princess Alexandra hospital",104.88378663
+1277,"Pomona",152.8533,-26.36256,"Princess Alexandra hospital",95.72653115
+1278,"Forest Acres",152.9413,-26.36638,"Princess Alexandra hospital",95.62950385
+1279,"Black Mountain",152.8819,-26.40467,"Princess Alexandra hospital",92.40095052
+1280,"Charleville",146.2416,-26.40697,"Princess Alexandra hospital",487.05455387
+1281,"Sunshine Beach",153.1058,-26.41021,"Princess Alexandra hospital",103.22663086
+1282,"Cooroy",152.9089,-26.41875,"Princess Alexandra hospital",88.14061374
+1283,"Doonan - Tinbeerwah",153.0119,-26.43781,"Princess Alexandra hospital",91.82462468
+1284,"Weyba Downs",153.0474,-26.45561,"Princess Alexandra hospital",93.36900824
+1285,"Imbil",152.677,-26.46119,"Princess Alexandra hospital",112.09270844
+1286,"Eumundi",152.9513,-26.47643,"Princess Alexandra hospital",84.66015616
+1287,"Mitchell",147.976,-26.48827,"Princess Alexandra hospital",374.88801161
+1288,"Kingaroy",151.8443,-26.53645,"Princess Alexandra hospital",160.61248637
+1289,"Yandina",152.9565,-26.56212,"Princess Alexandra hospital",79.15825175
+1290,"Roma",148.7879,-26.57094,"Princess Alexandra hospital",318.86736908
+1291,"Wallumbilla",149.187,-26.58483,"Princess Alexandra hospital",292.30060614
+1292,"Kenilworth",152.727,-26.59522,"Princess Alexandra hospital",106.95576923
+1293,"Kureelpa",152.8837,-26.60834,"Princess Alexandra hospital",85.92096216
+1294,"Yuleba",149.381,-26.61304,"Princess Alexandra hospital",279.33658825
+1295,"Quilpie",144.2683,-26.61502,"Princess Alexandra hospital",617.36154224
+1296,"Mapleton",152.8651,-26.62074,"Princess Alexandra hospital",87.70604307
+1297,"Nambour",152.9592,-26.62753,"Princess Alexandra hospital",76.79058917
+1298,"Kiels Mountain",153.001,-26.6527,"Princess Alexandra hospital",73.93384239
+1299,"Flaxton",152.8647,-26.65557,"Princess Alexandra hospital",88.36588028
+1300,"Miles",150.1857,-26.65858,"Princess Alexandra hospital",226.7836894
+1301,"Woombye",152.9666,-26.66148,"Princess Alexandra hospital",73.31261009
+1302,"Nanango",151.9992,-26.6713,"Princess Alexandra hospital",141.80998964
+1303,"Palmwoods",152.9568,-26.69113,"Princess Alexandra hospital",77.72753536
+1304,"Witta",152.8107,-26.70454,"Princess Alexandra hospital",85.87598637
+1305,"Chinchilla",150.628,-26.74202,"Princess Alexandra hospital",194.30463383
+1306,"Maleny",152.848,-26.75878,"Princess Alexandra hospital",77.53711772
+1307,"Mooloolah",152.9616,-26.76553,"Princess Alexandra hospital",69.95815581
+1308,"Glenview",153.0204,-26.76952,"Princess Alexandra hospital",65.3536683
+1309,"Jandowae",151.1101,-26.78068,"Princess Alexandra hospital",172.48807088
+1310,"Landsborough",152.9652,-26.80826,"Princess Alexandra hospital",63.54971926
+1311,"Yarraman",151.9796,-26.84046,"Princess Alexandra hospital",126.20230891
+1312,"Peachester",152.8871,-26.84242,"Princess Alexandra hospital",68.20845497
+1313,"Beerwah",152.954,-26.85293,"Princess Alexandra hospital",61.02620774
+1314,"Blackbutt",152.1042,-26.88722,"Princess Alexandra hospital",115.35411794
+1315,"Glass House Mountain",152.9507,-26.89771,"Princess Alexandra hospital",56.19806444
+1316,"Bell",151.4491,-26.93176,"Princess Alexandra hospital",160.95182636
+1317,"Beerburrum - North",152.957,-26.93545,"Princess Alexandra hospital",50.73171927
+1318,"Kilcoy",152.5638,-26.94019,"Princess Alexandra hospital",78.94441216
+1319,"Woodford",152.778,-26.95557,"Princess Alexandra hospital",61.26798898
+1320,"Beerburrum",152.955,-26.96138,"Princess Alexandra hospital",50.87279392
+1321,"D'Aguilar",152.7984,-26.98884,"Princess Alexandra hospital",56.64819983
+1322,"Delaneys Creek",152.7971,-27.00308,"Princess Alexandra hospital",57.1357613
+1323,"Donnybrook",153.0662,-27.00662,"Princess Alexandra hospital",50.75301972
+1324,"Toorbul",153.0991,-27.03348,"Princess Alexandra hospital",52.28402483
+1325,"Wamuran",152.8643,-27.04069,"Princess Alexandra hospital",49.08591381
+1326,"Ningi",153.1051,-27.06703,"Princess Alexandra hospital",51.39521312
+1327,"Woorim",153.2035,-27.07303,"Princess Alexandra hospital",64.82187606
+1328,"Sandstone Point",153.1273,-27.08295,"Princess Alexandra hospital",54.89355953
+1329,"Bongaree",153.1626,-27.08546,"Princess Alexandra hospital",61.60741799
+1330,"Toogoolawah",152.3753,-27.08821,"Princess Alexandra hospital",82.62366994
+1331,"Beachmere",153.0514,-27.12968,"Princess Alexandra hospital",47.62596559
+1332,"Surat",149.0666,-27.15384,"Princess Alexandra hospital",293.75536059
+1333,"Dalby",151.261,-27.18328,"Princess Alexandra hospital",137.77687653
+1334,"Dayboro",152.8215,-27.19792,"Princess Alexandra hospital",49.10065275
+1335,"Esk",152.4179,-27.23674,"Princess Alexandra hospital",69.77455894
+1336,"Crows Nest",152.0506,-27.26153,"Princess Alexandra hospital",112.27559275
+1337,"Tara",150.4556,-27.27772,"Princess Alexandra hospital",197.56860279
+1338,"Goombungee",151.8502,-27.30485,"Princess Alexandra hospital",111.93125337
+1339,"Mount Glorious",152.7701,-27.33397,"Princess Alexandra hospital",48.40423478
+1340,"Samford Valley - Highvale",152.8394,-27.36508,"Princess Alexandra hospital",35.6333058
+1341,"Samford",152.8849,-27.37146,"Princess Alexandra hospital",30.56607673
+1342,"Mount Nebo",152.7795,-27.39084,"Princess Alexandra hospital",43.93633549
+1343,"Coominya",152.5023,-27.3916,"Princess Alexandra hospital",58.81420238
+1344,"Amity Point",153.44,-27.39664,"Princess Alexandra hospital",98.73954695
+1345,"Meringandan West",151.8819,-27.41789,"Princess Alexandra hospital",105.21845738
+1346,"Meringandan",151.9132,-27.42327,"Princess Alexandra hospital",103.2118672
+1347,"Point Lookout",153.5377,-27.43022,"Princess Alexandra hospital",101.57142405
+1348,"Oakey",151.7183,-27.43202,"Princess Alexandra hospital",104.5037502
+1349,"Fernvale",152.6594,-27.45012,"Princess Alexandra hospital",43.88047248
+1350,"Lowood",152.5763,-27.46078,"Princess Alexandra hospital",49.60656927
+1351,"Murphys Creek",152.0567,-27.46123,"Princess Alexandra hospital",80.36699962
+1352,"Highfields",151.9481,-27.46253,"Princess Alexandra hospital",95.97185368
+1353,"Brisbane",153.0249,-27.47072,"Princess Alexandra hospital",8.15721476
+1354,"Kingsthorpe",151.8191,-27.47543,"Princess Alexandra hospital",98.02037522
+1355,"Gowrie Junction",151.8928,-27.49125,"Princess Alexandra hospital",92.73435423
+1356,"Lockrose",152.4579,-27.49448,"Princess Alexandra hospital",56.91201266
+1357,"Dunwich",153.4038,-27.49776,"Princess Alexandra hospital",82.96294679
+1358,"Blue Mountain Heights",151.9612,-27.50364,"Princess Alexandra hospital",90.53431145
+1359,"Gowrie Mountain",151.8228,-27.51137,"Princess Alexandra hospital",94.01662795
+1360,"Brightview",152.4916,-27.51975,"Princess Alexandra hospital",50.71590027
+1361,"Cecil Plains",151.1936,-27.53233,"Princess Alexandra hospital",138.04025191
+1362,"Minden Village",152.5591,-27.5357,"Princess Alexandra hospital",46.44948929
+1363,"Kensington Grove - Regency Downs",152.4572,-27.53986,"Princess Alexandra hospital",51.65972605
+1364,"Glenore Grove",152.4122,-27.54114,"Princess Alexandra hospital",54.25347942
+1365,"Helidon",152.1254,-27.54838,"Princess Alexandra hospital",70.45244663
+1366,"Prince Henry Heights",151.9905,-27.55295,"Princess Alexandra hospital",86.80185357
+1367,"Withcott",152.026,-27.55364,"Princess Alexandra hospital",76.63585619
+1368,"Placid Hills",152.2504,-27.5578,"Princess Alexandra hospital",66.2224794
+1369,"Gatton",152.2751,-27.56033,"Princess Alexandra hospital",62.54882434
+1370,"Toowoomba",151.9528,-27.56216,"Princess Alexandra hospital",88.26447445
+1371,"Coochiemudlo Island",153.3328,-27.56886,"Princess Alexandra hospital",44.25689606
+1372,"Marburg",152.5954,-27.56895,"Princess Alexandra hospital",40.25067943
+1373,"Grantham",152.2012,-27.57374,"Princess Alexandra hospital",70.15459664
+1374,"Plainland",152.4165,-27.57656,"Princess Alexandra hospital",52.16447553
+1375,"Forest Hill",152.3549,-27.58999,"Princess Alexandra hospital",57.99959716
+1376,"Macleay Island",153.3615,-27.59184,"Princess Alexandra hospital",73.83337555
+1377,"Walloon",152.6725,-27.60325,"Princess Alexandra hospital",39.82479035
+1378,"Westbrook",151.8757,-27.60355,"Princess Alexandra hospital",99.63518723
+1379,"Lamb Island",153.3798,-27.62387,"Princess Alexandra hospital",71.52496925
+1380,"Thagoona",152.6257,-27.62401,"Princess Alexandra hospital",41.63568175
+1381,"Laidley",152.3938,-27.63099,"Princess Alexandra hospital",58.33069643
+1382,"Rosewood",152.5889,-27.63446,"Princess Alexandra hospital",44.70891386
+1383,"Mount Cotton",153.2508,-27.63515,"Princess Alexandra hospital",31.84857512
+1384,"Laidley Heights",152.3675,-27.63571,"Princess Alexandra hospital",64.12887747
+1385,"Wyreema",151.8542,-27.65743,"Princess Alexandra hospital",103.00072181
+1386,"Ripley",152.7864,-27.66642,"Princess Alexandra hospital",31.42813773
+1387,"Southbrook",151.7128,-27.67579,"Princess Alexandra hospital",106.04344468
+1388,"Russell Island",153.3905,-27.68322,"Princess Alexandra hospital",79.05485061
+1389,"Deebing Heights",152.7546,-27.69709,"Princess Alexandra hospital",36.3807417
+1390,"Cambooya",151.8615,-27.70633,"Princess Alexandra hospital",106.85816831
+1391,"Pittsworth",151.6329,-27.71797,"Princess Alexandra hospital",112.37610928
+1392,"Cabbage Tree Point",153.3552,-27.73664,"Princess Alexandra hospital",40.11308175
+1393,"Logan Village",153.1134,-27.77455,"Princess Alexandra hospital",41.25195715
+1394,"Jacobs Well",153.3629,-27.78179,"Princess Alexandra hospital",41.6934216
+1395,"Greenmount",151.9059,-27.78299,"Princess Alexandra hospital",108.43819217
+1396,"Peak Crossing",152.7294,-27.78404,"Princess Alexandra hospital",41.480086
+1397,"Harrisville",152.6677,-27.81036,"Princess Alexandra hospital",48.79239698
+1398,"Jimboomba - West",152.9618,-27.81259,"Princess Alexandra hospital",40.15583666
+1399,"Jimboomba",153.0307,-27.83265,"Princess Alexandra hospital",38.239324
+1400,"Mundoolun",153.0767,-27.86482,"Princess Alexandra hospital",44.67092978
+1401,"Cedar Grove",152.9843,-27.86655,"Princess Alexandra hospital",42.69951376
+1402,"Millmerran",151.2671,-27.87814,"Princess Alexandra hospital",137.99248504
+1403,"Cedar Vale",153.002,-27.87876,"Princess Alexandra hospital",42.92606492
+1404,"Tamborine",153.1285,-27.88138,"Princess Alexandra hospital",44.81171294
+1405,"Eagle Heights",153.2054,-27.92251,"Princess Alexandra hospital",53.77232063
+1406,"Clifton",151.9083,-27.92996,"Princess Alexandra hospital",120.8941977
+1407,"Maudsland",153.2774,-27.93276,"Princess Alexandra hospital",44.36490787
+1408,"Kalbar",152.6229,-27.94196,"Princess Alexandra hospital",58.29706134
+1409,"Gleneagle",152.9918,-27.94234,"Princess Alexandra hospital",50.63844965
+1410,"Boyland",153.1642,-27.94939,"Princess Alexandra hospital",53.88413024
+1411,"Mount Tamborine",153.2014,-27.97114,"Princess Alexandra hospital",57.08223085
+1412,"Mount Nathan",153.2639,-27.97678,"Princess Alexandra hospital",50.74219293
+1413,"Aratula",152.5384,-27.98409,"Princess Alexandra hospital",62.0275709
+1414,"Beaudesert",152.9992,-27.98632,"Princess Alexandra hospital",59.66672642
+1415,"Gold Coast",153.4277,-27.99114,"Princess Alexandra hospital",53.84085637
+1416,"Thargomindah",143.8229,-27.99583,"Princess Alexandra hospital",636.53277238
+1417,"Boonah",152.6824,-27.9978,"Princess Alexandra hospital",61.17967837
+1418,"Canungra",153.1598,-28.01415,"Princess Alexandra hospital",62.59359887
+1419,"Allora",151.982,-28.03472,"Princess Alexandra hospital",109.27837318
+1420,"St George",148.5812,-28.03888,"Princess Alexandra hospital",325.73906934
+1421,"Lower Beechmont",153.2516,-28.04105,"Princess Alexandra hospital",58.46061939
+1422,"Cunnamulla",145.6832,-28.06921,"Princess Alexandra hospital",510.4661174
+1423,"Kooralbyn",152.8443,-28.08068,"Princess Alexandra hospital",78.02296305
+1424,"Beechmont",153.206,-28.09893,"Princess Alexandra hospital",71.55455858
+1425,"Springbrook",153.2644,-28.18766,"Princess Alexandra hospital",78.85012582
+1426,"Yangan",152.2107,-28.19552,"Princess Alexandra hospital",110.32258503
+1427,"Rathdowney",152.8635,-28.20976,"Princess Alexandra hospital",81.96300062
+1428,"Warwick",152.0311,-28.21745,"Princess Alexandra hospital",110.69038149
+1429,"Inglewood",151.0795,-28.41751,"Princess Alexandra hospital",179.77983077
+1430,"Goondiwindi",150.3062,-28.54799,"Princess Alexandra hospital",226.26842531
+1431,"Yelarbon",150.7524,-28.57416,"Princess Alexandra hospital",206.27735905
+1432,"Dirranbandi",148.2271,-28.5841,"Princess Alexandra hospital",377.35030448
+1433,"Stanthorpe",151.9327,-28.65779,"Princess Alexandra hospital",152.3265671
+1434,"Johnstone",148.5382,-28.6787,"Princess Alexandra hospital",373.71842787
+1435,"Smithfield",145.690172,-16.83142,"Princess Alexandra hospital",1122.22375097
+1436,"Texas",151.1692,-28.85306,"Princess Alexandra hospital",203.98724218
+1437,"Wallangarra",151.9262,-28.92345,"Princess Alexandra hospital",176.54359463
+1438,"Birdsville",139.3551,-25.8978,"Princess Alexandra hospital",1377.01727547
+1439,"Durham",141.811455,-27.397056,"Princess Alexandra hospital",790.94068159
+1440,"Hungerford",144.409847,-28.996741,"Princess Alexandra hospital",638.80820376
+1441,"RBWH",153.0285,-27.447,"Princess Alexandra hospital",7.17536896
+1001,"Boigu Island",142.2153,-9.260192,"Princess Alexandra hospital",2221.14992244
+1002,"Saibai Island",142.6217,-9.38044,"Princess Alexandra hospital",2151.14992244
+1003,"Erub (Darnley) Island",143.7703,-9.585443,"Princess Alexandra hospital",2241.14992244
+1004,"Yorke Island",143.4073,-9.750172,"Princess Alexandra hospital",2161.14992244
+1005,"Iama (Yam) Island",142.7744,-9.900403,"Princess Alexandra hospital",2051.14992244
+1006,"Mer (Murray) Island",144.0504,-9.918105,"Princess Alexandra hospital",2251.14992244
+1007,"Mabuiag Island",142.1829,-9.95718,"Princess Alexandra hospital",2031.14992244
+1008,"Badu Island",142.1388,-10.12322,"Princess Alexandra hospital",1981.14992244
+1009,"St Pauls",142.3349,-10.18488,"Princess Alexandra hospital",1971.14992244
+1010,"Warraber Island",142.8238,-10.20726,"Princess Alexandra hospital",1991.14992244
+1011,"Hammond Island",142.2047,-10.54803,"Princess Alexandra hospital",1891.14992244
+1038,"Gununa",139.178,-16.65843,"Princess Alexandra hospital",1555.67012381
+1127,"Hamilton Island",148.9686,-20.35179,"Princess Alexandra hospital",773.96132534
