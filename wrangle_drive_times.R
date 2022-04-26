@@ -26,6 +26,98 @@ drive_times_dir <- "input/drive_times/NewRehabTimes"
 # left_join(df_rsq, select(df, From_Location, drive_time=Total_Minutes), by=c("town_name"="From_Location")) %>%
 #   (function(x) nrow(x) == nrow(na.omit(x))) 
 
+# add the additional ferry time for island locations
+df_ids <- read.csv(file.path(drive_times_dir, "QLDLocations3422.csv"))
+df_tsv <- read.csv(file.path(drive_times_dir, "TownsvilleRDT.csv"))
+
+df_ids %>% filter(!Location %in% df_tsv$From_Location)
+
+
+# torres straight islands have boat speed of 30km/hr (1 hour and 10 mins for ~35km journey from seisia to thursday island)
+# https://peddellsferry.com.au/ferry-timetable/
+
+
+island_list <- list(
+  list(
+    island_location = "Boigu Island",
+    closest_town = "Seisia",
+    travel_time = (200/30)*60 # 200kms @ 30km/hr
+  ),
+  list(
+    island_location = "Saibai Island",
+    closest_town = "Seisia",
+    travel_time = (165/30)*60
+  ),
+  list(
+    island_location = "Erub (Darnley) Island",
+    closest_town = "Seisia",
+    travel_time = (210/30)*60
+  ),
+  list(
+    island_location = "Yorke Island",
+    closest_town = "Seisia",
+    travel_time = (170/30)*60
+  ),
+  list(
+    island_location = "Iama (Yam) Island",
+    closest_town = "Seisia",
+    travel_time = (115/30)*60
+  ),
+  list(
+    island_location = "Mer (Murray) Island",
+    closest_town = "Seisia",
+    travel_time = (215/30)*60
+  ),
+  list(
+    island_location = "Mabuiag Island",
+    closest_town = "Seisia",
+    travel_time = (105/30)*60
+  ),
+  list(
+    island_location = "Badu Island",
+    closest_town = "Seisia",
+    travel_time = (80/30)*60
+  ),
+  list(
+    island_location = "St Pauls", # called moa island on google maps
+    closest_town = "Seisia",
+    travel_time = (75/30)*60
+  ),
+  list(
+    island_location = "Warraber Island",
+    closest_town = "Seisia",
+    travel_time = (85/30)*60
+  ),
+  list(
+    island_location = "Hammond Island",
+    closest_town = "Seisia",
+    travel_time = (35/30)*60
+  ),
+  list(
+    island_location = "Gununa",
+    closest_town = "Doomadgee",
+    travel_time = (35/30)*60 + 94 # 35min boat (assume same speed as torres strait) to Gangalidda, then 94 min drive to Doomadgee
+  ),
+  list(
+    island_location = "Hamilton Island",
+    closest_town = "Airlie Beach",
+    travel_time = 35 + 15 # 35 min ferry + 15 min drive (https://www.directferries.com.au/shute_harbour_hamilton_island_marina_ferry.htm)
+  )
+)
+
+
+df_islands <- 
+  do.call(rbind, island_list) %>% 
+  as.data.frame() %>%
+  mutate(across(everything(), unlist)) %>%
+  left_join(., rename(df_ids, id=ID), by=c("island_location" = "Location"))
+
+
+df_islands %>%
+  left_join(., select(d, -x, -y, -id), by=c("closest_town"="town_name")) %>%
+  mutate(minutes = minutes + travel_time) %>%
+  rename(town_name = island_location) %>%
+  select(names(d))
 
 ############# wrangle times
 
@@ -75,7 +167,7 @@ df_combined <-
   mutate(centre=str_trim(centre))
 
 
-get_df_times <- function(data, centres, save_file=NULL){
+get_df_times <- function(data, centres, islands_data=df_islands, save_file=NULL){
   df_times <- 
     data %>%
     filter(centre %in% centres) %>%
@@ -83,6 +175,18 @@ get_df_times <- function(data, centres, save_file=NULL){
     arrange(minutes) %>%
     slice(1) %>%
     ungroup()
+  
+  islands_times <-
+    left_join(
+      islands_data, 
+      select(df_times, -x, -y, -id), 
+      by=c("closest_town"="town_name")
+    ) %>%
+    mutate(minutes = minutes + travel_time) %>%
+    rename(town_name = island_location) %>%
+    select(names(df_times))
+  
+  df_times <- rbind(df_times, islands_times)
   
   if(!is.null(save_file)){
     write.csv(df_times, file=save_file, row.names=FALSE)
