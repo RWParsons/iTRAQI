@@ -6,7 +6,7 @@ library(tidyverse)
 library(sf)
 
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
-qld_SAs2021 <- readRDS("input/qld_2021_SA1s.rds")
+qld_SAs2021 <- readRDS("output/sa_polygons/QLD_SA1_2021.rds")
 
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
 CELL_SIZE = 0.03
