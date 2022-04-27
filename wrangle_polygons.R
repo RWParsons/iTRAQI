@@ -134,28 +134,30 @@ grid <- expand.grid(
   stringsAsFactors=FALSE
 )
 
-for(i in 1:nrow(grid)){
-  data_file <- grid$data[i]
-  sa_file <- grid$SA_polygons[i]
-  kriged_df <- readRDS(file.path("output/kriging_data", grid$data[i]))
-  sa_polygons <- readRDS(file.path("output/sa_polygons", grid$SA_polygons[i]))
-  care_type <- str_extract(data_file, "^[a-z]*(?=_)")
-  SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
-  SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
-  # if(care_type=="rehab") next
-  # print(care_type)
-  get_SA_agged_times(
-    lzn_kriged_df=kriged_df,
-    SA_number=SA_level,
-    SA_year=SA_year,
-    # no need to save these as they're no longer being used
-    # save_path=glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}.rds")
-  ) %>% as.data.frame() %>%
-    dplyr::select(1, value, min, max) %>% 
-    write.csv(
-      file=glue::glue("output/download_data/{care_type}_data_SA{SA_level}_year20{SA_year}.csv"),
-      row.names=FALSE
-    )
+if(FALSE) {
+  for(i in 1:nrow(grid)){
+    data_file <- grid$data[i]
+    sa_file <- grid$SA_polygons[i]
+    kriged_df <- readRDS(file.path("output/kriging_data", grid$data[i]))
+    sa_polygons <- readRDS(file.path("output/sa_polygons", grid$SA_polygons[i]))
+    care_type <- str_extract(data_file, "^[a-z]*(?=_)")
+    SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
+    SA_year <- str_extract(sa_file, "(?<=20)[0-9]{2}")
+    # if(care_type=="rehab") next
+    # print(care_type)
+    get_SA_agged_times(
+      lzn_kriged_df=kriged_df,
+      SA_number=SA_level,
+      SA_year=SA_year,
+      # no need to save these as they're no longer being used
+      # save_path=glue::glue("output/layers/{care_type}_polygons_SA{SA_level}_year20{SA_year}.rds")
+    ) %>% as.data.frame() %>%
+      dplyr::select(1, value, min, max) %>% 
+      write.csv(
+        file=glue::glue("output/download_data/{care_type}_data_SA{SA_level}_year20{SA_year}.csv"),
+        row.names=FALSE
+      )
+  }
 }
 
 
