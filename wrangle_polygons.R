@@ -4,6 +4,10 @@ library(sf)
 library(sp)
 library(tidyverse)
 
+qld_SAs2016 <-
+  st_read("input/qld_sa_zones_2016/MB_2016_QLD.shp") %>%
+  rename(SA1_CODE16=SA1_MAIN16, SA2_CODE16=SA2_MAIN16)
+
 seifa_scale_to_text <- function(x){
   case_when(
     x==1 ~ "Most disadvantaged",
