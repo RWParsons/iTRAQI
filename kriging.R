@@ -12,17 +12,29 @@ aus <- raster::getData('GADM', country = 'AUS', level = 1)
 CELL_SIZE = 0.03
 VGM_MODEL = "Sph"
 
+replacement_name_for_brisbane <- "Brisbane (PAH/RBWH)"
+
+df_acute_addons <- data.frame(
+  # add brisbane as 8 minutes for acute care
+  # add rbwh as 0 minutes
+  town_name = c("Brisbane", "RBWH"),
+  acute_time = c(8, 0),
+  acute_care_centre = c(replacement_name_for_brisbane, replacement_name_for_brisbane)
+)
+
 df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
   select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, acute_care_centre=Destination2) %>%
   filter(!is.na(acute_care_centre)) %>%
-  mutate(acute_care_centre=ifelse(acute_care_centre=="Townsville Hospital","Townsville University Hospital","Brain Injury Rehabilitation Unit"))
+  mutate(acute_care_centre=ifelse(acute_care_centre=="Townsville Hospital","Townsville University Hospital", replacement_name_for_brisbane)) %>%
+  rbind(., df_acute_addons) %>%
+  distinct() # removes the duplicated Killarney
 
 df_rehab <- read.csv("input/rehab_times/weighted_rehab_time.csv")
 
 df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_name") %>%
   rename(location=town_name)
 
-write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220411.csv", row.names = F)
+write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220427.csv", row.names = F)
 
 df_times <- 
   df_times %>%
@@ -133,7 +145,8 @@ raster_out_paths <- list.files(rehab_times_dir, full.names = F)
 raster_out_paths <- str_replace(raster_out_paths, "csv", "rds")
 raster_out_paths <- file.path("output/layers", raster_out_paths)
 
-map2(data_files[-5], raster_out_paths[-5], do_rehab_layer_kriging) # ignore the weighted_rehab_time
+idx_ignore <- grep("weighted|all", data_files) # ignore the weighted and combined times rehab files
+map2(data_files[-idx_ignore], raster_out_paths[-idx_ignore], do_rehab_layer_kriging)
 
 # sanity check plots
 library(leaflet)
