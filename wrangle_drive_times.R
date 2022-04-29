@@ -169,8 +169,8 @@ files <- c(
 
 centre_renaming <- function(x) {
   case_when(
-    x == "Brain Injury Rehabilitation Unit" ~ "Princess Alexandra Hospital",
-    x == "RBWH" ~ "Royal Brisbane and Women's Hospital",
+    x == "Brain Injury Rehabilitation Unit" ~ "Princess Alexandra Hospital (PAH)",
+    x == "RBWH" ~ "Royal Brisbane and Women's Hospital (RBWH)",
     x == "Maleny Hospital" ~ "Maleny Soldiers Memorial Hospital",
     TRUE ~ x
   )
