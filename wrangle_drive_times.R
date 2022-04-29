@@ -136,6 +136,7 @@ future_gold_locs <- c(
   "Townsville University Hospital",
   "Sunshine Coast University Hospital",
   "Brain Injury Rehabilitation Unit",
+  "RBWH",
   "Gold Coast University Hospital"
 )
 
