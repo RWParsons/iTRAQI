@@ -320,7 +320,7 @@ stack_index <- stack %>%
     index=get_iTRAQI_index(acute_mins=value_acute, rehab_mins=value_rehab),
     rehab_time_str=str_extract(popup_rehab, "<b>Time to.*$"),
     popup_index =
-      paste0(popup_acute, rehab_time_str, "<b>iTRAQI Index: </b>", .[["index"]], "<br>")
+      paste0(popup_acute, rehab_time_str, "<b>iTRAQI Index: </b>", index, "<br>")
   ) %>% 
   rename(popup=popup_index, value=index) %>%
   select(CODE, ra, seifa_quintile, popup, value, SA_level) %>% 
