@@ -271,6 +271,30 @@ make_combined_SA1_layers <- function(save=TRUE){
 # make_combined_SA2_layers()
 # make_combined_SA1_layers()
 
+clean_acute_label <- function(x) {
+  str_remove_all(x, "\\(|\\)|\\[|\\]") %>% 
+    str_split(",", simplify=T) %>%
+    str_replace("-Inf", "<") %>%
+    str_replace(" Inf", "+") %>%
+    paste0(collapse=",") %>%
+    str_replace(",\\+", "\\+") %>%
+    str_replace("<,", "<") %>%
+    str_replace(",", "-")
+}
+
+iTRAQI_acute_breaks <- c(-Inf, 1, 2, 4, 6, Inf)
+iTRAQI_rehab_breaks <- c(-Inf, 1, 2, 4, 6, Inf)
+
+get_iTRAQI_index <- function(acute_mins, rehab_mins){
+  acute_cat <- cut(acute_mins/60, breaks=iTRAQI_acute_breaks)
+  rehab_cat <- cut(rehab_mins/60, breaks=iTRAQI_rehab_breaks)
+  
+  acute_label <- map_chr(acute_cat, clean_acute_label)
+  rehab_label <- LETTERS[rehab_cat]
+  
+  paste0(acute_label, rehab_label)
+}
+
 stack_SA1_and_SA2_layers <- function(save=TRUE){
   SA1 <- make_combined_SA1_layers(save=FALSE)
   SA2 <- make_combined_SA2_layers(save=FALSE)
@@ -290,7 +314,19 @@ stack <- stack_SA1_and_SA2_layers(save=FALSE)
 
 stack_rehab <- select(stack, -popup_acute, -value_acute) %>% rename(popup=popup_rehab, value=value_rehab) %>% mutate(care_type="rehab")
 stack_acute <- select(stack, -popup_rehab, -value_rehab) %>% rename(popup=popup_acute, value=value_acute) %>% mutate(care_type="acute")
-vstack <- rbind(stack_acute, stack_rehab)
+
+stack_index <- stack %>% 
+  mutate(
+    index=get_iTRAQI_index(acute_mins=value_acute, rehab_mins=value_rehab),
+    rehab_time_str=str_extract(popup_rehab, "<b>Time to.*$"),
+    popup_index =
+      paste0(popup_acute, rehab_time_str, "<b>iTRAQI Index: </b>", .[["index"]], "<br>")
+  ) %>% 
+  rename(popup=popup_index, value=index) %>%
+  select(CODE, ra, seifa_quintile, popup, value, SA_level) %>% 
+  mutate(care_type="index")
+
+vstack <- rbind(stack_acute, stack_rehab, stack_index)
 saveRDS(vstack, "output/layers/vertical_stacked_SA1_and_SA2_polygons_year2016_simplified.rds")
 #############
 
