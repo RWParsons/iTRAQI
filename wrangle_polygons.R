@@ -312,8 +312,15 @@ stack_SA1_and_SA2_layers <- function(save=TRUE){
 
 stack <- stack_SA1_and_SA2_layers(save=FALSE)
 
-stack_rehab <- select(stack, -popup_acute, -value_acute) %>% rename(popup=popup_rehab, value=value_rehab) %>% mutate(care_type="rehab")
-stack_acute <- select(stack, -popup_rehab, -value_rehab) %>% rename(popup=popup_acute, value=value_acute) %>% mutate(care_type="acute")
+stack_rehab <- stack %>%
+  select(-popup_acute, -value_acute) %>% 
+  rename(popup=popup_rehab, value=value_rehab) %>% 
+  mutate(care_type="rehab")
+
+stack_acute <- stack %>%
+  select(-popup_rehab, -value_rehab) %>% 
+  rename(popup=popup_acute, value=value_acute) %>% 
+  mutate(care_type="acute")
 
 stack_index <- stack %>% 
   mutate(
@@ -326,7 +333,14 @@ stack_index <- stack %>%
   select(CODE, ra, seifa_quintile, popup, value, SA_level) %>% 
   mutate(care_type="index")
 
-vstack <- rbind(stack_acute, stack_rehab, stack_index)
+vstack <- rbind(stack_acute, stack_rehab, stack_index) %>%
+  left_join(
+    ., 
+    select(as.data.frame(stack_index), CODE, index=value),
+    by="CODE"
+  )
+
+
 saveRDS(vstack, "output/layers/vertical_stacked_SA1_and_SA2_polygons_year2016_simplified.rds")
 #############
 
