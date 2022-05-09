@@ -34,8 +34,8 @@ saveRDS(
   aggregate_by_SA(qld_SAs2011, 1, SA_year=11),
   file="output/sa_polygons/QLD_SA1_2011.rds"
 )
-aus_SA1_2021 <- st_read("input/aus_sa1_2021/SA1_2021_AUST_GDA2020.shp")
-aus_SA2_2021 <- st_read("input/aus_sa2_2021/SA2_2021_AUST_GDA2020.shp")
+aus_SA1_2021 <- st_read("input/aus_sa1_2021/SA1_2021_AUST_GDA94.shp")
+aus_SA2_2021 <- st_read("input/aus_sa2_2021/SA2_2021_AUST_GDA94.shp")
 saveRDS(
   aus_SA1_2021[aus_SA1_2021$STE_NAME21=="Queensland", ],
   file="output/sa_polygons/QLD_SA1_2021.rds"

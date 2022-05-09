@@ -5,8 +5,19 @@ library(gstat)
 library(tidyverse)
 library(sf)
 
+sf_use_s2(FALSE)
+
 qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 qld_SAs2021 <- readRDS("output/sa_polygons/QLD_SA1_2021.rds")
+qld_SAs2016 <- readRDS("output/sa_polygons/QLD_SA1_2016.rds")
+qld_SAs2011 <- readRDS("output/sa_polygons/QLD_SA1_2011.rds")
+
+qld_SAs_all <- 
+  rbind(
+    rename(qld_SAs2011, code=1),
+    rename(qld_SAs2016, code=1),
+    select(rename(qld_SAs2021, code=1), code)
+  ) 
 
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
 CELL_SIZE = 0.03
@@ -106,7 +117,7 @@ do_kriging <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save
 
 # get grid for interpolations
 pnts_for_agg <- get_kriging_grid(
-  cellsize = CELL_SIZE, add_centroids = TRUE, centroids_polygon_sf = qld_SAs2021
+  cellsize = CELL_SIZE, add_centroids = TRUE, centroids_polygon_sf = qld_SAs_all
 )
 pnts_for_raster <- get_kriging_grid(cellsize = CELL_SIZE, add_centroids = FALSE)
 
