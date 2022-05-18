@@ -33,10 +33,26 @@ df_acute_addons <- data.frame(
   acute_care_centre = c(replacement_name_for_brisbane, replacement_name_for_brisbane)
 )
 
+clean_acute_centre <- function(x) {
+  x <- tolower(x)
+  brisbane_centres <- c(
+    "pah", 
+    "princess alexandra hospital",
+    "rbwh",
+    "royal brisbane and women's hospital"
+  )
+  case_when(
+    x %in% brisbane_centres ~ replacement_name_for_brisbane,
+    x %in% c("gcuh", "gold coast university hospital") ~ "Gold Coast University Hospital",
+    x == "townsville hospital" ~ "Townsville University Hospital",
+    TRUE ~ "bad match"
+  )
+}
+
 df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
   select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, acute_care_centre=Destination2) %>%
   filter(!is.na(acute_care_centre)) %>%
-  mutate(acute_care_centre=ifelse(acute_care_centre=="Townsville Hospital","Townsville University Hospital", replacement_name_for_brisbane)) %>%
+  mutate(acute_care_centre = clean_acute_centre(acute_care_centre)) %>%
   rbind(., df_acute_addons) %>%
   distinct() # removes the duplicated Killarney
 
