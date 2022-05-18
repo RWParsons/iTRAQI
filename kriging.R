@@ -195,7 +195,6 @@ leaflet() %>%
   addRasterImage(
     data=r,
     x=raster::raster(r, layer=1),
-    options=leafletOptions(pane="layers"),
     colors=palBin
   ) %>%
   addCircleMarkers(
