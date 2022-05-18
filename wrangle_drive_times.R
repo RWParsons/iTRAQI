@@ -129,7 +129,10 @@ silver_locs <- c(
   "RBWH",
   "Logan Hospital",
   "Redcliffe Hospital",
-  "Maleny Hospital"
+  "Maleny Hospital",
+  "Prince Charles Hospital",
+  "Geriatric Assessment Rehabilitation Unit",
+  "Brighton Bain Injury Service"
 )
 
 future_gold_locs <- c(
@@ -163,7 +166,10 @@ files <- c(
   "RHDTtoRBWHSilver",
   "RHDTtoLogan",
   "RHDTtoRedcliffe",
-  "RHDTtoMaleny"
+  "RHDTtoMaleny",
+  "DTtoPCHospital",
+  "DTtoGARU",
+  "DTtoBBIS"
 )
 
 
@@ -172,9 +178,11 @@ centre_renaming <- function(x) {
     x == "Brain Injury Rehabilitation Unit" ~ "Princess Alexandra Hospital (PAH)",
     x == "RBWH" ~ "Royal Brisbane and Women's Hospital (RBWH)",
     x == "Maleny Hospital" ~ "Maleny Soldiers Memorial Hospital",
+    x == "Brighton Bain Injury Service" ~ "Brighton Brain Injury Service",
     TRUE ~ x
   )
 }
+
 
 df_combined <- 
   plyr::ldply(file.path(drive_times_dir, paste0(files, ".csv")), read.csv) %>%
