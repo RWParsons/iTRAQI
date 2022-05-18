@@ -9,7 +9,6 @@
 /input/qld_sa_zones_2021/*
 /input/aus_sa1_2021/*
 /input/aus_sa2_2021/*
-/input/interpolation_points/*
 
 # Session Data files
 .RData
