@@ -20,7 +20,9 @@ qld_SAs_all <-
   ) 
 
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
-CELL_SIZE = 0.03
+
+CELL_SIZE_METERS <- 200
+CELL_SIZE <- CELL_SIZE_METERS / 111320
 VGM_MODEL = "Sph"
 
 replacement_name_for_brisbane <- "Brisbane (PAH/RBWH)"
@@ -61,7 +63,7 @@ df_rehab <- read.csv("input/rehab_times/weighted_rehab_time.csv")
 df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_name") %>%
   rename(location=town_name)
 
-write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220427.csv", row.names = F)
+write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220518.csv", row.names = F)
 
 df_times <- 
   df_times %>%
