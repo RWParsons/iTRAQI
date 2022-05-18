@@ -138,6 +138,8 @@ pnts_for_agg <- get_kriging_grid(
   cellsize = CELL_SIZE, add_centroids = TRUE, centroids_polygon_sf = qld_SAs_all
 )
 pnts_for_raster <- get_kriging_grid(cellsize = CELL_SIZE, add_centroids = FALSE)
+saveRDS(pnts_for_agg, "input/interpolation_points/pnts_for_agg.rds")
+saveRDS(pnts_for_raster, "input/interpolation_points/pnts_for_raster.rds")
 
 # interpolate and write layers to disk
 do_kriging(
