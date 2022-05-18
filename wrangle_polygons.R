@@ -271,17 +271,6 @@ make_combined_SA1_layers <- function(save=TRUE){
 # make_combined_SA2_layers()
 # make_combined_SA1_layers()
 
-clean_acute_label <- function(x) {
-  str_remove_all(x, "\\(|\\)|\\[|\\]") %>% 
-    str_split(",", simplify=T) %>%
-    str_replace("-Inf", "<") %>%
-    str_replace(" Inf", "+") %>%
-    paste0(collapse=",") %>%
-    str_replace(",\\+", "\\+") %>%
-    str_replace("<,", "<") %>%
-    str_replace(",", "-")
-}
-
 iTRAQI_acute_breaks <- c(-Inf, 1, 2, 4, 6, Inf)
 iTRAQI_rehab_breaks <- c(-Inf, 1, 2, 4, 6, Inf)
 
@@ -289,7 +278,7 @@ get_iTRAQI_index <- function(acute_mins, rehab_mins){
   acute_cat <- cut(acute_mins/60, breaks=iTRAQI_acute_breaks)
   rehab_cat <- cut(rehab_mins/60, breaks=iTRAQI_rehab_breaks)
   
-  acute_label <- map_chr(acute_cat, clean_acute_label)
+  acute_label <- as.numeric(acute_cat)
   rehab_label <- LETTERS[rehab_cat]
   
   paste0(acute_label, rehab_label)
@@ -309,6 +298,8 @@ stack_SA1_and_SA2_layers <- function(save=TRUE){
   if(save) saveRDS(stacked, "output/layers/stacked_SA1_and_SA2_polygons_year2016_simplified.rds")
   stacked
 }
+
+stack_SA1_and_SA2_layers(save=TRUE)
 
 stack <- stack_SA1_and_SA2_layers(save=FALSE)
 
@@ -360,6 +351,11 @@ combine_data <- function(SA_year, SA_level){
   
   df_combined <- inner_join(df_acute, df_rehab, by = glue::glue("SA{SA_level}_CODE{SA_year}"))
   
+  df_combined$iTRAQI_index <- get_iTRAQI_index(
+    acute_mins=df_combined$median_time_to_acute_care,
+    rehab_mins=df_combined$median_time_to_rehab_care
+  )
+
   write.csv(
     df_combined,
     glue::glue("output/download_data/combined_data_SA{SA_level}_year20{SA_year}.csv"),
