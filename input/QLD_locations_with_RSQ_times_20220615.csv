@@ -1,0 +1,442 @@
+"location","acute_time","acute_care_transit_location","acute_care_centre","id","x","y","silver_rehab_centre","gold_rehab_centre","rehab_time"
+"Wallangarra",195,"Texas Hospital","Brisbane (PAH/RBWH)",1437,151.9262,-28.92345,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",176.54359463
+"Texas",195,"Texas Hospital","Brisbane (PAH/RBWH)",1436,151.1692,-28.85306,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",203.92522341
+"Smithfield",183,"Cairns Hospital","Townsville University Hospital",1435,145.690172,-16.83142,"Cairns Hospital","Townsville University Hospital",134.222506395
+"Johnstone",345,"Dirranbandi Hospital","Brisbane (PAH/RBWH)",1434,148.5382,-28.6787,"Roma Hospital","Princess Alexandra Hospital (PAH)",275.520494745
+"Stanthorpe",170,"Stanthorpe Hospital","Brisbane (PAH/RBWH)",1433,151.9327,-28.65779,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",152.3265671
+"Dirranbandi",345,"Dirranbandi Hospital","Brisbane (PAH/RBWH)",1432,148.2271,-28.5841,"Roma Hospital","Princess Alexandra Hospital (PAH)",279.19051503
+"Yelarbon",216,"Goondiwindi Hospital","Brisbane (PAH/RBWH)",1431,150.7524,-28.57416,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",206.214898375
+"Goondiwindi",216,"Goondiwindi Hospital","Brisbane (PAH/RBWH)",1430,150.3062,-28.54799,"Roma Hospital","Princess Alexandra Hospital (PAH)",224.35145201
+"Inglewood",183,"Inglewood Hospital","Brisbane (PAH/RBWH)",1429,151.0795,-28.41751,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",179.77983077
+"Killarney",149,"Warwick Hospital","Brisbane (PAH/RBWH)",1141,152.2963,-28.33305,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",125.95798438
+"Warwick",149,"Warwick Hospital","Brisbane (PAH/RBWH)",1428,152.0311,-28.21745,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",110.69038149
+"Rathdowney",137,NA,"Brisbane (PAH/RBWH)",1427,152.8635,-28.20976,"Logan Hospital","Princess Alexandra Hospital (PAH)",74.51598883
+"Yangan",149,"Warwick Hospital","Brisbane (PAH/RBWH)",1426,152.2107,-28.19552,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",110.32258503
+"Springbrook",61,NA,"Gold Coast University Hospital",1425,153.2644,-28.18766,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",61.89129285
+"Beechmont",53,NA,"Gold Coast University Hospital",1424,153.206,-28.09893,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",54.59096696
+"Kooralbyn",128,NA,"Gold Coast University Hospital",1423,152.8443,-28.08068,"Logan Hospital","Princess Alexandra Hospital (PAH)",70.588792225
+"Cunnamulla",351,"Cunnamulla Hospital","Brisbane (PAH/RBWH)",1422,145.6832,-28.06921,"Roma Hospital","Princess Alexandra Hospital (PAH)",402.227548
+"Lower Beechmont",40,NA,"Gold Coast University Hospital",1421,153.2516,-28.04105,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",41.49187337
+"St George",286,"St George Hospital","Brisbane (PAH/RBWH)",1420,148.5812,-28.03888,"Roma Hospital","Princess Alexandra Hospital (PAH)",226.61313207
+"Allora",170,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1419,151.982,-28.03472,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",109.27837318
+"Canungra",48,NA,"Gold Coast University Hospital",1418,153.1598,-28.01415,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",47.86985817
+"Boonah",129,NA,"Brisbane (PAH/RBWH)",1417,152.6824,-27.9978,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",61.17967837
+"Thargomindah",375,"Thargomindah Hospital","Brisbane (PAH/RBWH)",1416,143.8229,-27.99583,"Roma Hospital","Princess Alexandra Hospital (PAH)",528.71196751
+"Gold Coast",26,NA,"Gold Coast University Hospital",1415,153.4277,-27.99114,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",32.35222577
+"Beaudesert",75,NA,"Brisbane (PAH/RBWH)",1414,152.9992,-27.98632,"Logan Hospital","Princess Alexandra Hospital (PAH)",52.181485475
+"Aratula",77,NA,"Brisbane (PAH/RBWH)",1413,152.5384,-27.98409,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",62.0275709
+"Mount Nathan",38,NA,"Gold Coast University Hospital",1412,153.2639,-27.97678,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",36.71769324
+"Mount Tamborine",45,NA,"Gold Coast University Hospital",1411,153.2014,-27.97114,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",43.067508305
+"Boyland",55,NA,"Gold Coast University Hospital",1410,153.1642,-27.94939,"Logan Hospital","Princess Alexandra Hospital (PAH)",45.111777665
+"Gleneagle",66,NA,"Brisbane (PAH/RBWH)",1409,152.9918,-27.94234,"Logan Hospital","Princess Alexandra Hospital (PAH)",45.781244805
+"Kalbar",129,NA,"Brisbane (PAH/RBWH)",1408,152.6229,-27.94196,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",58.29706134
+"Maudsland",31,NA,"Gold Coast University Hospital",1407,153.2774,-27.93276,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",30.34350339
+"Clifton",164,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1406,151.9083,-27.92996,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",120.8941977
+"Eagle Heights",49,NA,"Gold Coast University Hospital",1405,153.2054,-27.92251,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",43.66494125
+"Tamborine",58,NA,"Gold Coast University Hospital",1404,153.1285,-27.88138,"Logan Hospital","Princess Alexandra Hospital (PAH)",36.471684275
+"Cedar Vale",58,NA,"Brisbane (PAH/RBWH)",1403,153.002,-27.87876,"Logan Hospital","Princess Alexandra Hospital (PAH)",38.0683776
+"Millmerran",160,"Millmerran Hospital","Brisbane (PAH/RBWH)",1402,151.2671,-27.87814,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",137.99248504
+"Cedar Grove",58,NA,"Brisbane (PAH/RBWH)",1401,152.9843,-27.86655,"Logan Hospital","Princess Alexandra Hospital (PAH)",37.84182644
+"Mundoolun",65,NA,"Brisbane (PAH/RBWH)",1400,153.0767,-27.86482,"Logan Hospital","Princess Alexandra Hospital (PAH)",38.381577095
+"Jimboomba",53,NA,"Brisbane (PAH/RBWH)",1399,153.0307,-27.83265,"Logan Hospital","Princess Alexandra Hospital (PAH)",33.25565166
+"Jimboomba - West",55,NA,"Brisbane (PAH/RBWH)",1398,152.9618,-27.81259,"Logan Hospital","Princess Alexandra Hospital (PAH)",35.443224625
+"Harrisville",64,NA,"Brisbane (PAH/RBWH)",1397,152.6677,-27.81036,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",48.79239698
+"Peak Crossing",57,NA,"Brisbane (PAH/RBWH)",1396,152.7294,-27.78404,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",41.480086
+"Greenmount",151,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1395,151.9059,-27.78299,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",108.43819217
+"Jacobs Well",41,NA,"Gold Coast University Hospital",1394,153.3629,-27.78179,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",33.883718045
+"Logan Village",56,NA,"Brisbane (PAH/RBWH)",1393,153.1134,-27.77455,"Logan Hospital","Princess Alexandra Hospital (PAH)",29.386236795
+"Cabbage Tree Point",46,NA,"Gold Coast University Hospital",1392,153.3552,-27.73664,"Logan Hospital","Princess Alexandra Hospital (PAH)",32.92380905
+"Pittsworth",160,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1391,151.6329,-27.71797,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",112.37610928
+"Cambooya",148,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1390,151.8615,-27.70633,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",106.85816831
+"Deebing Heights",51,NA,"Brisbane (PAH/RBWH)",1389,152.7546,-27.69709,"Logan Hospital","Princess Alexandra Hospital (PAH)",35.72461881
+"Russell Island",118,NA,"Brisbane (PAH/RBWH)",1388,153.3905,-27.68322,"Logan Hospital","Princess Alexandra Hospital (PAH)",72.2662435
+"Southbrook",154,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1387,151.7128,-27.67579,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",106.04344468
+"Ripley",47,NA,"Brisbane (PAH/RBWH)",1386,152.7864,-27.66642,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",31.42813773
+"Wyreema",144,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1385,151.8542,-27.65743,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",103.00072181
+"Laidley Heights",127,NA,"Brisbane (PAH/RBWH)",1384,152.3675,-27.63571,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",64.12887747
+"Mount Cotton",47,NA,"Brisbane (PAH/RBWH)",1383,153.2508,-27.63515,"Logan Hospital","Princess Alexandra Hospital (PAH)",24.65451836
+"Rosewood",60,NA,"Brisbane (PAH/RBWH)",1382,152.5889,-27.63446,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",44.70891386
+"Laidley",127,NA,"Brisbane (PAH/RBWH)",1381,152.3938,-27.63099,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",58.33069643
+"Thagoona",57,NA,"Brisbane (PAH/RBWH)",1380,152.6257,-27.62401,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",41.63568175
+"Lamb Island",118,NA,"Brisbane (PAH/RBWH)",1379,153.3798,-27.62387,"Logan Hospital","Princess Alexandra Hospital (PAH)",64.739098165
+"Goombungee",164,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1338,151.8502,-27.30485,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",111.93125337
+"Westbrook",141,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1378,151.8757,-27.60355,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",99.63518723
+"Walloon",55,NA,"Brisbane (PAH/RBWH)",1377,152.6725,-27.60325,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",39.82479035
+"Macleay Island",116,NA,"Brisbane (PAH/RBWH)",1376,153.3615,-27.59184,"Logan Hospital","Princess Alexandra Hospital (PAH)",67.04772716
+"Forest Hill",73,NA,"Brisbane (PAH/RBWH)",1375,152.3549,-27.58999,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",57.99959716
+"Plainland",67,NA,"Brisbane (PAH/RBWH)",1374,152.4165,-27.57656,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",52.16447553
+"Grantham",126,NA,"Brisbane (PAH/RBWH)",1373,152.2012,-27.57374,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",70.15459664
+"Marburg",55,NA,"Brisbane (PAH/RBWH)",1372,152.5954,-27.56895,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",40.25067943
+"Coochiemudlo Island",114,NA,"Brisbane (PAH/RBWH)",1371,153.3328,-27.56886,"Logan Hospital","Princess Alexandra Hospital (PAH)",40.167292655
+"Toowoomba",133,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1370,151.9528,-27.56216,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",88.26447445
+"Gatton",127,NA,"Brisbane (PAH/RBWH)",1369,152.2751,-27.56033,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",62.54882434
+"Placid Hills",127,NA,"Brisbane (PAH/RBWH)",1368,152.2504,-27.5578,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",66.2224794
+"Withcott",140,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1367,152.026,-27.55364,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",76.63585619
+"Prince Henry Heights",138,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1366,151.9905,-27.55295,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",86.80185357
+"Helidon",149,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1365,152.1254,-27.54838,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",70.45244663
+"Glenore Grove",126,NA,"Brisbane (PAH/RBWH)",1364,152.4122,-27.54114,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",54.25347942
+"Kensington Grove - Regency Downs",125,NA,"Brisbane (PAH/RBWH)",1363,152.4572,-27.53986,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",51.65972605
+"Minden Village",62,NA,"Brisbane (PAH/RBWH)",1362,152.5591,-27.5357,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",46.44948929
+"Cecil Plains",191,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1361,151.1936,-27.53233,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",138.04025191
+"Brightview",66,NA,"Brisbane (PAH/RBWH)",1360,152.4916,-27.51975,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",50.71590027
+"Gowrie Mountain",146,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1359,151.8228,-27.51137,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",94.01662795
+"Blue Mountain Heights",142,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1358,151.9612,-27.50364,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",90.53431145
+"Dunwich",116,NA,"Brisbane (PAH/RBWH)",1357,153.4038,-27.49776,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",82.96294679
+"Lockrose",71,NA,"Brisbane (PAH/RBWH)",1356,152.4579,-27.49448,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",56.91201266
+"Gowrie Junction",145,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1355,151.8928,-27.49125,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",92.73435423
+"Kingsthorpe",150,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1354,151.8191,-27.47543,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",98.02037522
+"Highfields",146,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1352,151.9481,-27.46253,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",95.97185368
+"Murphys Creek",152,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1351,152.0567,-27.46123,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",80.36699962
+"Lowood",65,NA,"Brisbane (PAH/RBWH)",1350,152.5763,-27.46078,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",49.60656927
+"Fernvale",121,NA,"Brisbane (PAH/RBWH)",1349,152.6594,-27.45012,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",43.88047248
+"Oakey",157,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1348,151.7183,-27.43202,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",104.5037502
+"Point Lookout",122,NA,"Brisbane (PAH/RBWH)",1347,153.5377,-27.43022,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",101.57142405
+"Meringandan",153,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1346,151.9132,-27.42327,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",103.2118672
+"Meringandan West",154,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1345,151.8819,-27.41789,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",105.21845738
+"Amity Point",117,NA,"Brisbane (PAH/RBWH)",1344,153.44,-27.39664,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",98.73954695
+"Coominya",125,NA,"Brisbane (PAH/RBWH)",1343,152.5023,-27.3916,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",58.81420238
+"Mount Nebo",55,NA,"Brisbane (PAH/RBWH)",1342,152.7795,-27.39084,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",41.028335515
+"Samford",40,NA,"Brisbane (PAH/RBWH)",1341,152.8849,-27.37146,"Prince Charles Hospital","Princess Alexandra Hospital (PAH)",25.67480498
+"Samford Valley - Highvale",45,NA,"Brisbane (PAH/RBWH)",1340,152.8394,-27.36508,"Prince Charles Hospital","Princess Alexandra Hospital (PAH)",30.45934728
+"Mount Glorious",58,NA,"Brisbane (PAH/RBWH)",1339,152.7701,-27.33397,"Prince Charles Hospital","Princess Alexandra Hospital (PAH)",43.229230375
+"Tara",196,"Tara Hospital","Brisbane (PAH/RBWH)",1337,150.4556,-27.27772,"Roma Hospital","Princess Alexandra Hospital (PAH)",173.45635389
+"Crows Nest",168,"Toowoomba Hospital","Brisbane (PAH/RBWH)",1336,152.0506,-27.26153,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",112.27559275
+"Esk",136,NA,"Brisbane (PAH/RBWH)",1335,152.4179,-27.23674,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",69.77455894
+"Dayboro",60,NA,"Brisbane (PAH/RBWH)",1334,152.8215,-27.19792,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",42.13274535
+"Dalby",160,"Dalby Hospital","Brisbane (PAH/RBWH)",1333,151.261,-27.18328,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",137.77687653
+"Surat",345,"Surat Hospital","Brisbane (PAH/RBWH)",1332,149.0666,-27.15384,"Roma Hospital","Princess Alexandra Hospital (PAH)",173.591572555
+"Beachmere",59,NA,"Brisbane (PAH/RBWH)",1331,153.0514,-27.12968,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",39.306784135
+"Toogoolawah",135,NA,"Brisbane (PAH/RBWH)",1330,152.3753,-27.08821,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",76.859660335
+"Bongaree",73,NA,"Brisbane (PAH/RBWH)",1329,153.1626,-27.08546,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",53.269215965
+"Sandstone Point",66,NA,"Brisbane (PAH/RBWH)",1328,153.1273,-27.08295,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",46.573282585
+"Woorim",76,NA,"Brisbane (PAH/RBWH)",1327,153.2035,-27.07303,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",56.48265829
+"Ningi",63,NA,"Brisbane (PAH/RBWH)",1326,153.1051,-27.06703,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",43.08024876
+"Wamuran",60,NA,"Brisbane (PAH/RBWH)",1325,152.8643,-27.04069,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",40.76794166
+"Toorbul",64,NA,"Brisbane (PAH/RBWH)",1324,153.0991,-27.03348,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",43.96906047
+"Donnybrook",62,NA,"Brisbane (PAH/RBWH)",1323,153.0662,-27.00662,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",40.98264594
+"Delaneys Creek",68,NA,"Brisbane (PAH/RBWH)",1322,152.7971,-27.00308,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",47.42985868
+"D'Aguilar",68,NA,"Brisbane (PAH/RBWH)",1321,152.7984,-26.98884,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",46.44246969
+"Beerburrum",62,NA,"Brisbane (PAH/RBWH)",1320,152.955,-26.96138,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",39.54292047
+"Woodford",73,NA,"Brisbane (PAH/RBWH)",1319,152.778,-26.95557,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",46.67350847
+"Kilcoy",133,NA,"Brisbane (PAH/RBWH)",1318,152.5638,-26.94019,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",61.29255065
+"Beerburrum - North",62,NA,"Brisbane (PAH/RBWH)",1317,152.957,-26.93545,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",37.92331556
+"Bell",160,"Dalby Hospital","Brisbane (PAH/RBWH)",1316,151.4491,-26.93176,"Gympie Hospital","Princess Alexandra Hospital (PAH)",154.657185275
+"Glass House Mountain",68,NA,"Brisbane (PAH/RBWH)",1315,152.9507,-26.89771,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",40.755656915
+"Blackbutt",155,"Nanango Hospital","Brisbane (PAH/RBWH)",1314,152.1042,-26.88722,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",98.72641329
+"Beerwah",123,NA,"Brisbane (PAH/RBWH)",1313,152.954,-26.85293,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",40.72427221
+"Peachester",124,NA,"Brisbane (PAH/RBWH)",1312,152.8871,-26.84242,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",45.624212765
+"Yarraman",155,"Nanango Hospital","Brisbane (PAH/RBWH)",1311,151.9796,-26.84046,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",109.52589089
+"Landsborough",145,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1310,152.9652,-26.80826,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",39.69081071
+"Jandowae",309,"Jandowae Hospital","Brisbane (PAH/RBWH)",1309,151.1101,-26.78068,"Gympie Hospital","Princess Alexandra Hospital (PAH)",164.32020343
+"Glenview",141,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1308,153.0204,-26.76952,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",39.414259375
+"Mooloolah",146,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1307,152.9616,-26.76553,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",42.042517225
+"Maleny",126,NA,"Brisbane (PAH/RBWH)",1306,152.848,-26.75878,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",39.387085985
+"Chinchilla",309,"Chinchilla Hospital","Brisbane (PAH/RBWH)",1305,150.628,-26.74202,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.64087285
+"Witta",168,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1304,152.8107,-26.70454,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",47.0834796
+"Palmwoods",153,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1303,152.9568,-26.69113,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",51.59772381
+"Nanango",155,"Nanango Hospital","Brisbane (PAH/RBWH)",1302,151.9992,-26.6713,"Gympie Hospital","Princess Alexandra Hospital (PAH)",116.315173055
+"Woombye",149,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1301,152.9666,-26.66148,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",47.191062565
+"Miles",305,"Miles Hospital","Brisbane (PAH/RBWH)",1300,150.1857,-26.65858,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.326718555
+"Flaxton",164,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1299,152.8647,-26.65557,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",55.44014639
+"Kiels Mountain",150,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1298,153.001,-26.6527,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",47.812294865
+"Nambour",153,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1297,152.9592,-26.62753,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",50.66487677
+"Mapleton",128,NA,"Brisbane (PAH/RBWH)",1296,152.8651,-26.62074,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",56.94964691
+"Quilpie",363,"Quilpie Hospital","Brisbane (PAH/RBWH)",1295,144.2683,-26.61502,"Roma Hospital","Princess Alexandra Hospital (PAH)",459.062441105
+"Yuleba",369,"Roma Hospital","Brisbane (PAH/RBWH)",1294,149.381,-26.61304,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.782874155
+"Kureelpa",127,NA,"Brisbane (PAH/RBWH)",1293,152.8837,-26.60834,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",56.95072395
+"Kenilworth",139,NA,"Brisbane (PAH/RBWH)",1292,152.727,-26.59522,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",70.45075853
+"Wallumbilla",369,"Roma Hospital","Brisbane (PAH/RBWH)",1291,149.187,-26.58483,"Roma Hospital","Princess Alexandra Hospital (PAH)",161.013251935
+"Roma",321,"Roma Hospital","Brisbane (PAH/RBWH)",1290,148.7879,-26.57094,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.608427085
+"Yandina",155,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1289,152.9565,-26.56212,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",53.02662388
+"Kingaroy",165,"Kingaroy Hospital","Brisbane (PAH/RBWH)",1288,151.8443,-26.53645,"Gympie Hospital","Princess Alexandra Hospital (PAH)",128.12553584
+"Mitchell",327,"Mitchell Hospital","Brisbane (PAH/RBWH)",1287,147.976,-26.48827,"Roma Hospital","Princess Alexandra Hospital (PAH)",215.935451725
+"Eumundi",160,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1286,152.9513,-26.47643,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",58.530946095
+"Imbil",146,NA,"Brisbane (PAH/RBWH)",1285,152.677,-26.46119,"Gympie Hospital","Princess Alexandra Hospital (PAH)",70.67323711
+"Weyba Downs",162,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1284,153.0474,-26.45561,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",63.863793215
+"Doonan - Tinbeerwah",165,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1283,153.0119,-26.43781,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",64.457888505
+"Cooroy",164,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1282,152.9089,-26.41875,"Gympie Hospital","Princess Alexandra Hospital (PAH)",60.96875212
+"Sunshine Beach",170,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1281,153.1058,-26.41021,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",72.63108456
+"Charleville",309,"Charleville Hospital","Brisbane (PAH/RBWH)",1280,146.2416,-26.40697,"Roma Hospital","Princess Alexandra Hospital (PAH)",328.665977255
+"Black Mountain",168,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1279,152.8819,-26.40467,"Gympie Hospital","Princess Alexandra Hospital (PAH)",61.40989114
+"Forest Acres",136,NA,"Brisbane (PAH/RBWH)",1278,152.9413,-26.36638,"Gympie Hospital","Princess Alexandra Hospital (PAH)",67.20464219
+"Pomona",171,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1277,152.8533,-26.36256,"Gympie Hospital","Princess Alexandra Hospital (PAH)",64.09896967
+"Cooroibah",176,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1276,152.9939,-26.35897,"Gympie Hospital","Princess Alexandra Hospital (PAH)",76.349732875
+"Amamoor",142,NA,"Brisbane (PAH/RBWH)",1275,152.6748,-26.34607,"Gympie Hospital","Princess Alexandra Hospital (PAH)",63.17442681
+"Cooran",139,NA,"Brisbane (PAH/RBWH)",1274,152.8222,-26.33805,"Gympie Hospital","Princess Alexandra Hospital (PAH)",64.71663162
+"Wondai",165,"Kingaroy Hospital","Brisbane (PAH/RBWH)",1273,151.8736,-26.32045,"Gympie Hospital","Princess Alexandra Hospital (PAH)",130.10546572
+"Cherbourg",170,"Cherbourg Hospital","Brisbane (PAH/RBWH)",1272,151.9565,-26.28971,"Gympie Hospital","Princess Alexandra Hospital (PAH)",124.556759535
+"Boreen Point",139,NA,"Brisbane (PAH/RBWH)",1271,152.9952,-26.28443,"Gympie Hospital","Princess Alexandra Hospital (PAH)",77.821716035
+"Murgon",170,"Murgon Hospital","Brisbane (PAH/RBWH)",1270,151.9402,-26.24246,"Gympie Hospital","Princess Alexandra Hospital (PAH)",121.47632436
+"Pie Creek",160,"Gympie Hospital","Brisbane (PAH/RBWH)",1269,152.6277,-26.23769,"Gympie Hospital","Princess Alexandra Hospital (PAH)",61.709738985
+"Gowrie",321,"Charleville Hospital","Brisbane (PAH/RBWH)",1268,146.3207,-26.23114,"Roma Hospital","Princess Alexandra Hospital (PAH)",342.75143901
+"Nahrunda",160,"Gympie Hospital","Brisbane (PAH/RBWH)",1267,152.6127,-26.20237,"Gympie Hospital","Princess Alexandra Hospital (PAH)",63.098330335
+"The Palms",160,"Gympie Hospital","Brisbane (PAH/RBWH)",1266,152.5889,-26.19336,"Gympie Hospital","Princess Alexandra Hospital (PAH)",65.82183044
+"Gympie",160,"Gympie Hospital","Brisbane (PAH/RBWH)",1265,152.6706,-26.18893,"Gympie Hospital","Princess Alexandra Hospital (PAH)",58.968224905
+"Goomeri",170,"Murgon Hospital","Brisbane (PAH/RBWH)",1264,152.0647,-26.18048,"Gympie Hospital","Princess Alexandra Hospital (PAH)",110.157022345
+"Proston",170,"Murgon Hospital","Brisbane (PAH/RBWH)",1263,151.603,-26.16377,"Gympie Hospital","Princess Alexandra Hospital (PAH)",152.227544725
+"Wandoan",321,"Miles Hospital","Brisbane (PAH/RBWH)",1262,149.9628,-26.12088,"Roma Hospital","Princess Alexandra Hospital (PAH)",191.004652975
+"Kilkivan",164,NA,"Brisbane (PAH/RBWH)",1261,152.2399,-26.08621,"Gympie Hospital","Princess Alexandra Hospital (PAH)",92.19596873
+"Curra",204,"Sunshine Coast University Hospital","Brisbane (PAH/RBWH)",1260,152.5881,-26.07081,"Gympie Hospital","Princess Alexandra Hospital (PAH)",71.829087465
+"Cooloola Village",155,NA,"Brisbane (PAH/RBWH)",1259,152.982,-25.97598,"Gympie Hospital","Princess Alexandra Hospital (PAH)",96.241809235
+"Glenwood",254,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1258,152.6324,-25.94735,"Gympie Hospital","Princess Alexandra Hospital (PAH)",85.80235912
+"Tin Can Bay",159,NA,"Brisbane (PAH/RBWH)",1257,153.0031,-25.91357,"Gympie Hospital","Princess Alexandra Hospital (PAH)",94.839136265
+"Rainbow Beach",159,NA,"Brisbane (PAH/RBWH)",1256,153.0922,-25.90782,"Gympie Hospital","Princess Alexandra Hospital (PAH)",108.36166738
+"Bauple Forest",250,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1255,152.636,-25.85212,"Gympie Hospital","Princess Alexandra Hospital (PAH)",96.814315275
+"Injune",333,"Injune Hospital","Brisbane (PAH/RBWH)",1254,148.5651,-25.84311,"Roma Hospital","Princess Alexandra Hospital (PAH)",217.55553453
+"Augathella",339,"Augathella Hospital","Brisbane (PAH/RBWH)",1253,146.5842,-25.79596,"Roma Hospital","Princess Alexandra Hospital (PAH)",330.095013665
+"Tiaro",236,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1252,152.584,-25.725,"Gympie Hospital","Princess Alexandra Hospital (PAH)",99.371458455
+"Poona",184,NA,"Brisbane (PAH/RBWH)",1251,152.9052,-25.71673,"Gympie Hospital","Princess Alexandra Hospital (PAH)",108.59372861
+"Boonooroo - Tuan",237,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1250,152.8771,-25.6788,"Gympie Hospital","Princess Alexandra Hospital (PAH)",110.89148217
+"Taroom",261,"Taroom Hospital","Brisbane (PAH/RBWH)",1249,149.7974,-25.6412,"Roma Hospital","Princess Alexandra Hospital (PAH)",207.957524475
+"Gayndah",224,"Gayndah Hospital","Brisbane (PAH/RBWH)",1248,151.6074,-25.62451,"Gympie Hospital","Princess Alexandra Hospital (PAH)",161.155053205
+"Maaroom",232,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1247,152.8722,-25.61156,"Gympie Hospital","Princess Alexandra Hospital (PAH)",113.787637455
+"Mundubbera",215,"Mundubbera Hospital","Brisbane (PAH/RBWH)",1246,151.2992,-25.59115,"Gympie Hospital","Princess Alexandra Hospital (PAH)",188.43640377
+"Maryborough",215,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1245,152.6935,-25.52726,"Gympie Hospital","Princess Alexandra Hospital (PAH)",118.736034825
+"Oakhurst",227,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1244,152.6206,-25.51008,"Gympie Hospital","Princess Alexandra Hospital (PAH)",122.24219244
+"Biggenden",174,"Biggenden Hospital","Brisbane (PAH/RBWH)",1243,152.0449,-25.50952,"Gympie Hospital","Princess Alexandra Hospital (PAH)",138.42951925
+"Aldershot",223,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1242,152.6613,-25.46311,"Gympie Hospital","Princess Alexandra Hospital (PAH)",120.3877298
+"River Heads",206,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1241,152.9102,-25.39864,"Gympie Hospital","Princess Alexandra Hospital (PAH)",149.020150095
+"Eidsvold",215,"Mundubbera Hospital","Brisbane (PAH/RBWH)",1240,151.1221,-25.37064,"Gympie Hospital","Princess Alexandra Hospital (PAH)",212.189615845
+"Booral",203,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1239,152.9037,-25.36202,"Gympie Hospital","Princess Alexandra Hospital (PAH)",145.606301165
+"Sunshine Acres",198,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1238,152.7889,-25.35801,"Gympie Hospital","Princess Alexandra Hospital (PAH)",137.44560011
+"Walligan",199,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1237,152.771,-25.35161,"Gympie Hospital","Princess Alexandra Hospital (PAH)",135.542637465
+"Torbanlea",214,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1236,152.596,-25.34752,"Gympie Hospital","Princess Alexandra Hospital (PAH)",129.548418005
+"Howard",218,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1235,152.5602,-25.31648,"Gympie Hospital","Princess Alexandra Hospital (PAH)",132.897119615
+"Hervey Bay",201,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1234,152.8722,-25.28535,"Gympie Hospital","Princess Alexandra Hospital (PAH)",150.73428445
+"Pacific Haven",222,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1233,152.5565,-25.26683,"Gympie Hospital","Princess Alexandra Hospital (PAH)",137.67282888
+"Toogoom",207,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1232,152.6898,-25.25614,"Gympie Hospital","Princess Alexandra Hospital (PAH)",141.2610208
+"Childers",315,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1231,152.2765,-25.23536,"Gympie Hospital","Princess Alexandra Hospital (PAH)",150.89006065
+"Burrum Heads - South",212,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1230,152.5934,-25.23535,"Gympie Hospital","Princess Alexandra Hospital (PAH)",139.89799348
+"Apple Tree Creek",313,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1229,152.2338,-25.22391,"Gympie Hospital","Princess Alexandra Hospital (PAH)",155.579401835
+"Burrum Heads - East",217,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1228,152.6334,-25.21101,"Gympie Hospital","Princess Alexandra Hospital (PAH)",142.699116155
+"Burrum Heads",216,"Hervey Bay Hospital","Brisbane (PAH/RBWH)",1227,152.609,-25.18701,"Gympie Hospital","Princess Alexandra Hospital (PAH)",143.84313594
+"Mount Perry",219,NA,"Brisbane (PAH/RBWH)",1226,151.6442,-25.18036,"Gympie Hospital","Princess Alexandra Hospital (PAH)",222.81074911
+"Cordalba",339,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1225,152.2111,-25.15681,"Gympie Hospital","Princess Alexandra Hospital (PAH)",162.127536125
+"Woodgate",319,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1224,152.5506,-25.0964,"Gympie Hospital","Princess Alexandra Hospital (PAH)",172.22448757
+"Gin Gin",314,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1223,151.9557,-24.99157,"Gympie Hospital","Princess Alexandra Hospital (PAH)",187.9205637
+"South Bingera",293,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1222,152.2194,-24.96842,"Gympie Hospital","Princess Alexandra Hospital (PAH)",177.473464025
+"Theodore",229,"Theodore Hospital","Brisbane (PAH/RBWH)",1221,150.075,-24.94678,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",254.564055835
+"Elliott Heads",298,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1220,152.4888,-24.9178,"Gympie Hospital","Princess Alexandra Hospital (PAH)",194.13847464
+"Sharon",292,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1219,152.2587,-24.88377,"Gympie Hospital","Princess Alexandra Hospital (PAH)",190.17073919
+"Tambo",369,"Blackall Hospital","Brisbane (PAH/RBWH)",1218,146.2549,-24.88339,"Central West Sub-Acute Service","Princess Alexandra Hospital (PAH)",377.877825305
+"Innes Park",296,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1217,152.4823,-24.88137,"Gympie Hospital","Princess Alexandra Hospital (PAH)",192.409762775
+"Bundaberg",281,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1216,152.3444,-24.87052,"Gympie Hospital","Princess Alexandra Hospital (PAH)",188.08093643
+"Monto",244,"Monto Hospital","Brisbane (PAH/RBWH)",1215,151.1207,-24.86547,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",242.880433405
+"Oakwood",286,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1214,152.298,-24.85082,"Gympie Hospital","Princess Alexandra Hospital (PAH)",192.79166564
+"Sloping Hummock",291,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1213,152.4252,-24.8436,"Gympie Hospital","Princess Alexandra Hospital (PAH)",190.75888611
+"Gooburrum",286,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1212,152.345,-24.81685,"Gympie Hospital","Princess Alexandra Hospital (PAH)",195.49034591
+"Bargara",294,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1211,152.4607,-24.81453,"Gympie Hospital","Princess Alexandra Hospital (PAH)",195.452741265
+"Burnett Heads",295,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1210,152.4149,-24.76892,"Gympie Hospital","Princess Alexandra Hospital (PAH)",196.30246226
+"Moore Park",297,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1209,152.2757,-24.71776,"Gympie Hospital","Princess Alexandra Hospital (PAH)",207.068653835
+"Moura",271,"Moura Hospital","Brisbane (PAH/RBWH)",1208,149.9719,-24.57498,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",261.925335055
+"Thangool",272,"Biloela Hospital","Brisbane (PAH/RBWH)",1207,150.5751,-24.48738,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",241.871241535
+"Blackall",369,"Blackall Hospital","Brisbane (PAH/RBWH)",1206,145.4645,-24.42336,"Central West Sub-Acute Service","Princess Alexandra Hospital (PAH)",378.82867252
+"Biloela",272,"Biloela Hospital","Brisbane (PAH/RBWH)",1205,150.5098,-24.39602,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",242.24137348
+"Miriam Vale",260,NA,"Brisbane (PAH/RBWH)",1204,151.5583,-24.328,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",209.97753499
+"Taylors Creek",333,"Woorabinda Hospital","Brisbane (PAH/RBWH)",1203,149.1545,-24.25325,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",314.13049746
+"Agnes Water",286,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1202,151.9008,-24.21017,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",238.10845874
+"Baralaba",333,"Baralaba Hospital","Brisbane (PAH/RBWH)",1201,149.8114,-24.17958,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",275.578490295
+"Seventeen Seventy",289,"Bundaberg Hospital","Brisbane (PAH/RBWH)",1200,151.8855,-24.16343,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",244.91759271
+"Woorabinda",333,"Woorabinda Hospital","Brisbane (PAH/RBWH)",1199,149.4575,-24.1306,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",294.08899174
+"Springsure",357,"Springsure Hospital","Brisbane (PAH/RBWH)",1198,148.0891,-24.11595,"Roma Hospital","Townsville University Hospital",326.638695785
+"Benaraby",227,"Gladstone Hospital","Brisbane (PAH/RBWH)",1197,151.3256,-24.00187,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",209.834913
+"Calliope",227,"Gladstone Hospital","Brisbane (PAH/RBWH)",1196,151.213,-23.99655,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",210.71790436
+"Wurdong Heights",227,"Gladstone Hospital","Brisbane (PAH/RBWH)",1195,151.3025,-23.98485,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",211.428150405
+"Tannum Sands",227,"Gladstone Hospital","Brisbane (PAH/RBWH)",1194,151.3685,-23.94867,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",216.63799335
+"Gladstone",227,"Gladstone Hospital","Brisbane (PAH/RBWH)",1193,151.2578,-23.84753,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",216.01722012
+"Mount Larcom",354,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1192,150.9799,-23.8124,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",209.41189694
+"Willows Gemfields",345,"Emerald Hospital","Brisbane (PAH/RBWH)",1191,147.5411,-23.73932,"Central West Sub-Acute Service","Townsville University Hospital",327.670350625
+"Duaringa",376,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1190,149.6687,-23.71846,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",275.534958775
+"Alpha",381,"Alpha Hospital","Brisbane (PAH/RBWH)",1189,146.6387,-23.65028,"Central West Sub-Acute Service","Townsville University Hospital",320.02265546
+"Dingo",345,"Blackwater Hospital","Brisbane (PAH/RBWH)",1188,149.3315,-23.64629,"Rockhampton Hospital","Townsville University Hospital",281.658111
+"Mount Morgan",336,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1187,150.3881,-23.64464,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",232.199321255
+"Bluff",345,"Blackwater Hospital","Brisbane (PAH/RBWH)",1186,149.0695,-23.57993,"Rockhampton Hospital","Townsville University Hospital",285.8130312
+"Bouldercombe",322,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1185,150.4668,-23.57818,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",217.954923145
+"Blackwater",345,"Blackwater Hospital","Brisbane (PAH/RBWH)",1184,148.8834,-23.5779,"Rockhampton Hospital","Townsville University Hospital",286.50562309
+"Barcaldine",381,"Barcaldine Hospital","Brisbane (PAH/RBWH)",1183,145.2854,-23.55288,"Central West Sub-Acute Service","Townsville University Hospital",325.739498085
+"Emerald",345,"Emerald Hospital","Brisbane (PAH/RBWH)",1182,148.1598,-23.52349,"Rockhampton Hospital","Townsville University Hospital",284.72946483
+"Sapphire",345,"Emerald Hospital","Brisbane (PAH/RBWH)",1181,147.7193,-23.46006,"Rockhampton Hospital","Townsville University Hospital",306.322512455
+"Longreach",399,"Longreach Hospital","Brisbane (PAH/RBWH)",1180,144.2475,-23.44447,"Central West Sub-Acute Service","Townsville University Hospital",259.156003615
+"Gracemere",315,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1179,150.4558,-23.43865,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",212.795899065
+"Rubyvale",345,"Emerald Hospital","Brisbane (PAH/RBWH)",1178,147.6974,-23.42054,"Rockhampton Hospital","Townsville University Hospital",306.2224806
+"Rockhampton",305,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1177,150.4974,-23.38918,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",208.663866155
+"Keppel Sands",336,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1176,150.7919,-23.3275,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",239.445456865
+"Emu Park",339,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1175,150.8238,-23.25994,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",242.716798795
+"Glendale",326,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1174,150.4751,-23.24572,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",229.97914471
+"Kinka Beach",338,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1173,150.7876,-23.2243,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",241.8253076
+"Mulambin",344,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1172,150.7857,-23.19155,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",247.906584575
+"The Caves",328,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1171,150.4661,-23.17545,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",232.311171995
+"Yeppoon",339,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1170,150.7431,-23.12635,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",243.385708575
+"Capella",345,"Emerald Hospital","Brisbane (PAH/RBWH)",1169,148.0248,-23.08513,"Sarina Hospital","Townsville University Hospital",279.97848212
+"Tieri",369,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1168,148.3497,-23.03219,"Sarina Hospital","Townsville University Hospital",282.689462905
+"Aramac",381,"Barcaldine Hospital","Brisbane (PAH/RBWH)",1167,145.2439,-22.9698,"Central West Sub-Acute Service","Townsville University Hospital",367.74447295
+"Boulia",357,"Boulia Primary Health Centre","Townsville University Hospital",1166,139.9082,-22.91287,"Central West Sub-Acute Service","Townsville University Hospital",520.755672475
+"Byfield",360,"Rockhampton Hospital","Brisbane (PAH/RBWH)",1165,150.6508,-22.85074,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",263.80328089
+"Clermont",293,"Clermont Hospital","Townsville University Hospital",1164,147.6374,-22.82681,"Sarina Hospital","Townsville University Hospital",250.612526705
+"Middlemount",274,"Dysart Hospital","Townsville University Hospital",1163,148.7039,-22.81426,"Sarina Hospital","Townsville University Hospital",265.94386677
+"Dysart",274,"Dysart Hospital","Townsville University Hospital",1162,148.3481,-22.58982,"Sarina Hospital","Townsville University Hospital",263.17657045
+"Winton",351,"Winton Hospital","Townsville University Hospital",1161,143.0414,-22.38676,"Central West Sub-Acute Service","Townsville University Hospital",258.853697925
+"Moranbah",243,"Moranbah Hospital","Townsville University Hospital",1160,148.0456,-22.0039,"Sarina Hospital","Townsville University Hospital",235.481489975
+"Nebo",261,"Mackay Hospital","Townsville University Hospital",1159,148.6917,-21.69028,"Sarina Hospital","Townsville University Hospital",179.544835245
+"Armstrong Beach",235,"Mackay Hospital","Townsville University Hospital",1158,149.2873,-21.45078,"Sarina Hospital","Townsville University Hospital",147.34491694
+"Sarina",225,"Mackay Hospital","Townsville University Hospital",1157,149.216,-21.4206,"Sarina Hospital","Townsville University Hospital",138.133857615
+"Sarina Beach",228,"Mackay Hospital","Townsville University Hospital",1156,149.3095,-21.38995,"Sarina Hospital","Townsville University Hospital",145.27243379
+"Campwin Beach",229,"Mackay Hospital","Townsville University Hospital",1155,149.313,-21.37793,"Sarina Hospital","Townsville University Hospital",146.190358405
+"Grasstree Beach",228,"Mackay Hospital","Townsville University Hospital",1154,149.3067,-21.36404,"Sarina Hospital","Townsville University Hospital",146.300618525
+"Glenden",213,NA,"Townsville University Hospital",1153,148.1138,-21.35315,"Sarina Hospital","Townsville University Hospital",186.68902186
+"Hay Point",227,"Mackay Hospital","Townsville University Hospital",1152,149.2905,-21.29652,"Sarina Hospital","Townsville University Hospital",148.38017022
+"Eton",219,"Mackay Hospital","Townsville University Hospital",1151,148.9732,-21.26365,"Sarina Hospital","Townsville University Hospital",141.95243347
+"Bakers Creek",208,"Mackay Hospital","Townsville University Hospital",1150,149.1521,-21.20776,"Sarina Hospital","Townsville University Hospital",140.432488225
+"Walkerston",210,"Mackay Hospital","Townsville University Hospital",1149,149.0554,-21.16249,"Sarina Hospital","Townsville University Hospital",140.51768091
+"Mirani",225,"Mackay Hospital","Townsville University Hospital",1148,148.8653,-21.16023,"Sarina Hospital","Townsville University Hospital",148.423757235
+"Mackay",201,"Mackay Hospital","Townsville University Hospital",1147,149.1664,-21.15497,"Sarina Hospital","Townsville University Hospital",141.71978891
+"Marian",218,"Mackay Hospital","Townsville University Hospital",1146,148.9428,-21.14558,"Sarina Hospital","Townsville University Hospital",141.550499345
+"Finch Hatton",244,"Mackay Hospital","Townsville University Hospital",1145,148.6313,-21.14165,"Sarina Hospital","Townsville University Hospital",163.560448635
+"Erakala",207,"Mackay Hospital","Townsville University Hospital",1144,149.1071,-21.12326,"Sarina Hospital","Townsville University Hospital",140.68727152
+"Farleigh",208,"Mackay Hospital","Townsville University Hospital",1143,149.1017,-21.10705,"Sarina Hospital","Townsville University Hospital",138.78579746
+"Nindaroo",214,"Mackay Hospital","Townsville University Hospital",1142,149.1636,-21.05945,"Sarina Hospital","Townsville University Hospital",150.179383105
+"Haliday Bay - Ball Bay",234,"Mackay Hospital","Townsville University Hospital",1140,148.9879,-20.90075,"Sarina Hospital","Townsville University Hospital",152.90328946
+"Calen",236,"Mackay Hospital","Townsville University Hospital",1139,148.7716,-20.89849,"Sarina Hospital","Townsville University Hospital",138.947890455
+"Seaforth",234,"Mackay Hospital","Townsville University Hospital",1138,148.9607,-20.89524,"Sarina Hospital","Townsville University Hospital",153.326863745
+"Hughenden",303,"Hughenden Hospital","Townsville University Hospital",1137,144.1992,-20.84553,"Townsville University Hospital","Townsville University Hospital",258.6784947
+"Richmond",321,"Richmond Hospital","Townsville University Hospital",1136,143.1423,-20.73186,"Townsville University Hospital","Townsville University Hospital",338.2240319
+"Mount Isa",321,"Mount Isa Hospital","Townsville University Hospital",1135,139.4993,-20.73044,"Central West Sub-Acute Service","Townsville University Hospital",514.618390395
+"Cloncurry",327,"Cloncurry Hospital","Townsville University Hospital",1134,140.5092,-20.70554,"Central West Sub-Acute Service","Townsville University Hospital",435.48477666
+"Julia Creek",327,"Julia Creek Hospital","Townsville University Hospital",1133,141.7435,-20.65701,"Central West Sub-Acute Service","Townsville University Hospital",369.235802145
+"Midge Point",267,"Mackay Hospital","Townsville University Hospital",1132,148.7213,-20.65029,"Sarina Hospital","Townsville University Hospital",143.567678185
+"Scottville",186,"Collinsville Hospital","Townsville University Hospital",1131,147.8184,-20.57206,"Townsville University Hospital","Townsville University Hospital",184.6055052
+"Collinsville",186,"Collinsville Hospital","Townsville University Hospital",1130,147.8441,-20.55341,"Townsville University Hospital","Townsville University Hospital",180.8340175
+"Proserpine",196,"Proserpine Hospital","Townsville University Hospital",1129,148.5821,-20.40489,"Sarina Hospital","Townsville University Hospital",139.863758715
+"Mount Julian",196,"Proserpine Hospital","Townsville University Hospital",1128,148.6196,-20.37468,"Sarina Hospital","Townsville University Hospital",142.54186006
+"Hamilton Island",203,NA,"Townsville University Hospital",1127,148.9686,-20.35179,"Sarina Hospital","Townsville University Hospital",205.832968095
+"Cannonvale",196,"Proserpine Hospital","Townsville University Hospital",1126,148.6962,-20.2769,"Sarina Hospital","Townsville University Hospital",152.107575635
+"Airlie Beach",196,"Proserpine Hospital","Townsville University Hospital",1125,148.7132,-20.26829,"Sarina Hospital","Townsville University Hospital",155.832968095
+"Ravenswood",144,NA,"Townsville University Hospital",1124,146.8898,-20.10146,"Townsville University Hospital","Townsville University Hospital",82.7330207
+"Hideaway Bay - Dingo Beach",196,"Proserpine Hospital","Townsville University Hospital",1123,148.4886,-20.08489,"Sarina Hospital","Townsville University Hospital",157.02489952
+"Charters Towers",152,"Charters Towers Hospital","Townsville University Hospital",1122,146.2598,-20.07699,"Townsville University Hospital","Townsville University Hospital",90.71172953
+"Merinda",183,"Bowen Hospital","Townsville University Hospital",1121,148.1648,-20.01751,"Townsville University Hospital","Townsville University Hospital",128.9773991
+"Bowen",183,"Bowen Hospital","Townsville University Hospital",1120,148.2418,-20.01494,"Townsville University Hospital","Townsville University Hospital",136.0164966
+"Camooweal",363,"Camooweal Primary Health Centre","Townsville University Hospital",1119,138.119,-19.92248,"Central West Sub-Acute Service","Townsville University Hospital",631.444940265
+"Home Hill",136,"Ayr Hospital","Townsville University Hospital",1118,147.4144,-19.66043,"Townsville University Hospital","Townsville University Hospital",70.87277856
+"Ayr",136,"Ayr Hospital","Townsville University Hospital",1117,147.4056,-19.57545,"Townsville University Hospital","Townsville University Hospital",61.79092973
+"Brandon",136,"Ayr Hospital","Townsville University Hospital",1116,147.3554,-19.55389,"Townsville University Hospital","Townsville University Hospital",55.77882303
+"Kalamia Estate",136,"Ayr Hospital","Townsville University Hospital",1115,147.4184,-19.53428,"Townsville University Hospital","Townsville University Hospital",67.14997686
+"Giru",55,NA,"Townsville University Hospital",1114,147.1066,-19.51333,"Townsville University Hospital","Townsville University Hospital",39.88493742
+"Alva Beach",137,NA,"Townsville University Hospital",1113,147.4799,-19.45506,"Townsville University Hospital","Townsville University Hospital",75.38588839
+"Alligator Creek",39,NA,"Townsville University Hospital",1112,146.9432,-19.42302,"Townsville University Hospital","Townsville University Hospital",23.91320446
+"Cungulla",50,NA,"Townsville University Hospital",1111,147.1112,-19.40128,"Townsville University Hospital","Townsville University Hospital",34.92663311
+"Nome",33,NA,"Townsville University Hospital",1110,146.9099,-19.37372,"Townsville University Hospital","Townsville University Hospital",17.938261
+"Alice River",31,NA,"Townsville University Hospital",1109,146.6023,-19.32778,"Townsville University Hospital","Townsville University Hospital",16.00790769
+"Rangewood",28,NA,"Townsville University Hospital",1108,146.6392,-19.31192,"Townsville University Hospital","Townsville University Hospital",13.49819877
+"Townsville",30,NA,"Townsville University Hospital",1107,146.8092,-19.26508,"Townsville University Hospital","Townsville University Hospital",15.43296472
+"Black River",32,NA,"Townsville University Hospital",1106,146.618,-19.23302,"Townsville University Hospital","Townsville University Hospital",17.40782956
+"Bluewater Park",43,NA,"Townsville University Hospital",1105,146.5138,-19.20308,"Townsville University Hospital","Townsville University Hospital",27.82355798
+"Pallarenda",36,NA,"Townsville University Hospital",1104,146.773,-19.20234,"Townsville University Hospital","Townsville University Hospital",20.55136238
+"Yabulu",36,NA,"Townsville University Hospital",1103,146.5851,-19.20155,"Townsville University Hospital","Townsville University Hospital",20.55597816
+"Picnic Bay",107,NA,"Townsville University Hospital",1102,146.8379,-19.17814,"Townsville University Hospital","Townsville University Hospital",67.93645744
+"Bluewater",39,NA,"Townsville University Hospital",1101,146.5589,-19.1675,"Townsville University Hospital","Townsville University Hospital",24.33048709
+"Saunders Beach",40,NA,"Townsville University Hospital",1100,146.6098,-19.15875,"Townsville University Hospital","Townsville University Hospital",24.8172253
+"Nelly Bay",108,NA,"Townsville University Hospital",1099,146.8484,-19.15696,"Townsville University Hospital","Townsville University Hospital",64.50439318
+"Arcadia Bay",109,NA,"Townsville University Hospital",1098,146.8651,-19.14853,"Townsville University Hospital","Townsville University Hospital",66.25233923
+"Toolakea",43,NA,"Townsville University Hospital",1097,146.5788,-19.14605,"Townsville University Hospital","Townsville University Hospital",28.14502335
+"Horseshoe Bay",110,NA,"Townsville University Hospital",1096,146.8597,-19.11815,"Townsville University Hospital","Townsville University Hospital",70.42251091
+"Balgal Beach",56,NA,"Townsville University Hospital",1095,146.4083,-19.01722,"Townsville University Hospital","Townsville University Hospital",40.98592217
+"Palm Island",130,"Palm Island Hospital","Townsville University Hospital",1094,146.6058,-18.72665,"Townsville University Hospital","Townsville University Hospital",284.3648964
+"Allingham",141,"Ingham Hospital","Townsville University Hospital",1093,146.2953,-18.70771,"Townsville University Hospital","Townsville University Hospital",87.7786455
+"Ingham",141,"Ingham Hospital","Townsville University Hospital",1092,146.1581,-18.64706,"Townsville University Hospital","Townsville University Hospital",75.33067823
+"Trebonne",141,"Ingham Hospital","Townsville University Hospital",1091,146.0781,-18.62689,"Townsville University Hospital","Townsville University Hospital",80.53296272
+"Taylors Beach",141,"Ingham Hospital","Townsville University Hospital",1090,146.3273,-18.62407,"Townsville University Hospital","Townsville University Hospital",93.48412274
+"Macknade",141,"Ingham Hospital","Townsville University Hospital",1089,146.2605,-18.58664,"Townsville University Hospital","Townsville University Hospital",87.42525437
+"Halifax",141,"Ingham Hospital","Townsville University Hospital",1088,146.2856,-18.58094,"Townsville University Hospital","Townsville University Hospital",88.62110909
+"Lucinda",141,"Ingham Hospital","Townsville University Hospital",1087,146.3337,-18.52889,"Townsville University Hospital","Townsville University Hospital",95.78898402
+"Georgetown",309,"Georgetown Primary Health Centre","Townsville University Hospital",1086,143.5479,-18.29241,"Cairns Hospital","Townsville University Hospital",313.84355355
+"Cardwell",141,"Ingham Hospital","Townsville University Hospital",1085,146.0227,-18.26396,"Townsville University Hospital","Townsville University Hospital",110.1552451
+"Croydon",333,"Croydon Primary Health Centre","Townsville University Hospital",1084,142.2422,-18.2051,"Cairns Hospital","Townsville University Hospital",409.77814442
+"Tully Heads",183,"Tully Hospital","Townsville University Hospital",1083,146.0563,-18.01976,"Cairns Hospital","Townsville University Hospital",134.235945825
+"Carmoo",183,"Tully Hospital","Townsville University Hospital",1082,146.0461,-17.94788,"Cairns Hospital","Townsville University Hospital",129.804441
+"South Mission Beach",183,"Tully Hospital","Townsville University Hospital",1081,146.0909,-17.94652,"Cairns Hospital","Townsville University Hospital",137.109735145
+"Doomadgee",375,"Doomadgee Hospital","Townsville University Hospital",1080,138.824,-17.94141,"Central West Sub-Acute Service","Townsville University Hospital",727.27320828
+"Tully",183,"Tully Hospital","Townsville University Hospital",1079,145.9217,-17.93491,"Cairns Hospital","Townsville University Hospital",124.268000935
+"Wongaling Beach",183,"Tully Hospital","Townsville University Hospital",1078,146.091,-17.91401,"Cairns Hospital","Townsville University Hospital",135.052380015
+"Mission Beach",183,"Tully Hospital","Townsville University Hospital",1077,146.107,-17.86879,"Cairns Hospital","Townsville University Hospital",134.582180065
+"Bingil Bay",183,"Tully Hospital","Townsville University Hospital",1076,146.0976,-17.83471,"Cairns Hospital","Townsville University Hospital",134.92075859
+"El Arish",183,"Tully Hospital","Townsville University Hospital",1075,146.0048,-17.80559,"Cairns Hospital","Townsville University Hospital",122.26925331
+"Kurrimine",168,"Innisfail Hospital","Townsville University Hospital",1074,146.1047,-17.77796,"Cairns Hospital","Townsville University Hospital",129.799603055
+"Silkwood",168,"Innisfail Hospital","Townsville University Hospital",1073,146.0203,-17.74863,"Cairns Hospital","Townsville University Hospital",123.18939966
+"Burketown",363,"Burketown Primary Health Centre","Townsville University Hospital",1072,139.5466,-17.74255,"Central West Sub-Acute Service","Townsville University Hospital",692.427999925
+"Mount Garnet",187,NA,"Townsville University Hospital",1071,145.1208,-17.67675,"Cairns Hospital","Townsville University Hospital",200.44997264
+"Normanton",351,"Normanton Hospital","Townsville University Hospital",1070,141.0761,-17.67331,"Cairns Hospital","Townsville University Hospital",506.076564905
+"Ravenshoe",175,"Atherton Hospital","Townsville University Hospital",1069,145.4842,-17.60534,"Cairns Hospital","Townsville University Hospital",171.90652851
+"South Johnstone",168,"Innisfail Hospital","Townsville University Hospital",1068,145.9951,-17.60097,"Cairns Hospital","Townsville University Hospital",122.48249929
+"Mourilyan",168,"Innisfail Hospital","Townsville University Hospital",1067,146.0419,-17.583,"Cairns Hospital","Townsville University Hospital",122.43876823
+"Wangan",168,"Innisfail Hospital","Townsville University Hospital",1066,146.0083,-17.57463,"Cairns Hospital","Townsville University Hospital",122.960616815
+"Innisfail",168,"Innisfail Hospital","Townsville University Hospital",1065,146.0299,-17.52363,"Cairns Hospital","Townsville University Hospital",122.70099102
+"Belvedere",168,"Innisfail Hospital","Townsville University Hospital",1064,145.9896,-17.51972,"Cairns Hospital","Townsville University Hospital",123.796599805
+"Millaa Millaa",175,"Atherton Hospital","Townsville University Hospital",1063,145.612,-17.51108,"Cairns Hospital","Townsville University Hospital",151.796618025
+"Coconuts",168,"Innisfail Hospital","Townsville University Hospital",1062,146.0431,-17.50908,"Cairns Hospital","Townsville University Hospital",126.101393805
+"Flying Fish Point",168,"Innisfail Hospital","Townsville University Hospital",1061,146.0754,-17.49616,"Cairns Hospital","Townsville University Hospital",130.877148315
+"Karumba",351,"Normanton Hospital","Townsville University Hospital",1060,140.8383,-17.48673,"Cairns Hospital","Townsville University Hospital",551.91631546
+"Tarzali",175,"Atherton Hospital","Townsville University Hospital",1059,145.61,-17.42092,"Cairns Hospital","Townsville University Hospital",151.613571175
+"Mirriwinni",222,"Cairns Hospital","Townsville University Hospital",1058,145.9089,-17.39951,"Cairns Hospital","Townsville University Hospital",122.475844785
+"Herberton",178,"Herberton Hospital","Townsville University Hospital",1057,145.3852,-17.38376,"Cairns Hospital","Townsville University Hospital",166.80685316
+"Malanda",175,"Atherton Hospital","Townsville University Hospital",1056,145.5954,-17.35328,"Cairns Hospital","Townsville University Hospital",150.804824245
+"Bramston Beach",168,"Babinda Hospital","Townsville University Hospital",1055,146.0198,-17.35108,"Cairns Hospital","Townsville University Hospital",131.324892175
+"Babinda",218,"Cairns Hospital","Townsville University Hospital",1054,145.9219,-17.3445,"Cairns Hospital","Townsville University Hospital",123.3897452
+"Yungaburra",175,"Atherton Hospital","Townsville University Hospital",1053,145.5851,-17.26885,"Cairns Hospital","Townsville University Hospital",154.67698161
+"Atherton",175,"Atherton Hospital","Townsville University Hospital",1052,145.4776,-17.26641,"Cairns Hospital","Townsville University Hospital",162.05462704
+"Tolga",175,"Atherton Hospital","Townsville University Hospital",1051,145.4776,-17.22463,"Cairns Hospital","Townsville University Hospital",161.032853245
+"Tolga - West",175,"Atherton Hospital","Townsville University Hospital",1050,145.4506,-17.204,"Cairns Hospital","Townsville University Hospital",162.30367173
+"Tinaroo",175,"Atherton Hospital","Townsville University Hospital",1049,145.5505,-17.16863,"Cairns Hospital","Townsville University Hospital",169.08843357
+"Walkamin",178,"Mareeba Hospital","Townsville University Hospital",1048,145.4411,-17.15428,"Cairns Hospital","Townsville University Hospital",160.02969049
+"Chillagoe",202,"Chillagoe Primary Health Centre","Townsville University Hospital",1047,144.5225,-17.15243,"Cairns Hospital","Townsville University Hospital",260.122615135
+"Dimbulah",188,NA,"Townsville University Hospital",1046,145.1096,-17.15058,"Cairns Hospital","Townsville University Hospital",188.4890811
+"Goldsborough",201,"Cairns Hospital","Townsville University Hospital",1045,145.7509,-17.14553,"Cairns Hospital","Townsville University Hospital",128.96102357
+"Gordonvale",195,"Cairns Hospital","Townsville University Hospital",1044,145.7806,-17.09611,"Cairns Hospital","Townsville University Hospital",122.913130255
+"Mareeba - South",178,"Mareeba Hospital","Townsville University Hospital",1043,145.4211,-17.05062,"Cairns Hospital","Townsville University Hospital",160.947298535
+"Mareeba",178,"Mareeba Hospital","Townsville University Hospital",1042,145.4221,-16.9965,"Cairns Hospital","Townsville University Hospital",162.597050545
+"Cairns",172,"Cairns Hospital","Townsville University Hospital",1041,145.7649,-16.92311,"Cairns Hospital","Townsville University Hospital",121.935812865
+"Yarrabah",170,"Yarrabah Hospital","Townsville University Hospital",1040,145.865,-16.90636,"Cairns Hospital","Townsville University Hospital",146.51604817
+"Kuranda",201,"Cairns Hospital","Townsville University Hospital",1039,145.6352,-16.82032,"Cairns Hospital","Townsville University Hospital",151.40248918
+"Gununa",387,"Mornington Island Hospital","Townsville University Hospital",1038,139.178,-16.65843,"Central West Sub-Acute Service","Townsville University Hospital",891.27320828
+"Oak Beach",215,"Cairns Hospital","Townsville University Hospital",1037,145.5147,-16.5941,"Cairns Hospital","Townsville University Hospital",166.38753359
+"Craiglie",226,"Cairns Hospital","Townsville University Hospital",1036,145.467,-16.51455,"Cairns Hospital","Townsville University Hospital",176.71157866
+"Port Douglas",197,"Mossman Hospital","Townsville University Hospital",1035,145.4662,-16.48533,"Cairns Hospital","Townsville University Hospital",179.540114835
+"Mossman",197,"Mossman Hospital","Townsville University Hospital",1034,145.3731,-16.46155,"Cairns Hospital","Townsville University Hospital",184.58166038
+"Cooya Beach",197,"Mossman Hospital","Townsville University Hospital",1033,145.4067,-16.44813,"Cairns Hospital","Townsville University Hospital",183.62191915
+"Newell",197,"Mossman Hospital","Townsville University Hospital",1032,145.4061,-16.425,"Cairns Hospital","Townsville University Hospital",190.77838214
+"Wonga Beach",197,"Mossman Hospital","Townsville University Hospital",1031,145.4137,-16.3472,"Cairns Hospital","Townsville University Hospital",198.423943475
+"Daintree",197,"Mossman Hospital","Townsville University Hospital",1030,145.3306,-16.26079,"Cairns Hospital","Townsville University Hospital",210.045394025
+"Wujal Wujal",222,"Wujal Wujal Primary Health Centre","Townsville University Hospital",1029,145.3188,-15.94835,"Cairns Hospital","Townsville University Hospital",267.10697799
+"Kowanyama",369,"Kowanyama Primary Health Centre","Townsville University Hospital",1028,141.7435,-15.47744,"Cairns Hospital","Townsville University Hospital",764.529042295
+"Cooktown",245,"Cooktown Hospital","Townsville University Hospital",1027,145.2488,-15.47177,"Cairns Hospital","Townsville University Hospital",335.677292415
+"Hope Vale",258,"Hope Vale Primary Health Centre","Townsville University Hospital",1026,145.1102,-15.2971,"Cairns Hospital","Townsville University Hospital",372.542846655
+"Pormpuraaw",381,"Pormpuraaw Primary Health Centre","Townsville University Hospital",1025,141.6245,-14.89198,"Cairns Hospital","Townsville University Hospital",545.676107605
+"Coen",375,"Coen Primary Health Centre","Townsville University Hospital",1024,143.1999,-13.9448,"Cairns Hospital","Townsville University Hospital",517.186593525
+"Aurukun",399,"Aurukun Primary Health Centre","Townsville University Hospital",1023,141.7292,-13.35609,"Cairns Hospital","Townsville University Hospital",706.14408337
+"Lockhart River",387,"Lockhart River Primary Health Centre","Townsville University Hospital",1022,143.3424,-12.78591,"Cairns Hospital","Townsville University Hospital",748.961990875
+"Napranum",411,"Weipa Hospital","Townsville University Hospital",1021,141.8909,-12.68153,"Cairns Hospital","Townsville University Hospital",706.522240415
+"Weipa",411,"Weipa Hospital","Townsville University Hospital",1020,141.8777,-12.62496,"Cairns Hospital","Townsville University Hospital",713.05227822
+"Mapoon",429,"Mapoon Primary Health Centre","Townsville University Hospital",1019,141.8976,-12.02178,"Cairns Hospital","Townsville University Hospital",768.40852244
+"Injinoo",447,"Bamaga Hospital","Townsville University Hospital",1018,142.3275,-10.90209,"Cairns Hospital","Townsville University Hospital",832.59118507
+"Bamaga",447,"Bamaga Hospital","Townsville University Hospital",1017,142.3893,-10.89279,"Cairns Hospital","Townsville University Hospital",837.138957345
+"Umagico",447,"Bamaga Hospital","Townsville University Hospital",1016,142.3489,-10.88916,"Cairns Hospital","Townsville University Hospital",835.926384015
+"New Mapoon",447,"Bamaga Hospital","Townsville University Hospital",1015,142.3863,-10.87403,"Cairns Hospital","Townsville University Hospital",838.584054015
+"Seisia",447,"Bamaga Hospital","Townsville University Hospital",1014,142.3701,-10.85188,"Cairns Hospital","Townsville University Hospital",842.14916386
+"Horn Island",414,"Thursday Island Hospital","Townsville University Hospital",1013,142.2837,-10.60644,"Cairns Hospital","Townsville University Hospital",991.955002195
+"Thursday Island",324,"Thursday Island Hospital","Townsville University Hospital",1012,142.2167,-10.5804,"Cairns Hospital","Townsville University Hospital",977.278586185
+"Hammond Island",411,"Thursday Island Hospital","Townsville University Hospital",1011,142.2047,-10.54803,"Cairns Hospital","Townsville University Hospital",912.14916386
+"Warraber Island",456,"Thursday Island Hospital","Townsville University Hospital",1010,142.8238,-10.20726,"Cairns Hospital","Townsville University Hospital",1012.14916386
+"St Pauls",436,"Thursday Island Hospital","Townsville University Hospital",1009,142.3349,-10.18488,"Cairns Hospital","Townsville University Hospital",992.14916386
+"Badu Island",440,"Thursday Island Hospital","Townsville University Hospital",1008,142.1388,-10.12322,"Cairns Hospital","Townsville University Hospital",1002.14916386
+"Mabuiag Island",449,"Thursday Island Hospital","Townsville University Hospital",1007,142.1829,-9.95718,"Cairns Hospital","Townsville University Hospital",1052.14916386
+"Mer (Murray) Island",534,"Thursday Island Hospital","Townsville University Hospital",1006,144.0504,-9.918105,"Cairns Hospital","Townsville University Hospital",1272.14916386
+"Iama (Yam) Island",466,"Thursday Island Hospital","Townsville University Hospital",1005,142.7744,-9.900403,"Cairns Hospital","Townsville University Hospital",1072.14916386
+"Yorke Island",503,"Thursday Island Hospital","Townsville University Hospital",1004,143.4073,-9.750172,"Cairns Hospital","Townsville University Hospital",1182.14916386
+"Erub (Darnley) Island",527,"Thursday Island Hospital","Townsville University Hospital",1003,143.7703,-9.585443,"Cairns Hospital","Townsville University Hospital",1262.14916386
+"Saibai Island",491,"Thursday Island Hospital","Townsville University Hospital",1002,142.6217,-9.38044,"Cairns Hospital","Townsville University Hospital",1172.14916386
+"Boigu Island",493,"Thursday Island Hospital","Townsville University Hospital",1001,142.2153,-9.260192,"Cairns Hospital","Townsville University Hospital",1242.14916386
+"Birdsville",489,"Birdsville Primary Health Centre","Brisbane (PAH/RBWH)",1438,139.3551,-25.8978,"Central West Sub-Acute Service","Townsville University Hospital",781.9293898
+"Durham",375,"Thargomindah Primary Health Centre","Brisbane (PAH/RBWH)",1439,141.811455,-27.397056,"Central West Sub-Acute Service","Princess Alexandra Hospital (PAH)",666.80032922
+"Hungerford",375,"Thargomindah Primary Health Centre","Brisbane (PAH/RBWH)",1440,144.409847,-28.996741,"Roma Hospital","Princess Alexandra Hospital (PAH)",531.02257507
+"Brisbane",8,NA,"Brisbane (PAH/RBWH)",1353,153.0249,-27.47072,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",8.15721476
+"RBWH",0,NA,"Brisbane (PAH/RBWH)",1441,153.0285,-27.447,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",4.975331895

@@ -32,6 +32,7 @@ df_acute_addons <- data.frame(
   # add rbwh as 0 minutes
   town_name = c("Brisbane", "RBWH"),
   acute_time = c(8, 0),
+  acute_care_transit_location=rep("Brisbane (PAH/RBWH)", 2),
   acute_care_centre = c(replacement_name_for_brisbane, replacement_name_for_brisbane)
 )
 
@@ -47,28 +48,38 @@ clean_acute_centre <- function(x) {
     x %in% brisbane_centres ~ replacement_name_for_brisbane,
     x %in% c("gcuh", "gold coast university hospital") ~ "Gold Coast University Hospital",
     x == "townsville hospital" ~ "Townsville University Hospital",
-    TRUE ~ "bad match"
+    x == "rockhampton" ~ "Rockhampton Hospital",
+    x == "camooweal primary health clinic" ~ "Camooweal Primary Health Centre",
+    x == "taroom" ~ "Taroom Hospital",
+    x == "mareeba" ~ "Mareeba Hospital",
+    x == "weipa" ~ "Weipa Hospital",
+    x == "bamaga" ~ "Bamaga Hospital",
+    x == "thurday island" ~ "Thursday Island Hospital",
+    TRUE ~ str_replace(str_to_title(x), "Phc", "Primary Health Centre")
   )
 }
 
 df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
-  select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, acute_care_centre=Destination2) %>%
+  select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, 
+         acute_care_transit_location=Destination1, acute_care_centre=Destination2) %>%
   filter(!is.na(acute_care_centre)) %>%
-  mutate(acute_care_centre = clean_acute_centre(acute_care_centre)) %>%
+  mutate(acute_care_centre = clean_acute_centre(acute_care_centre),
+         acute_care_transit_location = clean_acute_centre(acute_care_transit_location)) %>%
   rbind(., df_acute_addons) %>%
   distinct() # removes the duplicated Killarney
 
 df_rehab <- read.csv("input/rehab_times/weighted_rehab_time.csv")
 
 df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_name") %>%
-  rename(location=town_name)
+  rename(location=town_name) %>%
+  mutate(acute_care_transit_location = ifelse(acute_care_transit_location == acute_care_centre, NA, acute_care_transit_location))
 
-write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220518.csv", row.names = F)
+write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220615.csv", row.names = F)
 
 df_times <- 
   df_times %>%
   rename(rehab_centre = silver_rehab_centre) %>%
-  select(-gold_rehab_centre)
+  select(-gold_rehab_centre, -acute_care_transit_location)
 # df_times_rsq <- readxl::read_xlsx(
 #   "input/drive_times/qld_towns_RSQ pathways V2.xlsx",
 #   skip=2
