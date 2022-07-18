@@ -114,7 +114,7 @@ get_kriging_grid <- function(cellsize, add_centroids=FALSE, centroids_polygon_sf
     # add centroids of all polygons to pnts to ensure there's at least one interpolated value within
     centroids <- 
       centroids_polygon_sf %>%
-      st_centroid(of_largest_polygon = TRUE) %>%
+      st_point_on_surface() %>%
       st_coordinates() %>%
       na.omit() %>% 
       as.data.frame()
