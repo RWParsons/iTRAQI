@@ -4,6 +4,7 @@ library(sp)
 library(gstat)
 library(tidyverse)
 library(sf)
+library(parallel)
 
 sf_use_s2(FALSE)
 
@@ -59,7 +60,8 @@ clean_acute_centre <- function(x) {
   )
 }
 
-df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V2.xlsx", skip=2) %>%
+
+df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V3.xlsx", skip=2) %>%
   select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, 
          acute_care_transit_location=Destination1, acute_care_centre=Destination2) %>%
   filter(!is.na(acute_care_centre)) %>%
@@ -74,8 +76,7 @@ df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_
   rename(location=town_name) %>%
   mutate(acute_care_transit_location = ifelse(acute_care_transit_location == acute_care_centre, NA, acute_care_transit_location))
 
-write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220615.csv", row.names = F)
-
+write.csv(df_times, "input/QLD_locations_with_RSQ_times_20220718.csv", row.names = F)
 df_times <- 
   df_times %>%
   rename(rehab_centre = silver_rehab_centre) %>%
@@ -113,7 +114,7 @@ get_kriging_grid <- function(cellsize, add_centroids=FALSE, centroids_polygon_sf
     # add centroids of all polygons to pnts to ensure there's at least one interpolated value within
     centroids <- 
       centroids_polygon_sf %>%
-      st_centroid() %>%
+      st_centroid(of_largest_polygon = TRUE) %>%
       st_coordinates() %>%
       na.omit() %>% 
       as.data.frame()
@@ -148,7 +149,58 @@ do_kriging <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save
 pnts_for_agg <- get_kriging_grid(
   cellsize = CELL_SIZE, add_centroids = TRUE, centroids_polygon_sf = qld_SAs_all
 )
-pnts_for_raster <- get_kriging_grid(cellsize = CELL_SIZE, add_centroids = FALSE)
+pnts_for_raster <- get_kriging_grid(cellsize = CELL_SIZE*3, add_centroids = FALSE)
+
+partition_pnts <- function(pnts, n_parts=detectCores() - 1) {
+  idx <- round(seq(from=0, to=length(pnts), length.out=n_parts + 1))
+  parts <- list()
+  for(i in 1:(length(idx)-1)){
+    start_idx <- idx[i]+1
+    end_idx <- idx[i+1]
+    parts <- c(parts, list(
+      pnts[start_idx:end_idx, ]
+    ))
+  }
+  return(parts)
+}
+
+
+do_kriging2 <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save_path=NULL) {
+  lzn_vgm <- variogram(formula, data)
+  
+  lzn_fit <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
+  
+  ncores <- detectCores() - 1
+  parts <- partition_pnts(pnts, n_parts=ncores)
+  
+  cl <- makeCluster(ncores)
+  clusterExport(cl = cl, varlist = c("formula", "data", "parts","lzn_fit"))
+  clusterEvalQ(cl = cl, expr = c(library('sp'), library('gstat')))
+  
+  kriged_list <- parLapply(
+    cl = cl, X = 1:ncores, 
+    fun = function(x) krige(formula, data, parts[[x]], model=lzn_fit)
+  )
+  
+  kriged_layer <- 
+    kriged_list %>%
+    lapply(as.data.frame) %>%
+    data.table::rbindlist()
+  
+  stopCluster(cl)
+  
+  if(return_raster) {
+    kriged_layer <- raster::rasterFromXYZ(kriged_layer, crs=4326)
+  }
+  if(!is.null(save_path)){
+    saveRDS(kriged_layer, file=save_path)
+  }else{
+    return(kriged_layer)
+  }
+}
+
+
+
 
 # interpolate and write layers to disk
 do_kriging(
