@@ -125,25 +125,25 @@ get_kriging_grid <- function(cellsize, add_centroids=FALSE, centroids_polygon_sf
   pnts
 }
 
-do_kriging <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save_path=NULL) {
-  lzn_vgm <- variogram(formula, data)
-  # return(lzn_vgm)
-  lzn_fit <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
-  kriged_layer <-
-    krige(
-      formula, data, pnts,
-      model=lzn_fit
-    ) %>%
-    as.data.frame()
-  if(return_raster) {
-    kriged_layer <- raster::rasterFromXYZ(kriged_layer, crs=4326)
-  }
-  if(!is.null(save_path)){
-    saveRDS(kriged_layer, file=save_path)
-  }else{
-    return(kriged_layer)
-  }
-}
+# do_kriging <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save_path=NULL) {
+#   lzn_vgm <- variogram(formula, data)
+#   # return(lzn_vgm)
+#   lzn_fit <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
+#   kriged_layer <-
+#     krige(
+#       formula, data, pnts,
+#       model=lzn_fit
+#     ) %>%
+#     as.data.frame()
+#   if(return_raster) {
+#     kriged_layer <- raster::rasterFromXYZ(kriged_layer, crs=4326)
+#   }
+#   if(!is.null(save_path)){
+#     saveRDS(kriged_layer, file=save_path)
+#   }else{
+#     return(kriged_layer)
+#   }
+# }
 
 # get grid for interpolations
 pnts_for_agg <- get_kriging_grid(
@@ -164,17 +164,16 @@ partition_pnts <- function(pnts, n_parts=detectCores() - 1) {
   return(parts)
 }
 
-
-do_kriging2 <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save_path=NULL) {
+do_kriging <- function(pnts, vgm_model, data, formula, return_raster=FALSE, save_path=NULL) {
   lzn_vgm <- variogram(formula, data)
-  
+  # return(environment())
   lzn_fit <- fit.variogram(lzn_vgm, model=vgm(vgm_model))
   
   ncores <- detectCores() - 1
   parts <- partition_pnts(pnts, n_parts=ncores)
   
   cl <- makeCluster(ncores)
-  clusterExport(cl = cl, varlist = c("formula", "data", "parts","lzn_fit"))
+  clusterExport(cl = cl, varlist = c("formula", "data", "parts","lzn_fit"), envir=environment())
   clusterEvalQ(cl = cl, expr = c(library('sp'), library('gstat')))
   
   kriged_list <- parLapply(
