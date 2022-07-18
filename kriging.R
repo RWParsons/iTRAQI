@@ -7,7 +7,7 @@ library(sf)
 
 sf_use_s2(FALSE)
 
-qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
+qld_boundary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 qld_SAs2021 <- readRDS("output/sa_polygons/QLD_SA1_2021.rds")
 qld_SAs2016 <- readRDS("output/sa_polygons/QLD_SA1_2016.rds")
 qld_SAs2011 <- readRDS("output/sa_polygons/QLD_SA1_2011.rds")
@@ -99,11 +99,11 @@ coordinates(df_times) <- ~ x + y
 
 get_kriging_grid <- function(cellsize, add_centroids=FALSE, centroids_polygon_sf=NULL) {
   grid <- makegrid(aus[aus$NAME_1 == "Queensland",], cellsize = cellsize)
-  pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(qld_bounary))
+  pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(qld_boundary))
   pnts <- pnts_sf %>% 
     mutate(
       # https://gis.stackexchange.com/a/343479
-      intersection = as.integer(st_intersects(geometry, qld_bounary))
+      intersection = as.integer(st_intersects(geometry, qld_boundary))
     ) %>%
     filter(!is.na(intersection)) %>%
     st_coordinates() %>% 

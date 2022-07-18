@@ -19,7 +19,7 @@ iTRAQI
 df_times <- read.csv("input/QLD_locations_with_RSQ_times_20220210.csv")
 coordinates(df_times) <- ~ x + y
 
-qld_bounary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
+qld_boundary <- read_sf("input/qld_state_polygon_shp/QLD_STATE_POLYGON_shp.shp")
 world <- ne_countries(scale = "medium", returnclass = "sf")
 qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 ```
@@ -47,7 +47,7 @@ qld_SAs <- st_read("input/qld_sa_zones/MB_2016_QLD.shp")
 ``` r
 ggplot(data = world) +
   geom_sf() +
-  geom_sf(data=qld_bounary, color="blue") +
+  geom_sf(data=qld_boundary, color="blue") +
   labs( x = "Longitude", y = "Latitude") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   geom_sf(data=qld_SAs, aes(fill=SA3_NAME16), col = NA) +
@@ -65,11 +65,11 @@ ggplot(data = world) +
 ``` r
 aus <- raster::getData('GADM', country = 'AUS', level = 1)
 grid <- makegrid(aus[aus$NAME_1 == "Queensland",], cellsize = 0.1)
-pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(qld_bounary))
+pnts_sf <- st_as_sf(grid, coords = c('x1', 'x2'), crs = st_crs(qld_boundary))
 
 pnts <- pnts_sf %>% mutate(
   # https://gis.stackexchange.com/a/343479
-  intersection = as.integer(st_intersects(geometry, qld_bounary))
+  intersection = as.integer(st_intersects(geometry, qld_boundary))
 ) %>%
   filter(!is.na(intersection)) %>%
   st_coordinates() %>% 
@@ -199,7 +199,7 @@ krige(rehab_time ~ 1, df_times, pnts, model=lzn_fit_rehab) %>%
 ``` r
 ggplot(data = world) +
   geom_sf() +
-  geom_sf(data=qld_bounary, color="blue") +
+  geom_sf(data=qld_boundary, color="blue") +
   labs( x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(100.00, 160.00), ylim = c(-45.00, -10.00), expand = T) +
   annotation_scale(location = "bl", width_hint = 0.5) +
