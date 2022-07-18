@@ -82,13 +82,14 @@ asgs_list <- make_asgs_df()
 
 # join interpolated values and aggregate within zones
 get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=1, add_seifa_and_asgs=FALSE, save_path=NULL){
+  # set sf objects to appropriate crs (equivalent of GDA94) https://epsg.io/4283
   coordinates(lzn_kriged_df) <- ~ X + Y
   lzn_kriged_sf <- st_as_sf(lzn_kriged_df)
-  lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4326)
-  lzn_kriged_sf <- st_transform(lzn_kriged_sf, crs = 4326)
+  lzn_kriged_sf <- st_set_crs(lzn_kriged_sf, 4283)
+  lzn_kriged_sf <- st_transform(lzn_kriged_sf, crs = 4283)
   
   qld_SAs <- readRDS(glue::glue("output/sa_polygons/QLD_SA{SA_number}_20{SA_year}.rds"))
-  qld_SAs <- st_transform(qld_SAs, crs = 4326)
+  qld_SAs <- st_transform(qld_SAs, crs = 4283)
   qld_SAs_with_int_times <- st_join(qld_SAs, lzn_kriged_sf)
   
   # https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
