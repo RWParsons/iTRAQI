@@ -90,6 +90,7 @@ get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=
   
   qld_SAs <- readRDS(glue::glue("output/sa_polygons/QLD_SA{SA_number}_20{SA_year}.rds"))
   qld_SAs <- st_transform(qld_SAs, crs = 4283)
+  
   qld_SAs_with_int_times <- st_join(qld_SAs, lzn_kriged_sf)
   
   # https://ryanpeek.org/2019-04-29-spatial-joins-in-r/
@@ -106,7 +107,6 @@ get_SA_agged_times <- function(lzn_kriged_df, SA_number, SA_year, simplify_keep=
     )
   
   SAs_agg_times <- merge(qld_SAs, SAs_agg_times, all.x=TRUE)
-  
   if(simplify_keep<1){
     SAs_agg_times <- rmapshaper::ms_simplify(SAs_agg_times, keep=simplify_keep)
   }
@@ -135,11 +135,14 @@ grid <- expand.grid(
   stringsAsFactors=FALSE
 )
 
-if(FALSE) {
+if(TRUE) {
   for(i in 1:nrow(grid)){
     data_file <- grid$data[i]
     sa_file <- grid$SA_polygons[i]
     kriged_df <- readRDS(file.path("output/kriging_data", grid$data[i]))
+    if("data.table" %in% class(kriged_df)){
+      kriged_df <- as.data.frame(kriged_df)
+    }
     sa_polygons <- readRDS(file.path("output/sa_polygons", grid$SA_polygons[i]))
     care_type <- str_extract(data_file, "^[a-z]*(?=_)")
     SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
@@ -169,6 +172,9 @@ for(i in 1:nrow(grid_2016)){
   data_file <- grid_2016$data[i]
   sa_file <- grid_2016$SA_polygons[i]
   kriged_df <- readRDS(file.path("output/kriging_data", grid_2016$data[i]))
+  if("data.table" %in% class(kriged_df)){
+    kriged_df <- as.data.frame(kriged_df)
+  }
   sa_polygons <- readRDS(file.path("output/sa_polygons", grid_2016$SA_polygons[i]))
   care_type <- str_extract(data_file, "^[a-z]*(?=_)")
   SA_level <- str_extract(sa_file, "(?<=SA)[0-9]")
@@ -303,6 +309,37 @@ stack_SA1_and_SA2_layers <- function(save=TRUE){
 stack_SA1_and_SA2_layers(save=TRUE)
 
 stack <- stack_SA1_and_SA2_layers(save=FALSE)
+
+
+##### investigate NA SA regions
+## THE PROBLEM WAS THAT st_centroid() wouldn't necessarily land within a polygon - swapped to st_point_on_surface() for making the kriging grid for aggs to fix!
+# library(leaflet)
+# stack_na <- stack %>% filter(is.na(value_rehab))
+# stack_na <- qld_SAs_with_int_times %>% filter(is.na(var1.pred))
+# 
+# pnts <- readRDS("output/kriging_data/rehab_for_agg.rds")
+# 
+# pnts_plot <- 
+#   pnts %>% 
+#   filter(abs(X-153.025)<0.13,
+#          abs(Y--27.5)<0.13) %>%
+#   as.data.frame()
+# 
+# pnts_plot <- cbind(lzn_kriged_sf, st_coordinates(lzn_kriged_sf)) %>%
+#   filter(abs(X-153.025)<0.13,
+#          abs(Y--27.5)<0.13)
+# 
+# leaflet() %>%
+#   addTiles() %>%
+#   addPolygons(data=stack_na, color="black", fillOpacity = 0.5, weight=1) %>%
+#   setView(lat=-27.5, lng=153.024, zoom=13) %>%
+#   # addCircleMarkers(lat=pnts_plot$Y, lng=pnts_plot$X, radius=2)
+#   addCircleMarkers(data=pnts_plot, radius=2)
+
+
+######
+
+
 
 stack_rehab <- stack %>%
   select(-popup_acute, -value_acute) %>% 
