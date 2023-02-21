@@ -1,0 +1,6 @@
+# like run.sh but uses the environment (renv)
+library(renv)
+run("wrangle_drive_times.R")
+run("subset_polygons.R")
+run("kriging.R")
+run("wrangle_polygons.R")
