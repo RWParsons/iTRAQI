@@ -287,12 +287,25 @@ acute_drive_times <-
   df_acute %>%
   mutate(acute_care_centre = ifelse(acute_care_centre == "Brisbane (PAH/RBWH)", "Brain Injury Rehabilitation Unit", acute_care_centre)) %>%
   select(-acute_time, -acute_care_transit_location) %>%
-  inner_join(df_combined, by = c("town_name", "acute_care_centre"="centre"))
+  inner_join(., df_combined, by = c("town_name", "acute_care_centre"="centre"))
+
+
+df_island_acute_drive_times <-
+  acute_drive_times %>%
+  filter(town_name %in% df_islands$closest_town) %>%
+  rename(mainland_to_acute_centre = minutes) %>%
+  select(-id, -x, -y) %>%
+  left_join(df_islands, ., by=c("closest_town"="town_name")) %>%
+  mutate(minutes = mainland_to_acute_centre + travel_time) %>%
+  rename(town_name = island_location) %>%
+  select(names(acute_drive_times))
+
+acute_drive_times_all <- rbind(acute_drive_times, df_island_acute_drive_times)
 
 weighted_rehab_times <-
   inner_join(
     rename(future_gold_and_cairns_times, silver_rehab_centre=centre, silver_time=minutes),
-    select(acute_drive_times, id, gold_rehab_centre=acute_care_centre, gold_time=minutes),
+    select(acute_drive_times_all, id, gold_rehab_centre=acute_care_centre, gold_time=minutes),
     by="id"
   ) %>%
   mutate(minutes=(silver_time + gold_time)/2) %>%

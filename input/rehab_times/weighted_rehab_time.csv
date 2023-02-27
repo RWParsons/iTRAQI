@@ -58,7 +58,7 @@
 1069,"Ravenshoe",145.4842,-17.60534,"Cairns Hospital","Townsville University Hospital",171.90652851
 1070,"Normanton",141.0761,-17.67331,"Cairns Hospital","Townsville University Hospital",506.076564905
 1071,"Mount Garnet",145.1208,-17.67675,"Cairns Hospital","Townsville University Hospital",200.44997264
-1072,"Burketown",139.5466,-17.74255,"Central West Sub-Acute Service","Townsville University Hospital",692.427999925
+1072,"Burketown",139.5466,-17.74255,"Cairns Hospital","Townsville University Hospital",756.30078715
 1073,"Silkwood",146.0203,-17.74863,"Cairns Hospital","Townsville University Hospital",123.18939966
 1074,"Kurrimine",146.1047,-17.77796,"Cairns Hospital","Townsville University Hospital",129.799603055
 1075,"El Arish",146.0048,-17.80559,"Cairns Hospital","Townsville University Hospital",122.26925331
@@ -66,7 +66,7 @@
 1077,"Mission Beach",146.107,-17.86879,"Cairns Hospital","Townsville University Hospital",134.582180065
 1078,"Wongaling Beach",146.091,-17.91401,"Cairns Hospital","Townsville University Hospital",135.052380015
 1079,"Tully",145.9217,-17.93491,"Cairns Hospital","Townsville University Hospital",124.268000935
-1080,"Doomadgee",138.824,-17.94141,"Central West Sub-Acute Service","Townsville University Hospital",727.27320828
+1080,"Doomadgee",138.824,-17.94141,"Cairns Hospital","Townsville University Hospital",790.64698005
 1081,"South Mission Beach",146.0909,-17.94652,"Cairns Hospital","Townsville University Hospital",137.109735145
 1082,"Carmoo",146.0461,-17.94788,"Cairns Hospital","Townsville University Hospital",129.804441
 1083,"Tully Heads",146.0563,-18.01976,"Cairns Hospital","Townsville University Hospital",134.235945825
@@ -105,328 +105,328 @@
 1116,"Brandon",147.3554,-19.55389,"Townsville University Hospital","Townsville University Hospital",55.77882303
 1117,"Ayr",147.4056,-19.57545,"Townsville University Hospital","Townsville University Hospital",61.79092973
 1118,"Home Hill",147.4144,-19.66043,"Townsville University Hospital","Townsville University Hospital",70.87277856
-1119,"Camooweal",138.119,-19.92248,"Central West Sub-Acute Service","Townsville University Hospital",631.444940265
+1119,"Camooweal",138.119,-19.92248,"Townsville University Hospital","Townsville University Hospital",719.0156323
 1120,"Bowen",148.2418,-20.01494,"Townsville University Hospital","Townsville University Hospital",136.0164966
 1121,"Merinda",148.1648,-20.01751,"Townsville University Hospital","Townsville University Hospital",128.9773991
 1122,"Charters Towers",146.2598,-20.07699,"Townsville University Hospital","Townsville University Hospital",90.71172953
-1123,"Hideaway Bay - Dingo Beach",148.4886,-20.08489,"Sarina Hospital","Townsville University Hospital",157.02489952
+1123,"Hideaway Bay - Dingo Beach",148.4886,-20.08489,"Townsville University Hospital","Townsville University Hospital",183.9408397
 1124,"Ravenswood",146.8898,-20.10146,"Townsville University Hospital","Townsville University Hospital",82.7330207
-1125,"Airlie Beach",148.7132,-20.26829,"Sarina Hospital","Townsville University Hospital",155.832968095
-1126,"Cannonvale",148.6962,-20.2769,"Sarina Hospital","Townsville University Hospital",152.107575635
-1128,"Mount Julian",148.6196,-20.37468,"Sarina Hospital","Townsville University Hospital",142.54186006
-1129,"Proserpine",148.5821,-20.40489,"Sarina Hospital","Townsville University Hospital",139.863758715
+1125,"Airlie Beach",148.7132,-20.26829,"Townsville University Hospital","Townsville University Hospital",187.9391187
+1126,"Cannonvale",148.6962,-20.2769,"Townsville University Hospital","Townsville University Hospital",184.2158004
+1128,"Mount Julian",148.6196,-20.37468,"Townsville University Hospital","Townsville University Hospital",176.5526797
+1129,"Proserpine",148.5821,-20.40489,"Townsville University Hospital","Townsville University Hospital",175.0745524
 1130,"Collinsville",147.8441,-20.55341,"Townsville University Hospital","Townsville University Hospital",180.8340175
 1131,"Scottville",147.8184,-20.57206,"Townsville University Hospital","Townsville University Hospital",184.6055052
-1132,"Midge Point",148.7213,-20.65029,"Sarina Hospital","Townsville University Hospital",143.567678185
-1133,"Julia Creek",141.7435,-20.65701,"Central West Sub-Acute Service","Townsville University Hospital",369.235802145
-1134,"Cloncurry",140.5092,-20.70554,"Central West Sub-Acute Service","Townsville University Hospital",435.48477666
-1135,"Mount Isa",139.4993,-20.73044,"Central West Sub-Acute Service","Townsville University Hospital",514.618390395
+1132,"Midge Point",148.7213,-20.65029,"Townsville University Hospital","Townsville University Hospital",197.2785208
+1133,"Julia Creek",141.7435,-20.65701,"Townsville University Hospital","Townsville University Hospital",437.1810472
+1134,"Cloncurry",140.5092,-20.70554,"Townsville University Hospital","Townsville University Hospital",527.8910342
+1135,"Mount Isa",139.4993,-20.73044,"Townsville University Hospital","Townsville University Hospital",605.3104692
 1136,"Richmond",143.1423,-20.73186,"Townsville University Hospital","Townsville University Hospital",338.2240319
 1137,"Hughenden",144.1992,-20.84553,"Townsville University Hospital","Townsville University Hospital",258.6784947
-1138,"Seaforth",148.9607,-20.89524,"Sarina Hospital","Townsville University Hospital",153.326863745
-1139,"Calen",148.7716,-20.89849,"Sarina Hospital","Townsville University Hospital",138.947890455
-1140,"Haliday Bay - Ball Bay",148.9879,-20.90075,"Sarina Hospital","Townsville University Hospital",152.90328946
-1141,"Killarney",152.2963,-28.33305,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",125.95798438
-1142,"Nindaroo",149.1636,-21.05945,"Sarina Hospital","Townsville University Hospital",150.179383105
-1143,"Farleigh",149.1017,-21.10705,"Sarina Hospital","Townsville University Hospital",138.78579746
-1144,"Erakala",149.1071,-21.12326,"Sarina Hospital","Townsville University Hospital",140.68727152
-1145,"Finch Hatton",148.6313,-21.14165,"Sarina Hospital","Townsville University Hospital",163.560448635
-1146,"Marian",148.9428,-21.14558,"Sarina Hospital","Townsville University Hospital",141.550499345
-1147,"Mackay",149.1664,-21.15497,"Sarina Hospital","Townsville University Hospital",141.71978891
-1148,"Mirani",148.8653,-21.16023,"Sarina Hospital","Townsville University Hospital",148.423757235
-1149,"Walkerston",149.0554,-21.16249,"Sarina Hospital","Townsville University Hospital",140.51768091
-1150,"Bakers Creek",149.1521,-21.20776,"Sarina Hospital","Townsville University Hospital",140.432488225
-1151,"Eton",148.9732,-21.26365,"Sarina Hospital","Townsville University Hospital",141.95243347
-1152,"Hay Point",149.2905,-21.29652,"Sarina Hospital","Townsville University Hospital",148.38017022
-1153,"Glenden",148.1138,-21.35315,"Sarina Hospital","Townsville University Hospital",186.68902186
-1154,"Grasstree Beach",149.3067,-21.36404,"Sarina Hospital","Townsville University Hospital",146.300618525
-1155,"Campwin Beach",149.313,-21.37793,"Sarina Hospital","Townsville University Hospital",146.190358405
-1156,"Sarina Beach",149.3095,-21.38995,"Sarina Hospital","Townsville University Hospital",145.27243379
-1157,"Sarina",149.216,-21.4206,"Sarina Hospital","Townsville University Hospital",138.133857615
-1158,"Armstrong Beach",149.2873,-21.45078,"Sarina Hospital","Townsville University Hospital",147.34491694
-1159,"Nebo",148.6917,-21.69028,"Sarina Hospital","Townsville University Hospital",179.544835245
-1160,"Moranbah",148.0456,-22.0039,"Sarina Hospital","Townsville University Hospital",235.481489975
-1161,"Winton",143.0414,-22.38676,"Central West Sub-Acute Service","Townsville University Hospital",258.853697925
-1162,"Dysart",148.3481,-22.58982,"Sarina Hospital","Townsville University Hospital",263.17657045
-1163,"Middlemount",148.7039,-22.81426,"Sarina Hospital","Townsville University Hospital",265.94386677
-1164,"Clermont",147.6374,-22.82681,"Sarina Hospital","Townsville University Hospital",250.612526705
-1165,"Byfield",150.6508,-22.85074,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",263.80328089
-1166,"Boulia",139.9082,-22.91287,"Central West Sub-Acute Service","Townsville University Hospital",520.755672475
-1167,"Aramac",145.2439,-22.9698,"Central West Sub-Acute Service","Townsville University Hospital",367.74447295
-1168,"Tieri",148.3497,-23.03219,"Sarina Hospital","Townsville University Hospital",282.689462905
-1169,"Capella",148.0248,-23.08513,"Sarina Hospital","Townsville University Hospital",279.97848212
-1170,"Yeppoon",150.7431,-23.12635,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",243.385708575
-1171,"The Caves",150.4661,-23.17545,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",232.311171995
-1172,"Mulambin",150.7857,-23.19155,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",247.906584575
-1173,"Kinka Beach",150.7876,-23.2243,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",241.8253076
-1174,"Glendale",150.4751,-23.24572,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",229.97914471
-1175,"Emu Park",150.8238,-23.25994,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",242.716798795
-1176,"Keppel Sands",150.7919,-23.3275,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",239.445456865
-1177,"Rockhampton",150.4974,-23.38918,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",208.663866155
-1178,"Rubyvale",147.6974,-23.42054,"Rockhampton Hospital","Townsville University Hospital",306.2224806
-1179,"Gracemere",150.4558,-23.43865,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",212.795899065
-1180,"Longreach",144.2475,-23.44447,"Central West Sub-Acute Service","Townsville University Hospital",259.156003615
-1181,"Sapphire",147.7193,-23.46006,"Rockhampton Hospital","Townsville University Hospital",306.322512455
-1182,"Emerald",148.1598,-23.52349,"Rockhampton Hospital","Townsville University Hospital",284.72946483
-1183,"Barcaldine",145.2854,-23.55288,"Central West Sub-Acute Service","Townsville University Hospital",325.739498085
-1184,"Blackwater",148.8834,-23.5779,"Rockhampton Hospital","Townsville University Hospital",286.50562309
-1185,"Bouldercombe",150.4668,-23.57818,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",217.954923145
-1186,"Bluff",149.0695,-23.57993,"Rockhampton Hospital","Townsville University Hospital",285.8130312
-1187,"Mount Morgan",150.3881,-23.64464,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",232.199321255
-1188,"Dingo",149.3315,-23.64629,"Rockhampton Hospital","Townsville University Hospital",281.658111
-1189,"Alpha",146.6387,-23.65028,"Central West Sub-Acute Service","Townsville University Hospital",320.02265546
-1190,"Duaringa",149.6687,-23.71846,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",275.534958775
-1191,"Willows Gemfields",147.5411,-23.73932,"Central West Sub-Acute Service","Townsville University Hospital",327.670350625
-1192,"Mount Larcom",150.9799,-23.8124,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",209.41189694
-1193,"Gladstone",151.2578,-23.84753,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",216.01722012
-1194,"Tannum Sands",151.3685,-23.94867,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",216.63799335
-1195,"Wurdong Heights",151.3025,-23.98485,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",211.428150405
-1196,"Calliope",151.213,-23.99655,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",210.71790436
-1197,"Benaraby",151.3256,-24.00187,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",209.834913
-1198,"Springsure",148.0891,-24.11595,"Roma Hospital","Townsville University Hospital",326.638695785
-1199,"Woorabinda",149.4575,-24.1306,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",294.08899174
-1200,"Seventeen Seventy",151.8855,-24.16343,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",244.91759271
-1201,"Baralaba",149.8114,-24.17958,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",275.578490295
-1202,"Agnes Water",151.9008,-24.21017,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",238.10845874
-1203,"Taylors Creek",149.1545,-24.25325,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",314.13049746
-1204,"Miriam Vale",151.5583,-24.328,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",209.97753499
-1205,"Biloela",150.5098,-24.39602,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",242.24137348
-1206,"Blackall",145.4645,-24.42336,"Central West Sub-Acute Service","Princess Alexandra Hospital (PAH)",378.82867252
-1207,"Thangool",150.5751,-24.48738,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",241.871241535
-1208,"Moura",149.9719,-24.57498,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",261.925335055
-1209,"Moore Park",152.2757,-24.71776,"Gympie Hospital","Princess Alexandra Hospital (PAH)",207.068653835
-1210,"Burnett Heads",152.4149,-24.76892,"Gympie Hospital","Princess Alexandra Hospital (PAH)",196.30246226
-1211,"Bargara",152.4607,-24.81453,"Gympie Hospital","Princess Alexandra Hospital (PAH)",195.452741265
-1212,"Gooburrum",152.345,-24.81685,"Gympie Hospital","Princess Alexandra Hospital (PAH)",195.49034591
-1213,"Sloping Hummock",152.4252,-24.8436,"Gympie Hospital","Princess Alexandra Hospital (PAH)",190.75888611
-1214,"Oakwood",152.298,-24.85082,"Gympie Hospital","Princess Alexandra Hospital (PAH)",192.79166564
-1215,"Monto",151.1207,-24.86547,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",242.880433405
-1216,"Bundaberg",152.3444,-24.87052,"Gympie Hospital","Princess Alexandra Hospital (PAH)",188.08093643
-1217,"Innes Park",152.4823,-24.88137,"Gympie Hospital","Princess Alexandra Hospital (PAH)",192.409762775
-1218,"Tambo",146.2549,-24.88339,"Central West Sub-Acute Service","Princess Alexandra Hospital (PAH)",377.877825305
-1219,"Sharon",152.2587,-24.88377,"Gympie Hospital","Princess Alexandra Hospital (PAH)",190.17073919
-1220,"Elliott Heads",152.4888,-24.9178,"Gympie Hospital","Princess Alexandra Hospital (PAH)",194.13847464
-1221,"Theodore",150.075,-24.94678,"Rockhampton Hospital","Princess Alexandra Hospital (PAH)",254.564055835
-1222,"South Bingera",152.2194,-24.96842,"Gympie Hospital","Princess Alexandra Hospital (PAH)",177.473464025
-1223,"Gin Gin",151.9557,-24.99157,"Gympie Hospital","Princess Alexandra Hospital (PAH)",187.9205637
-1224,"Woodgate",152.5506,-25.0964,"Gympie Hospital","Princess Alexandra Hospital (PAH)",172.22448757
-1225,"Cordalba",152.2111,-25.15681,"Gympie Hospital","Princess Alexandra Hospital (PAH)",162.127536125
-1226,"Mount Perry",151.6442,-25.18036,"Gympie Hospital","Princess Alexandra Hospital (PAH)",222.81074911
-1227,"Burrum Heads",152.609,-25.18701,"Gympie Hospital","Princess Alexandra Hospital (PAH)",143.84313594
-1228,"Burrum Heads - East",152.6334,-25.21101,"Gympie Hospital","Princess Alexandra Hospital (PAH)",142.699116155
-1229,"Apple Tree Creek",152.2338,-25.22391,"Gympie Hospital","Princess Alexandra Hospital (PAH)",155.579401835
-1230,"Burrum Heads - South",152.5934,-25.23535,"Gympie Hospital","Princess Alexandra Hospital (PAH)",139.89799348
-1231,"Childers",152.2765,-25.23536,"Gympie Hospital","Princess Alexandra Hospital (PAH)",150.89006065
-1232,"Toogoom",152.6898,-25.25614,"Gympie Hospital","Princess Alexandra Hospital (PAH)",141.2610208
-1233,"Pacific Haven",152.5565,-25.26683,"Gympie Hospital","Princess Alexandra Hospital (PAH)",137.67282888
-1234,"Hervey Bay",152.8722,-25.28535,"Gympie Hospital","Princess Alexandra Hospital (PAH)",150.73428445
-1235,"Howard",152.5602,-25.31648,"Gympie Hospital","Princess Alexandra Hospital (PAH)",132.897119615
-1236,"Torbanlea",152.596,-25.34752,"Gympie Hospital","Princess Alexandra Hospital (PAH)",129.548418005
-1237,"Walligan",152.771,-25.35161,"Gympie Hospital","Princess Alexandra Hospital (PAH)",135.542637465
-1238,"Sunshine Acres",152.7889,-25.35801,"Gympie Hospital","Princess Alexandra Hospital (PAH)",137.44560011
-1239,"Booral",152.9037,-25.36202,"Gympie Hospital","Princess Alexandra Hospital (PAH)",145.606301165
-1240,"Eidsvold",151.1221,-25.37064,"Gympie Hospital","Princess Alexandra Hospital (PAH)",212.189615845
-1241,"River Heads",152.9102,-25.39864,"Gympie Hospital","Princess Alexandra Hospital (PAH)",149.020150095
-1242,"Aldershot",152.6613,-25.46311,"Gympie Hospital","Princess Alexandra Hospital (PAH)",120.3877298
-1243,"Biggenden",152.0449,-25.50952,"Gympie Hospital","Princess Alexandra Hospital (PAH)",138.42951925
-1244,"Oakhurst",152.6206,-25.51008,"Gympie Hospital","Princess Alexandra Hospital (PAH)",122.24219244
-1245,"Maryborough",152.6935,-25.52726,"Gympie Hospital","Princess Alexandra Hospital (PAH)",118.736034825
-1246,"Mundubbera",151.2992,-25.59115,"Gympie Hospital","Princess Alexandra Hospital (PAH)",188.43640377
-1247,"Maaroom",152.8722,-25.61156,"Gympie Hospital","Princess Alexandra Hospital (PAH)",113.787637455
-1248,"Gayndah",151.6074,-25.62451,"Gympie Hospital","Princess Alexandra Hospital (PAH)",161.155053205
-1249,"Taroom",149.7974,-25.6412,"Roma Hospital","Princess Alexandra Hospital (PAH)",207.957524475
-1250,"Boonooroo - Tuan",152.8771,-25.6788,"Gympie Hospital","Princess Alexandra Hospital (PAH)",110.89148217
-1251,"Poona",152.9052,-25.71673,"Gympie Hospital","Princess Alexandra Hospital (PAH)",108.59372861
-1252,"Tiaro",152.584,-25.725,"Gympie Hospital","Princess Alexandra Hospital (PAH)",99.371458455
-1253,"Augathella",146.5842,-25.79596,"Roma Hospital","Princess Alexandra Hospital (PAH)",330.095013665
-1254,"Injune",148.5651,-25.84311,"Roma Hospital","Princess Alexandra Hospital (PAH)",217.55553453
-1255,"Bauple Forest",152.636,-25.85212,"Gympie Hospital","Princess Alexandra Hospital (PAH)",96.814315275
-1256,"Rainbow Beach",153.0922,-25.90782,"Gympie Hospital","Princess Alexandra Hospital (PAH)",108.36166738
-1257,"Tin Can Bay",153.0031,-25.91357,"Gympie Hospital","Princess Alexandra Hospital (PAH)",94.839136265
-1258,"Glenwood",152.6324,-25.94735,"Gympie Hospital","Princess Alexandra Hospital (PAH)",85.80235912
-1259,"Cooloola Village",152.982,-25.97598,"Gympie Hospital","Princess Alexandra Hospital (PAH)",96.241809235
-1260,"Curra",152.5881,-26.07081,"Gympie Hospital","Princess Alexandra Hospital (PAH)",71.829087465
-1261,"Kilkivan",152.2399,-26.08621,"Gympie Hospital","Princess Alexandra Hospital (PAH)",92.19596873
-1262,"Wandoan",149.9628,-26.12088,"Roma Hospital","Princess Alexandra Hospital (PAH)",191.004652975
-1263,"Proston",151.603,-26.16377,"Gympie Hospital","Princess Alexandra Hospital (PAH)",152.227544725
-1264,"Goomeri",152.0647,-26.18048,"Gympie Hospital","Princess Alexandra Hospital (PAH)",110.157022345
-1265,"Gympie",152.6706,-26.18893,"Gympie Hospital","Princess Alexandra Hospital (PAH)",58.968224905
-1266,"The Palms",152.5889,-26.19336,"Gympie Hospital","Princess Alexandra Hospital (PAH)",65.82183044
-1267,"Nahrunda",152.6127,-26.20237,"Gympie Hospital","Princess Alexandra Hospital (PAH)",63.098330335
-1268,"Gowrie",146.3207,-26.23114,"Roma Hospital","Princess Alexandra Hospital (PAH)",342.75143901
-1269,"Pie Creek",152.6277,-26.23769,"Gympie Hospital","Princess Alexandra Hospital (PAH)",61.709738985
-1270,"Murgon",151.9402,-26.24246,"Gympie Hospital","Princess Alexandra Hospital (PAH)",121.47632436
-1271,"Boreen Point",152.9952,-26.28443,"Gympie Hospital","Princess Alexandra Hospital (PAH)",77.821716035
-1272,"Cherbourg",151.9565,-26.28971,"Gympie Hospital","Princess Alexandra Hospital (PAH)",124.556759535
-1273,"Wondai",151.8736,-26.32045,"Gympie Hospital","Princess Alexandra Hospital (PAH)",130.10546572
-1274,"Cooran",152.8222,-26.33805,"Gympie Hospital","Princess Alexandra Hospital (PAH)",64.71663162
-1275,"Amamoor",152.6748,-26.34607,"Gympie Hospital","Princess Alexandra Hospital (PAH)",63.17442681
-1276,"Cooroibah",152.9939,-26.35897,"Gympie Hospital","Princess Alexandra Hospital (PAH)",76.349732875
-1277,"Pomona",152.8533,-26.36256,"Gympie Hospital","Princess Alexandra Hospital (PAH)",64.09896967
-1278,"Forest Acres",152.9413,-26.36638,"Gympie Hospital","Princess Alexandra Hospital (PAH)",67.20464219
-1279,"Black Mountain",152.8819,-26.40467,"Gympie Hospital","Princess Alexandra Hospital (PAH)",61.40989114
-1280,"Charleville",146.2416,-26.40697,"Roma Hospital","Princess Alexandra Hospital (PAH)",328.665977255
-1281,"Sunshine Beach",153.1058,-26.41021,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",72.63108456
-1282,"Cooroy",152.9089,-26.41875,"Gympie Hospital","Princess Alexandra Hospital (PAH)",60.96875212
-1283,"Doonan - Tinbeerwah",153.0119,-26.43781,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",64.457888505
-1284,"Weyba Downs",153.0474,-26.45561,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",63.863793215
-1285,"Imbil",152.677,-26.46119,"Gympie Hospital","Princess Alexandra Hospital (PAH)",70.67323711
-1286,"Eumundi",152.9513,-26.47643,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",58.530946095
-1287,"Mitchell",147.976,-26.48827,"Roma Hospital","Princess Alexandra Hospital (PAH)",215.935451725
-1288,"Kingaroy",151.8443,-26.53645,"Gympie Hospital","Princess Alexandra Hospital (PAH)",128.12553584
-1289,"Yandina",152.9565,-26.56212,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",53.02662388
-1290,"Roma",148.7879,-26.57094,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.608427085
-1291,"Wallumbilla",149.187,-26.58483,"Roma Hospital","Princess Alexandra Hospital (PAH)",161.013251935
-1292,"Kenilworth",152.727,-26.59522,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",70.45075853
-1293,"Kureelpa",152.8837,-26.60834,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",56.95072395
-1294,"Yuleba",149.381,-26.61304,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.782874155
-1295,"Quilpie",144.2683,-26.61502,"Roma Hospital","Princess Alexandra Hospital (PAH)",459.062441105
-1296,"Mapleton",152.8651,-26.62074,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",56.94964691
-1297,"Nambour",152.9592,-26.62753,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",50.66487677
-1298,"Kiels Mountain",153.001,-26.6527,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",47.812294865
-1299,"Flaxton",152.8647,-26.65557,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",55.44014639
-1300,"Miles",150.1857,-26.65858,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.326718555
-1301,"Woombye",152.9666,-26.66148,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",47.191062565
-1302,"Nanango",151.9992,-26.6713,"Gympie Hospital","Princess Alexandra Hospital (PAH)",116.315173055
-1303,"Palmwoods",152.9568,-26.69113,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",51.59772381
-1304,"Witta",152.8107,-26.70454,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",47.0834796
-1305,"Chinchilla",150.628,-26.74202,"Roma Hospital","Princess Alexandra Hospital (PAH)",160.64087285
-1306,"Maleny",152.848,-26.75878,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",39.387085985
-1307,"Mooloolah",152.9616,-26.76553,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",42.042517225
-1308,"Glenview",153.0204,-26.76952,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",39.414259375
-1309,"Jandowae",151.1101,-26.78068,"Gympie Hospital","Princess Alexandra Hospital (PAH)",164.32020343
-1310,"Landsborough",152.9652,-26.80826,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",39.69081071
-1311,"Yarraman",151.9796,-26.84046,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",109.52589089
-1312,"Peachester",152.8871,-26.84242,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",45.624212765
-1313,"Beerwah",152.954,-26.85293,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",40.72427221
-1314,"Blackbutt",152.1042,-26.88722,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",98.72641329
-1315,"Glass House Mountain",152.9507,-26.89771,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",40.755656915
-1316,"Bell",151.4491,-26.93176,"Gympie Hospital","Princess Alexandra Hospital (PAH)",154.657185275
-1317,"Beerburrum - North",152.957,-26.93545,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",37.92331556
-1318,"Kilcoy",152.5638,-26.94019,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",61.29255065
-1319,"Woodford",152.778,-26.95557,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",46.67350847
-1320,"Beerburrum",152.955,-26.96138,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",39.54292047
-1321,"D'Aguilar",152.7984,-26.98884,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",46.44246969
-1322,"Delaneys Creek",152.7971,-27.00308,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",47.42985868
-1323,"Donnybrook",153.0662,-27.00662,"Sunshine Coast University Hospital","Princess Alexandra Hospital (PAH)",40.98264594
-1324,"Toorbul",153.0991,-27.03348,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",43.96906047
-1325,"Wamuran",152.8643,-27.04069,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",40.76794166
-1326,"Ningi",153.1051,-27.06703,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",43.08024876
-1327,"Woorim",153.2035,-27.07303,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",56.48265829
-1328,"Sandstone Point",153.1273,-27.08295,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",46.573282585
-1329,"Bongaree",153.1626,-27.08546,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",53.269215965
-1330,"Toogoolawah",152.3753,-27.08821,"Maleny Soldiers Memorial Hospital","Princess Alexandra Hospital (PAH)",76.859660335
-1331,"Beachmere",153.0514,-27.12968,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",39.306784135
-1332,"Surat",149.0666,-27.15384,"Roma Hospital","Princess Alexandra Hospital (PAH)",173.591572555
-1333,"Dalby",151.261,-27.18328,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",137.77687653
-1334,"Dayboro",152.8215,-27.19792,"Brighton Brain Injury Service","Princess Alexandra Hospital (PAH)",42.13274535
-1335,"Esk",152.4179,-27.23674,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",69.77455894
-1336,"Crows Nest",152.0506,-27.26153,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",112.27559275
-1337,"Tara",150.4556,-27.27772,"Roma Hospital","Princess Alexandra Hospital (PAH)",173.45635389
-1338,"Goombungee",151.8502,-27.30485,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",111.93125337
-1339,"Mount Glorious",152.7701,-27.33397,"Prince Charles Hospital","Princess Alexandra Hospital (PAH)",43.229230375
-1340,"Samford Valley - Highvale",152.8394,-27.36508,"Prince Charles Hospital","Princess Alexandra Hospital (PAH)",30.45934728
-1341,"Samford",152.8849,-27.37146,"Prince Charles Hospital","Princess Alexandra Hospital (PAH)",25.67480498
-1342,"Mount Nebo",152.7795,-27.39084,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",41.028335515
-1343,"Coominya",152.5023,-27.3916,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",58.81420238
-1344,"Amity Point",153.44,-27.39664,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",98.73954695
-1345,"Meringandan West",151.8819,-27.41789,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",105.21845738
-1346,"Meringandan",151.9132,-27.42327,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",103.2118672
-1347,"Point Lookout",153.5377,-27.43022,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",101.57142405
-1348,"Oakey",151.7183,-27.43202,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",104.5037502
-1349,"Fernvale",152.6594,-27.45012,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",43.88047248
-1350,"Lowood",152.5763,-27.46078,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",49.60656927
-1351,"Murphys Creek",152.0567,-27.46123,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",80.36699962
-1352,"Highfields",151.9481,-27.46253,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",95.97185368
-1353,"Brisbane",153.0249,-27.47072,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",8.15721476
-1354,"Kingsthorpe",151.8191,-27.47543,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",98.02037522
-1355,"Gowrie Junction",151.8928,-27.49125,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",92.73435423
-1356,"Lockrose",152.4579,-27.49448,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",56.91201266
-1357,"Dunwich",153.4038,-27.49776,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",82.96294679
-1358,"Blue Mountain Heights",151.9612,-27.50364,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",90.53431145
-1359,"Gowrie Mountain",151.8228,-27.51137,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",94.01662795
-1360,"Brightview",152.4916,-27.51975,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",50.71590027
-1361,"Cecil Plains",151.1936,-27.53233,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",138.04025191
-1362,"Minden Village",152.5591,-27.5357,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",46.44948929
-1363,"Kensington Grove - Regency Downs",152.4572,-27.53986,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",51.65972605
-1364,"Glenore Grove",152.4122,-27.54114,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",54.25347942
-1365,"Helidon",152.1254,-27.54838,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",70.45244663
-1366,"Prince Henry Heights",151.9905,-27.55295,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",86.80185357
-1367,"Withcott",152.026,-27.55364,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",76.63585619
-1368,"Placid Hills",152.2504,-27.5578,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",66.2224794
-1369,"Gatton",152.2751,-27.56033,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",62.54882434
-1370,"Toowoomba",151.9528,-27.56216,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",88.26447445
-1371,"Coochiemudlo Island",153.3328,-27.56886,"Logan Hospital","Princess Alexandra Hospital (PAH)",40.167292655
-1372,"Marburg",152.5954,-27.56895,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",40.25067943
-1373,"Grantham",152.2012,-27.57374,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",70.15459664
-1374,"Plainland",152.4165,-27.57656,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",52.16447553
-1375,"Forest Hill",152.3549,-27.58999,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",57.99959716
-1376,"Macleay Island",153.3615,-27.59184,"Logan Hospital","Princess Alexandra Hospital (PAH)",67.04772716
-1377,"Walloon",152.6725,-27.60325,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",39.82479035
-1378,"Westbrook",151.8757,-27.60355,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",99.63518723
-1379,"Lamb Island",153.3798,-27.62387,"Logan Hospital","Princess Alexandra Hospital (PAH)",64.739098165
-1380,"Thagoona",152.6257,-27.62401,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",41.63568175
-1381,"Laidley",152.3938,-27.63099,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",58.33069643
-1382,"Rosewood",152.5889,-27.63446,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",44.70891386
-1383,"Mount Cotton",153.2508,-27.63515,"Logan Hospital","Princess Alexandra Hospital (PAH)",24.65451836
-1384,"Laidley Heights",152.3675,-27.63571,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",64.12887747
-1385,"Wyreema",151.8542,-27.65743,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",103.00072181
-1386,"Ripley",152.7864,-27.66642,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",31.42813773
-1387,"Southbrook",151.7128,-27.67579,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",106.04344468
-1388,"Russell Island",153.3905,-27.68322,"Logan Hospital","Princess Alexandra Hospital (PAH)",72.2662435
-1389,"Deebing Heights",152.7546,-27.69709,"Logan Hospital","Princess Alexandra Hospital (PAH)",35.72461881
-1390,"Cambooya",151.8615,-27.70633,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",106.85816831
-1391,"Pittsworth",151.6329,-27.71797,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",112.37610928
-1392,"Cabbage Tree Point",153.3552,-27.73664,"Logan Hospital","Princess Alexandra Hospital (PAH)",32.92380905
-1393,"Logan Village",153.1134,-27.77455,"Logan Hospital","Princess Alexandra Hospital (PAH)",29.386236795
-1394,"Jacobs Well",153.3629,-27.78179,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",33.883718045
-1395,"Greenmount",151.9059,-27.78299,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",108.43819217
-1396,"Peak Crossing",152.7294,-27.78404,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",41.480086
-1397,"Harrisville",152.6677,-27.81036,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",48.79239698
-1398,"Jimboomba - West",152.9618,-27.81259,"Logan Hospital","Princess Alexandra Hospital (PAH)",35.443224625
-1399,"Jimboomba",153.0307,-27.83265,"Logan Hospital","Princess Alexandra Hospital (PAH)",33.25565166
-1400,"Mundoolun",153.0767,-27.86482,"Logan Hospital","Princess Alexandra Hospital (PAH)",38.381577095
-1401,"Cedar Grove",152.9843,-27.86655,"Logan Hospital","Princess Alexandra Hospital (PAH)",37.84182644
-1402,"Millmerran",151.2671,-27.87814,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",137.99248504
-1403,"Cedar Vale",153.002,-27.87876,"Logan Hospital","Princess Alexandra Hospital (PAH)",38.0683776
-1404,"Tamborine",153.1285,-27.88138,"Logan Hospital","Princess Alexandra Hospital (PAH)",36.471684275
-1405,"Eagle Heights",153.2054,-27.92251,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",43.66494125
-1406,"Clifton",151.9083,-27.92996,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",120.8941977
-1407,"Maudsland",153.2774,-27.93276,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",30.34350339
-1408,"Kalbar",152.6229,-27.94196,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",58.29706134
-1409,"Gleneagle",152.9918,-27.94234,"Logan Hospital","Princess Alexandra Hospital (PAH)",45.781244805
-1410,"Boyland",153.1642,-27.94939,"Logan Hospital","Princess Alexandra Hospital (PAH)",45.111777665
-1411,"Mount Tamborine",153.2014,-27.97114,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",43.067508305
-1412,"Mount Nathan",153.2639,-27.97678,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",36.71769324
-1413,"Aratula",152.5384,-27.98409,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",62.0275709
-1414,"Beaudesert",152.9992,-27.98632,"Logan Hospital","Princess Alexandra Hospital (PAH)",52.181485475
-1415,"Gold Coast",153.4277,-27.99114,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",32.35222577
-1416,"Thargomindah",143.8229,-27.99583,"Roma Hospital","Princess Alexandra Hospital (PAH)",528.71196751
-1417,"Boonah",152.6824,-27.9978,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",61.17967837
-1418,"Canungra",153.1598,-28.01415,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",47.86985817
-1419,"Allora",151.982,-28.03472,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",109.27837318
-1420,"St George",148.5812,-28.03888,"Roma Hospital","Princess Alexandra Hospital (PAH)",226.61313207
-1421,"Lower Beechmont",153.2516,-28.04105,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",41.49187337
-1422,"Cunnamulla",145.6832,-28.06921,"Roma Hospital","Princess Alexandra Hospital (PAH)",402.227548
-1423,"Kooralbyn",152.8443,-28.08068,"Logan Hospital","Princess Alexandra Hospital (PAH)",70.588792225
-1424,"Beechmont",153.206,-28.09893,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",54.59096696
-1425,"Springbrook",153.2644,-28.18766,"Gold Coast University Hospital","Princess Alexandra Hospital (PAH)",61.89129285
-1426,"Yangan",152.2107,-28.19552,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",110.32258503
-1427,"Rathdowney",152.8635,-28.20976,"Logan Hospital","Princess Alexandra Hospital (PAH)",74.51598883
-1428,"Warwick",152.0311,-28.21745,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",110.69038149
-1429,"Inglewood",151.0795,-28.41751,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",179.77983077
-1430,"Goondiwindi",150.3062,-28.54799,"Roma Hospital","Princess Alexandra Hospital (PAH)",224.35145201
-1431,"Yelarbon",150.7524,-28.57416,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",206.214898375
-1432,"Dirranbandi",148.2271,-28.5841,"Roma Hospital","Princess Alexandra Hospital (PAH)",279.19051503
-1433,"Stanthorpe",151.9327,-28.65779,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",152.3265671
-1434,"Johnstone",148.5382,-28.6787,"Roma Hospital","Princess Alexandra Hospital (PAH)",275.520494745
+1138,"Seaforth",148.9607,-20.89524,"Townsville University Hospital","Townsville University Hospital",248.8488104
+1139,"Calen",148.7716,-20.89849,"Townsville University Hospital","Townsville University Hospital",217.8878607
+1140,"Haliday Bay - Ball Bay",148.9879,-20.90075,"Townsville University Hospital","Townsville University Hospital",248.4252623
+1141,"Killarney",152.2963,-28.33305,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",125.95798438
+1142,"Nindaroo",149.1636,-21.05945,"Townsville University Hospital","Townsville University Hospital",259.6209409
+1143,"Farleigh",149.1017,-21.10705,"Townsville University Hospital","Townsville University Hospital",245.7122812
+1144,"Erakala",149.1071,-21.12326,"Townsville University Hospital","Townsville University Hospital",247.6294439
+1145,"Finch Hatton",148.6313,-21.14165,"Townsville University Hospital","Townsville University Hospital",259.6765666
+1146,"Marian",148.9428,-21.14558,"Townsville University Hospital","Townsville University Hospital",241.830663
+1147,"Mackay",149.1664,-21.15497,"Townsville University Hospital","Townsville University Hospital",256.3593963
+1148,"Mirani",148.8653,-21.16023,"Townsville University Hospital","Townsville University Hospital",248.3788949
+1149,"Walkerston",149.0554,-21.16249,"Townsville University Hospital","Townsville University Hospital",248.8363873
+1150,"Bakers Creek",149.1521,-21.20776,"Townsville University Hospital","Townsville University Hospital",258.6617332
+1151,"Eton",148.9732,-21.26365,"Townsville University Hospital","Townsville University Hospital",253.168276
+1152,"Hay Point",149.2905,-21.29652,"Townsville University Hospital","Townsville University Hospital",276.9150095
+1153,"Glenden",148.1138,-21.35315,"Townsville University Hospital","Townsville University Hospital",258.0834264
+1154,"Grasstree Beach",149.3067,-21.36404,"Townsville University Hospital","Townsville University Hospital",277.1300937
+1155,"Campwin Beach",149.313,-21.37793,"Townsville University Hospital","Townsville University Hospital",278.5367429
+1156,"Sarina Beach",149.3095,-21.38995,"Townsville University Hospital","Townsville University Hospital",277.6208537
+1157,"Sarina",149.216,-21.4206,"Townsville University Hospital","Townsville University Hospital",274.7996897
+1158,"Armstrong Beach",149.2873,-21.45078,"Townsville University Hospital","Townsville University Hospital",284.1726982
+1159,"Nebo",148.6917,-21.69028,"Townsville University Hospital","Townsville University Hospital",294.9302369
+1160,"Moranbah",148.0456,-22.0039,"Townsville University Hospital","Townsville University Hospital",356.3131912
+1161,"Winton",143.0414,-22.38676,"Townsville University Hospital","Townsville University Hospital",403.3443839
+1162,"Dysart",148.3481,-22.58982,"Townsville University Hospital","Townsville University Hospital",381.2894072
+1163,"Middlemount",148.7039,-22.81426,"Townsville University Hospital","Townsville University Hospital",386.8274776
+1164,"Clermont",147.6374,-22.82681,"Townsville University Hospital","Townsville University Hospital",328.7490393
+1165,"Byfield",150.6508,-22.85074,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",445.63052163
+1166,"Boulia",139.9082,-22.91287,"Townsville University Hospital","Townsville University Hospital",663.0277266
+1167,"Aramac",145.2439,-22.9698,"Townsville University Hospital","Brain Injury Rehabilitation Unit",678.07094497
+1168,"Tieri",148.3497,-23.03219,"Townsville University Hospital","Brain Injury Rehabilitation Unit",495.154369095
+1169,"Capella",148.0248,-23.08513,"Townsville University Hospital","Brain Injury Rehabilitation Unit",484.1754175
+1170,"Yeppoon",150.7431,-23.12635,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",425.293200565
+1171,"The Caves",150.4661,-23.17545,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",414.253639985
+1172,"Mulambin",150.7857,-23.19155,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",428.88055314
+1173,"Kinka Beach",150.7876,-23.2243,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",422.828068145
+1174,"Glendale",150.4751,-23.24572,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",411.929948735
+1175,"Emu Park",150.8238,-23.25994,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",423.721683085
+1176,"Keppel Sands",150.7919,-23.3275,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",420.448096695
+1177,"Rockhampton",150.4974,-23.38918,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",389.71275228
+1178,"Rubyvale",147.6974,-23.42054,"Townsville University Hospital","Brain Injury Rehabilitation Unit",505.82225525
+1179,"Gracemere",150.4558,-23.43865,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",388.270226765
+1180,"Longreach",144.2475,-23.44447,"Townsville University Hospital","Brain Injury Rehabilitation Unit",634.91835666
+1181,"Sapphire",147.7193,-23.46006,"Townsville University Hospital","Brain Injury Rehabilitation Unit",505.915580295
+1182,"Emerald",148.1598,-23.52349,"Townsville University Hospital","Brain Injury Rehabilitation Unit",484.30280612
+1183,"Barcaldine",145.2854,-23.55288,"Townsville University Hospital","Brain Injury Rehabilitation Unit",636.23321053
+1184,"Blackwater",148.8834,-23.5779,"Townsville University Hospital","Brain Injury Rehabilitation Unit",488.434806275
+1185,"Bouldercombe",150.4668,-23.57818,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",391.438286025
+1186,"Bluff",149.0695,-23.57993,"Townsville University Hospital","Brain Injury Rehabilitation Unit",487.780837455
+1187,"Mount Morgan",150.3881,-23.64464,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",405.586182305
+1188,"Dingo",149.3315,-23.64629,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",474.194710785
+1189,"Alpha",146.6387,-23.65028,"Townsville University Hospital","Brain Injury Rehabilitation Unit",581.9565091
+1190,"Duaringa",149.6687,-23.71846,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",452.164626025
+1191,"Willows Gemfields",147.5411,-23.73932,"Townsville University Hospital","Brain Injury Rehabilitation Unit",529.25742205
+1192,"Mount Larcom",150.9799,-23.8124,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",341.89688406
+1193,"Gladstone",151.2578,-23.84753,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",329.38775098
+1194,"Tannum Sands",151.3685,-23.94867,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",315.376941785
+1195,"Wurdong Heights",151.3025,-23.98485,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",314.04147786
+1196,"Calliope",151.213,-23.99655,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",322.01630399
+1197,"Benaraby",151.3256,-24.00187,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",311.20208805
+1198,"Springsure",148.0891,-24.11595,"Townsville University Hospital","Brain Injury Rehabilitation Unit",484.04087321
+1199,"Woorabinda",149.4575,-24.1306,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",451.864420655
+1200,"Seventeen Seventy",151.8855,-24.16343,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",306.48103795
+1201,"Baralaba",149.8114,-24.17958,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",425.368859425
+1202,"Agnes Water",151.9008,-24.21017,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",299.6941
+1203,"Taylors Creek",149.1545,-24.25325,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",467.807531065
+1204,"Miriam Vale",151.5583,-24.328,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",280.713294725
+1205,"Biloela",150.5098,-24.39602,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",360.07392523
+1206,"Blackall",145.4645,-24.42336,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",623.3512071
+1207,"Thangool",150.5751,-24.48738,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",350.31087069
+1208,"Moura",149.9719,-24.57498,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",383.495246395
+1209,"Moore Park",152.2757,-24.71776,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",237.41405898
+1210,"Burnett Heads",152.4149,-24.76892,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",226.651264315
+1211,"Bargara",152.4607,-24.81453,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",225.80154332
+1212,"Gooburrum",152.345,-24.81685,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",225.839147965
+1213,"Sloping Hummock",152.4252,-24.8436,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",221.10856566
+1214,"Oakwood",152.298,-24.85082,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",223.14336163
+1215,"Monto",151.1207,-24.86547,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",299.52759881
+1216,"Bundaberg",152.3444,-24.87052,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",218.43228101
+1217,"Innes Park",152.4823,-24.88137,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",222.76145876
+1218,"Tambo",146.2549,-24.88339,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",559.29948721
+1219,"Sharon",152.2587,-24.88377,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",220.52189705
+1220,"Elliott Heads",152.4888,-24.9178,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",224.489287285
+1221,"Theodore",150.075,-24.94678,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",344.36332462
+1222,"South Bingera",152.2194,-24.96842,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",207.821223125
+1223,"Gin Gin",151.9557,-24.99157,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",218.27190828
+1224,"Woodgate",152.5506,-25.0964,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",202.5802819
+1225,"Cordalba",152.2111,-25.15681,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",192.48778983
+1226,"Mount Perry",151.6442,-25.18036,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",253.13996519
+1227,"Burrum Heads",152.609,-25.18701,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",174.22093497
+1228,"Burrum Heads - East",152.6334,-25.21101,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",173.07836832
+1229,"Apple Tree Creek",152.2338,-25.22391,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",185.95776003
+1230,"Burrum Heads - South",152.5934,-25.23535,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",170.277996295
+1231,"Childers",152.2765,-25.23536,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",181.271797625
+1232,"Toogoom",152.6898,-25.25614,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",171.640272965
+1233,"Pacific Haven",152.5565,-25.26683,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",168.054833595
+1234,"Hervey Bay",152.8722,-25.28535,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",181.11582341
+1235,"Howard",152.5602,-25.31648,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",163.2812955
+1236,"Torbanlea",152.596,-25.34752,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",159.93926995
+1237,"Walligan",152.771,-25.35161,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",165.928475495
+1238,"Sunshine Acres",152.7889,-25.35801,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",167.828254335
+1239,"Booral",152.9037,-25.36202,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",175.98178622
+1240,"Eidsvold",151.1221,-25.37064,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",242.530597125
+1241,"River Heads",152.9102,-25.39864,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",179.3975499
+1242,"Aldershot",152.6613,-25.46311,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",150.797668815
+1243,"Biggenden",152.0449,-25.50952,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",168.80952206
+1244,"Oakhurst",152.6206,-25.51008,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",152.650572815
+1245,"Maryborough",152.6935,-25.52726,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",149.14507754
+1246,"Mundubbera",151.2992,-25.59115,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",218.787561635
+1247,"Maaroom",152.8722,-25.61156,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",142.219290685
+1248,"Gayndah",151.6074,-25.62451,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",191.519589515
+1249,"Taroom",149.7974,-25.6412,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",307.96248025
+1250,"Boonooroo - Tuan",152.8771,-25.6788,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",139.323573335
+1251,"Poona",152.9052,-25.71673,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",137.028444295
+1252,"Tiaro",152.584,-25.725,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",129.800272695
+1253,"Augathella",146.5842,-25.79596,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",488.48353991
+1254,"Injune",148.5651,-25.84311,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",375.55593746
+1255,"Bauple Forest",152.636,-25.85212,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",127.245796125
+1256,"Rainbow Beach",153.0922,-25.90782,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",136.795946445
+1257,"Tin Can Bay",153.0031,-25.91357,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",123.278636965
+1258,"Glenwood",152.6324,-25.94735,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",116.31036649
+1259,"Cooloola Village",152.982,-25.97598,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",124.680307165
+1260,"Curra",152.5881,-26.07081,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",102.34832701
+1261,"Kilkivan",152.2399,-26.08621,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",122.631467485
+1262,"Wandoan",149.9628,-26.12088,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",270.7026111
+1263,"Proston",151.603,-26.16377,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",182.610467075
+1264,"Goomeri",152.0647,-26.18048,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",140.58191722
+1265,"Gympie",152.6706,-26.18893,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",88.21144719
+1266,"The Palms",152.5889,-26.19336,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",95.11428736
+1267,"Nahrunda",152.6127,-26.20237,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",92.394230495
+1268,"Gowrie",146.3207,-26.23114,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",501.11740632
+1269,"Pie Creek",152.6277,-26.23769,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",88.47196518
+1270,"Murgon",151.9402,-26.24246,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",151.88813288
+1271,"Boreen Point",152.9952,-26.28443,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",83.83386267
+1272,"Cherbourg",151.9565,-26.28971,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",154.964637215
+1273,"Wondai",151.8736,-26.32045,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",160.49102391
+1274,"Cooran",152.8222,-26.33805,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",75.72917614
+1275,"Amamoor",152.6748,-26.34607,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",80.768988825
+1276,"Cooroibah",152.9939,-26.35897,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",76.702220375
+1277,"Pomona",152.8533,-26.36256,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",69.574631535
+1278,"Forest Acres",152.9413,-26.36638,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",69.47693043
+1279,"Black Mountain",152.8819,-26.40467,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",66.252447795
+1280,"Charleville",146.2416,-26.40697,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",487.05455387
+1281,"Sunshine Beach",153.1058,-26.41021,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",72.63108456
+1282,"Cooroy",152.9089,-26.41875,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",62.004307855
+1283,"Doonan - Tinbeerwah",153.0119,-26.43781,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",64.457888505
+1284,"Weyba Downs",153.0474,-26.45561,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",63.863793215
+1285,"Imbil",152.677,-26.46119,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",85.922304185
+1286,"Eumundi",152.9513,-26.47643,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",58.530946095
+1287,"Mitchell",147.976,-26.48827,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",374.88801161
+1288,"Kingaroy",151.8443,-26.53645,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",155.7724814
+1289,"Yandina",152.9565,-26.56212,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",53.02662388
+1290,"Roma",148.7879,-26.57094,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",318.86122415
+1291,"Wallumbilla",149.187,-26.58483,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",292.239016285
+1292,"Kenilworth",152.727,-26.59522,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",80.78772411
+1293,"Kureelpa",152.8837,-26.60834,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",59.78682533
+1294,"Yuleba",149.381,-26.61304,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",279.28248499
+1295,"Quilpie",144.2683,-26.61502,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",617.36154224
+1296,"Mapleton",152.8651,-26.62074,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",61.56815465
+1297,"Nambour",152.9592,-26.62753,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",50.66487677
+1298,"Kiels Mountain",153.001,-26.6527,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",47.812294865
+1299,"Flaxton",152.8647,-26.65557,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",62.43394666
+1300,"Miles",150.1857,-26.65858,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",226.703378225
+1301,"Woombye",152.9666,-26.66148,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",47.191062565
+1302,"Nanango",151.9992,-26.6713,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",137.00480497
+1303,"Palmwoods",152.9568,-26.69113,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",51.59772381
+1304,"Witta",152.8107,-26.70454,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",62.760222595
+1305,"Chinchilla",150.628,-26.74202,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",194.27306223
+1306,"Maleny",152.848,-26.75878,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",54.423834845
+1307,"Mooloolah",152.9616,-26.76553,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",44.01153091
+1308,"Glenview",153.0204,-26.76952,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",39.414259375
+1309,"Jandowae",151.1101,-26.78068,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",172.48807088
+1310,"Landsborough",152.9652,-26.80826,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",40.240519955
+1311,"Yarraman",151.9796,-26.84046,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",121.47110778
+1312,"Peachester",152.8871,-26.84242,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",49.53127134
+1313,"Beerwah",152.954,-26.85293,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",41.172467575
+1314,"Blackbutt",152.1042,-26.88722,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",110.65915009
+1315,"Glass House Mountain",152.9507,-26.89771,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",40.755656915
+1316,"Bell",151.4491,-26.93176,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",160.95182636
+1317,"Beerburrum - North",152.957,-26.93545,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",37.92331556
+1318,"Kilcoy",152.5638,-26.94019,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",69.242141145
+1319,"Woodford",152.778,-26.95557,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",54.61886777
+1320,"Beerburrum",152.955,-26.96138,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",39.54292047
+1321,"D'Aguilar",152.7984,-26.98884,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",50.912303915
+1322,"Delaneys Creek",152.7971,-27.00308,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",51.400396015
+1323,"Donnybrook",153.0662,-27.00662,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",40.98264594
+1324,"Toorbul",153.0991,-27.03348,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",44.7087974
+1325,"Wamuran",152.8643,-27.04069,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",43.36318345
+1326,"Ningi",153.1051,-27.06703,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",46.13124289
+1327,"Woorim",153.2035,-27.07303,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",59.534609065
+1328,"Sandstone Point",153.1273,-27.08295,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",49.62545242
+1329,"Bongaree",153.1626,-27.08546,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",56.31982388
+1330,"Toogoolawah",152.3753,-27.08821,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",82.62366994
+1331,"Beachmere",153.0514,-27.12968,"Sunshine Coast University Hospital","Brain Injury Rehabilitation Unit",43.59274859
+1332,"Surat",149.0666,-27.15384,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",293.69545623
+1333,"Dalby",151.261,-27.18328,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",137.77687653
+1334,"Dayboro",152.8215,-27.19792,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",45.94322219
+1335,"Esk",152.4179,-27.23674,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",69.77455894
+1336,"Crows Nest",152.0506,-27.26153,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",112.27559275
+1337,"Tara",150.4556,-27.27772,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",197.528504095
+1338,"Goombungee",151.8502,-27.30485,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",111.93125337
+1339,"Mount Glorious",152.7701,-27.33397,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",44.72808344
+1340,"Samford Valley - Highvale",152.8394,-27.36508,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",31.959303865
+1341,"Samford",152.8849,-27.37146,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",27.174142265
+1342,"Mount Nebo",152.7795,-27.39084,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",41.028335515
+1343,"Coominya",152.5023,-27.3916,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",58.81420238
+1344,"Amity Point",153.44,-27.39664,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",98.73954695
+1345,"Meringandan West",151.8819,-27.41789,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",105.21845738
+1346,"Meringandan",151.9132,-27.42327,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",103.2118672
+1347,"Point Lookout",153.5377,-27.43022,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",101.57142405
+1348,"Oakey",151.7183,-27.43202,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",104.5037502
+1349,"Fernvale",152.6594,-27.45012,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",43.88047248
+1350,"Lowood",152.5763,-27.46078,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",49.60656927
+1351,"Murphys Creek",152.0567,-27.46123,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",80.36699962
+1352,"Highfields",151.9481,-27.46253,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",95.97185368
+1353,"Brisbane",153.0249,-27.47072,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",8.15721476
+1354,"Kingsthorpe",151.8191,-27.47543,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",98.02037522
+1355,"Gowrie Junction",151.8928,-27.49125,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",92.73435423
+1356,"Lockrose",152.4579,-27.49448,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",56.91201266
+1357,"Dunwich",153.4038,-27.49776,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",82.96294679
+1358,"Blue Mountain Heights",151.9612,-27.50364,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",90.53431145
+1359,"Gowrie Mountain",151.8228,-27.51137,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",94.01662795
+1360,"Brightview",152.4916,-27.51975,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",50.71590027
+1361,"Cecil Plains",151.1936,-27.53233,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",138.04025191
+1362,"Minden Village",152.5591,-27.5357,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",46.44948929
+1363,"Kensington Grove - Regency Downs",152.4572,-27.53986,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",51.65972605
+1364,"Glenore Grove",152.4122,-27.54114,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",54.25347942
+1365,"Helidon",152.1254,-27.54838,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",70.45244663
+1366,"Prince Henry Heights",151.9905,-27.55295,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",86.80185357
+1367,"Withcott",152.026,-27.55364,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",76.63585619
+1368,"Placid Hills",152.2504,-27.5578,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",66.2224794
+1369,"Gatton",152.2751,-27.56033,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",62.54882434
+1370,"Toowoomba",151.9528,-27.56216,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",88.26447445
+1371,"Coochiemudlo Island",153.3328,-27.56886,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",44.25689606
+1372,"Marburg",152.5954,-27.56895,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",40.25067943
+1373,"Grantham",152.2012,-27.57374,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",70.15459664
+1374,"Plainland",152.4165,-27.57656,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",52.16447553
+1375,"Forest Hill",152.3549,-27.58999,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",57.99959716
+1376,"Macleay Island",153.3615,-27.59184,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",73.83337555
+1377,"Walloon",152.6725,-27.60325,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",39.82479035
+1378,"Westbrook",151.8757,-27.60355,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",99.63518723
+1379,"Lamb Island",153.3798,-27.62387,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",71.52496925
+1380,"Thagoona",152.6257,-27.62401,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",41.63568175
+1381,"Laidley",152.3938,-27.63099,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",58.33069643
+1382,"Rosewood",152.5889,-27.63446,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",44.70891386
+1383,"Mount Cotton",153.2508,-27.63515,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",31.84857512
+1384,"Laidley Heights",152.3675,-27.63571,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",64.12887747
+1385,"Wyreema",151.8542,-27.65743,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",103.00072181
+1386,"Ripley",152.7864,-27.66642,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",31.42813773
+1387,"Southbrook",151.7128,-27.67579,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",106.04344468
+1388,"Russell Island",153.3905,-27.68322,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",79.05485061
+1389,"Deebing Heights",152.7546,-27.69709,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",36.31318837
+1390,"Cambooya",151.8615,-27.70633,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",106.85816831
+1391,"Pittsworth",151.6329,-27.71797,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",112.37610928
+1392,"Cabbage Tree Point",153.3552,-27.73664,"Gold Coast University Hospital","Gold Coast University Hospital",30.8583654
+1393,"Logan Village",153.1134,-27.77455,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",41.25195715
+1394,"Jacobs Well",153.3629,-27.78179,"Gold Coast University Hospital","Gold Coast University Hospital",26.07401449
+1395,"Greenmount",151.9059,-27.78299,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",108.43819217
+1396,"Peak Crossing",152.7294,-27.78404,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",41.480086
+1397,"Harrisville",152.6677,-27.81036,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",48.79239698
+1398,"Jimboomba - West",152.9618,-27.81259,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",40.15583666
+1399,"Jimboomba",153.0307,-27.83265,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",38.239324
+1400,"Mundoolun",153.0767,-27.86482,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",44.67092978
+1401,"Cedar Grove",152.9843,-27.86655,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",42.69951376
+1402,"Millmerran",151.2671,-27.87814,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",137.99248504
+1403,"Cedar Vale",153.002,-27.87876,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",42.92606492
+1404,"Tamborine",153.1285,-27.88138,"Gold Coast University Hospital","Gold Coast University Hospital",42.70453687
+1405,"Eagle Heights",153.2054,-27.92251,"Gold Coast University Hospital","Gold Coast University Hospital",33.55756187
+1406,"Clifton",151.9083,-27.92996,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",120.8941977
+1407,"Maudsland",153.2774,-27.93276,"Gold Coast University Hospital","Gold Coast University Hospital",16.32209891
+1408,"Kalbar",152.6229,-27.94196,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",58.29706134
+1409,"Gleneagle",152.9918,-27.94234,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",50.63844965
+1410,"Boyland",153.1642,-27.94939,"Gold Coast University Hospital","Gold Coast University Hospital",39.4530594
+1411,"Mount Tamborine",153.2014,-27.97114,"Gold Coast University Hospital","Gold Coast University Hospital",29.05278576
+1412,"Mount Nathan",153.2639,-27.97678,"Gold Coast University Hospital","Gold Coast University Hospital",22.69319355
+1413,"Aratula",152.5384,-27.98409,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",62.0275709
+1414,"Beaudesert",152.9992,-27.98632,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",58.86948468
+1415,"Gold Coast",153.4277,-27.99114,"Gold Coast University Hospital","Gold Coast University Hospital",10.86359517
+1416,"Thargomindah",143.8229,-27.99583,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",636.53277238
+1417,"Boonah",152.6824,-27.9978,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",61.17967837
+1418,"Canungra",153.1598,-28.01415,"Gold Coast University Hospital","Gold Coast University Hospital",33.14611747
+1419,"Allora",151.982,-28.03472,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",109.27837318
+1420,"St George",148.5812,-28.03888,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",325.73906934
+1421,"Lower Beechmont",153.2516,-28.04105,"Gold Coast University Hospital","Gold Coast University Hospital",24.52312735
+1422,"Cunnamulla",145.6832,-28.06921,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",510.4661174
+1423,"Kooralbyn",152.8443,-28.08068,"Gold Coast University Hospital","Gold Coast University Hospital",76.96299924
+1424,"Beechmont",153.206,-28.09893,"Gold Coast University Hospital","Gold Coast University Hospital",37.62737534
+1425,"Springbrook",153.2644,-28.18766,"Gold Coast University Hospital","Gold Coast University Hospital",44.93245988
+1426,"Yangan",152.2107,-28.19552,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",110.32258503
+1427,"Rathdowney",152.8635,-28.20976,"Gold Coast University Hospital","Brain Injury Rehabilitation Unit",81.427456205
+1428,"Warwick",152.0311,-28.21745,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",110.69038149
+1429,"Inglewood",151.0795,-28.41751,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",179.77983077
+1430,"Goondiwindi",150.3062,-28.54799,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",226.18715539
+1431,"Yelarbon",150.7524,-28.57416,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",206.214898375
+1432,"Dirranbandi",148.2271,-28.5841,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",377.35030448
+1433,"Stanthorpe",151.9327,-28.65779,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",152.3265671
+1434,"Johnstone",148.5382,-28.6787,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",373.71842787
 1435,"Smithfield",145.690172,-16.83142,"Cairns Hospital","Townsville University Hospital",134.222506395
-1436,"Texas",151.1692,-28.85306,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",203.92522341
-1437,"Wallangarra",151.9262,-28.92345,"Princess Alexandra Hospital (PAH)","Princess Alexandra Hospital (PAH)",176.54359463
-1438,"Birdsville",139.3551,-25.8978,"Central West Sub-Acute Service","Townsville University Hospital",781.9293898
-1439,"Durham",141.811455,-27.397056,"Central West Sub-Acute Service","Princess Alexandra Hospital (PAH)",666.80032922
-1440,"Hungerford",144.409847,-28.996741,"Roma Hospital","Princess Alexandra Hospital (PAH)",531.02257507
-1441,"RBWH",153.0285,-27.447,"Royal Brisbane and Women's Hospital (RBWH)","Princess Alexandra Hospital (PAH)",4.975331895
+1436,"Texas",151.1692,-28.85306,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",203.92522341
+1437,"Wallangarra",151.9262,-28.92345,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",176.54359463
+1438,"Birdsville",139.3551,-25.8978,"Townsville University Hospital","Brain Injury Rehabilitation Unit",1145.913800585
+1439,"Durham",141.811455,-27.397056,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",790.94068159
+1440,"Hungerford",144.409847,-28.996741,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",638.80820376
+1441,"RBWH",153.0285,-27.447,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",4.975331895
 1001,"Boigu Island",142.2153,-9.260192,"Cairns Hospital","Townsville University Hospital",1242.14916386
 1002,"Saibai Island",142.6217,-9.38044,"Cairns Hospital","Townsville University Hospital",1172.14916386
 1003,"Erub (Darnley) Island",143.7703,-9.585443,"Cairns Hospital","Townsville University Hospital",1262.14916386
@@ -438,5 +438,5 @@
 1009,"St Pauls",142.3349,-10.18488,"Cairns Hospital","Townsville University Hospital",992.14916386
 1010,"Warraber Island",142.8238,-10.20726,"Cairns Hospital","Townsville University Hospital",1012.14916386
 1011,"Hammond Island",142.2047,-10.54803,"Cairns Hospital","Townsville University Hospital",912.14916386
-1038,"Gununa",139.178,-16.65843,"Central West Sub-Acute Service","Townsville University Hospital",891.27320828
-1127,"Hamilton Island",148.9686,-20.35179,"Sarina Hospital","Townsville University Hospital",205.832968095
+1038,"Gununa",139.178,-16.65843,"Cairns Hospital","Townsville University Hospital",954.64698005
+1127,"Hamilton Island",148.9686,-20.35179,"Townsville University Hospital","Townsville University Hospital",237.9391187
