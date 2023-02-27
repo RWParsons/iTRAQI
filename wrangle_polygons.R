@@ -133,7 +133,7 @@ grid <- expand.grid(
   data=list.files("output/kriging_data"),
   SA_polygons=list.files("output/sa_polygons"),
   stringsAsFactors=FALSE
-)
+) # %>% filter(str_detect(data, "rehab"))
 
 if(TRUE) {
   for(i in 1:nrow(grid)){
