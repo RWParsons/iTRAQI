@@ -1,5 +1,51 @@
 library(tidyverse)
 
+### Create df_acute with acute travel times
+replacement_name_for_brisbane <- "Brisbane (PAH/RBWH)"
+
+df_acute_addons <- data.frame(
+  # add brisbane as 8 minutes for acute care
+  # add rbwh as 0 minutes
+  town_name = c("Brisbane", "RBWH"),
+  acute_time = c(8, 0),
+  acute_care_transit_location=rep("Brisbane (PAH/RBWH)", 2),
+  acute_care_centre = c(replacement_name_for_brisbane, replacement_name_for_brisbane)
+)
+
+clean_acute_centre <- function(x) {
+  x <- tolower(x)
+  brisbane_centres <- c(
+    "pah", 
+    "princess alexandra hospital",
+    "rbwh",
+    "royal brisbane and women's hospital"
+  )
+  case_when(
+    x %in% brisbane_centres ~ replacement_name_for_brisbane,
+    x %in% c("gcuh", "gold coast university hospital") ~ "Gold Coast University Hospital",
+    x == "townsville hospital" ~ "Townsville University Hospital",
+    x == "rockhampton" ~ "Rockhampton Hospital",
+    x == "camooweal primary health clinic" ~ "Camooweal Primary Health Centre",
+    x == "taroom" ~ "Taroom Hospital",
+    x == "mareeba" ~ "Mareeba Hospital",
+    x == "weipa" ~ "Weipa Hospital",
+    x == "bamaga" ~ "Bamaga Hospital",
+    x == "thurday island" ~ "Thursday Island Hospital",
+    TRUE ~ str_replace(str_to_title(x), "Phc", "Primary Health Centre")
+  )
+}
+
+
+df_acute <- readxl::read_excel("input/drive_times/Qld_towns_RSQ pathways V3.xlsx", skip=2) %>%
+  select(town_name=TOWN_NAME, acute_time=Total_transport_time_min, 
+         acute_care_transit_location=Destination1, acute_care_centre=Destination2) %>%
+  filter(!is.na(acute_care_centre)) %>%
+  mutate(acute_care_centre = clean_acute_centre(acute_care_centre),
+         acute_care_transit_location = clean_acute_centre(acute_care_transit_location)) %>%
+  rbind(., df_acute_addons) %>%
+  distinct() # removes the duplicated Killarney
+
+write.csv(df_acute, "input/df_acute.csv", row.names=FALSE)
 
 
 ############# CHECKS
@@ -143,6 +189,11 @@ future_gold_locs <- c(
   "Gold Coast University Hospital"
 )
 
+future_gold_and_cairns_locs <- c(
+  future_gold_locs,
+  "Cairns Hospital"
+)
+
 gold_locs <- c(
   "Townsville University Hospital",
   "Brain Injury Rehabilitation Unit"
@@ -224,16 +275,24 @@ get_df_times(data=df_combined, centres=silver_locs, save_file=file.path(rehab_ti
 get_df_times(data=df_combined, centres=future_gold_locs, save_file=file.path(rehab_times_dir, "future_gold_rehab.csv"))
 get_df_times(data=df_combined, centres=gold_locs, save_file=file.path(rehab_times_dir, "gold_rehab.csv"))
 get_df_times(data=df_combined, centres=platinum_locs, save_file=file.path(rehab_times_dir, "platinum_rehab.csv"))
+get_df_times(data=df_combined, centres=future_gold_and_cairns_locs, save_file=file.path(rehab_times_dir, "future_gold_and_cairns_rehab.csv"))
 
 silver_times <- get_df_times(data=df_combined, centres=silver_locs)
 gold_times <- get_df_times(data=df_combined, centres=gold_locs)
 future_gold_times <- get_df_times(data=df_combined, centres=future_gold_locs)
 platinum_times <- get_df_times(data=df_combined, centres=platinum_locs)
+future_gold_and_cairns_times <- get_df_times(data=df_combined, centres=future_gold_and_cairns_locs)
 
-weighted_rehab_times <- 
+acute_drive_times <- 
+  df_acute %>%
+  mutate(acute_care_centre = ifelse(acute_care_centre == "Brisbane (PAH/RBWH)", "Brain Injury Rehabilitation Unit", acute_care_centre)) %>%
+  select(-acute_time, -acute_care_transit_location) %>%
+  inner_join(df_combined, by = c("town_name", "acute_care_centre"="centre"))
+
+weighted_rehab_times <-
   inner_join(
-    rename(silver_times, silver_rehab_centre=centre, silver_time=minutes),
-    select(gold_times, id, gold_rehab_centre=centre, gold_time=minutes),
+    rename(future_gold_and_cairns_times, silver_rehab_centre=centre, silver_time=minutes),
+    select(acute_drive_times, id, gold_rehab_centre=acute_care_centre, gold_time=minutes),
     by="id"
   ) %>%
   mutate(minutes=(silver_time + gold_time)/2) %>%
@@ -254,6 +313,11 @@ all_rehab_times <-
   inner_join(
     .,
     select(platinum_times, id, platinum_rehab_centre=centre, platinum_time=minutes),
+    by="id"
+  ) %>%
+  inner_join(
+    .,
+    select(platinum_times, id, future_gold_and_cairns_rehab_centre=centre, future_gold_and_cairns_time=minutes),
     by="id"
   ) 
 
