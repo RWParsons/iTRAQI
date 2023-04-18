@@ -34,7 +34,7 @@ df_times <- inner_join(df_acute, rename(df_rehab, rehab_time=minutes), by="town_
   rename(location=town_name) %>%
   mutate(acute_care_transit_location = ifelse(acute_care_transit_location == acute_care_centre, NA, acute_care_transit_location))
 
-write.csv(df_times, "input/QLD_locations_with_RSQ_times_20230227.csv", row.names = F)
+write.csv(df_times, "input/QLD_locations_with_RSQ_times.csv", row.names = F)
 df_times <- 
   df_times %>%
   rename(rehab_centre = silver_rehab_centre) %>%

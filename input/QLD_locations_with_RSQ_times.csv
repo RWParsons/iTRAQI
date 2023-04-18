@@ -1,90 +1,90 @@
 "location","acute_time","acute_care_transit_location","acute_care_centre","id","x","y","silver_rehab_centre","gold_rehab_centre","rehab_time"
-"Boigu Island",493,"Thursday Island Hospital","Townsville University Hospital",1001,142.2153,-9.260192,"Cairns Hospital","Townsville University Hospital",1242.14916386
-"Saibai Island",491,"Thursday Island Hospital","Townsville University Hospital",1002,142.6217,-9.38044,"Cairns Hospital","Townsville University Hospital",1172.14916386
-"Erub (Darnley) Island",527,"Thursday Island Hospital","Townsville University Hospital",1003,143.7703,-9.585443,"Cairns Hospital","Townsville University Hospital",1262.14916386
-"Yorke Island",503,"Thursday Island Hospital","Townsville University Hospital",1004,143.4073,-9.750172,"Cairns Hospital","Townsville University Hospital",1182.14916386
-"Iama (Yam) Island",466,"Thursday Island Hospital","Townsville University Hospital",1005,142.7744,-9.900403,"Cairns Hospital","Townsville University Hospital",1072.14916386
-"Mer (Murray) Island",534,"Thursday Island Hospital","Townsville University Hospital",1006,144.0504,-9.918105,"Cairns Hospital","Townsville University Hospital",1272.14916386
-"Mabuiag Island",449,"Thursday Island Hospital","Townsville University Hospital",1007,142.1829,-9.95718,"Cairns Hospital","Townsville University Hospital",1052.14916386
-"Badu Island",440,"Thursday Island Hospital","Townsville University Hospital",1008,142.1388,-10.12322,"Cairns Hospital","Townsville University Hospital",1002.14916386
-"St Pauls",436,"Thursday Island Hospital","Townsville University Hospital",1009,142.3349,-10.18488,"Cairns Hospital","Townsville University Hospital",992.14916386
-"Warraber Island",456,"Thursday Island Hospital","Townsville University Hospital",1010,142.8238,-10.20726,"Cairns Hospital","Townsville University Hospital",1012.14916386
-"Hammond Island",411,"Thursday Island Hospital","Townsville University Hospital",1011,142.2047,-10.54803,"Cairns Hospital","Townsville University Hospital",912.14916386
-"Thursday Island",324,"Thursday Island Hospital","Townsville University Hospital",1012,142.2167,-10.5804,"Cairns Hospital","Townsville University Hospital",977.278586185
-"Horn Island",414,"Thursday Island Hospital","Townsville University Hospital",1013,142.2837,-10.60644,"Cairns Hospital","Townsville University Hospital",991.955002195
-"Seisia",447,"Bamaga Hospital","Townsville University Hospital",1014,142.3701,-10.85188,"Cairns Hospital","Townsville University Hospital",842.14916386
-"New Mapoon",447,"Bamaga Hospital","Townsville University Hospital",1015,142.3863,-10.87403,"Cairns Hospital","Townsville University Hospital",838.584054015
-"Umagico",447,"Bamaga Hospital","Townsville University Hospital",1016,142.3489,-10.88916,"Cairns Hospital","Townsville University Hospital",835.926384015
-"Bamaga",447,"Bamaga Hospital","Townsville University Hospital",1017,142.3893,-10.89279,"Cairns Hospital","Townsville University Hospital",837.138957345
-"Injinoo",447,"Bamaga Hospital","Townsville University Hospital",1018,142.3275,-10.90209,"Cairns Hospital","Townsville University Hospital",832.59118507
-"Mapoon",429,"Mapoon Primary Health Centre","Townsville University Hospital",1019,141.8976,-12.02178,"Cairns Hospital","Townsville University Hospital",768.40852244
-"Weipa",411,"Weipa Hospital","Townsville University Hospital",1020,141.8777,-12.62496,"Cairns Hospital","Townsville University Hospital",713.05227822
-"Napranum",411,"Weipa Hospital","Townsville University Hospital",1021,141.8909,-12.68153,"Cairns Hospital","Townsville University Hospital",706.522240415
-"Lockhart River",387,"Lockhart River Primary Health Centre","Townsville University Hospital",1022,143.3424,-12.78591,"Cairns Hospital","Townsville University Hospital",748.961990875
-"Aurukun",399,"Aurukun Primary Health Centre","Townsville University Hospital",1023,141.7292,-13.35609,"Cairns Hospital","Townsville University Hospital",706.14408337
-"Coen",375,"Coen Primary Health Centre","Townsville University Hospital",1024,143.1999,-13.9448,"Cairns Hospital","Townsville University Hospital",517.186593525
-"Pormpuraaw",381,"Pormpuraaw Primary Health Centre","Townsville University Hospital",1025,141.6245,-14.89198,"Cairns Hospital","Townsville University Hospital",545.676107605
-"Hope Vale",258,"Hope Vale Primary Health Centre","Townsville University Hospital",1026,145.1102,-15.2971,"Cairns Hospital","Townsville University Hospital",372.542846655
-"Cooktown",245,"Cooktown Hospital","Townsville University Hospital",1027,145.2488,-15.47177,"Cairns Hospital","Townsville University Hospital",335.677292415
-"Kowanyama",369,"Kowanyama Primary Health Centre","Townsville University Hospital",1028,141.7435,-15.47744,"Cairns Hospital","Townsville University Hospital",764.529042295
-"Wujal Wujal",222,"Wujal Wujal Primary Health Centre","Townsville University Hospital",1029,145.3188,-15.94835,"Cairns Hospital","Townsville University Hospital",267.10697799
-"Daintree",214,"Mossman Hospital","Townsville University Hospital",1030,145.3306,-16.26079,"Cairns Hospital","Townsville University Hospital",210.045394025
-"Wonga Beach",202,"Mossman Hospital","Townsville University Hospital",1031,145.4137,-16.3472,"Cairns Hospital","Townsville University Hospital",198.423943475
-"Newell",197,"Mossman Hospital","Townsville University Hospital",1032,145.4061,-16.425,"Cairns Hospital","Townsville University Hospital",190.77838214
-"Cooya Beach",197,"Mossman Hospital","Townsville University Hospital",1033,145.4067,-16.44813,"Cairns Hospital","Townsville University Hospital",183.62191915
-"Mossman",197,"Mossman Hospital","Townsville University Hospital",1034,145.3731,-16.46155,"Cairns Hospital","Townsville University Hospital",184.58166038
-"Port Douglas",197,"Mossman Hospital","Townsville University Hospital",1035,145.4662,-16.48533,"Cairns Hospital","Townsville University Hospital",179.540114835
-"Craiglie",226,"Cairns Hospital","Townsville University Hospital",1036,145.467,-16.51455,"Cairns Hospital","Townsville University Hospital",176.71157866
-"Oak Beach",217,"Cairns Hospital","Townsville University Hospital",1037,145.5147,-16.5941,"Cairns Hospital","Townsville University Hospital",166.38753359
-"Gununa",387,"Mornington Island Hospital","Townsville University Hospital",1038,139.178,-16.65843,"Cairns Hospital","Townsville University Hospital",954.64698005
-"Kuranda",201,"Cairns Hospital","Townsville University Hospital",1039,145.6352,-16.82032,"Cairns Hospital","Townsville University Hospital",151.40248918
-"Yarrabah",170,"Yarrabah Hospital","Townsville University Hospital",1040,145.865,-16.90636,"Cairns Hospital","Townsville University Hospital",146.51604817
-"Cairns",172,"Cairns Hospital","Townsville University Hospital",1041,145.7649,-16.92311,"Cairns Hospital","Townsville University Hospital",121.935812865
-"Mareeba",178,"Mareeba Hospital","Townsville University Hospital",1042,145.4221,-16.9965,"Cairns Hospital","Townsville University Hospital",162.597050545
-"Mareeba - South",178,"Mareeba Hospital","Townsville University Hospital",1043,145.4211,-17.05062,"Cairns Hospital","Townsville University Hospital",160.947298535
-"Gordonvale",195,"Cairns Hospital","Townsville University Hospital",1044,145.7806,-17.09611,"Cairns Hospital","Townsville University Hospital",122.913130255
-"Goldsborough",201,"Cairns Hospital","Townsville University Hospital",1045,145.7509,-17.14553,"Cairns Hospital","Townsville University Hospital",128.96102357
-"Dimbulah",188,NA,"Townsville University Hospital",1046,145.1096,-17.15058,"Cairns Hospital","Townsville University Hospital",188.4890811
-"Chillagoe",202,"Chillagoe Primary Health Centre","Townsville University Hospital",1047,144.5225,-17.15243,"Cairns Hospital","Townsville University Hospital",260.122615135
-"Walkamin",182,"Mareeba Hospital","Townsville University Hospital",1048,145.4411,-17.15428,"Cairns Hospital","Townsville University Hospital",160.02969049
-"Tinaroo",181,"Atherton Hospital","Townsville University Hospital",1049,145.5505,-17.16863,"Cairns Hospital","Townsville University Hospital",169.08843357
-"Tolga - West",176,"Atherton Hospital","Townsville University Hospital",1050,145.4506,-17.204,"Cairns Hospital","Townsville University Hospital",162.30367173
-"Tolga",175,"Atherton Hospital","Townsville University Hospital",1051,145.4776,-17.22463,"Cairns Hospital","Townsville University Hospital",161.032853245
-"Atherton",175,"Atherton Hospital","Townsville University Hospital",1052,145.4776,-17.26641,"Cairns Hospital","Townsville University Hospital",162.05462704
-"Yungaburra",177,"Atherton Hospital","Townsville University Hospital",1053,145.5851,-17.26885,"Cairns Hospital","Townsville University Hospital",154.67698161
-"Babinda",218,"Cairns Hospital","Townsville University Hospital",1054,145.9219,-17.3445,"Cairns Hospital","Townsville University Hospital",123.3897452
-"Bramston Beach",177,"Babinda Hospital","Townsville University Hospital",1055,146.0198,-17.35108,"Cairns Hospital","Townsville University Hospital",131.324892175
-"Malanda",175,"Atherton Hospital","Townsville University Hospital",1056,145.5954,-17.35328,"Cairns Hospital","Townsville University Hospital",150.804824245
-"Herberton",186,"Herberton Hospital","Townsville University Hospital",1057,145.3852,-17.38376,"Cairns Hospital","Townsville University Hospital",166.80685316
-"Mirriwinni",222,"Cairns Hospital","Townsville University Hospital",1058,145.9089,-17.39951,"Cairns Hospital","Townsville University Hospital",122.475844785
-"Tarzali",175,"Atherton Hospital","Townsville University Hospital",1059,145.61,-17.42092,"Cairns Hospital","Townsville University Hospital",151.613571175
-"Karumba",351,"Normanton Hospital","Townsville University Hospital",1060,140.8383,-17.48673,"Cairns Hospital","Townsville University Hospital",551.91631546
-"Flying Fish Point",168,"Innisfail Hospital","Townsville University Hospital",1061,146.0754,-17.49616,"Cairns Hospital","Townsville University Hospital",130.877148315
-"Coconuts",168,"Innisfail Hospital","Townsville University Hospital",1062,146.0431,-17.50908,"Cairns Hospital","Townsville University Hospital",126.101393805
-"Millaa Millaa",175,"Atherton Hospital","Townsville University Hospital",1063,145.612,-17.51108,"Cairns Hospital","Townsville University Hospital",151.796618025
-"Belvedere",168,"Innisfail Hospital","Townsville University Hospital",1064,145.9896,-17.51972,"Cairns Hospital","Townsville University Hospital",123.796599805
-"Innisfail",168,"Innisfail Hospital","Townsville University Hospital",1065,146.0299,-17.52363,"Cairns Hospital","Townsville University Hospital",122.70099102
-"Wangan",168,"Innisfail Hospital","Townsville University Hospital",1066,146.0083,-17.57463,"Cairns Hospital","Townsville University Hospital",122.960616815
-"Mourilyan",168,"Innisfail Hospital","Townsville University Hospital",1067,146.0419,-17.583,"Cairns Hospital","Townsville University Hospital",122.43876823
-"South Johnstone",168,"Innisfail Hospital","Townsville University Hospital",1068,145.9951,-17.60097,"Cairns Hospital","Townsville University Hospital",122.48249929
-"Ravenshoe",175,"Atherton Hospital","Townsville University Hospital",1069,145.4842,-17.60534,"Cairns Hospital","Townsville University Hospital",171.90652851
-"Normanton",351,"Normanton Hospital","Townsville University Hospital",1070,141.0761,-17.67331,"Cairns Hospital","Townsville University Hospital",506.076564905
-"Mount Garnet",187,NA,"Townsville University Hospital",1071,145.1208,-17.67675,"Cairns Hospital","Townsville University Hospital",200.44997264
-"Burketown",363,"Burketown Primary Health Centre","Townsville University Hospital",1072,139.5466,-17.74255,"Cairns Hospital","Townsville University Hospital",756.30078715
-"Silkwood",168,"Innisfail Hospital","Townsville University Hospital",1073,146.0203,-17.74863,"Cairns Hospital","Townsville University Hospital",123.18939966
-"Kurrimine",168,"Innisfail Hospital","Townsville University Hospital",1074,146.1047,-17.77796,"Cairns Hospital","Townsville University Hospital",129.799603055
-"El Arish",183,"Tully Hospital","Townsville University Hospital",1075,146.0048,-17.80559,"Cairns Hospital","Townsville University Hospital",122.26925331
-"Bingil Bay",186,"Tully Hospital","Townsville University Hospital",1076,146.0976,-17.83471,"Cairns Hospital","Townsville University Hospital",134.92075859
-"Mission Beach",183,"Tully Hospital","Townsville University Hospital",1077,146.107,-17.86879,"Cairns Hospital","Townsville University Hospital",134.582180065
-"Wongaling Beach",183,"Tully Hospital","Townsville University Hospital",1078,146.091,-17.91401,"Cairns Hospital","Townsville University Hospital",135.052380015
-"Tully",183,"Tully Hospital","Townsville University Hospital",1079,145.9217,-17.93491,"Cairns Hospital","Townsville University Hospital",124.268000935
-"Doomadgee",375,"Doomadgee Hospital","Townsville University Hospital",1080,138.824,-17.94141,"Cairns Hospital","Townsville University Hospital",790.64698005
-"South Mission Beach",183,"Tully Hospital","Townsville University Hospital",1081,146.0909,-17.94652,"Cairns Hospital","Townsville University Hospital",137.109735145
-"Carmoo",183,"Tully Hospital","Townsville University Hospital",1082,146.0461,-17.94788,"Cairns Hospital","Townsville University Hospital",129.804441
-"Tully Heads",192,"Tully Hospital","Townsville University Hospital",1083,146.0563,-18.01976,"Cairns Hospital","Townsville University Hospital",134.235945825
-"Croydon",333,"Croydon Primary Health Centre","Townsville University Hospital",1084,142.2422,-18.2051,"Cairns Hospital","Townsville University Hospital",409.77814442
+"Boigu Island",493,"Thursday Island Hospital","Townsville University Hospital",1001,142.2153,-9.260192,"Townsville University Hospital","Townsville University Hospital",1344.9550912
+"Saibai Island",491,"Thursday Island Hospital","Townsville University Hospital",1002,142.6217,-9.38044,"Townsville University Hospital","Townsville University Hospital",1274.9550912
+"Erub (Darnley) Island",527,"Thursday Island Hospital","Townsville University Hospital",1003,143.7703,-9.585443,"Townsville University Hospital","Townsville University Hospital",1364.9550912
+"Yorke Island",503,"Thursday Island Hospital","Townsville University Hospital",1004,143.4073,-9.750172,"Townsville University Hospital","Townsville University Hospital",1284.9550912
+"Iama (Yam) Island",466,"Thursday Island Hospital","Townsville University Hospital",1005,142.7744,-9.900403,"Townsville University Hospital","Townsville University Hospital",1174.9550912
+"Mer (Murray) Island",534,"Thursday Island Hospital","Townsville University Hospital",1006,144.0504,-9.918105,"Townsville University Hospital","Townsville University Hospital",1374.9550912
+"Mabuiag Island",449,"Thursday Island Hospital","Townsville University Hospital",1007,142.1829,-9.95718,"Townsville University Hospital","Townsville University Hospital",1154.9550912
+"Badu Island",440,"Thursday Island Hospital","Townsville University Hospital",1008,142.1388,-10.12322,"Townsville University Hospital","Townsville University Hospital",1104.9550912
+"St Pauls",436,"Thursday Island Hospital","Townsville University Hospital",1009,142.3349,-10.18488,"Townsville University Hospital","Townsville University Hospital",1094.9550912
+"Warraber Island",456,"Thursday Island Hospital","Townsville University Hospital",1010,142.8238,-10.20726,"Townsville University Hospital","Townsville University Hospital",1114.9550912
+"Hammond Island",411,"Thursday Island Hospital","Townsville University Hospital",1011,142.2047,-10.54803,"Townsville University Hospital","Townsville University Hospital",1014.9550912
+"Thursday Island",324,"Thursday Island Hospital","Townsville University Hospital",1012,142.2167,-10.5804,"Townsville University Hospital","Townsville University Hospital",1080.819326
+"Horn Island",414,"Thursday Island Hospital","Townsville University Hospital",1013,142.2837,-10.60644,"Townsville University Hospital","Townsville University Hospital",1095.321749
+"Seisia",447,"Bamaga Hospital","Townsville University Hospital",1014,142.3701,-10.85188,"Townsville University Hospital","Townsville University Hospital",944.9550912
+"New Mapoon",447,"Bamaga Hospital","Townsville University Hospital",1015,142.3863,-10.87403,"Townsville University Hospital","Townsville University Hospital",941.3848819
+"Umagico",447,"Bamaga Hospital","Townsville University Hospital",1016,142.3489,-10.88916,"Townsville University Hospital","Townsville University Hospital",938.6512743
+"Bamaga",447,"Bamaga Hospital","Townsville University Hospital",1017,142.3893,-10.89279,"Townsville University Hospital","Townsville University Hospital",939.7901949
+"Injinoo",447,"Bamaga Hospital","Townsville University Hospital",1018,142.3275,-10.90209,"Townsville University Hospital","Townsville University Hospital",934.9848422
+"Mapoon",429,"Mapoon Primary Health Centre","Townsville University Hospital",1019,141.8976,-12.02178,"Townsville University Hospital","Townsville University Hospital",872.1839014
+"Weipa",411,"Weipa Hospital","Townsville University Hospital",1020,141.8777,-12.62496,"Townsville University Hospital","Townsville University Hospital",814.4198158
+"Napranum",411,"Weipa Hospital","Townsville University Hospital",1021,141.8909,-12.68153,"Townsville University Hospital","Townsville University Hospital",805.6318151
+"Lockhart River",387,"Lockhart River Primary Health Centre","Townsville University Hospital",1022,143.3424,-12.78591,"Townsville University Hospital","Townsville University Hospital",854.0944546
+"Aurukun",399,"Aurukun Primary Health Centre","Townsville University Hospital",1023,141.7292,-13.35609,"Townsville University Hospital","Townsville University Hospital",806.3140301
+"Coen",375,"Coen Primary Health Centre","Townsville University Hospital",1024,143.1999,-13.9448,"Townsville University Hospital","Townsville University Hospital",629.7689944
+"Pormpuraaw",381,"Pormpuraaw Primary Health Centre","Townsville University Hospital",1025,141.6245,-14.89198,"Townsville University Hospital","Townsville University Hospital",654.0187141
+"Hope Vale",258,"Hope Vale Primary Health Centre","Townsville University Hospital",1026,145.1102,-15.2971,"Townsville University Hospital","Townsville University Hospital",479.0571065
+"Cooktown",245,"Cooktown Hospital","Townsville University Hospital",1027,145.2488,-15.47177,"Townsville University Hospital","Townsville University Hospital",442.1620646
+"Kowanyama",369,"Kowanyama Primary Health Centre","Townsville University Hospital",1028,141.7435,-15.47744,"Townsville University Hospital","Townsville University Hospital",796.2775668
+"Wujal Wujal",222,"Wujal Wujal Primary Health Centre","Townsville University Hospital",1029,145.3188,-15.94835,"Townsville University Hospital","Townsville University Hospital",385.3392704
+"Daintree",214,"Mossman Hospital","Townsville University Hospital",1030,145.3306,-16.26079,"Townsville University Hospital","Townsville University Hospital",328.136468
+"Wonga Beach",202,"Mossman Hospital","Townsville University Hospital",1031,145.4137,-16.3472,"Townsville University Hospital","Townsville University Hospital",316.3687394
+"Newell",197,"Mossman Hospital","Townsville University Hospital",1032,145.4061,-16.425,"Townsville University Hospital","Townsville University Hospital",308.6479163
+"Cooya Beach",197,"Mossman Hospital","Townsville University Hospital",1033,145.4067,-16.44813,"Townsville University Hospital","Townsville University Hospital",301.5280252
+"Mossman",197,"Mossman Hospital","Townsville University Hospital",1034,145.3731,-16.46155,"Townsville University Hospital","Townsville University Hospital",302.5625889
+"Port Douglas",197,"Mossman Hospital","Townsville University Hospital",1035,145.4662,-16.48533,"Townsville University Hospital","Townsville University Hospital",297.4971385
+"Craiglie",226,"Cairns Hospital","Townsville University Hospital",1036,145.467,-16.51455,"Townsville University Hospital","Townsville University Hospital",294.6217099
+"Oak Beach",217,"Cairns Hospital","Townsville University Hospital",1037,145.5147,-16.5941,"Townsville University Hospital","Townsville University Hospital",284.1524671
+"Gununa",387,"Mornington Island Hospital","Townsville University Hospital",1038,139.178,-16.65843,"Townsville University Hospital","Townsville University Hospital",955.3431982
+"Kuranda",201,"Cairns Hospital","Townsville University Hospital",1039,145.6352,-16.82032,"Townsville University Hospital","Townsville University Hospital",269.3849901
+"Yarrabah",170,"Yarrabah Hospital","Townsville University Hospital",1040,145.865,-16.90636,"Townsville University Hospital","Townsville University Hospital",247.043943
+"Cairns",172,"Cairns Hospital","Townsville University Hospital",1041,145.7649,-16.92311,"Townsville University Hospital","Townsville University Hospital",240.0324477
+"Mareeba",178,"Mareeba Hospital","Townsville University Hospital",1042,145.4221,-16.9965,"Townsville University Hospital","Townsville University Hospital",268.6017775
+"Mareeba - South",178,"Mareeba Hospital","Townsville University Hospital",1043,145.4211,-17.05062,"Townsville University Hospital","Townsville University Hospital",263.7673629
+"Gordonvale",195,"Cairns Hospital","Townsville University Hospital",1044,145.7806,-17.09611,"Townsville University Hospital","Townsville University Hospital",218.7128079
+"Goldsborough",201,"Cairns Hospital","Townsville University Hospital",1045,145.7509,-17.14553,"Townsville University Hospital","Townsville University Hospital",223.9756898
+"Dimbulah",188,NA,"Townsville University Hospital",1046,145.1096,-17.15058,"Townsville University Hospital","Townsville University Hospital",288.7027495
+"Chillagoe",202,"Chillagoe Primary Health Centre","Townsville University Hospital",1047,144.5225,-17.15243,"Townsville University Hospital","Townsville University Hospital",358.5812771
+"Walkamin",182,"Mareeba Hospital","Townsville University Hospital",1048,145.4411,-17.15428,"Townsville University Hospital","Townsville University Hospital",252.7055257
+"Tinaroo",181,"Atherton Hospital","Townsville University Hospital",1049,145.5505,-17.16863,"Townsville University Hospital","Townsville University Hospital",251.3961143
+"Tolga - West",176,"Atherton Hospital","Townsville University Hospital",1050,145.4506,-17.204,"Townsville University Hospital","Townsville University Hospital",249.8625263
+"Tolga",175,"Atherton Hospital","Townsville University Hospital",1051,145.4776,-17.22463,"Townsville University Hospital","Townsville University Hospital",246.3056547
+"Atherton",175,"Atherton Hospital","Townsville University Hospital",1052,145.4776,-17.26641,"Townsville University Hospital","Townsville University Hospital",243.1075111
+"Yungaburra",177,"Atherton Hospital","Townsville University Hospital",1053,145.5851,-17.26885,"Townsville University Hospital","Townsville University Hospital",238.3392319
+"Babinda",218,"Cairns Hospital","Townsville University Hospital",1054,145.9219,-17.3445,"Townsville University Hospital","Townsville University Hospital",195.9071473
+"Bramston Beach",177,"Babinda Hospital","Townsville University Hospital",1055,146.0198,-17.35108,"Townsville University Hospital","Townsville University Hospital",195.0459784
+"Malanda",175,"Atherton Hospital","Townsville University Hospital",1056,145.5954,-17.35328,"Townsville University Hospital","Townsville University Hospital",226.3012574
+"Herberton",186,"Herberton Hospital","Townsville University Hospital",1057,145.3852,-17.38376,"Townsville University Hospital","Townsville University Hospital",240.1605096
+"Mirriwinni",222,"Cairns Hospital","Townsville University Hospital",1058,145.9089,-17.39951,"Townsville University Hospital","Townsville University Hospital",190.4873454
+"Tarzali",175,"Atherton Hospital","Townsville University Hospital",1059,145.61,-17.42092,"Townsville University Hospital","Townsville University Hospital",220.2040204
+"Karumba",351,"Normanton Hospital","Townsville University Hospital",1060,140.8383,-17.48673,"Townsville University Hospital","Townsville University Hospital",583.6413746
+"Flying Fish Point",168,"Innisfail Hospital","Townsville University Hospital",1061,146.0754,-17.49616,"Townsville University Hospital","Townsville University Hospital",182.308228
+"Coconuts",168,"Innisfail Hospital","Townsville University Hospital",1062,146.0431,-17.50908,"Townsville University Hospital","Townsville University Hospital",177.7848091
+"Millaa Millaa",175,"Atherton Hospital","Townsville University Hospital",1063,145.612,-17.51108,"Townsville University Hospital","Townsville University Hospital",209.7218221
+"Belvedere",168,"Innisfail Hospital","Townsville University Hospital",1064,145.9896,-17.51972,"Townsville University Hospital","Townsville University Hospital",180.0730687
+"Innisfail",168,"Innisfail Hospital","Townsville University Hospital",1065,146.0299,-17.52363,"Townsville University Hospital","Townsville University Hospital",174.0023646
+"Wangan",168,"Innisfail Hospital","Townsville University Hospital",1066,146.0083,-17.57463,"Townsville University Hospital","Townsville University Hospital",171.564984
+"Mourilyan",168,"Innisfail Hospital","Townsville University Hospital",1067,146.0419,-17.583,"Townsville University Hospital","Townsville University Hospital",167.0666337
+"South Johnstone",168,"Innisfail Hospital","Townsville University Hospital",1068,145.9951,-17.60097,"Townsville University Hospital","Townsville University Hospital",168.2098681
+"Ravenshoe",175,"Atherton Hospital","Townsville University Hospital",1069,145.4842,-17.60534,"Townsville University Hospital","Townsville University Hospital",232.6055564
+"Normanton",351,"Normanton Hospital","Townsville University Hospital",1070,141.0761,-17.67331,"Townsville University Hospital","Townsville University Hospital",537.9366929
+"Mount Garnet",187,NA,"Townsville University Hospital",1071,145.1208,-17.67675,"Townsville University Hospital","Townsville University Hospital",260.4561067
+"Burketown",363,"Burketown Primary Health Centre","Townsville University Hospital",1072,139.5466,-17.74255,"Townsville University Hospital","Townsville University Hospital",757.3075299
+"Silkwood",168,"Innisfail Hospital","Townsville University Hospital",1073,146.0203,-17.74863,"Townsville University Hospital","Townsville University Hospital",154.9077532
+"Kurrimine",168,"Innisfail Hospital","Townsville University Hospital",1074,146.1047,-17.77796,"Townsville University Hospital","Townsville University Hospital",161.2411821
+"El Arish",183,"Tully Hospital","Townsville University Hospital",1075,146.0048,-17.80559,"Townsville University Hospital","Townsville University Hospital",149.0178481
+"Bingil Bay",186,"Tully Hospital","Townsville University Hospital",1076,146.0976,-17.83471,"Townsville University Hospital","Townsville University Hospital",161.1911088
+"Mission Beach",183,"Tully Hospital","Townsville University Hospital",1077,146.107,-17.86879,"Townsville University Hospital","Townsville University Hospital",160.1762431
+"Wongaling Beach",183,"Tully Hospital","Townsville University Hospital",1078,146.091,-17.91401,"Townsville University Hospital","Townsville University Hospital",156.6847228
+"Tully",183,"Tully Hospital","Townsville University Hospital",1079,145.9217,-17.93491,"Townsville University Hospital","Townsville University Hospital",139.9028961
+"Doomadgee",375,"Doomadgee Hospital","Townsville University Hospital",1080,138.824,-17.94141,"Townsville University Hospital","Townsville University Hospital",791.3431982
+"South Mission Beach",183,"Tully Hospital","Townsville University Hospital",1081,146.0909,-17.94652,"Townsville University Hospital","Townsville University Hospital",157.5556804
+"Carmoo",183,"Tully Hospital","Townsville University Hospital",1082,146.0461,-17.94788,"Townsville University Hospital","Townsville University Hospital",148.548011
+"Tully Heads",192,"Tully Hospital","Townsville University Hospital",1083,146.0563,-18.01976,"Townsville University Hospital","Townsville University Hospital",146.4029742
+"Croydon",333,"Croydon Primary Health Centre","Townsville University Hospital",1084,142.2422,-18.2051,"Townsville University Hospital","Townsville University Hospital",440.8011271
 "Cardwell",141,"Ingham Hospital","Townsville University Hospital",1085,146.0227,-18.26396,"Townsville University Hospital","Townsville University Hospital",110.1552451
-"Georgetown",309,"Georgetown Primary Health Centre","Townsville University Hospital",1086,143.5479,-18.29241,"Cairns Hospital","Townsville University Hospital",313.84355355
+"Georgetown",309,"Georgetown Primary Health Centre","Townsville University Hospital",1086,143.5479,-18.29241,"Townsville University Hospital","Townsville University Hospital",345.7479095
 "Lucinda",141,"Ingham Hospital","Townsville University Hospital",1087,146.3337,-18.52889,"Townsville University Hospital","Townsville University Hospital",95.78898402
 "Halifax",141,"Ingham Hospital","Townsville University Hospital",1088,146.2856,-18.58094,"Townsville University Hospital","Townsville University Hospital",88.62110909
 "Macknade",141,"Ingham Hospital","Townsville University Hospital",1089,146.2605,-18.58664,"Townsville University Hospital","Townsville University Hospital",87.42525437
@@ -432,7 +432,7 @@
 "Dirranbandi",345,"Dirranbandi Hospital","Brisbane (PAH/RBWH)",1432,148.2271,-28.5841,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",377.35030448
 "Stanthorpe",170,"Stanthorpe Hospital","Brisbane (PAH/RBWH)",1433,151.9327,-28.65779,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",152.3265671
 "Johnstone",357,"Dirranbandi Hospital","Brisbane (PAH/RBWH)",1434,148.5382,-28.6787,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",373.71842787
-"Smithfield",183,"Cairns Hospital","Townsville University Hospital",1435,145.690172,-16.83142,"Cairns Hospital","Townsville University Hospital",134.222506395
+"Smithfield",183,"Cairns Hospital","Townsville University Hospital",1435,145.690172,-16.83142,"Townsville University Hospital","Townsville University Hospital",252.2861806
 "Texas",195,"Texas Hospital","Brisbane (PAH/RBWH)",1436,151.1692,-28.85306,"Royal Brisbane and Women's Hospital (RBWH)","Brain Injury Rehabilitation Unit",203.92522341
 "Wallangarra",213,"Texas Hospital","Brisbane (PAH/RBWH)",1437,151.9262,-28.92345,"Princess Alexandra Hospital (PAH)","Brain Injury Rehabilitation Unit",176.54359463
 "Birdsville",489,"Birdsville Primary Health Centre","Brisbane (PAH/RBWH)",1438,139.3551,-25.8978,"Townsville University Hospital","Brain Injury Rehabilitation Unit",1145.913800585

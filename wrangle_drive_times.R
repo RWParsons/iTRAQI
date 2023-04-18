@@ -304,7 +304,7 @@ acute_drive_times_all <- rbind(acute_drive_times, df_island_acute_drive_times)
 
 weighted_rehab_times <-
   inner_join(
-    rename(future_gold_and_cairns_times, silver_rehab_centre=centre, silver_time=minutes),
+    rename(future_gold_times, silver_rehab_centre=centre, silver_time=minutes),
     select(acute_drive_times_all, id, gold_rehab_centre=acute_care_centre, gold_time=minutes),
     by="id"
   ) %>%
